@@ -354,7 +354,6 @@ Hooks.on("setup", function () {
 		lightweight: "WFRP4E.Properties.Lightweight",
 		practical: "WFRP4E.Properties.Practical",
 		slash: "WFRP4E.Properties.Slash",
-		trip: "WFRP4E.Properties.Trip",
 	};
 
 	// Weapon Flaw Descriptions (used in dropdown info)
@@ -388,7 +387,7 @@ Hooks.on("setup", function () {
 		daemonology: "",
 		necromancy: "",
 		nurgle: "",
-		slaanesh: "",
+		slaanesh: "Tradycja Slaanesha przynosi ból i ekstazę, wszystko w imię Księcia Bólu i Przyjemności dla jego wiecznego zadowolenia, łącząc perwersyjną mieszankę Ametystowego, Złotego i Jadeitowego Wiatru w coś pokręconego i egzotycznego. Efekt Tradycji: Czarnoksiężnik Slaanesha jest biegły w sztuce dostarczania przyjemności i bólu. Możesz zadać dodatkową ranę za każdy Stan Ogłuszenia lub Paniki odniesiony przez cele twoich zaklęć.",
 		tzeentch: "",
 	};
 
