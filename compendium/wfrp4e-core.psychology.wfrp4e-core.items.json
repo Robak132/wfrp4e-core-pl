@@ -23,7 +23,7 @@
                     "scriptData": [
                         {
                             "id": "c2t8UjBqbf19OnSo",
-                            "name": "Nienawiść",
+                            "name": "Combat tests against @item.parenthesesText",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.S4793DLFhjMxpM8x]"
                         }
@@ -50,7 +50,7 @@
                         },
                         {
                             "id": "fChUE7dauqBKrKWx",
-                            "name": "Szał Bojowy",
+                            "name": "Disable",
                             "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ]
@@ -67,7 +67,7 @@
                     "scriptData": [
                         {
                             "id": "AuT4QpnFZkbhTorV",
-                            "name": "Więź",
+                            "name": "Defending or supporting @item.parenthesesText",
                             "script": "[Script.wAETU6aTRr9d4oCU]"
                         }
                     ],
@@ -92,7 +92,7 @@
                     "scriptData": [
                         {
                             "id": "15e6EhXi2RBmk9c8",
-                            "name": "Miłość",
+                            "name": "Defending @item.parenthesesText",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.iVhi3Z6zPaf1bf8g]"
                         }
@@ -130,13 +130,13 @@
                     "scriptData": [
                         {
                             "id": "IjfyYiIzcg133HAV",
-                            "name": "Wrogość",
+                            "name": "Socially or physically attacking @item.parenthesesText",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.iVhi3Z6zPaf1bf8g]"
                         },
                         {
                             "id": "IjfyYiIzcg133HAV",
-                            "name": "Wrogość",
+                            "name": "Interacting with @item.parenthesesText",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         }

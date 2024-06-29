@@ -1,8 +1,8 @@
 let poisoned = args.actor.hasCondition("poisoned")
 if (poisoned)
 {
-   this.script.scriptNotification(`Usunięto liczbę stanów Zatrucia: ${poisoned.conditionValue}`)
+   this.script.scriptNotification(`Usunięto ${poisoned.conditionValue} Stanów Zatrucia`)
    poisoned.delete();  
 }
 else
-  this.script.scriptNotification(`Brak stanów Zatrucia`)
+  this.script.scriptNotification(`Brak Stanów Zatrucia`)

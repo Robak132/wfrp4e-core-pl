@@ -1,3 +1,5 @@
+
+
 if (!["Goblin", "Ork"].includes(this.actor.system.details.species.value)) {
     let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), { appendTitle: ` - ${this.effect.name}` })
     await test.roll();

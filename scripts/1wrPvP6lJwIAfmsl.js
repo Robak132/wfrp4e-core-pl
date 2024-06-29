@@ -1,4 +1,4 @@
-let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.locations), 1, "Wybierz Lokację");
+let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.locations), 1, "Wybierz miejsce");
 
 let location = choice[0].id;
 

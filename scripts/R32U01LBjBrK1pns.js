@@ -18,9 +18,9 @@
         let bio = 
         `
         <p><strong>Szablon</strong>: ${template.text}</p>
-        <p><strong>Fizyczne dziwactwo</strong>: ${physicalQuirk}</p>
-        <p><strong>Etyka pracy</strong>: ${workEthic}</p>
-        <p><strong>Osobowościowe dziwactwa</strong>: ${personalityQuirk}</p>
+        <p><strong>Cecha fizyczna</strong>: ${physicalQuirk}</p>
+        <p><strong>Etyka</strong>: ${workEthic}</p>
+        <p><strong>Cecha psychiczna</strong>: ${personalityQuirk}</p>
         `
         
         this.script.scriptMessage(bio, {whisper : ChatMessage.getWhisperRecipients("GM")})

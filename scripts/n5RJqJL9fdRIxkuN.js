@@ -1,11 +1,11 @@
 if (this.actor.system.status.advantage.value > 0)
 {
     await this.actor.modifyAdvantage(-1);
-    this.script.scriptNotification("Zmniejszono Punkty Przewag")
+    this.script.scriptNotification("Zmniejszono Przewagę")
 }
 else 
 {
-    return this.script.scriptNotification("Niewystarczająca Liczba Punktów Przewag!", "error")
+    return this.script.scriptNotification("Niewystarczająca Przewaga!", "error")
 }
 
 let test = await this.actor.setupTrait(this.item)

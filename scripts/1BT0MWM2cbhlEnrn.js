@@ -30,7 +30,7 @@
             }
             else 
             {
-                ui.notifications.warn(`Nie odnaleziono talentu: ${talent}`, {permanent : true})
+                ui.notifications.warn(`Nie znaleziono: ${talent}`, {permanent : true})
             }
         }
       

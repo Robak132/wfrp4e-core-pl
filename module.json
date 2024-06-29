@@ -1,87 +1,87 @@
 {
-    "id": "wfrp4e-core-pl",
-    "title": "WFRP4e - Podręcznik Główny PL",
-    "description": "Nieoficjalne (wciąż) tłumaczenie systemu Warhammer Fantasy Role Play 4ed. Zawiera (prawie) wszystkie tabele, bestiariusz i informacje, których potrzebujesz, aby wysłać bohaterów graczy w niebezpieczny świat Warhammera.",
-    "version": "1.0.0",
-    "authors": [
-        {
-            "name": "Myeshko1",
-            "discord": "myeshko1",
-            "flags": {}
-        },
-        {
-            "name": "GregorHak",
-            "flags": {}
-        },
-        {
-            "name": "Varis (dr_hans)",
-            "discord": "dr_hans",
-            "flags": {}
-        },
-        {
-            "name": "Liv",
-            "email": "livithor@gmail.pl",
-            "discord": "livithor",
-            "flags": {}
-        },
-        {
-            "name": "Ez",
-            "discord": "shifu7939"
-        },
-        {
-            "name": "silent_mark",
-            "url": "https://weblate.foundryvtt.be",
-            "email": "marek@kembrowski.net",
-            "discord": "silent_mark",
-            "flags": {}
-        }
-    ],
-    "relationships": {
-        "requires": [
-            {
-                "id": "babele",
-                "type": "module",
-                "compatibility": {
-                    "minimum": "2.5.5"
-                }
-            }
-        ],
-        "systems": [
-            {
-                "id": "wfrp4e",
-                "type": "system",
-                "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
-                "compatibility": {
-                    "minimum": "7.1.5"
-                }
-            }
-        ]
+  "id": "wfrp4e-core-pl",
+  "title": "WFRP4e - Podręcznik Główny PL",
+  "description": "Nieoficjalne (wciąż) tłumaczenie systemu Warhammer Fantasy Role Play 4ed. Zawiera (prawie) wszystkie tabele, bestiariusz i informacje, których potrzebujesz, aby wysłać bohaterów graczy w niebezpieczny świat Warhammera.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Myeshko1",
+      "discord": "myeshko1",
+      "flags": {}
     },
-    "compatibility": {
-        "minimum": "11",
-        "verified": "11"
+    {
+      "name": "GregorHak",
+      "flags": {}
     },
-    "esmodules": [
-        "babele-register.js",
-        "modules/config-polish.js"
-    ],
-    "scripts": [
-        "load-scripts-pl.js",
-        "modules/initialization.js",
-        "modules/wfrp4e-npc-generator.js"
-    ],
-    "styles": [
-        "css/wfrp4e.css"
-    ],
-    "languages": [
-        {
-            "lang": "pl",
-            "name": "Polish",
-            "path": "lang/pl.json",
-            "flags": {}
+    {
+      "name": "Varis (dr_hans)",
+      "discord": "dr_hans",
+      "flags": {}
+    },
+    {
+      "name": "Dajmynato",
+      "email": "livithor@gmail.pl",
+      "discord": "Dajmynato#8936",
+      "flags": {}
+    },
+    {
+      "name": "Ez",
+      "discord": "shifu7939",
+      "flags": {}
+    },
+    {
+      "name": "silent_mark",
+      "url": "https://weblate.foundryvtt.be",
+      "email": "marek@kembrowski.net",
+      "discord": "silent_mark",
+      "flags": {}
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {
+          "minimum": "2.5.5"
         }
-    ],    
-	"url": "https://weblate.foundryvtt.be/",
-	"manifest": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/module.json",
-	"download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/1.0.0.zip" 
+      }
+    ],
+    "systems": [
+      {
+        "id": "wfrp4e",
+        "type": "system",
+        "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
+        "compatibility": {
+          "minimum": "7.1.5"
+        }
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "esmodules": [
+    "babele-register.js",
+    "modules/config-polish.js",
+    "load-scripts-pl.js"
+  ],
+  "scripts": [
+    "modules/initialization.js"
+  ],
+  "styles": [
+    "css/wfrp4e.css"
+  ],
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polish",
+      "path": "lang/pl.json",
+      "flags": {}
+    }
+  ],
+  "url": "https://weblate.foundryvtt.be/",
+  "manifest": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/module.json",
+  "download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/1.0.0.zip"
 }

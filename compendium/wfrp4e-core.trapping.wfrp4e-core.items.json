@@ -18,7 +18,7 @@
         },
         "Brass Penny": {
             "id": "0MYOJFx3vkYA95B4",
-            "name": "Brązowy Pens",
+            "name": "Brązowy pens",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.0MYOJFx3vkYA95B4"
         },
@@ -78,7 +78,7 @@
         },
         "Book, Engineer": {
             "id": "25Ek5A1EmQqzOcSK",
-            "name": "Księga, inżynieria",
+            "name": "Księga (inżynieria)",
             "description": "<p>Większość książek inżynieryjnych jest drukowana. Inżynieria to w Imperium nauka zaawansowana, głównie dzięki Imperialnej Akademii Inżynierii w Altdorfie i krasnoludzkiej Gildii Inżynierów. Z tego względu teksty traktujące o inżynierii są zwykle pisane, współtworzone lub redagowane przez krasnoludy.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.25Ek5A1EmQqzOcSK"
         },
@@ -175,19 +175,19 @@
                     "scriptData": [
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Korzeń mandragory",
+                            "name": "Round Check",
                             "script": "[Script.EdTChmSouS0MSmk5]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Korzeń mandragory",
+                            "name": "Bonus to Cool Tests",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "activationScript": "[Script.7H6wYyJ6cpaoc2QQ]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Korzeń mandragory",
+                            "name": "Movement Halved",
                             "script": "[Script.dqvHDMlcitLx1pUx]"
                         }
                     ],
@@ -198,7 +198,7 @@
                     "scriptData": [
                         {
                             "id": "RyXKKxNWlNwsNxv7",
-                            "name": "Zastosuj Korzeń mandragory",
+                            "name": "@effect.name",
                             "script": "[Script.AqHLHp4kH6KULk3e]"
                         }
                     ],
@@ -224,7 +224,7 @@
             "name": "Śrut i proch",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.5wItcVAcA6mfa62q",
-            "range": "jak bron"
+            "range": "jak broń"
         },
         "Quill Pen": {
             "id": "61Fx3RHhSqaLCnao",
@@ -335,17 +335,17 @@
                     "scriptData": [
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Lampa Sztormowa",
+                            "name": "Turn On Storm Lantern",
                             "script": "[Script.AS7CstSosuCrwZ19]"
                         },
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Lampa Sztormowa",
+                            "name": "Turn On Storm Lantern (Focused)",
                             "script": "[Script.CMUFtmNA1kkD1ay7]"
                         },
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Lampa Sztormowa",
+                            "name": "Turn Off Storm Lantern",
                             "script": "[Script.hK0YMJfYbpbJZizO]"
                         }
                     ]
@@ -378,7 +378,7 @@
         },
         "Book, Medicine": {
             "id": "aQIxzS4uOcIe9oxd",
-            "name": "Księga, medycyna",
+            "name": "Księga (medycyna)",
             "description": "<p>Teksty medyczne mogą być pisane ręcznie lub drukowane, w zależności od prestiżu lekarza będącego ich autorem. Zazwyczaj występują w nich ilustracje, zwykle włącznie z rysunkami autopsji i diagramami procedur lekarskich.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.aQIxzS4uOcIe9oxd"
         },
@@ -396,13 +396,13 @@
         },
         "Tinderbox": {
             "id": "aVLjCqY3guj1DD06",
-            "name": "Pudełko na hubkę i krzesiwo",
+            "name": "Hubka i krzesiwo",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.aVLjCqY3guj1DD06"
         },
         "Book, Apothecary": {
             "id": "AWx6rqwOlN68pN6I",
-            "name": "Księga, aptekarstwo",
+            "name": "Księga (aptekarstwo)",
             "description": "<p>Księgi aptekarskie są zwykle pisane ręcznie. Podstawowa książka aptekarska zawiera opisy składników oraz przedstawione na wykresach instrukcje procesu warzenia mikstur. Zwykle podane są w niej formuły toników na trawienie, mikstur leczniczych i eliksirów żywotności (patrz Zioła i mikstury). Zaawansowane teksty zawierają formuły bardziej egzotycznych mikstur.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.AWx6rqwOlN68pN6I"
         },
@@ -494,13 +494,13 @@
         },
         "Plate Leggings": {
             "id": "bY6M9XxbqmFmqpA8",
-            "name": "Płytowe Nagolenniki",
+            "name": "Płytowe nagolenniki",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.bY6M9XxbqmFmqpA8",
             "effects": {
                 "u46Xpql4mjj6JOD0": {
                     "id": "u46Xpql4mjj6JOD0",
-                    "name": "Płytowe Nagolenniki",
+                    "name": "Płytowe nagolenniki",
                     "scriptData": [
                         {
                             "id": "u46Xpql4mjj6JOD0",
@@ -523,7 +523,7 @@
         },
         "Room, common/night": {
             "id": "BZmUt37Jk1UCokqS",
-            "name": "Nocleg, wspólna izba na 1 noc",
+            "name": "Wspólna izba na 1 noc",
             "description": "<p>Goście śpiący we wspólnych izbach powinni uważać na złodziejów.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.BZmUt37Jk1UCokqS"
         },
@@ -561,12 +561,12 @@
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
-                            "name": "Grzybki Szalonego Kapelusznika",
+                            "name": "Frenzy",
                             "script": "[Script.aMHGjWyn6BXCI4pw]"
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
-                            "name": "Grzybki Szalonego Kapelusznika",
+                            "name": "Effect Deleted",
                             "script": "[Script.2sDH6RvoOAR40oqH]"
                         }
                     ],
@@ -577,7 +577,7 @@
                     "scriptData": [
                         {
                             "id": "RmNoZUc1wPx1kcmk",
-                            "name": "Zastosuj Grzybki Szalonego Kapelusznika",
+                            "name": "@effect.name",
                             "script": "[Script.AqHLHp4kH6KULk3e]"
                         }
                     ],
@@ -724,7 +724,7 @@
         },
         "Gold Crown": {
             "id": "Ggx0bRaCuq8MbF0g",
-            "name": "Złota Korona",
+            "name": "Złota korona",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Ggx0bRaCuq8MbF0g"
         },
@@ -779,7 +779,7 @@
                     "scriptData": [
                         {
                             "id": "KQao0JiA57ipslnJ",
-                            "name": "Zastosuj Mikstura lecznicza",
+                            "name": "@effect.name",
                             "script": "[Script.xUpKYT7BZCSmAfUy]"
                         }
                     ],
@@ -802,7 +802,7 @@
         },
         "Book, Art": {
             "id": "H5CqkYPVVUslaORH",
-            "name": "Księga, sztuka",
+            "name": "Księga (sztuka)",
             "description": "<p>Sztuki teatralne, poematy i ballady, a czasem kompozycje muzyczne zapisane na luźnych kartach - książki artystyczne występują pod wieloma postaciami. Ponadto zawierają traktaty na temat perspektywy, formy i stylu, często pisane przez słynnych malarzy lub rzeźbiarzy, takich jak Leonardo da Miragliano, i przeznaczone do masowego druku.&nbsp;</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.H5CqkYPVVUslaORH"
         },
@@ -862,7 +862,7 @@
         },
         "Rope, 10 yards": {
             "id": "horFAtaDz0EbuY3R",
-            "name": "Lina, 10 metrów",
+            "name": "Lina (10 metrów)",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.horFAtaDz0EbuY3R"
         },
@@ -926,7 +926,7 @@
                     "scriptData": [
                         {
                             "id": "6ER1r3gah7XwnNBY",
-                            "name": "Zwijane posłanie",
+                            "name": "Endurance Tests rolled to resist Cold Exposure",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
@@ -974,7 +974,7 @@
                     "scriptData": [
                         {
                             "id": "6uP7rREK03gthlAq",
-                            "name": "Sercobój",
+                            "name": "Poisoned",
                             "script": "[Script.skVq3eDEYKFF2iZp]"
                         }
                     ],
@@ -985,7 +985,7 @@
                     "scriptData": [
                         {
                             "id": "mZjdxfvuZ8ez5djz",
-                            "name": "Zastosuj Sercobój",
+                            "name": "@effect.name",
                             "script": "[Script.G7sFEnJlXZvfXL3V]"
                         }
                     ],
@@ -1012,7 +1012,7 @@
                     "scriptData": [
                         {
                             "id": "TApb9RQHQJcksYYL",
-                            "name": "Rozkosz Ranalda",
+                            "name": "Apply After Effects",
                             "script": "[Script.yzN7ZNlgCiSVJqsU]"
                         }
                     ]
@@ -1025,7 +1025,7 @@
                     "scriptData": [
                         {
                             "id": "Bx8xTxlLwCu24IUS",
-                            "name": "Wciągnij Rozkosz Ranalda",
+                            "name": "@effect.name",
                             "script": "[Script.qSwCYMMiIHmSV1X5]"
                         }
                     ],
@@ -1067,7 +1067,7 @@
         },
         "Silver Shilling": {
             "id": "KB8HgDz56dh2w7w1",
-            "name": "Srebrny Szyling",
+            "name": "Srebrny szyling",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.KB8HgDz56dh2w7w1"
         },
@@ -1128,7 +1128,7 @@
         },
         "Bugman’s XXXXXX Ale, pint": {
             "id": "KzJkoB12jpidtngo",
-            "name": "Przesławne, wyśmienite Piwo Bugmana XXXXXX",
+            "name": "Pół litra przesławnego Piwa Bugmana",
             "description": "<p>Kupcy przemierzają cały Stary Świat, by nabyć to krzepkie, krasnoludzkie piwo ze słynnego browaru założonego przez Josefa Bugmana. Ten rześki i podnoszący na duchu napój dostarczany jest do większości głównych miast. Jeśli chodzi o spożycie alkoholu, jeden kubek Bugmana liczy się jako 4 porcje zwykłego piwa (patrz @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Mocna Głowa} na stronie 123) i zapewnia odporność na Testy Strachu przez 1k10 godzin.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.KzJkoB12jpidtngo"
         },
@@ -1224,14 +1224,14 @@
         },
         "Pouch": {
             "id": "mCvZAj5F6hfUZhzR",
-            "name": "Sakwa",
+            "name": "Sakiewka",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.mCvZAj5F6hfUZhzR"
         },
         "Tent": {
             "id": "MF43A52UBH8SHOnd",
             "name": "Namiot",
-            "description": "<p></p>",
+            "description": "<p>Średniej wielkości namiot mogący pomieścić 4 osoby śpiące w ciasnej przestrzeni. Małe namioty mieszczą 2 osoby i dostępne są za pół ceny oraz zabierają 1 punkt Obciążenia. Duże namioty mieszczą 8 osób i dostępne są za dwukrotnie wyższą cenę oraz zabierają 4 punkty Obciążenia.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.MF43A52UBH8SHOnd"
         },
         "Stone Bullet": {
@@ -1280,7 +1280,7 @@
                     "scriptData": [
                         {
                             "id": "ZnnZiIHuYkzxUKFZ",
-                            "name": "Zastosuj Salwort",
+                            "name": "@effect.name",
                             "script": "[Script.TBpNFRL5uehs0fze]"
                         }
                     ],
@@ -1335,7 +1335,7 @@
                     "scriptData": [
                         {
                             "id": "K0kAGUU2ptVMHSDf",
-                            "name": "Zastosuj Fakstoryl",
+                            "name": "@effect.name",
                             "script": "[Script.TBpNFRL5uehs0fze]"
                         }
                     ],
@@ -1371,7 +1371,7 @@
         },
         "Book, Law": {
             "id": "o4FSm7YgmfNV4Qgq",
-            "name": "Księga, prawo",
+            "name": "Księga (prawo)",
             "description": "<p>Przepisy prawne znacznie różnią się między poszczególnymi regionami. Miasta posiadające prasy drukarskie wydają zbiory rozporządzeń w oprawionych tomiszczach, podczas gdy w mniejszych miastach sędziowie często polegają na manuskryptach spisanych setki lat wcześniej. Księgi prawne używane przez podróżujących prawników lub sędziów nierzadko łączą drukowane i ręcznie pisane stronice pochodzące z różnych miast z całego Imperium, zebrane i oprawione pod jedną okładką.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.o4FSm7YgmfNV4Qgq"
         },
@@ -1389,13 +1389,13 @@
         },
         "Plate Breastplate": {
             "id": "oBNXxRFPh1sOT4K2",
-            "name": "Płytowy Napierśnik",
+            "name": "Płytowy napierśnik",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.oBNXxRFPh1sOT4K2"
         },
         "Trade Tools (Type)": {
             "id": "OD83JAlc9KhDpHK5",
-            "name": "Narzędzia Pracy (Rodzaj)",
+            "name": "Narzędzia pracy ()",
             "description": "<p><strong>Aptekarz</strong>: Narzędzia obejmują moździerz z tłuczkiem, łyżki, słoiki oraz wagę szalkową. Warsztat wyposażony jest także w palniki olejowe i półki pełne składników.</p>\n<p>&nbsp;</p>\n<p><strong>Rzemieślnik</strong>: Potencjalny wybór narzędzi używanych przez rzemieślników jest szeroki.</p>\n<p>Przykładowe zestawy:</p>\n<ul type=\"disc\">\n<li><strong>Grawer:</strong>: Rylce, punktaki, wosk, kwas, młotek i dłuta. Warsztat zawiera także skrawarki i prasy.</li>\n</ul>\n<ul type=\"disc\">\n<li><strong>Kowal</strong>: Młotek, cęgi, punktaki, kształtowniki, świdry i wiertła. Warsztat zawiera także kowadło, piec, dziurkownicę, młot kowalski oraz sztaby metalu.</li>\n</ul>\n<ul type=\"disc\">\n<li><strong>Stolarz</strong>: Młotek i gwoździe, piła, przymiar, kreda, pion na sznurku. Warsztat zawiera także tokarki, heble, imadła i zapas drewna.</li>\n</ul>\n<p>&nbsp;</p>\n<p>Przykłady innych rzemieślników: balsamista, bednarz, browarnik, dmuchacz szkła, garbarz, garncarz, jubiler, kaligraf, kamieniarz, kartograf, krawiec, kucharz, malarz, murarz, płatnerz, rusznikarz, rymarz, snycerz, szewc, szkutnik, szlifierz, świecarz, tkacz, winiarz, wytwórca łuków, zbrojmistrz i złotnik.</p>\n<p>&nbsp;</p>\n<p><strong>Artysta</strong>: Pędzle i farby, młotek i dłuta, pilniki i skrobaki. Warsztat zawiera także sztalugi lub postumenty i zapas płócien, pergaminu, welinu, drewna, gliny lub nieociosanego kamienia.</p>\n<p><strong>Inżynier</strong>: Klepsydra, przymiar, lont, cyrkiel i przykładnica. Warsztat zawiera także wielokrążki, liny i deski kreślarskie.</p>\n<p><strong>Lekarz</strong>: Igły i szwy, bandaże, skalpel, ocet, pincety i wziernik. Warsztat zawiera także rysunki anatomiczne, różne przybory i stół operacyjny.</p>\n<p><strong>Nawigator</strong>: Kwadrant, astrolabium, wykresy i kompasy, klepsydra i sonda na linie.&nbsp;</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.OD83JAlc9KhDpHK5"
         },
@@ -1419,7 +1419,7 @@
         },
         "Plate Bracers": {
             "id": "oW7wSkl4JMb5sBH8",
-            "name": "Płytowe Naramienniki",
+            "name": "Płytowe naramienniki",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.oW7wSkl4JMb5sBH8"
         },
@@ -1431,7 +1431,7 @@
         },
         "Book, Religion": {
             "id": "PKkGM5Q0Chmt5qFe",
-            "name": "Księga, religia",
+            "name": "Księga (religia)",
             "description": "<p>Księgi religijne dostępne są w Imperium we wszelakich formach. To kraina znana z przywiązania do religii. Istnieje chłonny rynek na najpopularniejsze teksty, z których większość jest tanio produkowana z użyciem pras drukarskich.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.PKkGM5Q0Chmt5qFe"
         },
@@ -1481,7 +1481,7 @@
                     "scriptData": [
                         {
                             "id": "NyPpILiBcAdT06RZ",
-                            "name": "Zastosuj Czarny lotos",
+                            "name": "@effect.name",
                             "script": "[Script.G7sFEnJlXZvfXL3V]"
                         }
                     ],
@@ -1522,7 +1522,7 @@
         },
         "Book, Magic": {
             "id": "qQQ6rRUqcRIaU7kr",
-            "name": "Księga, magia",
+            "name": "Księga (magia)",
             "description": "<p>Księgi zaklęć są zwykle spisywane przez czarodziejów, a ich okładki często bywają zabezpieczone zamknięciami na klucz. Czasami tomy chronione są także magicznymi alarmami lub pieczęciami. Posiadanie księgi zaklęć jest karalne jako herezja, o ile jej posiadacz nie jest czarodziejem licencjonowanym przez Kolegia Magii.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.qQQ6rRUqcRIaU7kr"
         },
@@ -1547,7 +1547,7 @@
         "Healing Poultice": {
             "id": "s2lBWQFQt6M5Pngb",
             "name": "Kataplazm leczniczy",
-            "description": "<p>Ten okład leczniczy o paskudnym zapachu wykonany jest ze zwierzęcego łajna i uryny, połączonych z pewną liczbą pospolitych ziół, takich jak sigmafoil, tarabet i waleriana. Rana Krytyczna obłożona kataplazmem leczniczym nie jest zagrożona Mniejszą Infekcją.</p>",
+            "description": "<p><strong>Przygotowanie:</strong> Maść ([[/r 1d10]]{1d10 tygodni})<br><strong>Wytworzenie wymaga:</strong> </p><hr><p>Ten okład leczniczy o paskudnym zapachu wykonany jest ze zwierzęcego łajna i uryny, połączonych z pewną liczbą pospolitych ziół, takich jak sigmafoil, tarabet i waleriana. Rana Krytyczna obłożona kataplazmem leczniczym nie jest zagrożona Mniejszą Infekcją.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.s2lBWQFQt6M5Pngb"
         },
         "Legal Document": {
@@ -1588,7 +1588,7 @@
         },
         "Riding Horse": {
             "id": "tL7ka28KOIvEi6Rc",
-            "name": "Koń Wierzchowy",
+            "name": "Koń wierzchowy",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.tL7ka28KOIvEi6Rc"
         },
@@ -1600,17 +1600,17 @@
         },
         "Plate Open Helm": {
             "id": "TvUKzvXjc2VChuTT",
-            "name": "Hełm Płytowy (Otwarty)",
+            "name": "Hełm płytowy (Otwarty)",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.TvUKzvXjc2VChuTT",
             "effects": {
                 "YLns5DNubGbr27Lh": {
                     "id": "YLns5DNubGbr27Lh",
-                    "name": "Hełm Płytowy (Otwarty)",
+                    "name": "Hełm płytowy (Otwarty)",
                     "scriptData": [
                         {
                             "id": "YLns5DNubGbr27Lh",
-                            "name": "Plate Open Helm",
+                            "name": "Hełm płytowy (Otwarty)",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]",
                             "activationScript": "[Script.9RFoasDcFnYZ1txR]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
@@ -1658,7 +1658,7 @@
         },
         "Baton": {
             "id": "utRev4dXTLI0A2GL",
-            "name": "Pałka",
+            "name": "Pałka (krótka)",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.utRev4dXTLI0A2GL"
         },
@@ -1745,7 +1745,7 @@
         "Earth Root": {
             "id": "WiPzDDFjCAo2EQDT",
             "name": "Ziemny korzeń",
-            "description": "<p>To zioło konsumowane jest w celu uśmierzenia efektów ropniaków powodowanych przez Czarną Zarazę (chociaż pozostają spore obrzęki). Co więcej, zapewnia to +10 do wszystkich Testów związanych z chorobą. <strong>Dawkowanie</strong>: 1 dawka dziennie..</p>",
+            "description": "<p>To zioło konsumowane jest w celu uśmierzenia efektów ropniaków powodowanych przez Czarną Zarazę (chociaż pozostają spore obrzęki). Co więcej, zapewnia to +10 do wszystkich Testów związanych z chorobą. <strong>Dawkowanie</strong>: 1 dawka dziennie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.WiPzDDFjCAo2EQDT"
         },
         "Instrument": {
@@ -1860,7 +1860,7 @@
         },
         "Book, Cryptography": {
             "id": "z8X2CMJdAZKoE3lk",
-            "name": "Księga, kryptografia",
+            "name": "Księga (kryptografia)",
             "description": "<p>Podczas gdy pojedyncze szyfry i klucze kodujące bywają zanotowane na jednej lub dwóch stronach, księgi kryptograficzne to często ręcznie pisane kodeksy traktujące o matematyce, numerologii i szyfrach polialfabetycznych.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.z8X2CMJdAZKoE3lk"
         },
@@ -1876,7 +1876,7 @@
                     "scriptData": [
                         {
                             "id": "76F3hl8iAvtCxKp9",
-                            "name": "Soczewki do czytania",
+                            "name": "Perception Tests to search for fine details",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
@@ -1911,7 +1911,7 @@
                     "scriptData": [
                         {
                             "id": "SQ8NfRku2VYsIWJf",
-                            "name": "Zastosuj Eliksir Żywotności",
+                            "name": "@effect.name",
                             "script": "[Script.xUpKYT7BZCSmAfUy]"
                         }
                     ],
@@ -1960,18 +1960,17 @@
     "folders": {
         "Trappings": "Wyposażenie",
         "Blessings": "Błogosławieństwa",
-        "Uliric": "Ulryk",
         "Ammunition": "Amunicja",
         "Armour": "Pancerze",
         "Weapons": "Broń",
-        "Books and Documents": "Księgi i Dokumenty",
-        "Clothing and Accessories": "Odzież i Akcesoria",
-        "Drugs and Poisons": "Narkotyki i Trucizny",
-        "Food and Drink": "Jedzenie i Napoje",
-        "Herbs and Draughts": "Zioła i Eliksiry",
+        "Books and Documents": "Księgi i dokumenty",
+        "Clothing and Accessories": "Odzież i akcesoria",
+        "Drugs and Poisons": "Narkotyki i trucizny",
+        "Food and Drink": "Jedzenie, picie i nocleg",
+        "Herbs and Draughts": "Zioła i mikstury",
         "Miscellaneous": "Różne",
-        "Packs and Containers": "Plecaki i Pojemniki",
-        "Tools and Kits": "Narzędzia i Zestawy",
+        "Packs and Containers": "Plecaki i pojemniki",
+        "Tools and Kits": "Narzędzia i zestawy",
         "Chaos Magic": "Magia Chaosu",
         "Lore of Beasts": "Tradycja Zwierząt",
         "Lore of Daemonology": "Tradycja Demonologii",
@@ -1985,6 +1984,6 @@
         "Lore of Shadow": "Tradycja Cieni",
         "Lore of Witchcraft": "Tradycja Czarostwa",
         "Lore of Necromancy": "Tradycja Nekromancji",
-        "Petty Spells": "Proste Zaklęcia"
+        "Petty Spells": "Magia Prosta"
     }
 }

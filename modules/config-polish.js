@@ -76,8 +76,8 @@ Hooks.on("setup", function () {
 		human: "Człowiek",
 		dwarf: "Krasnolud",
 		halfling: "Niziołek",
-		helf: "Wysoki elf",
-		welf: "Leśny elf",
+		helf: "Wysoki Elf",
+		welf: "Leśny Elf",
 	};
 
 	WFRP4E.subspecies = {
@@ -91,235 +91,16 @@ Hooks.on("setup", function () {
 					"Wycena",
 					"Plotkowanie",
 					"Targowanie",
-					"Język (bretoński)",
+					"Język (Bretoński)",
 					"Język (Jałowej Krainy)",
 					"Dowodzenie",
 					"Wiedza (Reikland)",
 					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
+					"Broń Zasięgowa (Łuki)",
 				],
 				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
 			},
-		},
-		welf: {
-			talsyn: {
-				name: "Talsyn", 
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Atletyka",
-					"Wspinaczka",
-					"Występy (Śpiewanie)",
-					"Wiedza (Talsyn)",
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Włóczykij, Silne Nogi", 0]
-			},
-			arranoc: {
-				name: "Arranoc",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Przekupstwo",
-					"Charyzma",
-					"Mocna Głowa",
-					"Wiedza (Arronc)",
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Atrakcyjny, Charyzmatyczny", 0]
-			},
-			argwylon: {
-				name: "Argwylon",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Oswajanie",
-					"Język (Magiczny)",
-					"Wiedza (Argwylon)",
-					"Wiedza (Magia)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Magia Prosta, Szósty Zmysł", 0]
-			},
-			modryn: {
-				name: "Modryn",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Unik",
-					"Zastraszanie",
-					"Zastawianie Pułapek",
-					"Wiedza (Modryn)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Groźny, Czujny", 0]
-			},
-			cavaroc: {
-				name: "Cavaroc",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Opieka nad Zwierzętami",
-					"Oswajanie",
-					"Jeździectwo (Konie)",
-					"Wiedza (Cavaroc)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Posłuch u Zwierząt, Szybki Refleks", 0]
-			},
-			atylwyth: {
-				name: "Atylwyth",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Atletyka",
-					"Unik",
-					"Opanowanie",
-					"Wiedza (Atylwyth)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Odporny na (Zimno), Urodzony Wojownik", 0]
-			},
-			wydrioth: {
-				name: "Wydrioth",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Wspinaczka", 
-					"Intuicja",
-					"Wiedza (Wydrioth)",
-					"Zastawianie Pułapek"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Nieustępliwy, Bardzo Silny", 0]
-			},
-			cythral: {
-				name: "Cythral",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuk)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Skradanie (Wieś)",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Atletyka",
-					"Wspinaczka",
-					"Opanowanie",
-					"Wiedza (Cythral)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Twardziel, Tragarz", 0]
-			},
-
-			fyrdarric: {
-				name: "Fyr Darric",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Kusza)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Opanowanie",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Zwinne Palce",
-					"Kuglarstwo (Taniec)",
-					"Występy (Śpiewanie)",
-					"Wiedza (Fyr Darric)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Gładkie Słówka, Naśladowca", 0]
-			},
-			torgovann: {
-				name: "Torgovann",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Kusza)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Opanowanie",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Wycena",
-					"Wiedza (Metalurgia)",
-					"Wiedza (Torgovann)",
-					"Rzemiosło (Dowolne)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Wytwórca (dowolny), Zręczny", 0]
-			},
-			anmyr: {
-				name: "Anmyr",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Kusza)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Opanowanie",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Atletyka",
-					"Zastraszanie", 
-					"Wiedza (Anmyr)",
-					"Wiedza (Zwierzoludzie)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Nienawiść (Zwierzoludzie), Nieugięty", 0]
-			},
-			tirstyh: {
-				name: "Tirstyh",
-				skills: [
-					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Kusza)",
-					"Język (Eltharin)",
-					"Odporność",
-					"Percepcja",
-					"Opanowanie",
-					"Sztuka Przetrwania",
-					"Tropienie",
-					"Sztuka (Rzeżbiarstwo)",
-					"Opanowanie",
-					"Występy (Śpiewanie)",
-					"Wiedza (Tirstyh)"
-				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Zimna krew, Odporny na (Choroby)", 0]
-			},
-		}
+        },
 	};
 
 	WFRP4E.speciesCharacteristics = {
@@ -393,12 +174,12 @@ Hooks.on("setup", function () {
 			"Wycena",
 			"Plotkowanie",
 			"Targowanie",
-			"Język (bretoński)",
+			"Język (Bretoński)",
 			"Język (Jałowej Krainy)",
 			"Dowodzenie",
 			"Wiedza (Reikland)",
 			"Broń Biała (Podstawowa)",
-			"Broń Zasięgowa (Łuk)",
+			"Broń Zasięgowa (Łuki)",
 		],
 		dwarf: [
 			"Mocna Głowa",
@@ -407,12 +188,12 @@ Hooks.on("setup", function () {
 			"Występy (Gawędziarstwo)",
 			"Wycena",
 			"Zastraszanie",
-			"Język (Khazalid)",
-			"Wiedza (Nains)",
+			"Język (Reikspiel)",
+			"Wiedza (Krasnoludy)",
 			"Wiedza (Geologia)",
 			"Wiedza (Metalurgia)",
 			"Broń Biała (Podstawowa)",
-			"Rzemiosło (Dowolne)",
+			"Rzemiosło ()",
 		],
 		halfling: [
 			"Charyzma",
@@ -421,19 +202,19 @@ Hooks.on("setup", function () {
 			"Unik",
 			"Zwinne Palce",
 			"Intuicja",
-			"Język (Mootland)",
+			"Język (Krainy Zgromadzenia)",
 			"Wiedza (Reikland)",
 			"Percepcja",
 			"Targowanie",
-			"Skradanie (Dowolne)",
+			"Skradanie ()",
 			"Rzemiosło (Kucharz)",
 		],
 		helf: [
 			"Broń Biała (Podstawowa)",
-			"Broń Zasięgowa (Łuk)",
+			"Broń Zasięgowa (Łuki)",
 			"Dowodzenie",
 			"Język (Eltharin)",
-			"Muzyka (Dowolny instrument)",
+			"Muzyka ()",
 			"Nawigacja",
 			"Opanowanie",
 			"Pływanie",
@@ -445,7 +226,7 @@ Hooks.on("setup", function () {
 		welf: [
 			"Atletyka",
 			"Broń Biała (Podstawowa)",
-			"Broń Zasięgowa (Łuk)",
+			"Broń Zasięgowa (Łuki)",
 			"Język (Eltharin)",
 			"Odporność",
 			"Percepcja",
@@ -460,8 +241,8 @@ Hooks.on("setup", function () {
 
 	WFRP4E.speciesTalents = {
 		human: [
-			"Wróżba Losu", 
-			"Błyskotliwość, Charyzmatyczny", 
+			"Wróżba Losu",
+			"Błyskotliwość, Charyzmatyczny",
 			3],
 		dwarf: [
 			"Odporność na Magię",
@@ -497,21 +278,14 @@ Hooks.on("setup", function () {
 	};
 
 	WFRP4E.classTrappings = {
-		Uczeni: "ClassTrappings.Academics",
-		Uczony: "ClassTrappings.Academics",
-		Mieszczanie: "ClassTrappings.Burghers",
-		Mieszczanin: "ClassTrappings.Burghers",
-		Dworzanie: "ClassTrappings.Courtiers",
-		Dworzanin: "ClassTrappings.Courtiers",
-		Pospólstwo: "ClassTrappings.Peasants",
-		Wędrowcy: "ClassTrappings.Rangers",
-		Wędrowiec: "ClassTrappings.Rangers",
-		Wodniacy: "ClassTrappings.Riverfolk",
-		Wodniak: "ClassTrappings.Riverfolk",
-		Łotry: "ClassTrappings.Rogues",
-		Łotr: "ClassTrappings.Rogues",
-		Wojownicy: "ClassTrappings.Warriors",
-		Wojownik: "ClassTrappings.Warriors",
+		"Uczony": "ClassTrappings.Academics",
+		"Mieszczanin": "ClassTrappings.Burghers",
+		"Dworzanin": "ClassTrappings.Courtiers",
+		"Chłop": "ClassTrappings.Peasants",
+		"Wędrowiec": "ClassTrappings.Rangers",
+		"Wodniak": "ClassTrappings.Riverfolk",
+		"Łotr": "ClassTrappings.Rogues",
+		"Wojownik": "ClassTrappings.Warriors",
 	};
 
 	// Weapon Group Descriptions
@@ -574,6 +348,7 @@ Hooks.on("setup", function () {
 		lightweight: "WFRP4E.Properties.Lightweight",
 		practical: "WFRP4E.Properties.Practical",
 		slash: "WFRP4E.Properties.Slash",
+		trip: "WFRP4E.Properties.Trip",
 	};
 
 	// Weapon Flaw Descriptions (used in dropdown info)
@@ -607,7 +382,7 @@ Hooks.on("setup", function () {
 		daemonology: "",
 		necromancy: "",
 		nurgle: "",
-		slaanesh: "Tradycja Slaanesha przynosi ból i ekstazę, wszystko w imię Księcia Bólu i Przyjemności dla jego wiecznego zadowolenia, łącząc perwersyjną mieszankę Ametystowego, Złotego i Jadeitowego Wiatru w coś pokręconego i egzotycznego. Efekt Tradycji: Czarnoksiężnik Slaanesha jest biegły w sztuce dostarczania przyjemności i bólu. Możesz zadać dodatkową ranę za każdy Stan Ogłuszenia lub Paniki odniesiony przez cele twoich zaklęć.",
+		slaanesh: "",
 		tzeentch: "",
 	};
 
@@ -642,8 +417,8 @@ Hooks.on("setup", function () {
         "nausea": "WFRP4E.Symptom.Nausea",
         "pox": "WFRP4E.Symptom.Pox",
         "wounded": "WFRP4E.Symptom.Wounded",
-		"delirium": "WFRP4E.Symptom.Delirium",
-		"swelling": "WFRP4E.Symptom.Swelling",
+        "delirium": "WFRP4E.Symptom.Delirium",
+        "swelling": "WFRP4E.Symptom.Swelling",
 	};
 
 	WFRP4E.symptomDescriptions = {

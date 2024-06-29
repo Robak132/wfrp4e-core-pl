@@ -4,5 +4,5 @@ let attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.v
 if (attackerSize > actorSize)
 {
    args.actor.addCondition("prone")
-   this.script.scriptMessage(`<strong>Atak Ogonem</strong>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`)
+   this.script.scriptMessage(`<strong>Atak Ogonem</strong>: ${args.actor.prototypeToken.name} zostaje <strong>Powalony</strong>`)
 }

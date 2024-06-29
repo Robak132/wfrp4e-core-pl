@@ -1,4 +1,4 @@
-let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.locations, this.effect.img), 1, "Wybierz Lokację");
+let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.locations, this.effect.img), 1, "Wybierz miejsce");
 if (choice[0])
 {
     this.effect.updateSource({name : `${this.effect.name} (${choice[0].name})`})

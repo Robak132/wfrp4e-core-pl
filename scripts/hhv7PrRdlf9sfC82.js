@@ -13,7 +13,7 @@ let characteristics = {
         let skills = ["Opanowanie", "Unik"]
         let skillAdvancements = [10, 10]
         let talents = ["Bitewny Refleks"]
-        let trappings = ["Skórzana kurta", "Skórzany hełm", "Skórzane nogawice", "Tarcza"]
+        let trappings = ["Skórzany kaftan", "Skórzany hełm", "Skórzane nogawice", "Tarcza"]
         let items = []
 
         let updateObj = this.actor.toObject();
@@ -48,7 +48,7 @@ let characteristics = {
             }
             else 
             {
-                ui.notifications.warn(`Could not find ${talent}`, {permanent : true})
+                ui.notifications.warn(`Nie znaleziono: ${talent}`, {permanent : true})
             }
         }
         
@@ -65,7 +65,7 @@ let characteristics = {
             }
             else 
             {
-                ui.notifications.warn(`Could not find ${trapping}`, {permanent : true})
+                ui.notifications.warn(`Nie znaleziono: ${trapping}`, {permanent : true})
             }
         }
       

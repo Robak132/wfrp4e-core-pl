@@ -1,5 +1,5 @@
         let choices = await Promise.all([game.wfrp4e.utility.findItemId("1zaqojk0Oq1m8vYv"), game.wfrp4e.utility.findItemId("zIuarD5mB0EF0ji0")])
-        let items = await game.wfrp4e.apps.ItemDialog.create(choices, 1, "Wybierz broń")
+        let items = await game.wfrp4e.apps.ItemDialog.create(choices, 1, "Wybierz Broń")
         items = items.map(i => i.toObject())
         
         items.forEach(i => equip(i))

@@ -1,1 +1,0 @@
-return args.item?.name != "Muzyka (Lutnia)"

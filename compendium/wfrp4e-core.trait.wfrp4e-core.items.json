@@ -40,12 +40,12 @@
                     "scriptData": [
                         {
                             "id": "mqb7U1RR6DjIhLgy",
-                            "name": "Wrogość",
+                            "name": "Socially or physically attacking @item.system.specification.value",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.iVhi3Z6zPaf1bf8g]"
                         },
                         {
-                            "name": "Wrogość",
+                            "name": "Interacting with @item.system.specification.value",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]",
                             "id": "mqb7U1RR6DjIhLgy"
@@ -117,7 +117,7 @@
                     "scriptData": [
                         {
                             "id": "qPjT5EO2Y83wUzVx",
-                            "name": "Lęk",
+                            "name": "Tests to affect @item.system.specification.value",
                             "script": "[Script.o1zD8mej9TWKNxUq]"
                         }
                     ],
@@ -156,7 +156,7 @@
                     "scriptData": [
                         {
                             "id": "cix7lwIY68fS1N30",
-                            "name": "# Macki",
+                            "name": "Grappling",
                             "script": "[Script.9MwRUzRinhq1IjhG]"
                         }
                     ],
@@ -277,7 +277,7 @@
                     "scriptData": [
                         {
                             "id": "4MsIBocsfHnwGUr7",
-                            "name": "Nienawiść",
+                            "name": "Combat tests against @item.system.specification.value",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.S4793DLFhjMxpM8x]"
                         }
@@ -302,7 +302,7 @@
                 "gh8P4EJqUjx9JGnO": {
                     "scriptData": [
                         {
-                            "name": "Spaczenie Umysłu",
+                            "name": "Add Mental Corruption",
                             "id": "gh8P4EJqUjx9JGnO",
                             "script": "[Script.KICZPwLvbUSxbDrE]"
                         }
@@ -342,7 +342,7 @@
                         },
                         {
                             "id": "tIImpgQfm7FirmhR",
-                            "name": "Ochrona",
+                            "name": "Set Rating",
                             "script": "[Script.cJFDnq1HI4gXWcJo]"
                         }
                     ],
@@ -415,7 +415,7 @@
                     "scriptData": [
                         {
                             "id": "M6Sztz0EoQls0Xx9",
-                            "name": "Niestabilny",
+                            "name": "Dead at 0 Wounds",
                             "script": "[Script.WPQbVpD1uwSLAXq1]"
                         }
                     ],
@@ -436,12 +436,12 @@
                     "scriptData": [
                         {
                             "id": "FLoUbmMqNQMuJfZx",
-                            "name": "Rój",
+                            "name": "Swarm Bonuses",
                             "script": "[Script.RJpglw5eVRM1f9t0]"
                         },
                         {
                             "id": "FLoUbmMqNQMuJfZx",
-                            "name": "Rój",
+                            "name": "Attacking a Swarm",
                             "script": "[Script.UYLXm2W6jVn21Age]",
                             "activationScript": "[Script.nSXzktHyNjGUXjaw]",
                             "hideScript": "[Script.RZlMkxJz5apn0mUj]"
@@ -461,7 +461,7 @@
                     "scriptData": [
                         {
                             "id": "qFRVjb5kUqUPzBgB",
-                            "name": "Latanie",
+                            "name": "Ranged Test while Flying",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "activationScript": "[Script.nSXzktHyNjGUXjaw]",
                             "hideScript": "[Script.RZlMkxJz5apn0mUj]"
@@ -608,7 +608,7 @@
                             "script": "[Script.ioeTj5mx8jlA5EX5]"
                         },
                         {
-                            "name": "Wymiot",
+                            "name": "Vomit (Free Attack)",
                             "id": "4KinCaegUvscrFU9",
                             "script": "[Script.CW5Vlr57OaMkKJ8Q]"
                         }
@@ -704,7 +704,7 @@
                     "scriptData": [
                         {
                             "id": "KCvK1MI6OC2RpXma",
-                            "name": "Mutacja",
+                            "name": "Add Mutation",
                             "script": "[Script.0R0QAr3D024kWPfo]"
                         }
                     ],
@@ -814,7 +814,7 @@
                     "scriptData": [
                         {
                             "id": "0AgiLabg8eB4LItu",
-                            "name": "Skryty",
+                            "name": "Stealth Tests",
                             "script": "[Script.3fdCQ3h3iVuhdDs9]",
                             "activationScript": "[Script.Ew3C2WmLCtc1KT46]",
                             "hideScript": "[Script.EpdMj9d9SYPeP44q]"
@@ -880,7 +880,7 @@
                     "scriptData": [
                         {
                             "id": "JqX5XmH4ZXiST9ML",
-                            "name": "Ugryzienie",
+                            "name": "Bite (Free Attack)",
                             "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ],
@@ -921,7 +921,7 @@
                     "scriptData": [
                         {
                             "id": "HipPSD61s7Vkcru0",
-                            "name": "Mieszkaniec Lasu",
+                            "name": "Climb or Stealth Tests",
                             "script": "[Script.s8xU6OOZbbfo6VIw]",
                             "activationScript": "[Script.Q9EmlWmuDac83cJw]",
                             "hideScript": "[Script.EVBSHEC5nmmj2X41]"
@@ -982,7 +982,7 @@
                     "scriptData": [
                         {
                             "id": "gjbJu5OWDKFJvvyY",
-                            "name": "Zakażony",
+                            "name": "Penalty to Melee attacks",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]",
                             "activationScript": "[Script.igVAVU7DOuzhNG14]",
                             "hideScript": "[Script.ogJBAXTXyhTqACPO]"
@@ -1027,7 +1027,7 @@
                         },
                         {
                             "id": "mkDK0Yqvb4JqL1zq",
-                            "name": "Konstrukt",
+                            "name": "Magical Weapons",
                             "script": "[Script.WKXyVHQwQCNTfSKv]"
                         }
                     ]
@@ -1070,7 +1070,7 @@
                         },
                         {
                             "id": "3KXZhIkHukLOpg2l",
-                            "name": "Atak Ogonem",
+                            "name": "Tail (Free Attack)",
                             "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ]
@@ -1099,13 +1099,13 @@
                 "PSDaEI70b4ZasVRm": {
                     "scriptData": [
                         {
-                            "name": "Zionięcie",
+                            "name": "Damage Effects",
                             "id": "PSDaEI70b4ZasVRm",
                             "script": "[Script.jdS2u1tQPYeO55WI]"
                         },
                         {
                             "id": "PSDaEI70b4ZasVRm",
-                            "name": "Zionięcie",
+                            "name": "Ignore AP",
                             "script": "[Script.11uCC0mK2uL783al]"
                         }
                     ],
@@ -1157,7 +1157,7 @@
                             "id": "ra1EGVf9mHjb4JrR",
                             "script": "[Script.ma0sWhebqwdRHWvY]",
                             "activationScript": "[Script.yRRzSKlcN3L7rEEe]",
-                            "name": "Wyszkolony",
+                            "name": "Trained (Entertain)",
                             "hideScript": "[Script.v6LIG7EwWYALxCpP]"
                         }
                     ],
@@ -1178,11 +1178,11 @@
                         {
                             "id": "lCW7MgvHneroE3ox",
                             "script": "[Script.WKXyVHQwQCNTfSKv]",
-                            "name": "Demoniczny"
+                            "name": "Magical Attacks"
                         },
                         {
                             "id": "lCW7MgvHneroE3ox",
-                            "name": "Demoniczny",
+                            "name": "Daemonic Ward",
                             "script": "[Script.S95QqpX1cZyIVCPy]"
                         }
                     ],
@@ -1273,7 +1273,7 @@
                         },
                         {
                             "id": "kPgI28vmSamM3u1s",
-                            "name": "Atak Językiem (Zasięg)",
+                            "name": "Tongue (Free Attack)",
                             "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ]
@@ -1303,7 +1303,7 @@
                         },
                         {
                             "id": "rNq9moHHK0N4dC3S",
-                            "name": "Spaczenie",
+                            "name": "Strength Choice",
                             "script": "[Script.xS2su09zcza9du09]"
                         }
                     ],
@@ -1327,7 +1327,7 @@
                         },
                         {
                             "id": "ydTMvbmqv6BZ4u6d",
-                            "name": "Szał Bojowy",
+                            "name": "Disable",
                             "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ],

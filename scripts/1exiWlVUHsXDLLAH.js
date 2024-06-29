@@ -1,0 +1,1 @@
+this.script.scriptNotification(`Nie możesz wejść: ${this.effect.name}!`);

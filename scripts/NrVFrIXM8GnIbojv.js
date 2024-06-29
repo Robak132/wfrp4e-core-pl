@@ -1,0 +1,1 @@
+args.item.system.damage.value = `BS + ${this.actor.system.characteristics.fel.bonus}`;

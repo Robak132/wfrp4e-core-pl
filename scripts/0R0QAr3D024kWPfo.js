@@ -1,7 +1,7 @@
 let table = game.wfrp4e.tables.findTable("mutatephys");
 if (!table)
 {
-	return ui.notifications.error("Nieodnaleziono tabeli Mutacji, upewnij się, że tabla o kluczu `mutatephys` jest zaimportowana do świata.")
+	return ui.notifications.error("Nie odnaleziono tabeli Mutacji, upewnij się, że tabla o kluczu `mutatephys` jest zaimportowana do świata.")
 }
 let result = (await table.roll()).results[0];
 let uuid = `Compendium.${result.documentCollection}.${result.documentId}`

@@ -1,6 +1,7 @@
 {
     "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
+        "image": "img",
         "duration": "system.duration.value",
         "range": "system.range.value",
         "target": "system.target.value",
@@ -112,7 +113,7 @@
                     "scriptData": [
                         {
                             "id": "lfR1p5Ph2BQCPl3G",
-                            "name": "Błogosławieństwo Prawości",
+                            "name": "Magical Weapon",
                             "script": "[Script.eWWLmA2xINR321aK]"
                         }
                     ],
@@ -445,7 +446,7 @@
                         },
                         {
                             "id": "2lds6IDIyorYrvY4",
-                            "name": "Mądrość sowy",
+                            "name": "Items",
                             "script": "[Script.dbOSvpgcPjsc2uvq]"
                         }
                     ]
@@ -603,7 +604,7 @@
                         },
                         {
                             "id": "yAJjiwiK0OSoIrkf",
-                            "name": "Spryt Ranalda",
+                            "name": "Catfall",
                             "script": "[Script.Y6ppJBerpM3TtSic]"
                         }
                     ]
@@ -631,7 +632,7 @@
                         },
                         {
                             "id": "qDw8FPD6bDLLY82Q",
-                            "name": "Twarz topielca",
+                            "name": "Effect Ended",
                             "script": "[Script.6V3qHON3mcerlBlB]"
                         }
                     ],
@@ -750,7 +751,7 @@
                     "scriptData": [
                         {
                             "id": "YhZKddnHcQnJUhFC",
-                            "name": "Pan łowów",
+                            "name": "Related to quarry",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]"
                         }
                     ],
@@ -844,12 +845,12 @@
                     "scriptData": [
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Rączy jeleń",
+                            "name": "Strong Legs",
                             "script": "[Script.oqgd9G6oI1ncPYLw]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Rączy jeleń",
+                            "name": "Athletics Test",
                             "script": "[Script.U9xh2wriSqCosugW]"
                         },
                         {
@@ -937,7 +938,7 @@
                         },
                         {
                             "id": "rR3CML7hvrzjzYH3",
-                            "name": "Miecz sprawiedliwości",
+                            "name": "Ignore AP",
                             "script": "[Script.wsqNM4NHnwaAAQym]"
                         }
                     ],
@@ -1020,7 +1021,7 @@
                         },
                         {
                             "id": "B6C7PTHXo7vQ79L1",
-                            "name": "Ukojenie Rhyi",
+                            "name": "Bonus to next Test",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]",
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
                             "submissionScript": "[Script.TzgmYRXFXRspIo1i]"
@@ -1058,6 +1059,7 @@
             "name": "Gorejące słońce",
             "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom @Condition[Oślepienie]{Oślepienia}. Za każde +2 PS otrzymują +1 poziom @Condition[Oślepienie]{Oślepienia}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Q91bWCEn0gt33fGT",
+            "image": "modules/wfrp4e-extended/icons/prayers/blazing-sun.png",
             "effects": {
                 "JlsdDkPK9j9Y65sB": {
                     "id": "JlsdDkPK9j9Y65sB",
@@ -1176,7 +1178,7 @@
                         },
                         {
                             "id": "90vi32xekMLeXdXT",
-                            "name": "Odmrożenia",
+                            "name": "Stunned",
                             "script": "[Script.k8TC0yzp4xfOXD2n]"
                         }
                     ],
@@ -1467,12 +1469,12 @@
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
-                            "name": "Młot Sigmara",
+                            "name": "Damage",
                             "script": "[Script.NrVFrIXM8GnIbojv]"
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
-                            "name": "Młot Sigmara",
+                            "name": "Conditions",
                             "script": "[Script.esuLwq4g5T8k1kLT]"
                         }
                     ],

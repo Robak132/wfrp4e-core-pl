@@ -68,7 +68,7 @@
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)",
                             "id": "ptrOabNiyWL7rEpc",
-                            "name": "Gangrena"
+                            "name": "@effect.name"
                         },
                         {
                             "id": "ptrOabNiyWL7rEpc",
@@ -99,7 +99,7 @@
                     "scriptData": [
                         {
                             "id": "DpXDhNg4Fjx9UYWp",
-                            "name": "Dymienica",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -125,7 +125,7 @@
                     "scriptData": [
                         {
                             "id": "tWV666SBeHQ1SkLQ",
-                            "name": "Gorączka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -157,7 +157,7 @@
                     "scriptData": [
                         {
                             "id": "WMvsbsArnzW4uGGK",
-                            "name": "Wysypka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"
@@ -196,7 +196,7 @@
                     "scriptData": [
                         {
                             "id": "5Z1lQUDSnpiWw1qF",
-                            "name": "Gorączka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -243,7 +243,7 @@
                     "scriptData": [
                         {
                             "id": "17RUu45P5uA9kmC9",
-                            "name": "Gorączka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -348,7 +348,7 @@
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "id": "5OCmYxeGpzmfmGjV",
-                            "name": "Gorączka"
+                            "name": "@effect.name"
                         }
                     ],
                     "id": "5OCmYxeGpzmfmGjV",
@@ -371,7 +371,7 @@
                     "scriptData": [
                         {
                             "id": "fToWKoDP5iitVHG6",
-                            "name": "Wysypka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"
@@ -468,7 +468,7 @@
                     "scriptData": [
                         {
                             "id": "Pj00cDfEiEMLPArP",
-                            "name": "Wysypka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"

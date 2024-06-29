@@ -48,7 +48,7 @@
             }
             else 
             {
-                ui.notifications.warn(`Could not find ${talent}`, {permanent : true})
+                ui.notifications.warn(`Nie znaleziono: ${talent}`, {permanent : true})
             }
         }
         
@@ -65,7 +65,7 @@
             }
             else 
             {
-                ui.notifications.warn(`Could not find ${trapping}`, {permanent : true})
+                ui.notifications.warn(`Nie znaleziono: ${trapping}`, {permanent : true})
             }
         }
        

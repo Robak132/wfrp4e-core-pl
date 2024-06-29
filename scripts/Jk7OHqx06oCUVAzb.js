@@ -1,1 +1,0 @@
-return !["Język (Magiczny)", "Splatanie Magii (Hysh)"].includes(args.skill?.name) 

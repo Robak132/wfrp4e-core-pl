@@ -12,12 +12,12 @@ let index = game.packs
 	return i
 })
 
-let choice = await ItemDialog.create(index, 1, "Wybierz rodzaj wiedzy")
+let choice = await ItemDialog.create(index, 1, "Wybierz rodzaj Wiedzy")
 let text;
 if (!choice[0])
 {
     let custom = await Dialog.wait({
-        title : "Wpisz rodzaj wiedzy",
+        title : "Podaj rodzaj Wiedzy",
         content : "<input type='text'>",
         buttons : {
             confirm : {

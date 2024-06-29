@@ -18,4 +18,4 @@ let weapon = {
 }
 
 Item.implementation.create(foundry.utils.expandObject(weapon), {parent : this.actor, fromEffect : this.effect.id})
-this.script.scriptNotification("Utworzony Broń. Dalsze dostosowywanie należy wykonać ręcznie w Karcie przedmiotu");
+this.script.scriptNotification("Przedmiot utworzony. Dalsze dostosowywanie należy wykonać ręcznie w Karcie przedmiotu");
