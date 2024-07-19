@@ -756,10 +756,10 @@
         },
         "Trade (Chandler)": {
             "id": "PFQYm0XaYcoeSYxE",
-            "name": "Rzemiosło (Kupiectwo)",
+            "name": "Rzemiosło (Świecarz)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.PFQYm0XaYcoeSYxE",
-            "image": "modules/wfrp4e-extended/icons/skills/6_Trade.svg"
+            "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Chandler.svg"
         },
         "Haggle": {
             "id": "pKLMbmG3Ivt6mzMf",
