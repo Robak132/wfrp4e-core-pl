@@ -199,7 +199,7 @@
     "SHEET.GroupAdvantage": "Przewagi Drużynowe",
     "SHEET.Expand": "Rozwiń",
     "SHEET.Collapse": "Zwiń",
-    "LOG.MemorizedSpell": "Zapamiętano {name}",
+    "LOG.MemorizedSpell": "Zapamiętano: {name}",
     "LOG.GainPrayer": "Zdobyto {name}",
     "LOG.CareerChange": "Zmiana profesji: {career}",
     "SHEET.MeleeWeaponHeader": "Broń Biała",
