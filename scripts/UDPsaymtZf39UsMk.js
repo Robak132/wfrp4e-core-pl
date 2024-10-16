@@ -1,7 +1,7 @@
-
-                            let fatigued = this.actor.hasCondition("fatigued")
-                            if (!fatigued)
-                            {
-                                this.actor.addCondition("fatigued")
-                              ui.notifications.notify(this.actor.name + ": dodano Stan Zmęczenia, który nie może zostać usunięty dopóki nie usunie się Gorączki.")
-                            }
+//*** Zatrucie Krwi
+let fatigued = this.actor.hasCondition("fatigued")
+if (!fatigued)
+{
+    this.actor.addCondition("fatigued")
+    ui.notifications.notify("Zmęczenie dodane do " + this.actor.name + ", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.")
+}

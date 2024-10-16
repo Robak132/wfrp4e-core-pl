@@ -1,3 +1,4 @@
+//*** Atrakcyjny
 if (args.test.options.useOnesAttractive && (args.test.result.roll <= game.settings.get("wfrp4e", "automaticSuccess") || args.test.result.roll <= args.test.target))
 {
 

@@ -1,3 +1,4 @@
+//*** Wybicie stawu
 let location = this.item.system.location.key;
 
 if (location)
@@ -6,7 +7,7 @@ if (location)
 
     if (dropped.length)
     {
-        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(", ")}!`)
+        this.script.notification(`Upuszczono: ${dropped.map(i => i.name).join(", ")}!`)
         for(let weapon of dropped)
         {
             await weapon.system.toggleEquip();

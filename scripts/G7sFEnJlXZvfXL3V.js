@@ -1,3 +1,4 @@
+//*** Czarny lotos
 if (this.item.system.quantity.value)
 {
 	this.item.system.reduceQuantity();
@@ -8,5 +9,5 @@ if (this.item.system.quantity.value)
 }
 else
 {
-	this.script.scriptNotification("Nic nie zostało!", "error")
+	this.script.notification("Nic nie zostało!", "error")
 }

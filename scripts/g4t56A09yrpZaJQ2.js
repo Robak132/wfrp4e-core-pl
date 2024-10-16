@@ -1,3 +1,4 @@
+//*** Szpony furii
     let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);
     amberTalons.name = "Szpony Furii";
     amberTalons.img = this.effect.img;
@@ -7,10 +8,9 @@
     amberTalons.effects.push({
         label : "Szpony Furii",
         transfer: false,
-        icon : "modules/wfrp4e-core/icons/spells/amber-talons.png" ,
-        flags : {
-          wfrp4e : {
-              applicationData : {
+        img : "modules/wfrp4e-core/icons/spells/amber-talons.png" ,
+        system: {
+          transferData : {
                   documentType : "Item"
               },
               scriptData : [{
@@ -18,6 +18,5 @@
                   script : "if (args.totalWoundLoss >= 1)\n{ \n    args.actor.addCondition(\"bleeding\")\n}"
               }]
           }
-        }
       })
     this.actor.createEmbeddedDocuments("Item", [amberTalons], {fromEffect: this.effect.id})

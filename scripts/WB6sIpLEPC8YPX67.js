@@ -1,6 +1,7 @@
+//*** Amputowana noga
 if (args.options.dodge)
 {
 	args.abort = true;
-	this.script.scriptNotification("Nie można unikać!")
+	this.script.notification("Nie można unikać!")
 }
 return ["t", "int", "wp", "fel"].includes(args.characteristic)

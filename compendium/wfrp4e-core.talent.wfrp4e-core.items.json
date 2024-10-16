@@ -70,7 +70,7 @@
                         },
                         {
                             "id": "SooTD4HVi4QwmIiB",
-                            "name": "Usuń Zaskoczenie",
+                            "name": "Usuń Stan Zaskoczenie",
                             "script": "[Script.OeCgX3hIsfLfmGvC]"
                         }
                     ],
@@ -102,10 +102,10 @@
         },
         "Strider": {
             "id": "1dUizIgLBgn4jICC",
-            "name": "Doświadczony Wędrowiec",
+            "name": "Doświadczony Wędrowiec (Wybrany Teren)",
             "description": "<p>Masz doświadczenie w wędrówce przez dzicz i potrafisz dobrze wybierać drogę. Nie działają na ciebie negatywne modyfikatory wynikające z wpływu wybranego terenu. Oto lista przykładów: Lasy, Pustynie, Moczary, Teren Kamienisty, Tundra, Wybrzeża.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.1dUizIgLBgn4jICC",
-            "tests": "Atletyka podczas podróży w terenie: Wybrany Teren",
+            "tests": "Atletyki podczas podróży w terenie (Wybrany Teren)",
             "effects": {
                 "nxZ6leAs6bz1KlXX": {
                     "scriptData": [
@@ -117,7 +117,7 @@
                         },
                         {
                             "id": "nxZ6leAs6bz1KlXX",
-                            "name": "Wybierz Teren",
+                            "name": "Wybierz Rodzaj Terenu",
                             "script": "[Script.190PHSHKGaJ74wsR]"
                         }
                     ],
@@ -172,7 +172,7 @@
                     ]
                 }
             },
-            "tests": "Splatanie Magii"
+            "tests": "Splatanie Magii (Wszystkie Wiatry Magii)"
         },
         "Fisherman": {
             "id": "1kgHcImgfyKI1IYp",
@@ -268,8 +268,8 @@
         },
         "Arcane Magic": {
             "id": "3O9clK7LGyuLTHPW",
-            "name": "Magia Tajemna",
-            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n <table title=\"\" border=\"1\">\n <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna. Co więcej, jeśli posiadasz Talent Magia Tajemna, nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
+            "name": "Magia Tajemna (Dowolna)",
+            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n <table title=\"\" border=\"1\">\n <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Dowolna). Co więcej, jeśli posiadasz Talent Magia Tajemna (Dowolna), nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.3O9clK7LGyuLTHPW"
         },
         "Argumentative": {
@@ -310,7 +310,7 @@
                     "scriptData": [
                         {
                             "id": "ZUzVS6EvwJvPOM5C",
-                            "name": "Testy Inicjatywy dotyczące @item.name",
+                            "name": "Testy inicjatywy dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
@@ -363,7 +363,7 @@
         },
         "Savant": {
             "id": "580fwhKfOZJFxMID",
-            "name": "Znawca",
+            "name": "Znawca (Wiedza)",
             "description": "<p>Jesteś prawdziwym ekspertem w wybranej dziedzinie wiedzy. Automatycznie potrafisz przytoczyć tyle poprawnych informacji na dany temat, ile razy wykupiłeś ten Talent i nie musisz wykonywać Testu Wiedzy. Udany test da ci dodatkowe wiadomości, określane przez MG według normalnych zasad.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.580fwhKfOZJFxMID",
             "tests": "Wiedza (wybrana dziedzina)",
@@ -379,7 +379,7 @@
                         },
                         {
                             "id": "KBX2JNU9b26vRDQs",
-                            "name": "Wybierz Wiedzę",
+                            "name": "Wybierz Rodzaj Wiedzy",
                             "script": "[Script.HMC6hPND9DWLFfZE]"
                         }
                     ],
@@ -666,7 +666,7 @@
                         },
                         {
                             "id": "kcVhLDQic6XJTa97",
-                            "name": "Aktywuj Nieustraszoność",
+                            "name": "Aktywuj Nieustraszonego",
                             "script": "[Script.rr4htuVq45onXdRG]"
                         }
                     ],
@@ -736,7 +736,7 @@
                         },
                         {
                             "id": "92qZkpgEbYj6Ts5w",
-                            "name": "Wybierz Zmysł",
+                            "name": "Wybór",
                             "script": "[Script.yCgH3N9AurIiAv0i]"
                         }
                     ],
@@ -747,7 +747,7 @@
         },
         "Fast Hands": {
             "id": "9sMAf0xmehjEmUao",
-            "name": "Ruchliwe Dłonie",
+            "name": "Ruchliwe dłonie",
             "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.9sMAf0xmehjEmUao",
             "tests": "Test Zwinnych Palców, Broni Białej (Bijatyka), aby dotknąć przeciwnika",
@@ -896,7 +896,7 @@
                     "scriptData": [
                         {
                             "id": "Cos43TEeV9wKTCua",
-                            "name": "Test Inteligencji dotyczący @item.name",
+                            "name": "Testy inteligencji dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -928,7 +928,7 @@
                     "scriptData": [
                         {
                             "id": "aXj98pQZec46FwXP",
-                            "name": "Usuń Powalenie",
+                            "name": "Usuń Stan Powalenie",
                             "script": "[Script.x8XK2fzzXCnSwfjt]"
                         }
                     ],
@@ -1045,7 +1045,7 @@
                     "scriptData": [
                         {
                             "id": "VaILgn8RaKpqAueV",
-                            "name": "Test Atletyki wiążący się ze skakaniem",
+                            "name": "Testy Atletyki związane ze skakaniem",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
@@ -1091,7 +1091,7 @@
                     "scriptData": [
                         {
                             "id": "lHqEF0gevCPcI1ec",
-                            "name": "Test Walki Wręcz związany z  @item.name",
+                            "name": "Testy walki wręcz dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.7n3SEAGRA5ESK8gV]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
@@ -1116,7 +1116,7 @@
         },
         "E98mVLZgE8bX5vQW": {
             "id": "E98mVLZgE8bX5vQW",
-            "name": "Nienawiść ",
+            "name": "Nienawiść (Grupa)",
             "description": "<p>Coś w Starym Świecie powoduje twoją @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.5w5YLPNd6AaU4f85]{Nienawiść}. Każde wykupienie tego Talentu to jej nowy obiekt, a przykładowe grupy to: Banici, Czarownice, Ożywieńcy, Potwory, Sigmaryci, Zielonoskórzy, Zwierzoludzie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.E98mVLZgE8bX5vQW",
             "effects": {
@@ -1126,7 +1126,7 @@
                     "scriptData": [
                         {
                             "id": "3vgrN50Ul3S5T2j6",
-                            "name": "Wybierz Grupę",
+                            "name": "Wybierz Grupę Społeczną",
                             "script": "[Script.cUnbADgOQ4fMKgrH]"
                         },
                         {
@@ -1144,7 +1144,7 @@
                     ]
                 }
             },
-            "tests": "Test Siły Woli podczas opierania się grupie: Grupa"
+            "tests": "Test Siły Woli podczas opierania się danej grupie"
         },
         "Small": {
             "id": "eBwHnWdwQJ590ASb",
@@ -1210,7 +1210,7 @@
         "eowbsW6oHGSNJmxV": {
             "id": "eowbsW6oHGSNJmxV",
             "name": "Odporność na Magię",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
+            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna (Dowolna)</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.eowbsW6oHGSNJmxV",
             "effects": {
                 "EsoBJtVEVYxCXdRb": {
@@ -1274,7 +1274,7 @@
                         },
                         {
                             "id": "hQX3nuG3TIAkSP8Q",
-                            "name": "Pierwsza Pomoc",
+                            "name": "Użyj @item.name",
                             "hideScript": "[Script.I7ieW0hNYvvX0KFg]",
                             "submissionScript": "[Script.2yctEihGmdCfTTVx]"
                         },
@@ -1306,7 +1306,7 @@
                         },
                         {
                             "id": "J5IUFXDMXgCJSPXW",
-                            "name": "Przeciwstawny Test Siły",
+                            "name": "Przeciwstawne Testy Siły",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.bWr8leucbWslBCYG]"
                         },
@@ -1341,7 +1341,7 @@
                         },
                         {
                             "id": "HRSjpI6pAoSuf9tl",
-                            "name": "Brak kary do Uniku na koniu",
+                            "name": "Brak kary za testy uników na koniu",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "activationScript": "[Script.PBW6IZtwawNHxB6y]",
                             "hideScript": "[Script.N7nGncsPrTz2ZbDA]"
@@ -1384,7 +1384,7 @@
             "name": "Rozpoznanie Artefaktu",
             "description": "<p>Jesteś w stanie wykryć, czy w danym przedmiocie zaklęta jest magia. Możesz wykonać Test Intuicji, gdy go dotykasz. Jeśli Test się powiedzie, każdy PS pozwala ci poznać jedną zasadę, która ma zastosowanie wobec przedmiotu (jeśli tak w ogóle jest). W zwykłych przypadkach możesz wykonać tylko jeden Test wobec danego artefaktu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.g3y373FnWJEAxgEB",
-            "tests": "Intuicja związana z wykrywaniem magicznych artefaktów",
+            "tests": "Testy Intuicji związane z wykrywaniem magicznych artefaktów",
             "effects": {
                 "JJy9WQaBw4LgaURv": {
                     "scriptData": [
@@ -1432,7 +1432,7 @@
             "name": "Aptekarz",
             "description": "<p>Jesteś świetnym aptekarzem i lepiej od innych wyrabiasz pigułki, maści, smarowidła, olejki, kremy i im podobne. Możesz odwrócić kolejność kości nieudanego Testu Rzemiosła (Aptekarstwa), jeśli nowy wynik pozwoli ci odnieść sukces.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.G4rPR0XGiYFUZWKi",
-            "tests": "Rzemiosło (Aptekarz)",
+            "tests": "Rzemiosło (Aptekarstwo)",
             "effects": {
                 "vjFXbrHfB9svhE8r": {
                     "scriptData": [
@@ -1451,10 +1451,10 @@
         },
         "Master Tradesman": {
             "id": "GHmXS9zGNx3PWYZc",
-            "name": "Mistrz Rzemiosła",
+            "name": "Mistrz Rzemiosła (Rzemiosło)",
             "description": "<p>Jesteś wybitnie wykwalifikowany w danym rzemiośle. Możesz zmniejszyć liczbę wymaganych PS podczas Testu Wydłużonego tego Rzemiosła o tyle, ile razy wykupiłeś ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.GHmXS9zGNx3PWYZc",
-            "tests": "Wydłużony Test Rzemiosła (Rzemiosło)",
+            "tests": "Pasujący Wydłużony Test tego Rzemiosła",
             "effects": {
                 "zDFaXbEai6DK9e89": {
                     "scriptData": [
@@ -1497,7 +1497,7 @@
         },
         "Craftsman": {
             "id": "GRRN3XAKIpEVCY7z",
-            "name": "Wytwórca",
+            "name": "Wytwórca (Dowolne Rzemiosło)",
             "description": "<p>Jesteś prawdziwie uzdolniony. Dodaj rzemiosło powiązane z tym Talentem do listy Umiejętności aktualnej Profesji. Jeśli już wcześniej było na niej wymienione, za każde jego Rozwinięcie płacisz 5 PD mniej.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.GRRN3XAKIpEVCY7z",
             "tests": "Rzemiosło (Dowolne)",
@@ -1513,12 +1513,12 @@
                         },
                         {
                             "id": "3Xwh9xniDQ17C9kx",
-                            "name": "Wybierz Rzemiosło",
+                            "name": "Wybierz Specjalizację Rzemiosła",
                             "script": "[Script.sgS9rblPkQB36C8S]"
                         },
                         {
                             "id": "3Xwh9xniDQ17C9kx",
-                            "name": "Dodaj Rzemiosło",
+                            "name": "Dodaj Specjalizację Rzemiosła",
                             "script": "[Script.2W9uMTT6iJhfQ044]"
                         }
                     ],
@@ -1589,7 +1589,7 @@
         },
         "Chaos Magic": {
             "id": "hiU7vhBOVpVI8c7C",
-            "name": "Magia Chaosu",
+            "name": "Magia Chaosu (Dowolna)",
             "description": "<p>Przez przypadek (lub wręcz przeciwnie) część twojej duszy przypadła jednemu z Mrocznych Bogów i jesteś w stanie korzystać z wszetecznej magii Chaosu. Twój złowrogi patron zapewnia ci dostęp do jednego czaru z wybranej tradycji (najczęściej Nurgla, Slaanesha lub Tzeentcha), a wraz z nim otrzymujesz Punkt Zepsucia, gdy bluźniercza formuła wypala się w twoim umyśle, byś nigdy jej nie zapomniał. Za każdym razem, gdy wykupujesz ten Talent, musisz zapłacić za niego 100 PD, a więc jest inaczej niż w przypadku innych tradycji. W zamian za to otrzymujesz czar z wybranej tradycji i 1 Punkt Zepsucia. W normalnych warunkach możesz znać tylko jedną tradycję magii Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.hiU7vhBOVpVI8c7C"
         },
@@ -1604,7 +1604,7 @@
                     "scriptData": [
                         {
                             "id": "EhRvG4wX2zc1YT59",
-                            "name": "Unik przy aktywacji @item.name",
+                            "name": "Testy Uników, aby aktywować @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.VAPsww9x3HAw1sKP]"
                         }
@@ -1656,7 +1656,7 @@
                         },
                         {
                             "id": "VBaGAZpE1JheOkhY",
-                            "name": "Wyłącz",
+                            "name": "Deaktywacja",
                             "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ],
@@ -1797,13 +1797,13 @@
         },
         "Coolheaded": {
             "id": "JLzJws09GMw9GWBV",
-            "name": "Zimna Krew",
+            "name": "Zimna krew",
             "description": "<p>Zyskujesz premię +5 do początkowej wartości Siły Woli, co nie wlicza się do sumy Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.JLzJws09GMw9GWBV",
             "effects": {
                 "QTmmZBqgkJMBn9KT": {
                     "id": "QTmmZBqgkJMBn9KT",
-                    "name": "Zimna Krew"
+                    "name": "Zimna krew"
                 }
             }
         },
@@ -1881,7 +1881,7 @@
                     "scriptData": [
                         {
                             "id": "kdYtcyWzFZHkwNcv",
-                            "name": "Ogłuszenie (Ignoruj atak mierzony w głowę)",
+                            "name": "Oszołomienie (zignoruj karę za mierzenie w głowę)",
                             "script": "[Script.0vaYwAlMWTmOBl8k]",
                             "activationScript": "[Script.MgTqCMRjxhezT73T]",
                             "hideScript": "[Script.ZhuitY1KOU1Xe7cP]"
@@ -2046,7 +2046,7 @@
         "Petty Magic": {
             "id": "mdPGZsn2396dEpOf",
             "name": "Magia Prosta",
-            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Zawsze miałeś smykałkę do rzucania czarów i opanowałeś metody ich podstawowej kontroli. Kiedy wykupujesz ten Talent, uczysz się tylu zaklęć Magii Prostej, ile wynosi twój Bonus z Siły Woli. Kolejnych czarów możesz się nauczyć, korzystając z poniższej tabeli kosztów:</p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> </p><div style=\"direction: ltr;\"><table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"><tbody><tr><td style=\"vertical-align: top; width: 2.4312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Liczba znanych czarów Magii Prostej</p></td><td style=\"vertical-align: top; width: 1.5833in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"mso-spacerun: yes;\"> </span>Koszt nowego czaru w PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x1</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">50 PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x2</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">100 PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x3</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">150 PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x4</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">200 PD</p></td></tr></tbody></table></div><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">…i tak dalej</p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> </p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Jeśli twój Bonus z Siły Woli wynosi 3 i znasz 3 zaklęcia Magii Prostej, to pierwsze wykupywane zaklęcie kosztuje 50 PD, kolejne trzy 100 PD i tak dalej.</p></p>",
+            "description": "<p>Zawsze miałeś smykałkę do rzucania czarów i opanowałeś metody ich podstawowej kontroli. Kiedy wykupujesz ten Talent, uczysz się i zapamiętujesz tyle czarów, ile wynosi modyfikator z twojej Siły Woli. Kolejnych czarów możesz się nauczyć, korzystając z poniższej tabeli kosztów:</p> <div style='direction: ltr;'>     <table style='direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;' title='' border='1'>         <tbody><tr>                 <td style='vertical-align: top; width: 2.4312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>Liczba znanych czarów Magii Prostej</span></p>                 </td>                 <td style='vertical-align: top; width: 1.5833in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>Koszt nowego czaru w PD</span></p>                 </td> </tr><tr>                 <td style='vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>do Bonusu z Siły Woli x1</span></p>                 </td>                 <td style='vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>50 PD</span></p>                 </td> </tr><tr>                 <td style='vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>do Bonusu z Siły Woli x2</span></p>                 </td>                 <td style='vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>100 PD</span></p>                 </td> </tr><tr>                 <td style='vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>do Bonusu z Siły Woli x3</span></p>                 </td>                 <td style='vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>150 PD</span></p>                 </td> </tr><tr>                 <td style='vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>do Bonusu z Siły Woli x4</span></p>                 </td>                 <td style='vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>200 PD</span></p>                 </td> </tr><tr>                 <td style='vertical-align: top; width: 2.4125in; padding: 4pt; border: 1pt solid #a3a3a3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'>…i tak dalej</span></p>                 </td>                 <td style='vertical-align: top; width: 1.5333in; padding: 4pt; border: 1pt solid #a3a3a3;'>                     <p style='margin: 0in; font-family: Calibri; font-size: 11.0pt'><span style='font-family: Calibri'> </span></p>                 </td> </tr></tbody>     </table> </div> <p>Jeśli twój Bonus z Siły Woli wynosi 3 i znasz 3 zaklęcia, pierwsze zakupione będzie Cię kosztowało 50 PD. Kolejne trzy będą kosztowały 100 PD i tak dalej.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.mdPGZsn2396dEpOf"
         },
         "Iron Will": {
@@ -2324,7 +2324,7 @@
                     "scriptData": [
                         {
                             "id": "UfH6jjlJcNdIZpdv",
-                            "name": "Test Percepcji związany z  @item.name",
+                            "name": "Testy Percepcji dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
@@ -2413,7 +2413,7 @@
                         },
                         {
                             "id": "rhATebOe8pHsOaQd",
-                            "name": "Dodaj Występy (Śpiewanie)",
+                            "name": "Dodaj Występy (Śpiew)",
                             "script": "[Script.HrOBAXsEX073ReKl]"
                         }
                     ],
@@ -2456,7 +2456,7 @@
                     "scriptData": [
                         {
                             "id": "GYVwQU6Hgh3GL1Yn",
-                            "name": "Czarownica!",
+                            "name": "Dodaj Język (Magiczny)",
                             "script": "[Script.IzoOmDywGLqLNljN]"
                         }
                     ]
@@ -2505,7 +2505,7 @@
         },
         "Bless": {
             "id": "QyjWtSdnVMT04l5Y",
-            "name": "Błogosławieństwo",
+            "name": "Błogosławieństwo (Boska Tradycja)",
             "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Religie i wierzenia}. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.QyjWtSdnVMT04l5Y",
             "effects": {
@@ -2680,8 +2680,8 @@
         },
         "Etiquette": {
             "id": "sYbgpSnRqSZWgwFP",
-            "name": "Etykieta",
-            "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kapłani, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
+            "name": "Etykieta (Grupa Społeczna)",
+            "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.sYbgpSnRqSZWgwFP",
             "tests": "Charyzma lub Plotkowanie (Grupa Społeczna)",
             "effects": {
@@ -2758,7 +2758,7 @@
                     "scriptData": [
                         {
                             "id": "Eu8Ajiixpb7rdqVW",
-                            "name": "Skrócenie Dystansu",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.7f6OsttTzE7Hvzfk]",
                             "activationScript": "[Script.pnB9TzSEytkxk3Rb]",
                             "hideScript": "[Script.ZrePyV2spv3v65Tg]"
@@ -2884,14 +2884,14 @@
         },
         "Resistance": {
             "id": "vMYEkrWj0ip6ZOdv",
-            "name": "Odporny na (Zagrożenie)",
+            "name": "Odporny na",
             "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Teście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości. </p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.vMYEkrWj0ip6ZOdv",
-            "tests": "Wszystkie testy, gdy opierasz się powiązanemu zagrożeniu",
+            "tests": "Wszystkie, gdy opierasz się powiązanemu zagrożeniu (Wybrane Zagrożenie)",
             "effects": {
                 "FQv1UAIrdvtf9Tlc": {
                     "id": "FQv1UAIrdvtf9Tlc",
-                    "name": "Odporny na",
+                    "name": "Odporny na (Wybrane Zagrożenie)",
                     "scriptData": [
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
@@ -2900,7 +2900,7 @@
                         },
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
-                            "name": "Wybierz Odporność",
+                            "name": "Wybierz Rodzaj Odporności",
                             "script": "[Script.tCIT1a12Gt6k2ohA]"
                         }
                     ]
@@ -2910,7 +2910,7 @@
         "Invoke": {
             "id": "voV0C2ar1bKpcpnH",
             "name": "Inwokacja",
-            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów@UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia Tajemna}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
+            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów@UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia Tajemna (Dowolna)}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.voV0C2ar1bKpcpnH"
         },
         "Enclosed Fighter": {
@@ -2980,7 +2980,7 @@
         },
         "WEH97InIX29nzgW1": {
             "id": "WEH97InIX29nzgW1",
-            "name": "Pilot",
+            "name": "Starsza Pilotka",
             "description": "<p>Potrafisz kierować okrętem po zdradliwych akwenach. Kiedy nie powiedzie ci się Test na niepewnych wodach, możesz odwrócić kolejność kości, jeżeli nowy wynik pozwoli ci odnieść sukces. Maksymalnie możesz w ten sposób osiągnąć +1 PS, ponieważ w ostatniej chwili wypatrzyłeś niebezpieczeństwo. </p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.WEH97InIX29nzgW1",
             "tests": "Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody",
@@ -3071,7 +3071,7 @@
             "name": "Przyrządzanie Mikstur",
             "description": "<p>Wiesz, jak przyrządzać napary, wywary i susze. Możesz podjąć się jednego darmowego Zajęcia <i>Wytwórstwa</i>, by użyć Rzemiosła (Aptekarstwa) bez dostępu do Warsztatu. Pozostałe Zajęcia <i>Wytwórstwa</i> należy przeprowadzić normalnie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.wXcJWxJdw0ib5b8W",
-            "tests": "Rzemiosło (Aptekarz), Rzemiosło (Alchemik), Rzemiosło (Truciciel)",
+            "tests": "Rzemiosło (Aptekarstwo)",
             "effects": {
                 "Cz6kGWZNw1siJSxN": {
                     "scriptData": [
@@ -3079,7 +3079,7 @@
                             "id": "Cz6kGWZNw1siJSxN",
                             "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
-                            "activationScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Trade\"));",
+                            "activationScript": "[Script.MfxzwJz2o9ho2hOM]",
                             "hideScript": "[Script.DxQnamsb2AuW0p2e]"
                         }
                     ],
@@ -3149,7 +3149,7 @@
                         },
                         {
                             "id": "vju0E944RCDRKgBK",
-                            "name": "Zamiana",
+                            "name": "Zamień Obronę na Atak",
                             "script": "[Script.TxfmxDGBj04AQQpt]"
                         }
                     ],
@@ -3356,7 +3356,15 @@
             "effects": {
                 "6m85TVcbkk2geHrE": {
                     "id": "6m85TVcbkk2geHrE",
-                    "name": "Krasomówstwo"
+                    "name": "Krasomówstwo",
+                    "scriptData": [
+                        {
+                            "id": "6m85TVcbkk2geHrE",
+                            "name": "Wystąpienia publiczne przed tłumem",
+                            "script": "args.fields.slBonus++;",
+                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")"
+                        }
+                    ]
                 }
             }
         },
@@ -3371,7 +3379,7 @@
                     "scriptData": [
                         {
                             "id": "Eu8Ajiixpb7rdqVW",
-                            "name": "@item.system.tests.value",
+                            "name": "Skrócenie Dystansu",
                             "script": "[Script.7f6OsttTzE7Hvzfk]",
                             "activationScript": "[Script.pnB9TzSEytkxk3Rb]",
                             "hideScript": "[Script.ZrePyV2spv3v65Tg]"

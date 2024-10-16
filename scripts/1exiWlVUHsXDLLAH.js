@@ -1,1 +1,2 @@
-this.script.scriptNotification(`Nie możesz wejść: ${this.effect.name}!`);
+//*** Krąg śmierci
+this.script.notification(`Nie można wkroczyć: ${this.effect.name}!`);

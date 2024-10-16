@@ -175,19 +175,19 @@
                     "scriptData": [
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Round Check",
+                            "name": "Koniec Rundy",
                             "script": "[Script.EdTChmSouS0MSmk5]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Bonus to Cool Tests",
+                            "name": "Bonus do testów opanowania",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "activationScript": "[Script.7H6wYyJ6cpaoc2QQ]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Movement Halved",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.dqvHDMlcitLx1pUx]"
                         }
                     ],
@@ -335,17 +335,17 @@
                     "scriptData": [
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Turn On Storm Lantern",
+                            "name": "Włącz latarnię burzową",
                             "script": "[Script.AS7CstSosuCrwZ19]"
                         },
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Turn On Storm Lantern (Focused)",
+                            "name": "Włącz Latarnię Burzową (Promień)",
                             "script": "[Script.CMUFtmNA1kkD1ay7]"
                         },
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Turn Off Storm Lantern",
+                            "name": "Wyłącz latarnię burzową",
                             "script": "[Script.hK0YMJfYbpbJZizO]"
                         }
                     ]
@@ -561,12 +561,12 @@
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
-                            "name": "Frenzy",
+                            "name": "Szał Bojowy",
                             "script": "[Script.aMHGjWyn6BXCI4pw]"
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
-                            "name": "Effect Deleted",
+                            "name": "Efekt usunięty",
                             "script": "[Script.2sDH6RvoOAR40oqH]"
                         }
                     ],
@@ -784,7 +784,7 @@
                         }
                     ],
                     "id": "KQao0JiA57ipslnJ",
-                    "name": "Zastosuj Mikstura lecznicza"
+                    "name": "Użyj Mikstury leczniczej"
                 }
             }
         },
@@ -926,7 +926,7 @@
                     "scriptData": [
                         {
                             "id": "6ER1r3gah7XwnNBY",
-                            "name": "Endurance Tests rolled to resist Cold Exposure",
+                            "name": "Testy odporności związane z ekspozycją na zimno",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
@@ -974,7 +974,7 @@
                     "scriptData": [
                         {
                             "id": "6uP7rREK03gthlAq",
-                            "name": "Poisoned",
+                            "name": "Zatrucie",
                             "script": "[Script.skVq3eDEYKFF2iZp]"
                         }
                     ],
@@ -1012,7 +1012,7 @@
                     "scriptData": [
                         {
                             "id": "TApb9RQHQJcksYYL",
-                            "name": "Apply After Effects",
+                            "name": "Zastosuj po zakończeniu efektu",
                             "script": "[Script.yzN7ZNlgCiSVJqsU]"
                         }
                     ]
@@ -1876,7 +1876,7 @@
                     "scriptData": [
                         {
                             "id": "76F3hl8iAvtCxKp9",
-                            "name": "Perception Tests to search for fine details",
+                            "name": "Testy percepcji do wyszukiwania drobnych szczegółów",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
@@ -1971,7 +1971,7 @@
         "Miscellaneous": "Różne",
         "Packs and Containers": "Plecaki i pojemniki",
         "Tools and Kits": "Narzędzia i zestawy",
-        "Chaos Magic": "Magia Chaosu",
+        "Chaos Magic": "Magia Chaosu (Dowolna)",
         "Lore of Beasts": "Tradycja Zwierząt",
         "Lore of Daemonology": "Tradycja Demonologii",
         "Lore of Death": "Tradycja Śmierci",
@@ -1982,7 +1982,7 @@
         "Lore of Light": "Tradycja Światła",
         "Lore of Metal": "Tradycja Metalu",
         "Lore of Shadow": "Tradycja Cieni",
-        "Lore of Witchcraft": "Tradycja Czarostwa",
+        "Lore of Witchcraft": "Tradycja Czarownictwa",
         "Lore of Necromancy": "Tradycja Nekromancji",
         "Petty Spells": "Magia Prosta"
     }

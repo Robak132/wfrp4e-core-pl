@@ -1,12 +1,13 @@
+//*** Stłuczony obojczyk
 let location = (Math.ceil(CONFIG.Dice.randomUniform() * 2) == 2 ? "r" : "l") + "Arm"
 
 if (location == "lArm")
 {
-	this.script.scriptNotification("Wylosowano Lewą")
+	this.script.notification("Wylosowano Lewą")
 }
 else if (location == "rArm")
 {
-	this.script.scriptNotification("Wylosowano Prawą")
+	this.script.notification("Wylosowano Prawą")
 }
 
 this.effect.updateSource({"flags.wfrp4e.location" : location});
@@ -17,7 +18,7 @@ if (location)
 
     if (dropped.length)
     {
-        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(", ")}!`)
+        this.script.notification(`Upuszczono ${dropped.map(i => i.name).join(", ")}!`)
         for(let weapon of dropped)
         {
             await weapon.system.toggleEquip();

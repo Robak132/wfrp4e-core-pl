@@ -1,3 +1,4 @@
+//*** Dziwnokorzeń
 if (this.item.system.quantity.value)
 {
 	this.item.system.reduceQuantity();
@@ -5,10 +6,10 @@ if (this.item.system.quantity.value)
      let effectData = this.item.effects.contents[0].convertToApplied();
      let minutes = Math.ceil(CONFIG.Dice.randomUniform() * 10) * 10;
      effectData.duration.seconds = 60 * minutes
-     this.script.scriptMessage(`<strong>Czas trwania</strong>: ${minutes} minut`, {whisper : ChatMessage.getWhisperRecipients("GM")})
+     this.script.message(`<strong>${game.i18n.localize("Duration")}</strong>: ${minutes} ${game.i18n.localize("Minutes")}`, {whisper : ChatMessage.getWhisperRecipients("GM")})
 	actor.applyEffect({effectData : [effectData]})
 }
 else
 {
-	this.script.scriptNotification("None left!", "error")
+	this.script.notification("Nie nie zostało!", "error")
 }

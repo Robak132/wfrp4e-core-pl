@@ -1,8 +1,9 @@
+//*** Zestaw na zatrucia
 let poisoned = args.actor.hasCondition("poisoned")
 if (poisoned)
 {
-   this.script.scriptNotification(`Usunięto ${poisoned.conditionValue} Stanów Zatrucia`)
+   this.script.notification(`Usunięto liczbę stanów Zatrucia: ${poisoned.conditionValue}`)
    poisoned.delete();  
 }
 else
-  this.script.scriptNotification(`Brak Stanów Zatrucia`)
+  this.script.notification(`Brak stanów Zatrucia`)

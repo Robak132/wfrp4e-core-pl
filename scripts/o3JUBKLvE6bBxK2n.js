@@ -1,3 +1,4 @@
+//*** Zmiażdżona stopa
 let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), { fields: { difficulty: "average" } })
 await test.roll();
 if (test.failed) 
@@ -9,12 +10,12 @@ if (test.failed)
     injury.system.location.key = this.item.system.location.key[0] + injury.system.location.value
     if (injury.system.location.key[0] == "r")
     {
-        injury.system.location.value = `${toes} prawy ${injury.system.location.value}s`
+        injury.system.location.value = `${toes} Right ${injury.system.location.value}s`
     }
     else if (injury.system.location.key[0] == "l")
     {
-        injury.system.location.value = `${toes} lewy ${injury.system.location.value}s`
+        injury.system.location.value = `${toes} Left ${injury.system.location.value}s`
     }
-    setProperty(injury, "system.wfrp4e.count", toes)
+    foundry.utils.setProperty(injury, "system.wfrp4e.count", toes)
     this.actor.createEmbeddedDocuments("Item", [injury])
 }

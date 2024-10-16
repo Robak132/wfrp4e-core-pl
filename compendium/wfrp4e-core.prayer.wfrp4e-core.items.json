@@ -1,11 +1,11 @@
 {
     "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
-        "image": "img",
         "duration": "system.duration.value",
         "range": "system.range.value",
         "target": "system.target.value",
         "damage": "system.damage.value",
+        "god": "system.god.value",
         "overcast": "system.overcast.label",
         "effects": {
             "path": "effects",
@@ -33,7 +33,8 @@
                     "id": "h88PijhN5NNg1y6Y",
                     "name": "Maska śmierci"
                 }
-            }
+            },
+            "god": "Morr"
         },
         "Blessing of Hardiness": {
             "id": "0r3moMIHXsBrcOyh",
@@ -48,7 +49,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Sigmar, Taal, Ulryk"
         },
         "Rhya's Touch": {
             "id": "0uT3mzx8v4H3gVQj",
@@ -63,7 +65,7 @@
                     "scriptData": [
                         {
                             "id": "FzMgOIeeJEy3DPGL",
-                            "name": "Wyleczenie choroby",
+                            "name": "Dotyk Rhyi",
                             "script": "[Script.vc4bELo0cWYoILfB]"
                         }
                     ],
@@ -74,14 +76,15 @@
                     "scriptData": [
                         {
                             "id": "slUPiVruBghcFcCQ",
-                            "name": "Uzdrowienie",
+                            "name": "Dotyk Rhyi",
                             "script": "[Script.oV81zgbZsuTFG6L2]"
                         }
                     ],
                     "id": "slUPiVruBghcFcCQ",
                     "name": "Uzdrowienie"
                 }
-            }
+            },
+            "god": "Rhya"
         },
         "An Invitation": {
             "id": "1MUSq1xRyHCaIuAL",
@@ -90,7 +93,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.1MUSq1xRyHCaIuAL",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "god": "Ranald"
         },
         "Rhya's Shelter": {
             "id": "25trttu8NxFQQCo9",
@@ -99,7 +103,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.25trttu8NxFQQCo9",
             "duration": "Specjalny",
             "target": "Ty",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Rhya"
         },
         "Blessing of Righteousness": {
             "id": "2WN0muIB2BFd4kBO",
@@ -113,7 +118,7 @@
                     "scriptData": [
                         {
                             "id": "lfR1p5Ph2BQCPl3G",
-                            "name": "Magical Weapon",
+                            "name": "Magiczna broń",
                             "script": "[Script.eWWLmA2xINR321aK]"
                         }
                     ],
@@ -122,7 +127,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Morr, Myrmidia, Sigmar, Verena"
         },
         "Pelt of the Winter Wolf": {
             "id": "3ONBOTaeWq657MQR",
@@ -137,7 +143,8 @@
                     "id": "kLZ9SuRbFKuZrdyT",
                     "name": "Futro zimowego wilka"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Soulfire": {
             "id": "5fVTY8TSua3trOW8",
@@ -160,7 +167,8 @@
             },
             "duration": "Natychmiast",
             "target": "Bonus Ogd Metrów",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Sigmar"
         },
         "Eagle's Eye": {
             "id": "7KUKKbXBv8MbyEHt",
@@ -169,7 +177,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.7KUKKbXBv8MbyEHt",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
         },
         "Balm to a Wounded Mind": {
             "id": "8LcAFB6W37LDN70K",
@@ -184,7 +193,8 @@
                     "id": "C1Fq2LPZLHLzpF9k",
                     "name": "Balsam na duszę"
                 }
-            }
+            },
+            "god": "Shallya"
         },
         "Howl of the Wolf": {
             "id": "9ALNZLZUZSLrLvkd",
@@ -193,7 +203,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.9ALNZLZUZSLrLvkd",
             "duration": "Bonus Ogd Rund",
             "target": "Specjalny",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Ulryk"
         },
         "Cat's Eyes": {
             "id": "Bo3ukcaipFNb7Ljl",
@@ -202,7 +213,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.Bo3ukcaipFNb7Ljl",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Ranald"
         },
         "Spear of Myrmidia": {
             "id": "BVZWihaal1zq3aJs",
@@ -225,7 +237,8 @@
                     "name": "Włócznia Myrmidii",
                     "filter": "return args.type == \"weapon\""
                 }
-            }
+            },
+            "god": "Myrmidia"
         },
         "Blessing of The Hunt": {
             "id": "By5dc8Q7ZAGpr177",
@@ -240,7 +253,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Taal"
         },
         "Blessing of Healing": {
             "id": "C92dpJPRYpkZFsGu",
@@ -262,7 +276,8 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Rhya, Shallya"
         },
         "Blessing of Courage": {
             "id": "Cg2Q3TV66cpmheHS",
@@ -277,7 +292,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Morr, Myrmidia, Sigmar, Ulryk, Verena"
         },
         "Truth Will Out": {
             "id": "DA4ZB3HkOh51vhuB",
@@ -299,7 +315,8 @@
                     "id": "aYQSXtW45SbZbfTQ",
                     "name": "Prawdomówność"
                 }
-            }
+            },
+            "god": "Verena"
         },
         "Rhya's Union": {
             "id": "dDxhGgBBM9CugxsH",
@@ -308,7 +325,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.dDxhGgBBM9CugxsH",
             "duration": "Bonus Ogd Godzin",
             "target": "Specjalny",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Rhya"
         },
         "Beacon of Righteous Virtue": {
             "id": "Dk0zjtcANtahntHx",
@@ -330,7 +348,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Zasięg Wzroku",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Sigmar"
         },
         "Blessing of Savagery": {
             "id": "eBRjKAF6U0yR0KK8",
@@ -345,7 +364,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Taal, Ulryk"
         },
         "Blessing of Battle": {
             "id": "ElmLfnrXliStS9CP",
@@ -360,7 +380,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Myrmidia, Sigmar, Taal, Ulryk"
         },
         "ezVl3vFWTwHfNXL3": {
             "id": "ezVl3vFWTwHfNXL3",
@@ -382,7 +403,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Bonus Int sojuszników",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
         },
         "Ulric's Fury": {
             "id": "F6iJdTrvBvGQ54G3",
@@ -404,7 +426,8 @@
                     "id": "hGdAGmyvnWQJt9Le",
                     "name": "Dar Ulryka"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "You Ain’t Seen Me, Right?": {
             "id": "fABd17NZvg2uUReL",
@@ -425,7 +448,8 @@
                     "id": "Pu2IGxGN1kTUxrCV",
                     "name": "Nie widziałeś mnie, prawda?"
                 }
-            }
+            },
+            "god": "Ranald"
         },
         "Wisdom of the Owl": {
             "id": "fAlQcNUb6TZtPKqk",
@@ -446,7 +470,7 @@
                         },
                         {
                             "id": "2lds6IDIyorYrvY4",
-                            "name": "Items",
+                            "name": "Przedmioty",
                             "script": "[Script.dbOSvpgcPjsc2uvq]"
                         }
                     ]
@@ -454,7 +478,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Verena"
         },
         "Blessing of Charisma": {
             "id": "FElNQGNiPzaOwwKT",
@@ -469,7 +494,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Ranald"
         },
         "Stay Lucky": {
             "id": "FfGboPdR54WHtkAE",
@@ -491,7 +517,8 @@
                     "id": "CC5N9g66lyRrHaAz",
                     "name": "Uśmiech losu"
                 }
-            }
+            },
+            "god": "Ranald"
         },
         "Heed Not the Witch": {
             "id": "Ffm7xIlRUWyacvKU",
@@ -515,7 +542,8 @@
                     "id": "DGUAxQA9U6ChgHrQ",
                     "name": "Młot na czarownice"
                 }
-            }
+            },
+            "god": "Sigmar"
         },
         "Blessing of Wisdom": {
             "id": "FRkIz2sR7ZC92W2G",
@@ -530,7 +558,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Morr, Verena"
         },
         "Becalm": {
             "id": "Geo6EAR39JzaP9P2",
@@ -539,7 +568,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.Geo6EAR39JzaP9P2",
             "duration": "1 Godzina",
             "target": "1 okręt w zasięgu widzenia",
-            "range": "Bonus I Kilometrów"
+            "range": "Bonus I Kilometrów",
+            "god": "Manann"
         },
         "Blessing of Tenacity": {
             "id": "GvaOlWY8iD5CO1WB",
@@ -561,7 +591,8 @@
                     "id": "uxCZ2uplQQJcwRgu",
                     "name": "Błogosławieństwo Nieustępliwości"
                 }
-            }
+            },
+            "god": "Manann, Morr, Shallya, Ulryk"
         },
         "The Snow King's Judgement": {
             "id": "GVMPSJwgscMVJzpX",
@@ -583,7 +614,8 @@
                     "id": "eGV3D8HZcAHCuZ0h",
                     "name": "Prawo Śnieżnego Króla"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Ranald's Grace": {
             "id": "hL7B3d7A0sYYjHXn",
@@ -604,7 +636,7 @@
                         },
                         {
                             "id": "yAJjiwiK0OSoIrkf",
-                            "name": "Catfall",
+                            "name": "Na Cztery Łapy",
                             "script": "[Script.Y6ppJBerpM3TtSic]"
                         }
                     ]
@@ -612,7 +644,8 @@
             },
             "duration": "Bonus Zw Rund",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Ranald"
         },
         "Drowned Man's Face": {
             "id": "i5DW3xX2lGu6Pps6",
@@ -632,14 +665,15 @@
                         },
                         {
                             "id": "qDw8FPD6bDLLY82Q",
-                            "name": "Effect Ended",
+                            "name": "Efekt zakończony",
                             "script": "[Script.6V3qHON3mcerlBlB]"
                         }
                     ],
                     "id": "qDw8FPD6bDLLY82Q",
                     "name": "Twarz topielca"
                 }
-            }
+            },
+            "god": "Manann"
         },
         "Vanquish the Unrighteous": {
             "id": "I8YPP2uRmUKyHEq2",
@@ -661,7 +695,8 @@
                     "id": "DxYGZR4BgiliPfoY",
                     "name": "Pogrom"
                 }
-            }
+            },
+            "god": "Sigmar"
         },
         "Blessing of Fortune": {
             "id": "iIfYOlNrLb0uiV8c",
@@ -682,7 +717,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Morr, Myrmidia, Ranald, Verena"
         },
         "Manann's Bounty": {
             "id": "IKW03JiqXVdDoPA6",
@@ -691,7 +727,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.IKW03JiqXVdDoPA6",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Manann"
         },
         "Dooming": {
             "id": "itARFNqBAbwNDAAy",
@@ -700,7 +737,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.itARFNqBAbwNDAAy",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Morr"
         },
         "Waterwalk": {
             "id": "iWVQRVDVDCx1SyPA",
@@ -721,7 +759,8 @@
                     "id": "odfHnWTa1Q7luIyY",
                     "name": "Chodzenie po wodzie"
                 }
-            }
+            },
+            "god": "Manann"
         },
         "Blessing of Recuperation": {
             "id": "Jkt465WPdRcejLwl",
@@ -736,7 +775,8 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Rhya, Shallya"
         },
         "Lord of the Hunt": {
             "id": "JxmIQjVuoPcQnyPF",
@@ -751,14 +791,15 @@
                     "scriptData": [
                         {
                             "id": "YhZKddnHcQnJUhFC",
-                            "name": "Related to quarry",
+                            "name": "Związane z łowiectwem",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]"
                         }
                     ],
                     "id": "YhZKddnHcQnJUhFC",
                     "name": "Pan łowów"
                 }
-            }
+            },
+            "god": "Taal"
         },
         "As Verena is My Witness": {
             "id": "jXyyzYWid3nruQmc",
@@ -779,7 +820,8 @@
                     "id": "Auvp8VLd13SyGbh3",
                     "name": "Verena mi świadkiem"
                 }
-            }
+            },
+            "god": "Verena"
         },
         "Blessing of Protection": {
             "id": "K5DE9cceinUTIrem",
@@ -801,7 +843,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Myrmidia, Ranald, Rhya, Shallya, Sigmar"
         },
         "Blessing of Might": {
             "id": "KSDrXcieyRc37YI7",
@@ -816,7 +859,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Sigmar, Ulryk"
         },
         "Blessing of Grace": {
             "id": "maUl7MoLvuvTOhM0",
@@ -831,7 +875,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Rhya"
         },
         "Leaping Stag": {
             "id": "mXKrxO8WRZ9QLHA6",
@@ -845,17 +890,17 @@
                     "scriptData": [
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Strong Legs",
+                            "name": "Silne Nogi",
                             "script": "[Script.oqgd9G6oI1ncPYLw]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Athletics Test",
+                            "name": "Test atletyki",
                             "script": "[Script.U9xh2wriSqCosugW]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Rączy jeleń",
+                            "name": "Nie można nie zdać testów atletyki związanych ze skakaniem",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]",
                             "submissionScript": "[Script.b2WaqRna5CFXmbDG]"
                         }
@@ -864,7 +909,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Taal"
         },
         "King of the Wild": {
             "id": "n8MfaJhczROmscCR",
@@ -873,7 +919,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.n8MfaJhczROmscCR",
             "duration": "Bonus Ogd Rund",
             "target": "1",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Taal"
         },
         "Fair Winds": {
             "id": "nQ9Fydtqshroi11E",
@@ -896,7 +943,8 @@
                     "id": "1j2FQJqwfouwvNe3",
                     "name": "Sprzyjający wiatr"
                 }
-            }
+            },
+            "god": "Manann"
         },
         "Fury's Call": {
             "id": "nyZNUwJ54MTLKQ7Y",
@@ -918,7 +966,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Bonus Int sojuszników",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
         },
         "Sword of Justice": {
             "id": "o5soyuEJoUk9HmCC",
@@ -938,7 +987,7 @@
                         },
                         {
                             "id": "rR3CML7hvrzjzYH3",
-                            "name": "Ignore AP",
+                            "name": "Ignoruj PP",
                             "script": "[Script.wsqNM4NHnwaAAQym]"
                         }
                     ],
@@ -946,7 +995,8 @@
                     "name": "Miecz sprawiedliwości",
                     "filter": "return args.type == \"weapon\""
                 }
-            }
+            },
+            "god": "Verena"
         },
         "Shackles of Truth": {
             "id": "oI3iwxVEXHRLSael",
@@ -955,7 +1005,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.oI3iwxVEXHRLSael",
             "duration": "Bonus Ogd Rund",
             "target": "1",
-            "range": "Ogd Metrów"
+            "range": "Ogd Metrów",
+            "god": "Verena"
         },
         "Rhya's Harvest": {
             "id": "OiMiQmsv1mut24jD",
@@ -964,7 +1015,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.OiMiQmsv1mut24jD",
             "duration": "1 Rund",
             "target": "Ty",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Rhya"
         },
         "Blessing of Finesse": {
             "id": "OkKWAfnMiHfxhTnB",
@@ -979,7 +1031,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Ranald"
         },
         "Tanglefoot": {
             "id": "ONz21FviMRk3AyvE",
@@ -1001,7 +1054,8 @@
             },
             "duration": "Natychmiast",
             "target": "Bonus Ogd Metrów",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Taal"
         },
         "Rhya's Succour": {
             "id": "pBWXlJDOE7tfl8hP",
@@ -1021,7 +1075,7 @@
                         },
                         {
                             "id": "B6C7PTHXo7vQ79L1",
-                            "name": "Bonus to next Test",
+                            "name": "Premia do następnego testu",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]",
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
                             "submissionScript": "[Script.TzgmYRXFXRspIo1i]"
@@ -1030,7 +1084,8 @@
                     "id": "B6C7PTHXo7vQ79L1",
                     "name": "Ukojenie Rhyi"
                 }
-            }
+            },
+            "god": "Rhya"
         },
         "Tooth and Claw": {
             "id": "PcKMAEF6UoaPSK6d",
@@ -1052,14 +1107,14 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Taal"
         },
         "Blazing Sun": {
             "id": "Q91bWCEn0gt33fGT",
             "name": "Gorejące słońce",
             "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom @Condition[Oślepienie]{Oślepienia}. Za każde +2 PS otrzymują +1 poziom @Condition[Oślepienie]{Oślepienia}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Q91bWCEn0gt33fGT",
-            "image": "modules/wfrp4e-extended/icons/prayers/blazing-sun.png",
             "effects": {
                 "JlsdDkPK9j9Y65sB": {
                     "id": "JlsdDkPK9j9Y65sB",
@@ -1075,7 +1130,8 @@
             },
             "duration": "Natychmiast",
             "target": "Ogłada metrów",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Myrmidia"
         },
         "Rhya's Children": {
             "id": "qB1T6ii29jreZBRP",
@@ -1084,7 +1140,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.qB1T6ii29jreZBRP",
             "duration": "Bonus Ogd Rund",
             "target": "Ogłada metrów",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Rhya"
         },
         "Rich Man, Poor Man, Beggar Man, Thief": {
             "id": "QSwJNH8sotKjtdi4",
@@ -1093,7 +1150,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.QSwJNH8sotKjtdi4",
             "duration": "Bonus Ogd Minut",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "god": "Ranald"
         },
         "Blind Justice": {
             "id": "R6Q16WOXcPfaHnOb",
@@ -1114,7 +1172,8 @@
                     "id": "DAK4rm9dlR6SBJSb",
                     "name": "Ślepa dziewica"
                 }
-            }
+            },
+            "god": "Verena"
         },
         "Last Rites": {
             "id": "rbdxcYoj8N2eMaqV",
@@ -1136,7 +1195,8 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "god": "Morr"
         },
         "Twin-tailed Comet": {
             "id": "rjkMzFwN1trbSLL8",
@@ -1158,7 +1218,8 @@
             },
             "duration": "Natychmiast",
             "target": "Bonus Ogd Metrów",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Sigmar"
         },
         "Winter's Bite": {
             "id": "rrfrmqCpy10u7c9o",
@@ -1178,7 +1239,7 @@
                         },
                         {
                             "id": "90vi32xekMLeXdXT",
-                            "name": "Stunned",
+                            "name": "Oszołomienie",
                             "script": "[Script.k8TC0yzp4xfOXD2n]"
                         }
                     ],
@@ -1186,7 +1247,8 @@
                     "name": "Odmrożenia",
                     "filter": "return args.type == \"weapon\""
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Destroy Undead": {
             "id": "sdSy4k7ygDhAjSSX",
@@ -1209,7 +1271,8 @@
             },
             "duration": "Natychmiast",
             "target": "Bonus Ogd Metrów",
-            "range": "Ty"
+            "range": "Ty",
+            "god": "Morr"
         },
         "Unblemished Innocence": {
             "id": "SItGUVYokyOo7csk",
@@ -1231,7 +1294,8 @@
                     "id": "3vMF3rqvtV17CtTa",
                     "name": "Niepokalana niewinność"
                 }
-            }
+            },
+            "god": "Shallya"
         },
         "Stay Morr's Hand": {
             "id": "SjKFVBXgLC51dnQz",
@@ -1240,7 +1304,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.SjKFVBXgLC51dnQz",
             "duration": "Bonus Ogd Godzin (Specjalny)",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Morr"
         },
         "Animal Instincts": {
             "id": "SZ88OXYo6F2q3vWb",
@@ -1262,7 +1327,8 @@
                     "id": "qyW4IN35YlJimtdH",
                     "name": "Zwierzęcy Instynkt"
                 }
-            }
+            },
+            "god": "Taal"
         },
         "Blessing of Conscience": {
             "id": "tEMwdlHM8A40h6HE",
@@ -1283,7 +1349,8 @@
                     "id": "20GOIXJFrxNHLpE6",
                     "name": "Błogosławieństwo Sumienia"
                 }
-            }
+            },
+            "god": "Myrmidia, Ranald, Rhya, Shallya, Taal, Verena"
         },
         "Blessing of Breath": {
             "id": "TKHvOsihelBStO6i",
@@ -1304,7 +1371,8 @@
                     "id": "svizyaSIJocqQanw",
                     "name": "Błogosławieństwo Oddechu"
                 }
-            }
+            },
+            "god": "Manann, Morr, Rhya, Shallya, Taal"
         },
         "Blessing of Wit": {
             "id": "tMocig1z9dHKNiCT",
@@ -1319,7 +1387,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Ranald, Verena"
         },
         "Portal's Threshold": {
             "id": "uE6AXjMjYvtvXQvy",
@@ -1328,7 +1397,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.uE6AXjMjYvtvXQvy",
             "duration": "Specjalny",
             "target": "8 metrów",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "god": "Morr"
         },
         "Anchorite's Endurance": {
             "id": "uMECZBuDnb3qkc7k",
@@ -1350,7 +1420,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "1",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Shallya"
         },
         "Bitter Catharsis": {
             "id": "UtgGJK46K08TZpP5",
@@ -1372,7 +1443,8 @@
                     "id": "Z0GLLTahLhnGYyhg",
                     "name": "Gorzkie oczyszczenie"
                 }
-            }
+            },
+            "god": "Shallya"
         },
         "Hoarfrost's Chill": {
             "id": "v28a5ilgxvDJfBqR",
@@ -1398,14 +1470,15 @@
                     "scriptData": [
                         {
                             "id": "WKYusHV8UerVWjSu",
-                            "name": "Zimowy chłód (Strach)",
+                            "name": "Zimowy chłód",
                             "script": "[Script.AmpDbT0BkDHeaRzf]"
                         }
                     ],
                     "id": "WKYusHV8UerVWjSu",
                     "name": "Zimowy chłód (Strach)"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Shield of Myrmidia": {
             "id": "V8GCeqgk1FNGFg76",
@@ -1427,7 +1500,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "Bonus Int sojuszników",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
         },
         "VUyCJ5LRPkuC5iZx": {
             "id": "VUyCJ5LRPkuC5iZx",
@@ -1449,7 +1523,8 @@
             },
             "duration": "Bonus Ogd Rund",
             "target": "1",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Manann"
         },
         "Sigmar's Fiery Hammer": {
             "id": "WgZx3xma6vYGz17e",
@@ -1469,12 +1544,12 @@
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
-                            "name": "Damage",
+                            "name": "Obrażenia",
                             "script": "[Script.NrVFrIXM8GnIbojv]"
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
-                            "name": "Conditions",
+                            "name": "Stany",
                             "script": "[Script.esuLwq4g5T8k1kLT]"
                         }
                     ],
@@ -1482,7 +1557,8 @@
                     "name": "Młot Sigmara",
                     "filter": "return args.type == \"weapon\""
                 }
-            }
+            },
+            "god": "Sigmar"
         },
         "Shallya's Tears": {
             "id": "YAauxOwJJa3JahxQ",
@@ -1504,7 +1580,8 @@
                     "id": "516PqG2C3iLdf78r",
                     "name": "Złote łzy"
                 }
-            }
+            },
+            "god": "Shallya"
         },
         "Martyr": {
             "id": "YCjWyU567vb4Rs11",
@@ -1526,7 +1603,8 @@
                     "id": "Gf79SxYUeZQGAu5v",
                     "name": "Męczeństwo"
                 }
-            }
+            },
+            "god": "Shallya"
         }
     },
     "folders": {

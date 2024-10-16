@@ -1,5 +1,5 @@
 Hooks.on("init", () => {
-	CONFIG.supportedLanguages["pl"] = "pl";
+	CONFIG.supportedLanguages["pl"] = "Polski";
     game.data.packs = game.data.packs.filter(i => i.name != "basic" || i.system != "wfrp4e");
 
 	// Register Advantage cap
@@ -43,7 +43,7 @@ WFRP4eCoreInitWrapper.prototype.render = function () {
 	
 	<a href="mailto: info@cubicle7games.com">info@cubicle7games.com</a>`;
     
-    new game.wfrp4e.apps.ModuleInitializer("wfrp4e-core", "WFRP4e - Inicjalizacja Podręcznika Głównego", html).render(true);
+    new WarhammerModuleInitializer("wfrp4e-core", "WFRP4e - Inicjalizacja Podręcznika Głównego", html).render(true);
 }
 
 CONFIG.JournalEntry.noteIcons = {

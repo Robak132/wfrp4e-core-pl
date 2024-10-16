@@ -1,12 +1,13 @@
+//*** Petryfikujące Spojrzenie
 let advantage = this.actor.system.status.advantage.value;
 if (advantage > 0)
 {
     await this.actor.setAdvantage(0);
-    this.script.scriptNotification("Zmniejszono Przewagę")
+    this.script.notification("Zmniejszono Punkty Przewag")
 }
 else 
 {
-    return this.script.scriptNotification("Niewystarczająca Przewaga!", "error")
+    return this.script.notification("Niewystarczająca liczba Punktów Przewag!", "error")
 }
 
 let test = await this.actor.setupTrait(this.item, {fields : {slBonus : advantage}})

@@ -1,0 +1,2 @@
+//*** Przecięte ścięgno
+args.prefillModifiers.modifier -= 10 * this.effect.system.condition.value

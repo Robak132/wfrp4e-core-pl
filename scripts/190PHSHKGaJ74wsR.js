@@ -1,43 +1,32 @@
-if (this.item.name.includes("(")) {
-  let terrain = this.item.parenthesesText;
-  if (terrain !== "Dowolny") {
-    return this.item.updateSource(
-      {"system.tests.value": this.item.system.tests.value.replace("Wybrany Teren", terrain)});
-  }
+//*** Doświadczony Wędrowiec (Wybrany Teren)
+if (!this.item.name.includes("(") || this.item.system.tests.value.toLowerCase().includes("teren") || this.item.system.tests.value.toLowerCase().includes("wybrany"))
+{
+    let tests = this.item.system.tests.value
+    let name = this.item.name
+
+    // If name already specifies, make sure tests value reflects that
+    if (name.includes("(") && !name.toLowerCase().includes("wybrany"))
+    {
+        let terrain = name.split("(")[1].split(")")[0]
+        tests = tests.replace("Wybrany Teren", terrain)
+    }
+    else // If no sense specified, provide dialog choice
+    {
+        let choice = await ItemDialog.create(ItemDialog.objectToArray({
+            coastal : "Wybrzeża",
+            deserts : "Pustynie",
+            marshes : "Bagna",
+            rocky : "Teren Skalisty",
+            tundra : "Tundra",
+            woodlands : "Lasy"
+        }, this.item.img), 1, "Wybierz teren:");
+        if (choice[0])
+        {
+            name = `${name.split("(")[0].trim()} (${choice[0].name})`
+            tests = tests.replace("Wybrany Teren", choice[0].name)
+        }
+    }
+
+    this.effect.updateSource({name})
+    this.item.updateSource({name, "system.tests.value" : tests})
 }
-
-let index = game.packs.filter(i => i.metadata.type == "Item").
-  reduce((acc, pack) => acc.concat(pack.index.contents), []).
-  filter(i => i.type == "talent" && i.name !== `${game.i18n.localize("NAME.Strider")}` &&
-    i.name.includes(game.i18n.localize("NAME.Strider"))).
-  sort((a, b) => a.name.localeCompare(b.name)).
-  map(i => {
-    i.id = i._id;
-    return i;
-  });
-
-let choice = await ItemDialog.create(index, 1, "Wybierz Teren");
-let text;
-if (!choice[0]) {
-  let custom = await ValueDialog.create("Wpisz własny Teren", "Własny Teren");
-  text = custom || "";
-} else {
-  text = game.wfrp4e.utility.extractParenthesesText(choice[0].name);
-}
-
-let newTalentName = this.item.name.replace("(Dowolny)", "").trim() + ` (${text})`;
-let careerTalents = this.actor.system.currentCareer.system.talents;
-const talentIndex = careerTalents.indexOf(this.item.name);
-if (talentIndex !== -1) {
-  careerTalents.splice(talentIndex, 1);
-  careerTalents.push(newTalentName);
-  await this.actor.system.currentCareer.update({
-    "system.talents": careerTalents,
-  });
-}
-
-await this.effect.updateSource({name: newTalentName});
-await this.item.updateSource({
-  name: newTalentName,
-  "system.tests.value": this.item.system.tests.value.replace("Wybrany Teren", text),
-});

@@ -1,3 +1,4 @@
+//*** Wspinacz
 if (args.test.options.wallcrawler)
 {
 	if (parseInt(args.test.result.SL) < 0 || args.test.failed)

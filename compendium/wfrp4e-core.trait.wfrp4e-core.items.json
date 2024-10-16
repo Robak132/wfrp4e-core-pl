@@ -32,20 +32,20 @@
         "Animosity": {
             "id": "0VpT5yubw4UL7j6f",
             "name": "Wrogość",
-            "description": "<em><p>Stworzenie naprawdę nie lubi celu.</p>\n<p>Postać żywi wrogość wobec grupy „x”, co zazwyczaj oznacza jakąś grupę społeczną lub typ stworzeń, jak np. „mieszkańcy Nordlandu”, „zwierzoludzie” czy „szlachta”. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, postać może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, postać nie jest w stanie dłużej dusić Wrogości.</p>\n<p>Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. <em>@Condition[Oszołomienie]</em> lub <em>@Condition[Utrata Przytomności]</em> naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne.</p>\n<p>Kiedy postać ma napad Wrogości:</p>\n<ul>\n<li>Musi natychmiast zaatakować swoich wrogów – albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności.</li>\n<li>Ponadto podczas takich drwin i innych prób werbalnych ataków postać otrzymuje premię +1 PS.</li>\n</ul>\n<p>@UUID[Compendium.wfrp4e-core.items.Ib2YQYChktDFN93y]{Strach} i @UUID[Compendium.wfrp4e-core.items.meMkLEwdJIDLxM0B]{Groza} natychmiast przerywają napad Wrogości.</p>",
+            "description": "<p>Stworzenie naprawdę nie lubi Obiektu wrogości.</p> <p>Postać żywi wrogość wobec grupy „x”, co zazwyczaj oznacza jakąś grupę społeczną lub typ stworzeń, jak np. „mieszkańcy Nordlandu”, „zwierzoludzie” czy „szlachta”. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, postać może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, postać nie jest w stanie dłużej dusić Wrogości.</p> <p>Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. @Condition[Oszołomienie] lub @Condition[Utrata Przytomności] naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne.</p> <p>Kiedy postać ma napad Wrogości:</p> <ul> <li>Musi natychmiast zaatakować swoich wrogów – albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności.</li> <li>Ponadto podczas takich drwin i innych prób werbalnych ataków postać otrzymuje premię +1 PS.</li> </ul> <p>Strach i Groza natychmiast przerywają napad Wrogości.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.0VpT5yubw4UL7j6f",
-            "specification": "Cel",
+            "specification": "Obiekt",
             "effects": {
                 "mqb7U1RR6DjIhLgy": {
                     "scriptData": [
                         {
                             "id": "mqb7U1RR6DjIhLgy",
-                            "name": "Socially or physically attacking @item.system.specification.value",
+                            "name": "Drwiny i inne werbalne próby atakowania źródła Wrogośći (@item.system.specification.value)",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.iVhi3Z6zPaf1bf8g]"
                         },
                         {
-                            "name": "Interacting with @item.system.specification.value",
+                            "name": "Interakcje ze źródłem Wrogośći (@item.system.specification.value)",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]",
                             "id": "mqb7U1RR6DjIhLgy"
@@ -109,15 +109,15 @@
         "Afraid": {
             "id": "4CMKeDTDrRQZbPIJ",
             "name": "Lęk",
-            "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem.</p>\n<p>Strach jest objawem ekstremalnej awersji wobec czegoś. Stworzenia, które wzbudzają Strach, w statystykach mają również Współczynnik Strachu równy „x”. Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu danego stworzenia lub go nie przekroczy. Dopóki się to nie stanie, postać jest zdjęta Strachem:</p>\n<ul>\n<li>Otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu.</li>\n<li>Postać nie może podejść do czegokolwiek, co wywołuje w niej Strach, jeśli nie zda <strong>Wymagającego (+0) Testu Opanowania</strong>. Jeśli stworzenie zacznie się zbliżać, również należy wykonać <strong>Wymagający (+0) Test Opanowania</strong> – jeżeli się nie powiedzie, postać otrzymuje 1 poziom Paniki.</li>\n</ul>",
+            "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem lęku.</p> <p>Strach jest objawem ekstremalnej awersji wobec czegoś. Stworzenia, które wzbudzają Strach, w statystykach mają również Współczynnik Strachu równy „x”. Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu danego stworzenia lub go nie przekroczy. Dopóki się to nie stanie, postać jest zdjęta Strachem:</p> <ul> <li>Otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu.</li> <li>Postać nie może podejść do czegokolwiek, co wywołuje w niej Strach, jeśli nie zda <strong>Wymagającego (+0) Testu Opanowania</strong>. Jeśli stworzenie zacznie się zbliżać, również należy wykonać <strong>Wymagający (+0) Test Opanowania</strong> – jeżeli się nie powiedzie, postać otrzymuje 1 poziom @Condition[Panika]{Paniki}.</li> </ul>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.4CMKeDTDrRQZbPIJ",
-            "specification": "Cel",
+            "specification": "Obiekt",
             "effects": {
                 "qPjT5EO2Y83wUzVx": {
                     "scriptData": [
                         {
                             "id": "qPjT5EO2Y83wUzVx",
-                            "name": "Tests to affect @item.system.specification.value",
+                            "name": "Testy które w jakikolwiek sposób wpływają na źródło Strachu (@item.system.specification.value)",
                             "script": "[Script.o1zD8mej9TWKNxUq]"
                         }
                     ],
@@ -156,7 +156,7 @@
                     "scriptData": [
                         {
                             "id": "cix7lwIY68fS1N30",
-                            "name": "Grappling",
+                            "name": "Zapasy",
                             "script": "[Script.9MwRUzRinhq1IjhG]"
                         }
                     ],
@@ -277,7 +277,7 @@
                     "scriptData": [
                         {
                             "id": "4MsIBocsfHnwGUr7",
-                            "name": "Combat tests against @item.system.specification.value",
+                            "name": "Testy walki przeciwko @item.system.specification.value",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.S4793DLFhjMxpM8x]"
                         }
@@ -290,7 +290,7 @@
         "Bestial": {
             "id": "AGcJl5rHjkyIQBPP",
             "name": "Zwierzęcy",
-            "description": "<p>Stworzenie jest nierozumne albo nie potrafi posługiwać się mową. Unika ognia i dostaje Stan @Condition[Panika], jeśli zostanie nim trafione. W obronie używa wyłącznie Umiejętności Unik. Jeśli straci ponad połowę Żywotności, spróbuje uciec, o ile nie chroni swoich młodych, nie jest osaczone lub nie ma Cechy Stworzenia <i>Terytorialny</i>. W takim przypadku wpada w Szał Bojowy. Zwierzęce stworzenia nie mają Cechy Ogłada.</p>",
+            "description": "<p>Stworzenie jest nierozumne albo nie potrafi posługiwać się mową. Unika ognia i dostaje Stan @Condition[Panika], jeśli zostanie nim trafione. W obronie używa wyłącznie Umiejętności Unik. Jeśli straci ponad połowę Żywotności, spróbuje uciec, o ile nie chroni swoich młodych, nie jest osaczone lub nie ma Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.JIAe7i7dqTQBu4do]. W takim przypadku wpada w @UUID[Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT]. Zwierzęce stworzenia nie mają Cechy Ogłada.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.AGcJl5rHjkyIQBPP"
         },
         "Mental Corruption": {
@@ -302,7 +302,7 @@
                 "gh8P4EJqUjx9JGnO": {
                     "scriptData": [
                         {
-                            "name": "Add Mental Corruption",
+                            "name": "Dodaj zepsucie psychiczne",
                             "id": "gh8P4EJqUjx9JGnO",
                             "script": "[Script.KICZPwLvbUSxbDrE]"
                         }
@@ -342,7 +342,7 @@
                         },
                         {
                             "id": "tIImpgQfm7FirmhR",
-                            "name": "Set Rating",
+                            "name": "Ustaw wartość",
                             "script": "[Script.cJFDnq1HI4gXWcJo]"
                         }
                     ],
@@ -415,7 +415,7 @@
                     "scriptData": [
                         {
                             "id": "M6Sztz0EoQls0Xx9",
-                            "name": "Dead at 0 Wounds",
+                            "name": "Martwy przy 0 ranach",
                             "script": "[Script.WPQbVpD1uwSLAXq1]"
                         }
                     ],
@@ -436,12 +436,12 @@
                     "scriptData": [
                         {
                             "id": "FLoUbmMqNQMuJfZx",
-                            "name": "Swarm Bonuses",
+                            "name": "Premie roju",
                             "script": "[Script.RJpglw5eVRM1f9t0]"
                         },
                         {
                             "id": "FLoUbmMqNQMuJfZx",
-                            "name": "Attacking a Swarm",
+                            "name": "Atakowanie rojem",
                             "script": "[Script.UYLXm2W6jVn21Age]",
                             "activationScript": "[Script.nSXzktHyNjGUXjaw]",
                             "hideScript": "[Script.RZlMkxJz5apn0mUj]"
@@ -461,7 +461,7 @@
                     "scriptData": [
                         {
                             "id": "qFRVjb5kUqUPzBgB",
-                            "name": "Ranged Test while Flying",
+                            "name": "Test związane z ruchem podczas lotu",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "activationScript": "[Script.nSXzktHyNjGUXjaw]",
                             "hideScript": "[Script.RZlMkxJz5apn0mUj]"
@@ -475,7 +475,7 @@
         "Fury": {
             "id": "fjd1u9VAgiYzhBRp",
             "name": "Furia",
-            "description": "<p>Stworzenie ulega czasami wszechogarniającej wściekłości. Może wydać wszystkie Przewagi (minimalnie 1), by wzbudzić w sobie <i>@UUID[Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0]{Nienawiść}</i> wobec przeciwników w walce wręcz. Jeżeli stworzenie zebrało przynajmniej 3 Przewagi, może wydać wszystkie Przewagi, by wpaść w <i>@UUID[Compendium.wfrp4e-core.items.Item.yRhhOlt18COq4e1q]{Szał Bojowy}</i>.</p>",
+            "description": "<p>Stworzenie ulega czasami wszechogarniającej wściekłości. Może wydać wszystkie Przewagi (minimalnie 1), by wzbudzić w sobie @UUID[Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0]{Nienawiść} wobec przeciwników w walce wręcz. Jeżeli stworzenie zebrało przynajmniej 3 Przewagi, może wydać wszystkie Przewagi, by wpaść w @UUID[Compendium.wfrp4e-core.items.Item.yRhhOlt18COq4e1q]{Szał Bojowy}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.fjd1u9VAgiYzhBRp",
             "effects": {
                 "UrY6shI382y5L9os": {
@@ -520,7 +520,7 @@
                         },
                         {
                             "id": "cwsT8KWhr0OgtWc1",
-                            "name": "Jad",
+                            "name": "Ustaw wartość",
                             "script": "[Script.gMIenSmLklAkB2Zm]"
                         }
                     ]
@@ -613,7 +613,7 @@
                             "script": "[Script.ioeTj5mx8jlA5EX5]"
                         },
                         {
-                            "name": "Vomit (Free Attack)",
+                            "name": "Wymiociny (darmowy atak)",
                             "id": "4KinCaegUvscrFU9",
                             "script": "[Script.CW5Vlr57OaMkKJ8Q]"
                         }
@@ -648,7 +648,7 @@
                             "script": "[Script.OqLKL0PiCvYH2QxW]"
                         },
                         {
-                            "name": "Wspinacz",
+                            "name": "Nie można nie zdać testów wspinaczki",
                             "activationScript": "[Script.aAvJrAKLzXhS9qN6]",
                             "hideScript": "[Script.bWr8leucbWslBCYG]",
                             "submissionScript": "[Script.ZCkYe5XMVY1RWMXG]",
@@ -720,7 +720,7 @@
                     "scriptData": [
                         {
                             "id": "KCvK1MI6OC2RpXma",
-                            "name": "Add Mutation",
+                            "name": "Dodaj mutację",
                             "script": "[Script.0R0QAr3D024kWPfo]"
                         }
                     ],
@@ -830,7 +830,7 @@
                     "scriptData": [
                         {
                             "id": "0AgiLabg8eB4LItu",
-                            "name": "Stealth Tests",
+                            "name": "Testy skradania",
                             "script": "[Script.3fdCQ3h3iVuhdDs9]",
                             "activationScript": "[Script.Ew3C2WmLCtc1KT46]",
                             "hideScript": "[Script.EpdMj9d9SYPeP44q]"
@@ -881,7 +881,8 @@
                             "name": "Upiorne Wycie"
                         }
                     ],
-                    "filter": "return this.effect.sourceItem?.actor.uuid == this.actor.uuid;"
+                    "filter": "return this.effect.sourceItem?.actor.uuid == this.actor.uuid;",
+                    "preApplyScript": "if (this.actor.system.status.advantage.value >= 2)\n{\n    await this.actor.setAdvantage(0);\n    this.script.scriptNotification(\"Odjęto Punkty Przewag\")\n    return true;\n}\nelse \n{\n    this.script.scriptNotification(\"Niewystarczająca liczba Punktów Przewag!\", \"error\")\n    return false;\n}"
                 }
             }
         },
@@ -896,7 +897,7 @@
                     "scriptData": [
                         {
                             "id": "JqX5XmH4ZXiST9ML",
-                            "name": "Bite (Free Attack)",
+                            "name": "Ugryzienie (Darmowy Atak)",
                             "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ],
@@ -948,7 +949,7 @@
                     "scriptData": [
                         {
                             "id": "HipPSD61s7Vkcru0",
-                            "name": "Climb or Stealth Tests",
+                            "name": "Test w zalesionym terenie",
                             "script": "[Script.s8xU6OOZbbfo6VIw]",
                             "activationScript": "[Script.Q9EmlWmuDac83cJw]",
                             "hideScript": "[Script.EVBSHEC5nmmj2X41]"
@@ -1009,7 +1010,7 @@
                     "scriptData": [
                         {
                             "id": "gjbJu5OWDKFJvvyY",
-                            "name": "Penalty to Melee attacks",
+                            "name": "Kara do ataków wręcz",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]",
                             "activationScript": "[Script.igVAVU7DOuzhNG14]",
                             "hideScript": "[Script.ogJBAXTXyhTqACPO]"
@@ -1040,7 +1041,7 @@
         "Construct": {
             "id": "UB4mDroL6S1F9B4u",
             "name": "Konstrukt",
-            "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy <i>@UUID[Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do]{Terytorialny}</i>, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są <i>Magiczne</i>.</p>",
+            "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy @UUID[Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do]{Terytorialny}, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są <i>Magiczne</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.UB4mDroL6S1F9B4u",
             "effects": {
                 "mkDK0Yqvb4JqL1zq": {
@@ -1054,7 +1055,7 @@
                         },
                         {
                             "id": "mkDK0Yqvb4JqL1zq",
-                            "name": "Magical Weapons",
+                            "name": "Magiczna broń",
                             "script": "[Script.WKXyVHQwQCNTfSKv]"
                         }
                     ]
@@ -1097,7 +1098,7 @@
                         },
                         {
                             "id": "3KXZhIkHukLOpg2l",
-                            "name": "Tail (Free Attack)",
+                            "name": "Ogon (Darmowy Atak)",
                             "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ]
@@ -1126,13 +1127,13 @@
                 "PSDaEI70b4ZasVRm": {
                     "scriptData": [
                         {
-                            "name": "Damage Effects",
+                            "name": "Efekty obrażeń",
                             "id": "PSDaEI70b4ZasVRm",
                             "script": "[Script.jdS2u1tQPYeO55WI]"
                         },
                         {
                             "id": "PSDaEI70b4ZasVRm",
-                            "name": "Ignore AP",
+                            "name": "Ignoruj PP",
                             "script": "[Script.11uCC0mK2uL783al]"
                         }
                     ],
@@ -1144,7 +1145,7 @@
         "Die Hard": {
             "id": "UsJ2uIOOtHA7JqD5",
             "name": "Nie do Zdarcia",
-            "description": "<p>Bez względu na to, jak mocno obrywa stworzenie, wciąż się podnosi. Wszystkie Rany Krytyczne, których wynikiem nie jest śmierć, mogą zostać wyleczone; wystarczy połączyć potrzebne części ciała w odpowiednich miejscach, może unieruchamiając je klamrami lub dużymi kołkami, a stwór zaraz będzie gotowy funkcjonować dalej. Nawet „śmierć” można „wyleczyć”, jeśli do ciała zostaną przymocowane odpowiednie części takie jak stracona głowa. Jeśli nastąpi zgon, a wszystkie części ciała będą na swoim miejscu, stworzenie może wykonywać po swojej śmierci <b>Wymagający (+0) Test Odporności</b> z <b>PS wynoszącym 6<?b> na początku każdej Rundy (przez tyle Rund, ile wynosi jego Bonus z Wytrzymałości). Jeśli Test jest udany, stworzenie z charkotem budzi się do życia z 1 punktem Żywotności.</p>",
+            "description": "<p>Bez względu na to, jak mocno obrywa stworzenie, wciąż się podnosi. Wszystkie Rany Krytyczne, których wynikiem nie jest śmierć, mogą zostać wyleczone; wystarczy połączyć potrzebne części ciała w odpowiednich miejscach, może unieruchamiając je klamrami lub dużymi kołkami, a stwór zaraz będzie gotowy funkcjonować dalej. Nawet „śmierć” można „wyleczyć”, jeśli do ciała zostaną przymocowane odpowiednie części takie jak stracona głowa. Jeśli nastąpi zgon, a wszystkie części ciała będą na swoim miejscu, stworzenie może wykonywać po swojej śmierci <strong>Wymagający (+0) Test Odporności</strong> z PS wynoszącym 6 na początku każdej Rundy (przez tyle Rund, ile wynosi jego Bonus z Wytrzymałości). Jeśli Test jest udany, stworzenie z charkotem budzi się do życia z 1 punktem Żywotności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.UsJ2uIOOtHA7JqD5"
         },
         "Infected": {
@@ -1184,7 +1185,7 @@
                             "id": "ra1EGVf9mHjb4JrR",
                             "script": "[Script.ma0sWhebqwdRHWvY]",
                             "activationScript": "[Script.yRRzSKlcN3L7rEEe]",
-                            "name": "Trained (Entertain)",
+                            "name": "Wyszkolony (Rozrywka)",
                             "hideScript": "[Script.v6LIG7EwWYALxCpP]"
                         }
                     ],
@@ -1205,11 +1206,11 @@
                         {
                             "id": "lCW7MgvHneroE3ox",
                             "script": "[Script.WKXyVHQwQCNTfSKv]",
-                            "name": "Magical Attacks"
+                            "name": "Magiczne ataki"
                         },
                         {
                             "id": "lCW7MgvHneroE3ox",
-                            "name": "Daemonic Ward",
+                            "name": "Demoniczna Ochrona",
                             "script": "[Script.S95QqpX1cZyIVCPy]"
                         }
                     ],
@@ -1255,7 +1256,7 @@
                         },
                         {
                             "id": "CAcGBn8sq62mVUxJ",
-                            "name": "Zbroja",
+                            "name": "Ustal wartość",
                             "script": "[Script.2QB0LjueuJcIaHaC]"
                         }
                     ]
@@ -1286,7 +1287,7 @@
         "Leader": {
             "id": "wGTD2LezlI6Atyy0",
             "name": "Przywódca",
-            "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. <b>Uwaga:</b> tej cechy nie mogą wybierać stworzenia posiadające cechę <i>@UUID[Compendium.wfrp4e-core.items.Item.AGcJl5rHjkyIQBPP]{Zwierzęcy}</i>.</p>",
+            "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. <b>Uwaga:</b> tej cechy nie mogą wybierać stworzenia posiadające cechę @UUID[Compendium.wfrp4e-core.items.Item.AGcJl5rHjkyIQBPP]{Zwierzęcy}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.wGTD2LezlI6Atyy0",
             "effects": {
                 "qjz6qX4wkAN2Eldl": {
@@ -1318,7 +1319,7 @@
                         },
                         {
                             "id": "kPgI28vmSamM3u1s",
-                            "name": "Tongue (Free Attack)",
+                            "name": "Atak Językiem (Darmowy atak)",
                             "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ]
@@ -1335,7 +1336,7 @@
         "Corruption": {
             "id": "xsGbDFqK2qh7lsIj",
             "name": "Spaczenie",
-            "description": "<p>Stworzenie jest napiętnowane przez Chaos lub przepełnione mroczną magią. Siła spaczenia podana jest w nawiasie.</p>",
+            "description": "<p>Stworzenie jest napiętnowane przez Chaos lub przepełnione mroczną magią. Siła spaczenia podana jest w nawiasie (@Corruption[minor]{Pomniejsze}, @Corruption[moderate]{Umiarkowane}, albo @Corruption[major]{Potężne}).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.xsGbDFqK2qh7lsIj",
             "specification": "Siła Korupcji",
             "effects": {
@@ -1348,7 +1349,7 @@
                         },
                         {
                             "id": "rNq9moHHK0N4dC3S",
-                            "name": "Strength Choice",
+                            "name": "Wybór siły zepsucia",
                             "script": "[Script.xS2su09zcza9du09]"
                         }
                     ],
@@ -1372,7 +1373,7 @@
                         },
                         {
                             "id": "ydTMvbmqv6BZ4u6d",
-                            "name": "Disable",
+                            "name": "Deaktywacja",
                             "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ],

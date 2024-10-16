@@ -93,7 +93,7 @@ Hooks.on("init", () => {
 		}
 	}
 	
-	Reflect.defineProperty(ModuleInitializer.prototype, 'createFolders', { value:
+	Reflect.defineProperty(WarhammerModuleInitializer.prototype, 'createFolders', { value:
 		function (pack) {
 			let root = game.modules.get(pack.metadata.packageName).flags.folder;
 			root.type = pack.metadata.type;
@@ -181,9 +181,9 @@ Hooks.on("init", () => {
                 );
 
                 let translation = {};
-                translations.forEach(t => {mergeObject(translation, t)})
+                translations.forEach(t => {foundry.utils.mergeObject(translation, t)})
 				console.log(`Babele | translation for ${collection} pack successfully loaded`);
-				allTranslations.push(mergeObject(translation, { collection: collection }));
+				allTranslations.push(foundry.utils.mergeObject(translation, { collection: collection }));
             }
         };
 
@@ -219,23 +219,28 @@ Hooks.on("init", () => {
 							result.name = translation.name;
 						}
 						if (translation.filter) {
-							result.flags.wfrp4e.applicationData = data.flags.wfrp4e.applicationData ?? {};
-							result.flags.wfrp4e.applicationData.filter = translation.filter;
+							result.system.transferData.filter = translation.filter;
+						}
+						if (translation.enableConditionScript) {
+							result.system.transferData.enableConditionScript = translation.enableConditionScript;
+						}
+						if (translation.preApplyScript) {
+							result.system.transferData.preApplyScript = translation.preApplyScript;
 						}
 						if (translation.scriptData) {
 							for (let i = 0; i < translation.scriptData.length; i++) {
 								let transScript = translation.scriptData[i];
-								let script = result.flags.wfrp4e.scriptData[i];
+								let script = result.system.scriptData[i];
 								if (script) {
 									script.label = transScript.name;
 									if (transScript.hideScript) {
-										script.options.dialog.hideScript = transScript.hideScript;
+										script.options.hideScript = transScript.hideScript;
 									}
 									if (transScript.activationScript) {
-										script.options.dialog.activationScript = transScript.activationScript;
+										script.options.activateScript = transScript.activationScript;
 									}
 									if (transScript.submissionScript) {
-										script.options.dialog.submissionScript = transScript.submissionScript;
+										script.options.submissionScript = transScript.submissionScript;
 									}
 									script.script = transScript.script;
 								}
@@ -254,9 +259,9 @@ Hooks.on("init", () => {
 				if (translations){ 
 					const translation = translations[data.id] ?? translations[data._id];
 					if (translation) {
-						return mergeObject(
+						return foundry.utils.mergeObject(
 							data,
-							mergeObject(translation, { translated: true }),
+							foundry.utils.mergeObject(translation, { translated: true }),
 						);
 					}
 				}
@@ -277,28 +282,37 @@ Hooks.on("init", () => {
 					let translatedItem = pack.translations[originalName];
 					if (translatedItem) {
 						const translatedData = dynamicMapping.map(item, translatedItem);
-						translatedItem = mergeObject(item, translatedData);
+						translatedItem = foundry.utils.mergeObject(item, translatedData);
 						for (const e of translatedItem.effects) {
 							const te = pack.translations[originalName].effects[e._id];
 							if (te) {
-								mergeObject(e, te);
+								foundry.utils.mergeObject(e, te);
 								if (te.filter) {
 									e.flags.wfrp4e.applicationData.filter = te.filter;
 								}
-								if (e.flags?.wfrp4e?.scriptData && te.scriptData) {
+								if (te.filter) {
+									e.system.transferData.filter = te.filter;
+								}
+								if (te.enableConditionScript) {
+									e.system.transferData.enableConditionScript = te.enableConditionScript;
+								}
+								if (te.preApplyScript) {
+									e.system.transferData.preApplyScript = te.preApplyScript;
+								}
+								if (e.system.scriptData && te.scriptData) {
 									for (let i = 0; i < te.scriptData.length; i++) {
 										let transScript = te.scriptData[i];
-										let script = e.flags.wfrp4e.scriptData[i];
+										let script = e.system.scriptData[i];
 										if (script) {
 											script.label = transScript.name;
 											if (transScript.hideScript) {
-												script.options.dialog.hideScript = transScript.hideScript;
+												script.options.hideScript = transScript.hideScript;
 											}
 											if (transScript.activationScript) {
-												script.options.dialog.activationScript = transScript.activationScript;
+												script.options.activateScript = transScript.activationScript;
 											}
 											if (transScript.submissionScript) {
-												script.options.dialog.submissionScript = transScript.submissionScript;
+												script.options.submissionScript = transScript.submissionScript;
 											}
 											script.script = transScript.script;
 										}
@@ -329,28 +343,37 @@ Hooks.on("init", () => {
 								let translatedItem = pack.translations[compendiumItemId];
 								if (translatedItem) {
 									const translatedData = dynamicMapping.map(item, translatedItem);
-									translatedItem = mergeObject(item, translatedData);
+									translatedItem = foundry.utils.mergeObject(item, translatedData);
 									for (const e of translatedItem.effects) {
 										const te = pack.translations[compendiumItemId].effects[e._id];
 										if (te) {
-											mergeObject(e, te);
+											foundry.utils.mergeObject(e, te);
 											if (te.filter) {
 												e.flags.wfrp4e.applicationData.filter = te.filter;
 											}
-											if (e.flags?.wfrp4e?.scriptData && te.scriptData) {
+											if (te.filter) {
+												e.system.transferData.filter = te.filter;
+											}
+											if (te.enableConditionScript) {
+												e.system.transferData.enableConditionScript = te.enableConditionScript;
+											}
+											if (te.preApplyScript) {
+												e.system.transferData.preApplyScript = te.preApplyScript;
+											}
+											if (e.system.scriptData && te.scriptData) {
 												for (let i = 0; i < te.scriptData.length; i++) {
 													let transScript = te.scriptData[i];
-													let script = e.flags.wfrp4e.scriptData[i];
+													let script = e.system.scriptData[i];
 													if (script) {
 														script.label = transScript.name;
 														if (transScript.hideScript) {
-															script.options.dialog.hideScript = transScript.hideScript;
+															script.options.hideScript = transScript.hideScript;
 														}
 														if (transScript.activationScript) {
-															script.options.dialog.activationScript = transScript.activationScript;
+															script.options.activateScript = transScript.activationScript;
 														}
 														if (transScript.submissionScript) {
-															script.options.dialog.submissionScript = transScript.submissionScript;
+															script.options.submissionScript = transScript.submissionScript;
 														}
 														script.script = transScript.script;
 													}

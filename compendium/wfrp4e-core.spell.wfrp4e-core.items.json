@@ -51,7 +51,7 @@
                     "scriptData": [
                         {
                             "id": "JhckMd5Y6kwzj89D",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -73,7 +73,7 @@
                     "scriptData": [
                         {
                             "id": "VsXAXUP37Jy1RxLN",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -115,7 +115,7 @@
                     "scriptData": [
                         {
                             "id": "Tlpj4ne1QrB5dECY",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -181,7 +181,7 @@
                     "scriptData": [
                         {
                             "id": "3M0DDQ0n2MHGkjno",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -211,7 +211,7 @@
                     "scriptData": [
                         {
                             "id": "I0LnnT4KAYz135g7",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -289,7 +289,7 @@
                     "scriptData": [
                         {
                             "id": "g5xrHWYinn3mzhgZ",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -361,7 +361,7 @@
                     "scriptData": [
                         {
                             "id": "F0DbfSHM5yydi8m6",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -391,7 +391,7 @@
                     "scriptData": [
                         {
                             "id": "MfretxCbwRwt99f9",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -436,7 +436,7 @@
                     "scriptData": [
                         {
                             "id": "atb5E3ncyIiTKt0t",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -458,7 +458,7 @@
                     "scriptData": [
                         {
                             "id": "MZp4uJfW2vuwQlUI",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -499,7 +499,7 @@
                     "scriptData": [
                         {
                             "id": "IgH0DCpmKpMerQum",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -541,17 +541,17 @@
                         },
                         {
                             "id": "N25aw2AX02DBl2O5",
-                            "name": "Ablaze",
+                            "name": "Podpalenie",
                             "script": "[Script.IG4zYqtN9fRSYE7q]"
                         },
                         {
                             "id": "N25aw2AX02DBl2O5",
-                            "name": "Ablaze (Self)",
+                            "name": "Płonący (siebie)",
                             "script": "[Script.inPxRSx0CDj1nwAm]"
                         },
                         {
                             "id": "N25aw2AX02DBl2O5",
-                            "name": "Damage",
+                            "name": "Obrażenia",
                             "script": "[Script.Z30zYayPryXOjT5N]"
                         }
                     ],
@@ -572,7 +572,7 @@
                     "scriptData": [
                         {
                             "id": "K0kaagF7ly9yudmO",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -592,7 +592,7 @@
                     "scriptData": [
                         {
                             "id": "3tVlSQAlq4vZ2Kam",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -649,7 +649,7 @@
                     "scriptData": [
                         {
                             "id": "X0n7yGiOOJsNh8VX",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -711,7 +711,7 @@
                     "scriptData": [
                         {
                             "id": "5YlXp3ml2TjTtQdM",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -734,7 +734,7 @@
                     "scriptData": [
                         {
                             "id": "oo1w999vVDp0SvXP",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -777,7 +777,7 @@
                     "scriptData": [
                         {
                             "id": "bVubLxTGWeMveMMH",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -802,7 +802,7 @@
                     "scriptData": [
                         {
                             "id": "EhYooYA50dkN1iiC",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -853,7 +853,7 @@
                     "scriptData": [
                         {
                             "id": "Jnx3vLiM17qTRsCb",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -878,7 +878,7 @@
                     "scriptData": [
                         {
                             "id": "sbBqQ0cdfvCjKApH",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -901,7 +901,7 @@
                     "scriptData": [
                         {
                             "id": "98H5YjVu2RCtcvub",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -933,7 +933,7 @@
                     "scriptData": [
                         {
                             "id": "3exXNS10MNXC0z1n",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -954,7 +954,7 @@
                     "scriptData": [
                         {
                             "id": "JXm1XYeumrZbROEj",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ]
@@ -1024,7 +1024,7 @@
                     "scriptData": [
                         {
                             "id": "hbusGHb4tl7w3EHo",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -1049,7 +1049,7 @@
                     "scriptData": [
                         {
                             "id": "UwVJOvlqQumyNTnt",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1081,7 +1081,7 @@
                     "scriptData": [
                         {
                             "id": "85KF3czVr2jjEFWt",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -1113,7 +1113,7 @@
                     "scriptData": [
                         {
                             "id": "rc0uUFDi4KF1NCXt",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1136,7 +1136,7 @@
                     "scriptData": [
                         {
                             "id": "ihzJ0xBHJy1mxtTt",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -1199,7 +1199,7 @@
                     "scriptData": [
                         {
                             "id": "nvwYuMyUOW30ilmN",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -1232,7 +1232,7 @@
                 "H8as8eJ4hGm4pAzM": {
                     "scriptData": [
                         {
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "id": "H8as8eJ4hGm4pAzM",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
@@ -1264,7 +1264,7 @@
                     "scriptData": [
                         {
                             "id": "SdigWFFBhyW0tW4o",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -1286,7 +1286,7 @@
                     "scriptData": [
                         {
                             "id": "yLd6Lk0hud98ztHK",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -1370,7 +1370,7 @@
                     "scriptData": [
                         {
                             "id": "URxWDjaF0VmshPEv",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -1416,7 +1416,7 @@
                 "GoYTWl6YKH4pkg0O": {
                     "scriptData": [
                         {
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "id": "GoYTWl6YKH4pkg0O",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
@@ -1439,7 +1439,7 @@
                     "scriptData": [
                         {
                             "id": "Q7QqF5uTm8eGirdi",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -1471,7 +1471,7 @@
                     "scriptData": [
                         {
                             "id": "4K4CBRvn6GrQF8oz",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -1530,7 +1530,7 @@
                     "scriptData": [
                         {
                             "id": "oNadg6lHGjw86VOX",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1555,7 +1555,7 @@
                     "scriptData": [
                         {
                             "id": "YgYNwtWeQPNjuV5H",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1598,7 +1598,7 @@
                     "scriptData": [
                         {
                             "id": "ciDf515sFb8vga9e",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1663,7 +1663,8 @@
                         }
                     ],
                     "id": "7xgUnEZCcRXXlOCL",
-                    "name": "Złe oko"
+                    "name": "Złe oko",
+                    "preApplyScript": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Intimidate\"), {fields : {slBonus : parseInt(args.test.result.SL)}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nreturn true;"
                 }
             }
         },
@@ -1686,7 +1687,7 @@
                     "scriptData": [
                         {
                             "id": "tCcYUt5VFEHyNdST",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -1708,7 +1709,7 @@
                     "scriptData": [
                         {
                             "id": "IQZUsYz05TWAqgWR",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1739,7 +1740,7 @@
                     "scriptData": [
                         {
                             "id": "qrT2BgFv18mc3GOR",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -1779,7 +1780,7 @@
                     "scriptData": [
                         {
                             "id": "BYK1xtejBXlxhoqN",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1809,7 +1810,7 @@
                         },
                         {
                             "id": "yUz74Oljp6MoxHRY",
-                            "name": "Add Properties",
+                            "name": "Dodawanie właściwości",
                             "script": "[Script.zqShIJnrRReGgP94]"
                         }
                     ],
@@ -1832,7 +1833,7 @@
                     "scriptData": [
                         {
                             "id": "VVyJ3I7yhqhT5spF",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -1863,7 +1864,7 @@
                     "scriptData": [
                         {
                             "id": "UMQ4HkPxFZjCTATx",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -1893,7 +1894,7 @@
                     "scriptData": [
                         {
                             "id": "1Go91fEPZPGcCuYW",
-                            "name": "Distracting",
+                            "name": "Dekoncentracja",
                             "script": "[Script.WY3DajPRGcMNt158]"
                         }
                     ]
@@ -1913,7 +1914,7 @@
                     "scriptData": [
                         {
                             "id": "s3QRNdtGwVWUiRUB",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1979,7 +1980,7 @@
                     "scriptData": [
                         {
                             "id": "54DHdpiAYjq9O9EA",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -2007,7 +2008,7 @@
                         },
                         {
                             "id": "VxgpVBMx8k8Q9jra",
-                            "name": "Items",
+                            "name": "Przedmioty",
                             "script": "[Script.qK4q4o6cQhcGzFX3]"
                         }
                     ]
@@ -2027,7 +2028,7 @@
                     "scriptData": [
                         {
                             "id": "xATk1vsIU54hBqTR",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -2052,7 +2053,7 @@
                     "scriptData": [
                         {
                             "id": "HgiJGJRUMzBH5QwK",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -2071,7 +2072,7 @@
                     "scriptData": [
                         {
                             "id": "eEA4tPYa2SWiqn2r",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -2095,7 +2096,7 @@
                     "scriptData": [
                         {
                             "id": "Zdq7ThKolTWWRUXk",
-                            "name": "Broken",
+                            "name": "Panika",
                             "script": "[Script.oGdsGPgJWcyWkiWl]"
                         }
                     ]
@@ -2148,7 +2149,7 @@
                     "scriptData": [
                         {
                             "id": "PEdVe7ebjT9Uq11O",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -2202,7 +2203,7 @@
                     "scriptData": [
                         {
                             "id": "Ky25zH3wVjBIdMyC",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -2251,7 +2252,7 @@
                     "name": "Dekoncentracja",
                     "scriptData": [
                         {
-                            "name": "Distracting",
+                            "name": "Dekoncentracja",
                             "id": "1Go91fEPZPGcCuYW",
                             "script": "[Script.WY3DajPRGcMNt158]"
                         }
@@ -2272,7 +2273,7 @@
                     "scriptData": [
                         {
                             "id": "T3ybCpYia0S9hT33",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -2334,7 +2335,7 @@
                     "scriptData": [
                         {
                             "id": "vuLCGvWWMBkjS4fU",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -2396,7 +2397,7 @@
                     "scriptData": [
                         {
                             "id": "3cZn06GPmqGXkHDR",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -2455,7 +2456,7 @@
                     "scriptData": [
                         {
                             "id": "1j5aw0XvSUyyIM32",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -2477,7 +2478,7 @@
                     "scriptData": [
                         {
                             "id": "5OeYLDk9BKdhFID2",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -2499,7 +2500,7 @@
                     "scriptData": [
                         {
                             "id": "zv3OBX2cjka63VpF",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -2521,7 +2522,7 @@
                     "scriptData": [
                         {
                             "id": "UW3d5MaZw81uZEnR",
-                            "name": "Charm Animal or Animal Training",
+                            "name": "Oswajanie lub Tresura",
                             "script": "[Script.9ZFPDCk8M2TQxh7x]",
                             "activationScript": "[Script.LeKLtvEDrWh4yHsx]",
                             "hideScript": "[Script.3hfMQkUKYI4rCuBy]"
@@ -2566,7 +2567,7 @@
                     "scriptData": [
                         {
                             "id": "BMhMgqhyGvSt0EhU",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -2598,7 +2599,7 @@
                     "scriptData": [
                         {
                             "id": "vWfOtn15iLmUCtha",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -2623,7 +2624,7 @@
                     "scriptData": [
                         {
                             "id": "70JYVG0LtENanmK1",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -2758,7 +2759,7 @@
                     "scriptData": [
                         {
                             "id": "ANinq8MojAZbYOvB",
-                            "name": "Primary Target",
+                            "name": "Główny Cel",
                             "script": "[Script.e0TuMgYuI7ZtGoQr]"
                         }
                     ]
@@ -2767,7 +2768,7 @@
                     "scriptData": [
                         {
                             "id": "cX6Ya7n8B1EHV1kf",
-                            "name": "Początkowy obszar działania",
+                            "name": "Pożoga zagłady U’zhula",
                             "script": "[Script.dfnCK8jCPXNLM7Gh]"
                         }
                     ],
@@ -2779,7 +2780,7 @@
                     "scriptData": [
                         {
                             "id": "q8mpF2eXkyVDGb5k",
-                            "name": "Rosnązy Obszar Działania",
+                            "name": "Pożoga zagłady U’zhula",
                             "script": "[Script.3l7MQSa10Kve2K3P]"
                         }
                     ],
@@ -2826,7 +2827,7 @@
                     "scriptData": [
                         {
                             "id": "r1jNr1Li8TcxFq8g",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -2878,7 +2879,7 @@
                     "scriptData": [
                         {
                             "id": "aFt85cPoz0FNKK4f",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -2904,7 +2905,7 @@
                         },
                         {
                             "id": "XRM7FxEmLX5QBXmK",
-                            "name": "Ignore AP",
+                            "name": "Ignoruj PP",
                             "script": "[Script.KyswmGj1uG3QS3ng]"
                         }
                     ]
@@ -2927,12 +2928,12 @@
                     "scriptData": [
                         {
                             "id": "th43mvG7od8GUb2z",
-                            "name": "Initial",
+                            "name": "Oślepienie",
                             "script": "[Script.IR86DuMbVdbGOJYt]"
                         },
                         {
                             "id": "th43mvG7od8GUb2z",
-                            "name": "Initial",
+                            "name": "Początkowa Wartość",
                             "script": "[Script.IR86DuMbVdbGOJYt]"
                         }
                     ]
@@ -3008,7 +3009,7 @@
                     "scriptData": [
                         {
                             "id": "U4xziri0eT6nh4CC",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -3027,7 +3028,7 @@
                     "scriptData": [
                         {
                             "id": "wKR2jxDBFScuhXcM",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -3049,7 +3050,7 @@
                     "scriptData": [
                         {
                             "id": "PSZqPu4QXRm1hM6Z",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -3071,7 +3072,7 @@
                     "scriptData": [
                         {
                             "id": "6XpxhRM1r3IPL5qc",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -3093,7 +3094,7 @@
                     "scriptData": [
                         {
                             "id": "d1oPCrkMy8Bu4VD7",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -3115,7 +3116,7 @@
                     "scriptData": [
                         {
                             "id": "F576eAeSRmMTypKM",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -3168,7 +3169,7 @@
                     "scriptData": [
                         {
                             "id": "oCXbVysC7nk7Rr2t",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -3242,7 +3243,7 @@
                     "scriptData": [
                         {
                             "id": "eUYaEn9lKiDUVsCz",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -3264,7 +3265,7 @@
                     "scriptData": [
                         {
                             "id": "qujsUQ7k22ikvLRk",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -3302,7 +3303,7 @@
                     "scriptData": [
                         {
                             "id": "pVG6w1y1EXYbUuS0",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -3344,7 +3345,7 @@
                     "scriptData": [
                         {
                             "id": "ZSGvMxczaTcygVrt",
-                            "name": "Flight",
+                            "name": "Lot",
                             "script": "[Script.PjRxGuUDKGmSmVDc]"
                         }
                     ]
@@ -3386,7 +3387,7 @@
                     "scriptData": [
                         {
                             "id": "ZSGvMxczaTcygVrt",
-                            "name": "Flight",
+                            "name": "Lot",
                             "script": "[Script.PjRxGuUDKGmSmVDc]"
                         }
                     ]
@@ -3415,7 +3416,7 @@
                     "scriptData": [
                         {
                             "id": "PKAiQdd29vmRBjZz",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -3440,7 +3441,7 @@
                     "scriptData": [
                         {
                             "id": "clDmg3OvYAuqjIkY",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -3462,7 +3463,7 @@
                     "scriptData": [
                         {
                             "id": "vE7RaHx8aVrEqU9h",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -3484,7 +3485,7 @@
                     "scriptData": [
                         {
                             "id": "f7TJ64L2jdl8ouoj",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -3523,7 +3524,7 @@
                     "scriptData": [
                         {
                             "id": "ekGcZkiHjBtyNHs3",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -3656,7 +3657,7 @@
                     "scriptData": [
                         {
                             "id": "L7xR8KYtl9WieojO",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -3677,7 +3678,7 @@
                     "scriptData": [
                         {
                             "id": "uxJ68z65aa82x6lz",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ]
@@ -3779,7 +3780,7 @@
                     "scriptData": [
                         {
                             "id": "sKpoDZnfimoK3Mu6",
-                            "name": "Dome (Beasts)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -3801,7 +3802,7 @@
                     "scriptData": [
                         {
                             "id": "6F4tYiFiy92FnpVm",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -3833,7 +3834,7 @@
                     "scriptData": [
                         {
                             "id": "SbiMllbJ2Qc5sH9F",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -3855,7 +3856,7 @@
                     "scriptData": [
                         {
                             "id": "hsgQqmPA2K83fqDJ",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -3884,7 +3885,7 @@
                     "scriptData": [
                         {
                             "id": "ydDGrVtmLytP0YU7",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -3906,7 +3907,7 @@
                     "scriptData": [
                         {
                             "id": "sBWtncdE7Mk3lna3",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -3994,7 +3995,7 @@
                     "scriptData": [
                         {
                             "id": "aZhwaaoQ9Me6De23",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -4016,7 +4017,7 @@
                     "scriptData": [
                         {
                             "id": "Ca2jTOF8b9UZSRqT",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4079,7 +4080,7 @@
                     "scriptData": [
                         {
                             "id": "aL95XxYAtvW7BP4Y",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -4119,7 +4120,7 @@
                     "scriptData": [
                         {
                             "id": "uAVx2oZaunk0xGTO",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4140,7 +4141,7 @@
                     "scriptData": [
                         {
                             "id": "eAPUB6aO9oHrZXf0",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ]
@@ -4219,7 +4220,7 @@
                     "scriptData": [
                         {
                             "id": "xnNXg11stSg3pZIm",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4238,7 +4239,7 @@
                     "scriptData": [
                         {
                             "id": "LrDeyxmOSYqQ7kd4",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -4260,7 +4261,7 @@
                     "scriptData": [
                         {
                             "id": "9v58rP6tdbLv0UIn",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -4284,7 +4285,7 @@
                     "scriptData": [
                         {
                             "id": "dThQOqhp4tned27Q",
-                            "name": "Feather of Lead - Unburdened",
+                            "name": "Pancerz z Ołowiu - nieobciążony",
                             "script": "[Script.qcyl98GYD55BkJsD]"
                         }
                     ]
@@ -4295,7 +4296,7 @@
                     "scriptData": [
                         {
                             "id": "EDZYgEcsj41nykmR",
-                            "name": "Feather of Lead - Overburdened",
+                            "name": "Pancerz z Ołowiu - przeciążony",
                             "script": "[Script.WzMmwjZbhyCbHxyZ]"
                         }
                     ]
@@ -4340,7 +4341,7 @@
                     "scriptData": [
                         {
                             "id": "ic3nYfvopPblvpVn",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -4381,7 +4382,7 @@
                     "scriptData": [
                         {
                             "id": "cigto4HCrMB2zwaV",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -4411,7 +4412,7 @@
                     "scriptData": [
                         {
                             "id": "3dcW4ets6FUgMbJr",
-                            "name": "Transmutation (AP Increase)",
+                            "name": "Transmutacja (Zwiększenie PP)",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ]
@@ -4422,12 +4423,12 @@
                     "scriptData": [
                         {
                             "id": "P9etlFW2PaP0Wsq5",
-                            "name": "Ignore TB",
+                            "name": "Ignoruj Bomus Wt",
                             "script": "[Script.McLR9YcgVUG3MooC]"
                         },
                         {
                             "id": "P9etlFW2PaP0Wsq5",
-                            "name": "Add Conditions",
+                            "name": "Dodaj Stany",
                             "script": "[Script.RqWnhnwFxaHubgiA]"
                         }
                     ]
@@ -4451,7 +4452,7 @@
                     "scriptData": [
                         {
                             "id": "bsxBmkm57zC9wSE8",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -4542,7 +4543,7 @@
                     "scriptData": [
                         {
                             "id": "XN5cYK2IuNZ6f9dX",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -4596,7 +4597,7 @@
                     "scriptData": [
                         {
                             "id": "SZr8AV9YZ80ORpeL",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -4621,7 +4622,7 @@
                     "scriptData": [
                         {
                             "id": "6gI1W6kvtj350VyK",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -4650,7 +4651,7 @@
                     "scriptData": [
                         {
                             "id": "bkmkylhJFibDOrzb",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -4697,7 +4698,7 @@
                     "scriptData": [
                         {
                             "id": "yxLhiefzdXazt0es",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -4717,7 +4718,7 @@
                     "scriptData": [
                         {
                             "id": "hvpAaik3DR0dICmf",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -4784,7 +4785,7 @@
                     "scriptData": [
                         {
                             "id": "poXtxybcRrubQAME",
-                            "name": "Characteristic Bonus",
+                            "name": "Bonus do Atrybutu",
                             "script": "[Script.mPxmCsXYirAIT913]"
                         }
                     ]
@@ -4829,7 +4830,7 @@
                     "scriptData": [
                         {
                             "id": "6ESOFlVRjIopuK05",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4953,7 +4954,7 @@
                     "scriptData": [
                         {
                             "id": "qPDK4TpuhAiEsNuj",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -4978,7 +4979,7 @@
                     "scriptData": [
                         {
                             "id": "lRK2UmOVYuXLjUWD",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -5023,7 +5024,7 @@
                     "scriptData": [
                         {
                             "id": "CuLX8URyAmWi4ty0",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -5064,7 +5065,7 @@
                     "scriptData": [
                         {
                             "id": "vC9zu0ID04uFFu5g",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -5093,7 +5094,7 @@
                         },
                         {
                             "id": "TQBQTcM5ZsdKnmHg",
-                            "name": "Fear",
+                            "name": "Strach",
                             "script": "[Script.SLy1Fs3oXcHgFgjK]"
                         }
                     ]
@@ -5126,7 +5127,7 @@
                     "scriptData": [
                         {
                             "id": "hdIILBAbl5hilsOR",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -5148,7 +5149,7 @@
                     "scriptData": [
                         {
                             "id": "9zuHzPmx0NnskUWZ",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -5178,7 +5179,7 @@
                     "scriptData": [
                         {
                             "id": "T0jvz85Sk2284U7X",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -5200,7 +5201,7 @@
                     "scriptData": [
                         {
                             "id": "bTCnO5MmRR8ilreD",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -5232,7 +5233,7 @@
                     "scriptData": [
                         {
                             "id": "827sxj7s4rHDl8FD",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -5275,7 +5276,7 @@
                     "scriptData": [
                         {
                             "id": "IrSnPGa2IyNqlP93",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -5296,7 +5297,7 @@
                 "ZZFyeE1lhRrCuYmW": {
                     "scriptData": [
                         {
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "id": "ZZFyeE1lhRrCuYmW",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
@@ -5329,7 +5330,7 @@
                     "scriptData": [
                         {
                             "id": "MmcZ4nslDScgBkhs",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -5352,7 +5353,7 @@
                     "scriptData": [
                         {
                             "id": "WfUd2hDRyNq6A72i",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -5371,7 +5372,7 @@
                     "scriptData": [
                         {
                             "id": "bfknISl6e0tRXVtp",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -5396,7 +5397,7 @@
                     "scriptData": [
                         {
                             "id": "Hfni32tmNowj4vz4",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -5424,7 +5425,7 @@
                     "scriptData": [
                         {
                             "id": "nByzf6O64Kb39U20",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -5446,7 +5447,7 @@
                     "scriptData": [
                         {
                             "id": "c1XVrcvKxEFkbVNK",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -5545,7 +5546,7 @@
                     "scriptData": [
                         {
                             "id": "GgtYbVMhm4tyxERG",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -5652,7 +5653,7 @@
                     "scriptData": [
                         {
                             "id": "zWEYwMYf27yzto2L",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -5784,7 +5785,7 @@
                         },
                         {
                             "id": "PN345hPPQdbkVjii",
-                            "name": "Stunned",
+                            "name": "Oszołomienie",
                             "script": "[Script.a7pEvCycVnFBXGAQ]"
                         }
                     ],
@@ -5836,7 +5837,7 @@
                     "scriptData": [
                         {
                             "id": "kr6JLNSSf86IV0ey",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -5881,7 +5882,7 @@
                     "scriptData": [
                         {
                             "id": "d1T2Ams7OOaJtNTK",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -5903,7 +5904,7 @@
                     "scriptData": [
                         {
                             "id": "AUi64HpRvGk7UpUR",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -5922,7 +5923,7 @@
                     "scriptData": [
                         {
                             "id": "EdigIeavWdwPkRMu",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -5978,7 +5979,7 @@
                     "scriptData": [
                         {
                             "id": "KVdhIQENPruyBarF",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -6009,12 +6010,12 @@
                     "scriptData": [
                         {
                             "id": "7SfzLW4YpArHqagJ",
-                            "name": "Ward",
+                            "name": "Magiczna ochrona",
                             "script": "[Script.6kifXp2jXEaQVJsg]"
                         },
                         {
                             "id": "7SfzLW4YpArHqagJ",
-                            "name": "Ignore Ablaze",
+                            "name": "Ignoruj Stan Podpalenia",
                             "script": "[Script.sNSfDBIA2k17hPYI]"
                         }
                     ],
@@ -6036,7 +6037,7 @@
                     "scriptData": [
                         {
                             "id": "M6l4n4QUFvSs1kNx",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -6100,7 +6101,7 @@
                     "scriptData": [
                         {
                             "id": "0YpCdGEHf0X3EnKy",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -6122,7 +6123,7 @@
                     "scriptData": [
                         {
                             "id": "DzSaZHbdsaz6ELtg",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -6144,12 +6145,12 @@
                     "scriptData": [
                         {
                             "id": "P6oXjqmgBVCgxLhm",
-                            "name": "Initial Ward",
+                            "name": "Początkowa wartość Ochrony",
                             "script": "[Script.j3zDMWkns32Yrxn3]"
                         },
                         {
                             "id": "P6oXjqmgBVCgxLhm",
-                            "name": "Apply Ward",
+                            "name": "Zastosuj Ochronę",
                             "script": "[Script.cK1Jysfu5IMUUH0C]"
                         }
                     ],
@@ -6170,7 +6171,7 @@
                 "PtQTUTcrOGEFC6r1": {
                     "scriptData": [
                         {
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "id": "PtQTUTcrOGEFC6r1",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
@@ -6195,7 +6196,7 @@
                         },
                         {
                             "id": "HFdnOZq5kEVY6OuL",
-                            "name": "Ignore AP and TB",
+                            "name": "Ignoruj PP i Bons z Wt",
                             "script": "[Script.QbIYnshWeP1U8SUy]"
                         }
                     ],
@@ -6227,7 +6228,7 @@
                     "scriptData": [
                         {
                             "id": "kdJqiwGR4T8afYdM",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -6284,7 +6285,7 @@
                     "scriptData": [
                         {
                             "id": "TYow8qFRyMONw08Y",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -6347,7 +6348,7 @@
                     "scriptData": [
                         {
                             "id": "2sSxVty0HRBbwEHL",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -6369,7 +6370,7 @@
                     "scriptData": [
                         {
                             "id": "ub3UquG1hH8SDjLt",
-                            "name": "Push",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -6402,7 +6403,7 @@
                     "scriptData": [
                         {
                             "id": "Us02PKKZJu2Uaxao",
-                            "name": "Ward",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -6421,7 +6422,7 @@
                     "scriptData": [
                         {
                             "id": "Bgb1EcNJlFu4wZ94",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -6446,7 +6447,7 @@
                     "scriptData": [
                         {
                             "id": "7HVppZJ50MrBn6oS",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -6465,7 +6466,7 @@
                     "scriptData": [
                         {
                             "id": "bCsKEyCOw8kQqRZ6",
-                            "name": "Entangle (Beasts)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -6500,7 +6501,7 @@
                     "scriptData": [
                         {
                             "id": "XuCxx5xXIP3hcsDa",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -6603,7 +6604,7 @@
                         },
                         {
                             "id": "SCQe2V2T0STbxyrD",
-                            "name": "Cerulean Damage",
+                            "name": "Niebiańskie obrażenia",
                             "script": "[Script.Cjj4iLkdY1NaZRCi]"
                         }
                     ],
@@ -6651,7 +6652,7 @@
                     "scriptData": [
                         {
                             "id": "DFKGSUFwUVlkrDMt",
-                            "name": "Uszkodzenie Pancerza",
+                            "name": "Gnicie",
                             "script": "[Script.1wrPvP6lJwIAfmsl]"
                         }
                     ],
@@ -6674,7 +6675,7 @@
                     "scriptData": [
                         {
                             "id": "SHfgFfFjy3LPZcbn",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -6695,7 +6696,7 @@
                     "scriptData": [
                         {
                             "id": "66ekfI3zFgYh6OkE",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ]
@@ -6846,7 +6847,7 @@
                     "scriptData": [
                         {
                             "id": "pPiCdtq7UEorxdC4",
-                            "name": "Dispelling",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -6935,7 +6936,7 @@
                     "scriptData": [
                         {
                             "id": "6gCW5UI0VvFvdg6p",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -6957,7 +6958,7 @@
                     "scriptData": [
                         {
                             "id": "L7cmiQJyduuy5yX2",
-                            "name": "Corrosive Blood",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -6988,7 +6989,7 @@
                     "scriptData": [
                         {
                             "id": "84vwr1GgFvR2GsOD",
-                            "name": "Aethyric Armour",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -7013,7 +7014,7 @@
                     "scriptData": [
                         {
                             "id": "LLSTGmlrHxWMyTZD",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -7039,7 +7040,7 @@
                             "script": "[Script.52kbfuWrOh6dsTtd]"
                         },
                         {
-                            "name": "Remove",
+                            "name": "Usunięcie",
                             "script": "[Script.CDASLC4fWKSGQKf9]",
                             "id": "gGxgfn6fxA0gZjY1"
                         }
@@ -7064,7 +7065,7 @@
                     "scriptData": [
                         {
                             "id": "Ljp0hDFhffTnqY1O",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -7086,7 +7087,7 @@
                     "scriptData": [
                         {
                             "id": "04J17HSwQnbCdvar",
-                            "name": "Drop",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -7108,7 +7109,7 @@
                     "scriptData": [
                         {
                             "id": "kHHhy6V8OPhun6bu",
-                            "name": "Dark Vision",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -7137,7 +7138,7 @@
                     "scriptData": [
                         {
                             "id": "CTttcf8bbxqzpnrJ",
-                            "name": "Fearsome",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -7167,25 +7168,25 @@
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "(Leg) Movement Halved",
+                            "name": "(Noga) Ruch zmniejszony o połowę",
                             "script": "[Script.HOt2hHOiHDZ7oBgW]"
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Tests relying on mobility",
+                            "name": "Testy oparte na mobilności",
                             "script": "[Script.ipkkRffJh61WE7zR]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.2Qi1hwLYhdE6v6Hs]"
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Relies on two hands",
+                            "name": "Testy wymagające obu rąk",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.z926Cl2vxUfyLY0V]"
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Useless Arm",
+                            "name": "Bezużyteczna ręka",
                             "script": "[Script.VKpKq4RSbI1KkUQK]"
                         }
                     ],
@@ -7207,7 +7208,7 @@
                     "scriptData": [
                         {
                             "id": "RLBANkQIxxJGScd5",
-                            "name": "Aethyric Arms",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -7239,7 +7240,7 @@
                     "scriptData": [
                         {
                             "id": "3p5MDoKzHR3EEJ0H",
-                            "name": "Arrow Shield",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -7283,7 +7284,7 @@
                     "scriptData": [
                         {
                             "id": "7ezLLIq97hr1UVOt",
-                            "name": "Dome",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -7302,7 +7303,7 @@
                     "scriptData": [
                         {
                             "id": "PSf11k3Vg2vUxUwc",
-                            "name": "Terrifying",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -7328,13 +7329,13 @@
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         },
                         {
-                            "name": "No Fortune Points",
+                            "name": "Brak punktów szczęścia",
                             "id": "zFqJGepPilWiSBCm",
                             "script": "[Script.DMQ0taEpBUJU5njV]"
                         },
                         {
                             "id": "zFqJGepPilWiSBCm",
-                            "name": "Cannot edit Fortune Points",
+                            "name": "Nie można edytować punktów szczęścia",
                             "script": "[Script.6xTtJEhRc4OjcDTf]"
                         }
                     ],

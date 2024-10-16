@@ -1,0 +1,2 @@
+//*** Ukojenie Rhyi
+return true;

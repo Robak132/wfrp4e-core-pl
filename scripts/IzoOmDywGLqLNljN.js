@@ -1,16 +1,20 @@
-let currentArtisticSkill = this.actor.getFlag("wfrp4e", "currentArtisticSkill");
-if (currentArtisticSkill !== null) {
-  let currentCareer = this.actor.system.currentCareer;
-  let existingSkill = this.actor.itemTypes.skill.find(i => i.name === currentArtisticSkill);
+//*** Czarownica!
+let skill = `Język (Magiczny)`;
+let currentCareer = this.actor.system.currentCareer;
+let existingSkill = this.actor.itemTypes.skill.find(i => i.name == skill);
 
-  if (!currentCareer) {
-    return;
-  }
+if (!currentCareer) return
 
-  let inCurrentCareer = currentCareer.system.skills.includes(currentArtisticSkill);
-  if (existingSkill && inCurrentCareer && currentArtisticSkill != null) {
-    existingSkill.system.advances.costModifier = -5;
-  } else {
-    currentCareer.system.skills.push(currentArtisticSkill);
-  }
+
+let inCurrentCareer = currentCareer.system.skills.concat(currentCareer.system.addedSkills).includes(skill);
+let witchAdded = actor.getFlag("wfrp4e", "witchAdded") || {};
+if (existingSkill && inCurrentCareer && !witchAdded[existingSkill.name])
+{
+	existingSkill.system.advances.costModifier = -5;
+}
+else 
+{
+	witchAdded[skill] = true;
+	currentCareer.system.addedSkills.push(skill);
+	foundry.utils.setProperty(this.actor, "flags.wfrp4e.witchAdded", witchAdded)
 }

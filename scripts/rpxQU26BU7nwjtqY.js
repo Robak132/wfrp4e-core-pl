@@ -1,3 +1,4 @@
+//*** Krwawiąca dłoń
 let location = this.item.system.location.key
 let test = await this.actor.setupCharacteristic("dex", {context : {failure : `<strong>${this.effect.name}</strong>: Upuść przedmiot!`}, skipTargets: true, appendTitle :  " - " + this.effect.name, fields : {difficulty : "average"}})
 await test.roll();
@@ -9,7 +10,7 @@ if (location && test.failed)
 
     if (dropped.length)
     {
-        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(", ")}!`)
+        this.script.notification(`Upuszczono ${dropped.map(i => i.name).join(", ")}!`)
         for(let weapon of dropped)
         {
             await weapon.system.toggleEquip();

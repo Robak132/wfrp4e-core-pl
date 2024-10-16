@@ -1,1 +1,2 @@
-this.script.scriptNotification(`Nie można wejść: ${this.effect.name}!`); this.actor.addCondition("broken");
+//*** Ochrona Phâ
+this.script.notification(`Nie można wejść: ${this.effect.name}!`); this.actor.addCondition("broken");

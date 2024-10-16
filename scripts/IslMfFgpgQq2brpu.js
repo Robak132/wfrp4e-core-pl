@@ -1,5 +1,6 @@
+//*** On Deadly Ground
 if (this.actor.hasCondition("broken"))
 {
     this.actor.removeCondition("broken")
-    this.script.scriptNotification(`Nie może otrzymać Paniki`);
+    this.script.notification(`Nie można otrzymać stanu Panika`);
 }

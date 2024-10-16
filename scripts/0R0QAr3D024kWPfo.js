@@ -1,3 +1,4 @@
+//*** Mutacja
 let table = game.wfrp4e.tables.findTable("mutatephys");
 if (!table)
 {
@@ -9,7 +10,7 @@ let item = await fromUuid(uuid);
 
 if (item)
 {
-    this.script.scriptNotification(`${item.name} added`)
+    this.script.notification(`Dodano: ${item.name}`)
     this.actor.createEmbeddedDocuments("Item", [item])
 }
 else 
