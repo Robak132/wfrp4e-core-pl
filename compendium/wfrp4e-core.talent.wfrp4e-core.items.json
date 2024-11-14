@@ -1797,13 +1797,13 @@
         },
         "Coolheaded": {
             "id": "JLzJws09GMw9GWBV",
-            "name": "Zimna krew",
+            "name": "Zimna Krew",
             "description": "<p>Zyskujesz premię +5 do początkowej wartości Siły Woli, co nie wlicza się do sumy Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.JLzJws09GMw9GWBV",
             "effects": {
                 "QTmmZBqgkJMBn9KT": {
                     "id": "QTmmZBqgkJMBn9KT",
-                    "name": "Zimna krew"
+                    "name": "Zimna Krew"
                 }
             }
         },

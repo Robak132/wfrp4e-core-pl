@@ -157,14 +157,14 @@
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
-                    "name": "Sztuka ()",
+                    "name": "Sztuka (Dowolna)",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.5wl3KH6hXsGwUcZa.Item.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
-                    "name": "Występy ()",
+                    "name": "Występy (Dowolne)",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.5wl3KH6hXsGwUcZa.Item.0CwV96kTDRF0jUhk"
@@ -368,14 +368,14 @@
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
-                    "name": "Sztuka ()",
+                    "name": "Sztuka (Dowolna)",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.7ihBjcHcewZ2Obul.Item.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
-                    "name": "Występy ()",
+                    "name": "Występy (Dowolne)",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.7ihBjcHcewZ2Obul.Item.0CwV96kTDRF0jUhk"
@@ -509,7 +509,7 @@
         "Griffon": {
             "id": "8g9rnHLiZ1pJcPPt",
             "name": "Gryf",
-            "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak @UUID[Compendium.wfrp4e-core.actors.RiXpMLex8SZf6gaQ]{hipogryfy} lub @UUID[Compendium.wfrp4e-core.actors.XtVkAVgZRIIgrBXb]{mantikory}. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w @UUID[Compendium.wfrp4e-altdorf.journals.cDOlXEpTvnuaOJ0P.JournalEntryPage.ulseg2IAlTWy7m3s]{Imperialnym Zwierzyńcu} w @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorfie} Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach.</p></section>",
+            "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak @UUID[Compendium.wfrp4e-core.actors.RiXpMLex8SZf6gaQ]{hipogryfy} lub @UUID[Compendium.wfrp4e-core.actors.XtVkAVgZRIIgrBXb]{mantikory}. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w @UUID[Compendium.wfrp4e-altdorf.journals.cDOlXEpTvnuaOJ0P.JournalEntryPage.ulseg2IAlTWy7m3s]{Imperialnym Zwierzyńcu} w @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorfie} Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.8g9rnHLiZ1pJcPPt",
             "gender": "Różne",
             "species": "Gryf",
@@ -624,7 +624,7 @@
         "Jabberslythe": {
             "id": "9q8QzWB4o7aj6ZxL",
             "name": "Dżabersmok",
-            "description": "<section id=\"secret-ZoRnOiMJetjmYnjP\" class=\"secret\"><p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada – wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. </p><p>Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko.</p></section>",
+            "description": "<section id=\"secret-ZoRnOiMJetjmYnjP\" class=\"secret\"><p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada – wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. </p><p>Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.9q8QzWB4o7aj6ZxL",
             "gender": "Różne",
             "species": "Dżabersmok",
@@ -725,7 +725,7 @@
         "Chaos Warrior": {
             "id": "a05lQsGjSv62wF0U",
             "name": "Wojownik Chaosu",
-            "description": "<section id=\"secret-UmFQtYU7axewKKpu\" class=\"secret\"><blockquote><p>Największe zagrożenie leży na ponurej północy. To wytwór innego miejsca, innego czasu, który spadł na nas z powodu nieszczęścia lub błędu dawno martwych bogów. Żarłocznie pożera nasz świat, trzęsąc się z niecierpliwości, wysyłając hordy najbardziej wojowniczych i zazdrosnych ludów ze wszystkich: naszych własnych krewniaków, plemiona ludzi.</p><p style=\"text-align: right;\"><em>— Phitzer, wissenlandzki czarownik</em></p></blockquote>\n<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach – wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą\nmogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p></section>",
+            "description": "<section id=\"secret-UmFQtYU7axewKKpu\" class=\"secret\"><blockquote><p>Największe zagrożenie leży na ponurej północy. To wytwór innego miejsca, innego czasu, który spadł na nas z powodu nieszczęścia lub błędu dawno martwych bogów. Żarłocznie pożera nasz świat, trzęsąc się z niecierpliwości, wysyłając hordy najbardziej wojowniczych i zazdrosnych ludów ze wszystkich: naszych własnych krewniaków, plemiona ludzi..</p><p style=\"text-align: right;\"><em>— Phitzer, wissenlandzki czarownik</em></p></blockquote>\n<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach – wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą\nmogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.a05lQsGjSv62wF0U",
             "gender": "???",
             "species": "???",
@@ -955,7 +955,7 @@
         "Horse": {
             "id": "b1R5sW6lYIViJ2ki",
             "name": "Koń",
-            "description": "<section id=\"secret-KVVskb3Id1ELGbjT\" class=\"secret\"><p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności.</p></section>",
+            "description": "<section id=\"secret-KVVskb3Id1ELGbjT\" class=\"secret\"><p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.b1R5sW6lYIViJ2ki",
             "gender": "Różne",
             "species": "Koń",
@@ -989,7 +989,7 @@
         "Minotaur": {
             "id": "cAK1bMj1ne7HPcxI",
             "name": "Minotaur",
-            "description": "<section id=\"secret-rgCbHIibGUe2g7ZT\" class=\"secret\"><p>Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom.</p></section>",
+            "description": "<section id=\"secret-rgCbHIibGUe2g7ZT\" class=\"secret\"><p>Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.cAK1bMj1ne7HPcxI",
             "gender": "Różne",
             "species": "Minotaur",
@@ -1315,7 +1315,7 @@
                 },
                 "PvvKNlPhknsCQLfe": {
                     "id": "aE3pyW20Orvdjzj0",
-                    "name": "Nienawiść",
+                    "name": "Nienawiść (Grupa)",
                     "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0",
                     "specification": "Zielonoskórzy",
@@ -1518,7 +1518,7 @@
                 },
                 "D2Q5PMiivGzUO6Ij": {
                     "specification": "Zielonoskórzy",
-                    "name": "Nienawiść",
+                    "name": "Nienawiść (Grupa)",
                     "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0",
                     "id": "aE3pyW20Orvdjzj0",
@@ -2729,7 +2729,7 @@
                 "e2VIIE1u4gCRRgyA": {
                     "specification": "Wszystko",
                     "id": "aE3pyW20Orvdjzj0",
-                    "name": "Nienawiść",
+                    "name": "Nienawiść (Grupa)",
                     "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
@@ -3345,7 +3345,7 @@
                 "ZcyLIms5jaQwM44m": {
                     "id": "ZcyLIms5jaQwM44m",
                     "name": "Zionięcie (Kwas)",
-                    "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+                    "description": "<p><p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
                     "originalName": "Zionięcie (Kwas)",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.VMceSpLje0J7lfP0.Item.ZcyLIms5jaQwM44m",
                     "specification": "#",
@@ -3644,7 +3644,7 @@
                 },
                 "sgcBPlKbvanYQSo5": {
                     "specification": "Żywe Istoty",
-                    "name": "Nienawiść",
+                    "name": "Nienawiść (Grupa)",
                     "originalName": "Nienawiść",
                     "id": "aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
@@ -3822,7 +3822,7 @@
                 "j0MIzIYwSmHtuxOZ": {
                     "specification": "Drapieżniki",
                     "id": "aE3pyW20Orvdjzj0",
-                    "name": "Nienawiść",
+                    "name": "Nienawiść (Grupa)",
                     "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
@@ -3980,7 +3980,7 @@
                 "roSjnlW56LH4gCMv": {
                     "specification": "Krasnoludy",
                     "id": "aE3pyW20Orvdjzj0",
-                    "name": "Nienawiść",
+                    "name": "Nienawiść (Grupa)",
                     "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób:</p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
