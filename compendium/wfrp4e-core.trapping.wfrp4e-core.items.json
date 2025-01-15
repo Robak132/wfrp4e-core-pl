@@ -1547,7 +1547,7 @@
         "Healing Poultice": {
             "id": "s2lBWQFQt6M5Pngb",
             "name": "Kataplazm leczniczy",
-            "description": "<p><strong>Przygotowanie:</strong> Maść ([[/r 1d10]]{1d10 tygodni})<br><strong>Wytworzenie wymaga:</strong> </p><hr><p>Ten okład leczniczy o paskudnym zapachu wykonany jest ze zwierzęcego łajna i uryny, połączonych z pewną liczbą pospolitych ziół, takich jak sigmafoil, tarabet i waleriana. Rana Krytyczna obłożona kataplazmem leczniczym nie jest zagrożona Mniejszą Infekcją.</p>",
+            "description": "<p>Ten okład leczniczy o paskudnym zapachu wykonany jest ze zwierzęcego łajna i uryny, połączonych z pewną liczbą pospolitych ziół, takich jak sigmafoil, tarabet i waleriana. Rana Krytyczna obłożona kataplazmem leczniczym nie jest zagrożona Mniejszą Infekcją.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.s2lBWQFQt6M5Pngb"
         },
         "Legal Document": {
@@ -1960,6 +1960,7 @@
     "folders": {
         "Trappings": "Wyposażenie",
         "Blessings": "Błogosławieństwa",
+        "Uliric": "Ulryk",
         "Ammunition": "Amunicja",
         "Armour": "Pancerze",
         "Weapons": "Broń",

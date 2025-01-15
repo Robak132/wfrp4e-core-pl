@@ -29,9 +29,9 @@ for (let talent of talents)
     {
         items.push(talentItem.toObject());
     }
-    else
+    else 
     {
-                ui.notifications.warn(`Nie odnaleziono talentu: ${talent}`, {permanent : true})
+        ui.notifications.warn(`Nie odnaleziono talentu: ${talent}`, {permanent : true})
     }
 }
 
