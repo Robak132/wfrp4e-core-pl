@@ -747,7 +747,7 @@
         },
         "Fast Hands": {
             "id": "9sMAf0xmehjEmUao",
-            "name": "Ruchliwe dłonie",
+            "name": "Ruchliwe Dłonie",
             "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.9sMAf0xmehjEmUao",
             "tests": "Test Zwinnych Palców, Broni Białej (Bijatyka), aby dotknąć przeciwnika",
@@ -763,7 +763,7 @@
                         }
                     ],
                     "id": "1YrrAMWA7O0Czg7U",
-                    "name": "Ruchliwe dłonie"
+                    "name": "Ruchliwe Dłonie"
                 }
             }
         },
