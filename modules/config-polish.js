@@ -338,7 +338,6 @@ Hooks.on("i18nInit", async function () {
     nurgle: "",
     slaanesh:
       "Tradycja Slaanesha przynosi ból i ekstazę, wszystko w imię Księcia Bólu i Przyjemności dla jego wiecznego zadowolenia, łącząc perwersyjną mieszankę Ametystowego, Złotego i Jadeitowego Wiatru w coś pokręconego i egzotycznego. Efekt Tradycji: Czarnoksiężnik Slaanesha jest biegły w sztuce dostarczania przyjemności i bólu. Możesz zadać dodatkową ranę za każdy Stan Ogłuszenia lub Paniki odniesiony przez cele twoich zaklęć.",
-    tzeentch: "",
   };
 
   WFRP4E.loreEffects = {
@@ -648,6 +647,28 @@ Hooks.on("i18nInit", async function () {
         ],
       },
     },
+    tzeentch: {
+      name: "Tradycja Tzeentcha",
+      icon: "modules/wfrp4e-core/icons/spells/tzeentch.png",
+      transfer: true,
+      flags: {
+        wfrp4e: {
+          effectApplication: "apply",
+          effectTrigger: "oneTime",
+          lore: true,
+          script: `
+          if (this.actor.isOwner)
+            args.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure: "Otrzymano 1 punkt korupcji", success : "Otrzymano 1 punkt szczęścia"}}).then(async test => {
+            await test.roll();
+            if (test.result.result === "success" && args.actor.data.type === "character") {
+              args.actor.update({"data.status.fortune.value" : args.actor.data.data.status.fortune.value + 1})
+            } else if (test.result.result === "failure" && args.actor.data.type === "character") {
+              args.actor.update({"data.status.corruption.value" : args.actor.data.data.status.corruption.value + 1})
+            }
+          })`
+        }
+      }
+    }
   };
 
   WFRP4E.symptomEffects = {
@@ -2244,7 +2265,6 @@ Hooks.on("init", () => {
 		]
 
 		foundry.utils.mergeObject(this.propertyEffects, {
-
 			// Qualities
 			accurate: {
 				name : game.i18n.localize("PROPERTY.Accurate"),
@@ -2491,9 +2511,6 @@ Hooks.on("init", () => {
 					},
 				}
 			},
-
-
-
 
 			// Flaws
 			dangerous: {
