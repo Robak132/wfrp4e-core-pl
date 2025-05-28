@@ -65,7 +65,7 @@
     },
     "compatibility": {
         "minimum": "12",
-        "maximum": "12",
+        "maximum": "13",
         "verified": "12"
     },
     "esmodules": [

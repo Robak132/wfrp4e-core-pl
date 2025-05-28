@@ -1651,7 +1651,6 @@ Hooks.on("init", () => {
 							`
 						}
 					]
-				}
         },
       },
       defensive: {
@@ -1707,9 +1706,6 @@ Hooks.on("init", () => {
 						}
 					]
 				}
-            },
-          ],
-        },
       },
       consumealcohol1: {
         name: game.i18n.localize("EFFECT.ConsumeAlcohol") + " 1",
@@ -2243,8 +2239,7 @@ Hooks.on("init", () => {
             value: null,
             numbered: false,
           },
-        },
-				}
+        }
 			}
 		]
 
