@@ -42,7 +42,6 @@ Hooks.on("init", () => {
     
 
         setTimeout(async () => {
-            
             const batter = game.wfrp4e.config.groupAdvantageActions.find(a => a.name == "Batter");
             const trick = game.wfrp4e.config.groupAdvantageActions.find(a => a.name == "Trick");
             const additionalEffort = game.wfrp4e.config.groupAdvantageActions.find(a => a.name == "Additional Effort");
