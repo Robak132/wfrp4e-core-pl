@@ -2,7 +2,7 @@ let chatData = { whisper: ChatMessage.getWhisperRecipients("GM") }
 let message = ""
 
 let wounds = foundry.utils.duplicate(this.actor.status.wounds)
-let regenRoll = await new Roll("1d10").roll();
+let regenRoll = await new Roll("1d10").roll({allowInteractive : false});
 let regen = regenRoll.total;
 
 if (wounds.value >= wounds.max)
@@ -19,21 +19,21 @@ if (wounds.value > 0)
 
     if (regen == 10)
     {
-        message += `<br>Dodatkowo zregenerowano krytyczną ranę.`;
+        message += `<br>Dodatkowo zregenerowano Ranę Krytyczną.`;
     }
 }
 else if (regen >= 8) 
 {
-    message += `<b>${this.actor.name}</b>: wylosowano ${regen} i odzyskano 1 punkt Żywotności.`;
+    message += `<b>${this.actor.name}</b> - Rzut ${regen}: odzyskano 1 punkt Żywotności.`;
     wounds.value += 1
     if (regen == 10)
     {
-        message += `<br>Dodatkowo zregenerowano krytyczną ranę.`;
+        message += `<br>Dodatkowo zregenerowano Ranę Krytyczną.`
     }
 }
 else 
 {
-    message += `<b>${this.actor.name}</b>: wylosowano ${regen} - brak efektu.`;
+    message += `<b>${this.actor.name}</b> - Rzut ${regen}: Brak efektu.`
 }
 
 await this.actor.update({ "system.status.wounds": wounds })

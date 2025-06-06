@@ -41,11 +41,11 @@ let choice2 = [
 let choice3 = [
     {
         type : "armour",
-        name : "Płytowy Napierśnik"
+        name : "Płytowy napierśnik"
     },
     {
         type : "armour",
-        name : "Płytowe Naramienniki"
+        name : "Płytowe naramienniki"
     },
     {
         type : "armour",
@@ -53,12 +53,12 @@ let choice3 = [
     },
     {
         type : "armour",
-        name : "Płytowe Nagolenniki"
+        name : "Płytowe nagolenniki"
     },
 ]
 
-let choice = await Dialog.wait({
-    title : "Wybór zbroi",
+let choice = await foundry.applications.api.DialogV2.wait({
+    window : {title : "Wybór zbroi"},
     content : 
     `<p>
     Wybierz
@@ -69,26 +69,29 @@ let choice = await Dialog.wait({
     <li>Płyta</li>
     </ol> 
     `,
-    buttons : {
-        1 : {
+    buttons : [
+        {
+            action : 1,
             label : "Kolczuga",
             callback : () => {
                 return choice1
             }
         },
-        2 : {
+        {
+            action : 2,
             label : "Kolczuga i skóra",
             callback : () => {
                 return choice2
             }
         },
-        3 : {
+        {
+            action : 3,
             label : "Płyta",
             callback : () => {
                 return choice3
             }
         }
-    }
+    ]
 })
 
 let updateObj = this.actor.toObject();

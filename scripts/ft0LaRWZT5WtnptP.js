@@ -6,7 +6,7 @@ if (advantage > 0)
 }
 else 
 {
-    return this.script.notification("Niewystarczająca liczba Punktów Przewag!", "error")
+    return this.script.notification("Niewystarczająca liczba Przewagi!", "error")
 }
 
 let test = await this.actor.setupTrait(this.item, {fields : {slBonus : advantage}})

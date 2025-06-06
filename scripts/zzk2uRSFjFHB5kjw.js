@@ -1,3 +1,4 @@
+
    let roll = Math.ceil(CONFIG.Dice.randomUniform() * 10)
    if (args.test.isFumble && roll == 1 && !args.test.result.misfire)
   {

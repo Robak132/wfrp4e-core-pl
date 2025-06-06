@@ -7,7 +7,7 @@ if (args.actor.characteristics.i.value <= 0)
    i_gain += (await new Roll("2d10").roll()).total
 }
 
-msg = `<b>${this.actor.prototypeToken.name}</b>: otrzymano punkty Inicjatywy w liczbie ${i_gain}`
+msg = `<b>${this.actor.prototypeToken.name}</b>: otrzymano ${i_gain} Inicjatywy`
 
 let newValue = i_gain + args.actor.characteristics.i.modifier
 
@@ -21,6 +21,6 @@ let desc = hitloc.description
 
 this.effect.updateSource({"flags.wfrp4e.location" : value})
 
-msg += ` gdy nowe oczy pojawiają się w lokacji: ${desc}`
+msg += ` gdy nowe oczy pojawiają się na: ${desc}`
 
 this.script.message(msg)

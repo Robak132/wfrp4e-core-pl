@@ -1,13 +1,13 @@
-if (!this.item.name.includes("(") || this.item.system.tests.value.toLowerCase().includes("teren") || this.item.system.tests.value.toLowerCase().includes("wybrany"))
+if (!this.item.name.includes("(") || this.item.system.tests.value.includes("Teren") || this.item.system.tests.value.toLowerCase().includes("()"))
 {
     let tests = this.item.system.tests.value
     let name = this.item.name
 
     // If name already specifies, make sure tests value reflects that
-    if (name.includes("(") && !name.toLowerCase().includes("wybrany"))
+    if (name.includes("(") && !name.toLowerCase().includes("()"))
     {
         let terrain = name.split("(")[1].split(")")[0]
-        tests = tests.replace("Wybrany Teren", terrain)
+        tests = tests.replace("Teren", terrain)
     }
     else // If no sense specified, provide dialog choice
     {

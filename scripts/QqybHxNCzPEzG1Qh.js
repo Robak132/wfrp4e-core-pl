@@ -1,1 +1,1 @@
-return args.fields.dualWielding || args.options.dualWieldOffhand
+return args.context.dualWieldOffhand

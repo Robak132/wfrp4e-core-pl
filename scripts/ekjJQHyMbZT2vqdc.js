@@ -5,5 +5,5 @@ this.item.setFlag("wfrp4e", "uses", uses);
 if (uses >= 3)
 {
 	this.effect.update({"system.transferData.type" : "other"})
-	this.script.notification(`Zurzyty`);
+	this.script.notification(`Zużyty`);
 }

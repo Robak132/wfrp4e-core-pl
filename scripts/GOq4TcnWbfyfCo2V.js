@@ -1,11 +1,11 @@
-this.script.scriptNotification(`Uleczone Rany: ${this.actor.characteristics.t.bonus * 2}`)
+this.script.notification(`Uleczone Rany: ${this.actor.characteristics.t.bonus * 2} Wounds`)
 await this.actor.modifyWounds(this.actor.characteristics.t.bonus * 2)
 
-let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {skipTargets: true, appendTitle :  ` - Skutki Uboczne`,fields : {difficulty : "difficult"}})
+let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {skipTargets: true, appendTitle :  ` - Skutki uboczne`,fields : {difficulty : "difficult"}})
 await test.roll();
 if (test.failed)
 {
-    let roll = await new Roll("1d10").roll();
+    let roll = await new Roll("1d10").roll({allowInteractive : false});
     await roll.toMessage(this.script.getChatData())
     if (roll.total <= 3)
     {

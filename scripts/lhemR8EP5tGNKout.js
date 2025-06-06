@@ -1,4 +1,4 @@
-let test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {fields: {difficulty : "average"}, skipTargets: true, appendTitle :  ` - ${this.effect.name}`, context : {failure : "Cierpisz na Irraconalne Lęki"}})
+let test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {fields: {difficulty : "average"}, skipTargets: true, appendTitle :  ` - ${this.effect.name}`, context : {failure : "Cierpisz na Irracjonalne Lęki"}})
 await test.roll();
 if (test.failed)
 {

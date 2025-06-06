@@ -1,4 +1,4 @@
-let test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {skipTargets: true, appendTitle :  ` - ${this.effect.name}`, context : {failure: "Dodatkowy Punkt Zepsucia"}})
+let test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {skipTargets: true, appendTitle :  ` - ${this.effect.name}`, context : {failure: "Zyskano 1 Punkt Zepsucia"}})
 await test.roll();
 if (test.failed && this.actor.type == "character")
 {

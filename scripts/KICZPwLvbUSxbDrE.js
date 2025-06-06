@@ -14,5 +14,5 @@ if (item)
 }
 else 
 {
-    ui.notifications.error("Nie odnaleziono przddmiotu o kluczu: " + uuid)
+    ui.notifications.error("Nie odnaleziono przedmiotu o kluczu: " + uuid)
 }

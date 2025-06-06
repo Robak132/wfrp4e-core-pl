@@ -5,5 +5,5 @@ if (this.actor.hasCondition("bleeding"))
 }
 else 
 {
-    this.script.notification("Brak Stanów Krwawienia do usunięcia");
+    this.script.notification("Brak Stanów Krwawienia");
 }

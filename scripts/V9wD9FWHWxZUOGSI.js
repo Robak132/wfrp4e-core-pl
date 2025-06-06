@@ -11,5 +11,5 @@ else
     fatigued = Math.max(0, fatigued)
     if (fatigued)
         this.actor.addCondition("fatigued", fatigued)
-    this.script.notification(`Otrzymano Stany Zmęczenia w liczbie: ${fatigued}`)
+    this.script.notification(`Otrzymano ${fatigued} Stanów Zmęczenia`)
 }

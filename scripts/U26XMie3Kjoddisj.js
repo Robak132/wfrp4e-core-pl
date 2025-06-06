@@ -6,5 +6,5 @@ if (stunned)
 }
 else 
 {
-	this.script.notification(`Brak Stanów Oszołomienia do usunięcia`)
+	this.script.notification(`Brak Stanów Oszołomienia`)
 }

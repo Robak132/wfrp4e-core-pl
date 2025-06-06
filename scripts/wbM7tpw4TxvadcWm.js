@@ -9,7 +9,7 @@ for(let item of items)
     }
     else 
     {
-        msg += `<p>${item.name}: rozsypano w pył!</p>` 
+        msg += `<p>${item.name} rozsypuje się w pył!</p>`
         await item.update({name : item.name + " (Pył)"})
     }
 }

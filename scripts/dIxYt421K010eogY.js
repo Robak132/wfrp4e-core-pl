@@ -1,6 +1,6 @@
 
                             let modifier = 0
-                            if (this.effect.name.includes("Umiark"))
+                            if (this.effect.name.includes("Umiarkowane"))
                                 modifier = -20
                             else
                                 modifier = -10

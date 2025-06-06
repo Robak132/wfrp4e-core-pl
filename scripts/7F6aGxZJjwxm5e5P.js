@@ -8,7 +8,7 @@ if (args.test.result.castOutcome == "failure")
         }
         else if (Number.isNumeric(value))
         {
-            this.script.notification(`Utrcone Punkty Żywotności: ${value}`)
+            this.script.notification(`Utracone Punkty Żywotności: ${value}`)
             this.actor.modifyWounds(-1 * value)
             await this.item.system.toggleEquip();
             args.test.addSL(value);

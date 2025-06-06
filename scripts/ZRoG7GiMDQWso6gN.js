@@ -1,5 +1,5 @@
 const repaired_message = `<p>Zakończono naprawę: <em>${this.item.name}</em>.</p>`;
-const test = 'Rzrmiosło (Stolarstwo)';
+const test = 'Rzrmiosło (Stolarz)';
 const difficulty = 'difficult';
 const target = 30;
 

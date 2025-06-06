@@ -17,7 +17,7 @@ if (!name)
 if (item)
 {
     item.update({
-        name : item.name.split("(")[0] + ` (${n})`, 
+        name : item.name.split("(")[0] + ` (${name})`, 
         "system.tests.value" : item.system.tests.value.split("(")[0] + ` (${name}`
     })
 }

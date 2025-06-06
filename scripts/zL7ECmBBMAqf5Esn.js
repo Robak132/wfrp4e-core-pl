@@ -1,4 +1,4 @@
-let hasMagazine = await Dialog.confirm({content: "<p>Czy statek ma magazyn lub inny rodzaj przechowalni dla Prochu?</p>"});
+let hasMagazine = await foundry.applications.api.DialogV2.confirm({window : {title : this.effect.name}, content: "<p>Czy statek ma magazyn lub inny rodzaj przechowalni Prochu?</p>"});
 
 if (!hasMagazine) return;
 
@@ -27,4 +27,4 @@ for (let i = 0; i < roll.total; i++) {
 const items = await this.actor.createEmbeddedDocuments("Item", crits);
 const speaker = ChatMessage.getSpeaker({actor: this.actor});
 const uuids = items.map(i => `@UUID[${i.uuid}]`);
-this.script.message(`<p><b>${this.item.name}</b> spowodował dodatkowo trafienia krytyczne w kadłub: ${anchor.outerHTML}!</p><ul><li>${uuids.join('<li>')}</ul>`)
+this.script.message(`<p><b>${this.item.name}</b> spowodował dodatkowo ${anchor.outerHTML} Trafienia Krytyczne w kadłub!</p><ul><li>${uuids.join('<li>')}</ul>`)

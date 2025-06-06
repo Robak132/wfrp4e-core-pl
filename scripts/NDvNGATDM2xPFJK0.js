@@ -6,8 +6,8 @@ teeth = teeth.toObject();
 tongue = tongue.toObject();
 
 
-let roll = await new Roll("1d10").roll();
-roll.toMessage(this.script.getChatData({flavor : "Utrata Zębów"}))
+let roll = await new Roll("1d10").roll({allowInteractive : false});
+roll.toMessage(this.script.getChatData({flavor : "Utracone zęby"}))
 
 teeth.system.location.value = `${roll.total} ${teeth.system.location.value}`
 brokenbone.system.location.value = "Szczęka"

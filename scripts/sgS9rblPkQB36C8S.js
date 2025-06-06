@@ -14,11 +14,11 @@ let index = game.packs
 	return i
 })
 
-let choice = await ItemDialog.create(index, 1, "Wybierz Umiejętność Rzemieślniczą")
+let choice = await ItemDialog.create(index, 1, {text : "Wybierz Rzemiosło lub przejdź dalej i wpisz je ręcznie.", title : this.effect.name})
 let text;
 if (!choice[0])
 {
-    let custom = await ValueDialog.create({text : "wpisz własny rodzaj rzemiosła", title : "Własne Rzemiosło"});  
+    let custom = await ValueDialog.create({text : "Wpisz niestandardowe Rzemiosło", title : "Niestandardowe Rzemiosło"});
     text = custom || ""
 }
 else 

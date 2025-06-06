@@ -11,7 +11,7 @@ if (this.item.system.tests.value.includes("(Grupa Społeczna)"))
     }
     else
     {
-        let value = await ValueDialog.create({text : "Napisz, czyjej Etykiety dotyczy talentu", title : this.effect.name});
+        let value = await ValueDialog.create({text : "Napisz, czyjej Etykiety dotyczy Talent", title : this.effect.name});
         if (value)
         {
             name = `${name.split("(")[0].trim()} (${value})`
@@ -19,5 +19,4 @@ if (this.item.system.tests.value.includes("(Grupa Społeczna)"))
         }
     }
     this.item.updateSource({name, "system.tests.value" : tests})
-    this.item.updateSource({"name" : name});
 }

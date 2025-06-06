@@ -2,7 +2,7 @@ let criticals = this.actor.itemTypes.critical;
 
 if (criticals.length)
 {
-    this.script.notification("Nie może doznać krytycznych ran");
+    this.script.notification("Nie utrzymać Rany Krytycznej");
     this.actor.deleteEmbeddedDocuments("Item", criticals.map(i => i.id))
 }
 

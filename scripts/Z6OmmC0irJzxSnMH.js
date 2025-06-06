@@ -2,7 +2,7 @@ let chatData = { whisper: ChatMessage.getWhisperRecipients("GM") }
 let message = ""
 
 let wounds = foundry.utils.duplicate(this.actor.status.wounds)
-let regenRoll = await new Roll("1d10").roll();
+let regenRoll = await new Roll("1d10").roll({allowInteractive : false});
 let regen = regenRoll.total;
 
 if (wounds.value >= wounds.max)
@@ -19,7 +19,7 @@ if (wounds.value > 0)
 
     if (regen == 10)
     {
-        message += `<br>Dodatkowo zregenerowano krytyczną ranę.`
+        message += `<br>Dodatkowo zregenerowano Ranę Krytyczną.`
     }
 }
 else if (regen >= 8) 
@@ -28,7 +28,7 @@ else if (regen >= 8)
     wounds.value += 1
     if (regen == 10)
     {
-        message += `<br>Dodatkowo zregenerowano krytyczną ranę.`
+        message += `<br>Dodatkowo zregenerowano Ranę Krytyczną.`
     }
 }
 else 
@@ -39,7 +39,7 @@ else
 await this.actor.update({ "system.status.wounds": wounds })
 this.script.message(message, { whisper: ChatMessage.getWhisperRecipients("GM") })
 
-if (this.actor.Species != "Ogr")
+if (this.actor.Species?.toLowerCase() != "ogr")
 {
    this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {skipTargets: true, appendTitle :  " - " + this.effect.name, fields : {difficulty : "average"}}).then(test => {
        test.roll()

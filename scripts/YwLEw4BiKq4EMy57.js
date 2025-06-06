@@ -5,10 +5,10 @@ if (args.actor.characteristics.fel.value <= 0)
    fel_gain += (await new Roll("2d10").roll()).total
 }
 
-let msg = `<b>${this.actor.prototypeToken.name}</b>: otrzymano punkty Inteligencji w liczbie: ${i_gain}`
+let msg = `<b>${this.actor.prototypeToken.name}</b>: otrzymano ${i_gain} Inteligencji`
 
 if (fel_gain)
-   msg += ` oraz Ogłady w liczbie: ${fel_gain}`
+   msg += ` oraz ${fel_gain} Ogłady`
 
 
 let newInt = i_gain + args.actor.characteristics.int.modifier

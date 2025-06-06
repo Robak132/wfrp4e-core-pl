@@ -4,7 +4,7 @@ if (args.equipped)
 {  
   this.actor.createEmbeddedDocuments("ActiveEffect", [this.item.effects.contents[1]?.convertToApplied()])  
   this.script.message(`<strong>${this.item.name}</strong> została założona przez ${this.actor.name}. <br>
-      Jeśli maska jest noszona przez ponad godzinę lub wykorzystane są jej efekty, postać jest wystawiona na @Corruption[moderate]{Przeciętne Zepsucie}`,
+      Jeśli maska jest noszona przez ponad godzinę lub wykorzystane są jej efekty, postać jest wystawiona na @Corruption[moderate]{Umiarkowane Zepsucie}`,
       {whisper: ChatMessage.getWhisperRecipients("GM")}) 
 }
 

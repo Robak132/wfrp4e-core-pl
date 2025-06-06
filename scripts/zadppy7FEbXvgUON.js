@@ -1,15 +1,15 @@
  let characteristics = {
-                    "ws" : 5,
-                    "bs" : 0,
-                    "s" : 0,
-                    "t" : 0,
-                    "i" : 0,
-                    "ag" : 10,
-                    "dex" : 10,
-                    "int" : 0,
-                    "wp" : 0,
-                    "fel" : 5
-                }
+    "ws" : 5,
+    "bs" : 0,
+    "s" : 0,
+    "t" : 0,
+    "i" : 0,
+    "ag" : 10,
+    "dex" : 10,
+    "int" : 0,
+    "wp" : 0,
+    "fel" : 5
+}
 let skills = ["Percepcja", "Zwinne Palce", "Skradanie (Miasto)"]
 let skillAdvancements = [10, 10, 10]
 let talents = ["Przestępca", "Etykieta (Przestępcy)"]
