@@ -1,1 +1,3 @@
-,args.fields.slBonus++;,args.fields.slBonus++;,args.fields.slBonus++;
+args.fields.slBonus++;
+args.fields.slBonus++;
+args.fields.slBonus++;

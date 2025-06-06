@@ -4,6 +4,6 @@
         items = items.map(i => i.toObject())
         items.forEach(i => i.system.advances.value = 20)
 
-items.forEach(i => i.system.equipped.value = true;)
+items.forEach(i => i.system.equipped.value = true)
 
 this.actor.createEmbeddedDocuments("Item", items);
