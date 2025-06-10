@@ -8,28 +8,28 @@
         "Entertain ()": {
             "id": "0CwV96kTDRF0jUhk",
             "name": "Występy ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui caption=false]{(Występy)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk",
             "image": "modules/wfrp4e-extended/icons/skills/9_Entertain.svg"
         },
         "Trade (Apothecary)": {
             "id": "0qQqFANTRUDTDpRg",
             "name": "Rzemiosło (Aptekarz)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.0qQqFANTRUDTDpRg",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Apothecary.svg"
         },
         "Language (Tilean)": {
             "id": "12e3H6NX4JH0bwI3",
             "name": "Język (Tileański)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.12e3H6NX4JH0bwI3",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Tilean.svg"
         },
         "Perform (Firebreathing)": {
             "id": "1dVlA24UQGuWCiPT",
             "name": "Kuglarstwo (Połykanie Ognia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.1dVlA24UQGuWCiPT",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Firebreathing.svg"
         },
@@ -43,343 +43,343 @@
         "Entertain (Comedy)": {
             "id": "1SVd48nGAHbASqr8",
             "name": "Występy (Komedianctwo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui caption=false]{(Występy)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.1SVd48nGAHbASqr8",
             "image": "modules/wfrp4e-extended/icons/skills/9_Entertain_Comedy.svg"
         },
         "Lore (Law)": {
             "id": "2LDCVJQWkTFszMok",
             "name": "Wiedza (Prawo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.2LDCVJQWkTFszMok",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Law.svg"
         },
         "Ranged (Engineering)": {
             "id": "2Y91ebFapH6zRfHk",
             "name": "Broń Zasięgowa (Eksperymentalna)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.2Y91ebFapH6zRfHk",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Engineering.svg"
         },
         "Channelling ( )": {
             "id": "3MbQF1W8U18ba9fb",
             "name": "Splatanie Magii ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.3MbQF1W8U18ba9fb",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling.svg"
         },
         "Animal Training (Pigeon)": {
             "id": "4HgOG0Ud3V2P52so",
             "name": "Tresura (Gołębie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0 caption=false]{(Tresura)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.4HgOG0Ud3V2P52so",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Pigeon.svg"
         },
         "Charm Animal": {
             "id": "4IGdIhnwTaZijzg7",
             "name": "Oswajanie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.1N6sOXgrqF1KkIh0]{Oswajanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.1N6sOXgrqF1KkIh0 caption=false]{(Oswajanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.4IGdIhnwTaZijzg7",
             "image": "modules/wfrp4e-extended/icons/skills/8_Charm_Animal.svg"
         },
         "Melee (Fencing)": {
             "id": "4mJoPBw4drm1kv2D",
             "name": "Broń Biała (Szermiercza)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.4mJoPBw4drm1kv2D",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Fencing.svg"
         },
         "Language (Bretonnian)": {
             "id": "5EvSIh1khpt77uM7",
             "name": "Język (Bretoński)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.5EvSIh1khpt77uM7",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Bretonnian.svg"
         },
         "Language (Elthárin)": {
             "id": "5MzxtQSzv5RtJGbw",
             "name": "Język (Elthárin)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.5MzxtQSzv5RtJGbw",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Eltharin.svg"
         },
         "Sail (Wolfship)": {
             "id": "5WfSy7tUYgjvChyN",
             "name": "Żeglarstwo (Wilcze Statki)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{(Żeglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.5WfSy7tUYgjvChyN",
             "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Wolfship.svg"
         },
         "Language (Classical)": {
             "id": "61L9aX2z164cjm7K",
             "name": "Język (Klasyczny)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.61L9aX2z164cjm7K",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Classical.svg"
         },
         "Animal Training (Horse)": {
             "id": "6am9EDNE43mzwDvG",
             "name": "Tresura (Konie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0 caption=false]{(Tresura)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.6am9EDNE43mzwDvG",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Horse.svg"
         },
         "Secret Signs (Ranger)": {
             "id": "6l2JkMfD3mNxqiep",
             "name": "Sekretne Znaki (Wędrowców)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.6l2JkMfD3mNxqiep",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Ranger.svg"
         },
         "Gamble": {
             "id": "7pQo66cESWttzIlb",
             "name": "Hazard",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq]{Hazard}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq caption=false]{(Hazard)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.7pQo66cESWttzIlb",
             "image": "modules/wfrp4e-extended/icons/skills/7_Gamble.svg"
         },
         "Lore (Science)": {
             "id": "7ToyUcqJDkceoJRd",
             "name": "Wiedza (Nauka)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.7ToyUcqJDkceoJRd",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Science.svg"
         },
         "Sail (Frigate)": {
             "id": "9s8S1BlR4cd5UeN8",
             "name": "Żeglarstwo (Fregaty)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{(Żeglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.9s8S1BlR4cd5UeN8",
             "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Frigate.svg"
         },
         "Research": {
             "id": "9tbHTeuvEMZrp0rx",
             "name": "Badania Naukowe",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Nv0jexKy05qTOnuN]{Badania Naukowe}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Nv0jexKy05qTOnuN caption=false]{(Badania Naukowe)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.9tbHTeuvEMZrp0rx",
             "image": "modules/wfrp4e-extended/icons/skills/7_Research.svg"
         },
         "Pray": {
             "id": "9xR9uO8FIvi4YsJp",
             "name": "Modlitwa",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.NRfh04q1bZBIND0A]{Modlitwa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.NRfh04q1bZBIND0A caption=false]{(Modlitwa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.9xR9uO8FIvi4YsJp",
             "image": "modules/wfrp4e-extended/icons/skills/9_Pray.svg"
         },
         "Animal Training (Demigryph)": {
             "id": "A5I729L56i4WQXfB",
             "name": "Tresura (Półgryfy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0 caption=false]{(Tresura)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.A5I729L56i4WQXfB",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Demigryph.svg"
         },
         "Art (Tattoo)": {
             "id": "AaXk4bfDRTPeeYjn",
             "name": "Sztuka (Tatuowanie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.AaXk4bfDRTPeeYjn",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Tattoo.svg"
         },
         "Ride (Great Wolf)": {
             "id": "aD6f4BzQlKEGAM8d",
             "name": "Jeździectwo (Wielkie Wilki)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe caption=false]{(Jeździectwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.aD6f4BzQlKEGAM8d",
             "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Great_Wolf.svg"
         },
         "Secret Signs (Thief)": {
             "id": "AIueed3kikw3euvn",
             "name": "Sekretne Znaki (Złodziei)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.AIueed3kikw3euvn",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Thief.svg"
         },
         "Pick Lock": {
             "id": "AkjRsazdAppqveZu",
             "name": "Otwieranie Zamków",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.XexqYWmxO5dy2us3]{Otwieranie Zamków}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.XexqYWmxO5dy2us3 caption=false]{(Otwieranie Zamków)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.AkjRsazdAppqveZu",
             "image": "modules/wfrp4e-extended/icons/skills/6_Pick_Lock.svg"
         },
         "Play ()": {
             "id": "bBLK2hznjPlby6Jb",
             "name": "Muzyka ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN caption=false]{(Muzyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.bBLK2hznjPlby6Jb",
             "image": "modules/wfrp4e-extended/icons/skills/6_Play.svg"
         },
         "Melee (Parry)": {
             "id": "bJBesrdCaDqaXbQg",
             "name": "Broń Biała (Parująca)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.bJBesrdCaDqaXbQg",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Parry.svg"
         },
         "Art (Painting)": {
             "id": "bJZ8le54J5OwGqFx",
             "name": "Sztuka (Malarstwo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.bJZ8le54J5OwGqFx",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Painting.svg"
         },
         "Evaluate": {
             "id": "bSWoV1IiS5qWNw39",
             "name": "Wycena",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.NtJ85TY8yY3WOGHN]{Wycena}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.NtJ85TY8yY3WOGHN caption=false]{(Wycena)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.bSWoV1IiS5qWNw39",
             "image": "modules/wfrp4e-extended/icons/skills/7_Evaluate.svg"
         },
         "Secret Signs ()": {
             "id": "bVdhLdfuSAfMi3qq",
             "name": "Sekretne Znaki ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.bVdhLdfuSAfMi3qq",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs.svg"
         },
         "Animal Training (Pegasus)": {
             "id": "c2HVWH6ZLRn3QjhH",
             "name": "Tresura (Pegaz)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0 caption=false]{(Tresura)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.c2HVWH6ZLRn3QjhH",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training.svg"
         },
         "Perform (Clowning)": {
             "id": "c6I7wHp56nulRLic",
             "name": "Kuglarstwo (Błaznowanie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.c6I7wHp56nulRLic",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Clowning.svg"
         },
         "Endurance": {
             "id": "CcNJsS4jSwB6Ug1J",
             "name": "Odporność",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.E9UyI8AMrBqgCX4a]{Odporność}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.E9UyI8AMrBqgCX4a caption=false]{(Odporność)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.CcNJsS4jSwB6Ug1J",
             "image": "modules/wfrp4e-extended/icons/skills/3_Endurance.svg"
         },
         "Language (Mootish)": {
             "id": "Cg2b92BRjvxYXZiE",
             "name": "Język (Krainy Zgromadzenia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Cg2b92BRjvxYXZiE",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Mootish.svg"
         },
         "Stealth (Underground)": {
             "id": "cHbQeJQ7cVZZyDyl",
             "name": "Skradanie (Podziemia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE caption=false]{(Skradanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.cHbQeJQ7cVZZyDyl",
             "image": "modules/wfrp4e-extended/icons/skills/5_Stealth_Underground.svg"
         },
         "Channelling (Hysh)": {
             "id": "ChI09rjm2afh1bqI",
             "name": "Splatanie Magii (Hysh)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ChI09rjm2afh1bqI",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Hysh.svg"
         },
         "Secret Signs (Grey Order)": {
             "id": "CJxLsDRzVMguEpF1",
             "name": "Sekretne Znaki (Kolegium Cienia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.CJxLsDRzVMguEpF1",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Grey_Order.svg"
         },
         "Secret Signs (Scout)": {
             "id": "COND1RfSn9v58QiN",
             "name": "Sekretne Znaki (Zwiadowców)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.COND1RfSn9v58QiN",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Scout.svg"
         },
         "Intuition": {
             "id": "cYtU0ORRFCOpQLWz",
             "name": "Intuicja",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.31VEXGfn6houFutI]{Intuicja}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.31VEXGfn6houFutI caption=false]{(Intuicja)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.cYtU0ORRFCOpQLWz",
             "image": "modules/wfrp4e-extended/icons/skills/4_Intuition.svg"
         },
         "Bribery": {
             "id": "d3VZwO4Y5JH5DXdT",
             "name": "Przekupstwo",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.IwGXgEPOkNVZ0SwI]{Przekupstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.IwGXgEPOkNVZ0SwI caption=false]{(Przekupstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.d3VZwO4Y5JH5DXdT",
             "image": "modules/wfrp4e-extended/icons/skills/9_Bribery.svg"
         },
         "Secret Signs (Guilder)": {
             "id": "D4JNPSl6VOpsVmSi",
             "name": "Sekretne Znaki (Gildii)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.D4JNPSl6VOpsVmSi",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Guild.svg"
         },
         "Lore (Theology)": {
             "id": "d9bGxy6Y3u3rOHIN",
             "name": "Wiedza (Teologia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.d9bGxy6Y3u3rOHIN",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Theology.svg"
         },
         "Channelling (Dhar)": {
             "id": "dBwnAzhe0bvobgbY",
             "name": "Splatanie Magii (Dhar)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.dBwnAzhe0bvobgbY",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Dhar.svg"
         },
         "Ride (Griffon)": {
             "id": "dfuN0EpNQS6eqCxZ",
             "name": "Jeździectwo (Gryfy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe caption=false]{(Jeździectwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.dfuN0EpNQS6eqCxZ",
             "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Griffon.svg"
         },
         "Lore (Heraldry)": {
             "id": "DiP9cmbqUir3HkkK",
             "name": "Wiedza (Heraldyka)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.DiP9cmbqUir3HkkK",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Heraldry.svg"
         },
         "Lore ()": {
             "id": "DRO5DLF6UcfkvNSh",
             "name": "Wiedza ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.DRO5DLF6UcfkvNSh",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore.svg"
         },
         "Language (Magick)": {
             "id": "e3McIND4Rrsn5cE6",
             "name": "Język (Magiczny)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.e3McIND4Rrsn5cE6",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Magick.svg"
         },
         "Channelling (Ulgu)": {
             "id": "e6uURn9IFt09beNU",
             "name": "Splatanie Magii (Ulgu)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.e6uURn9IFt09beNU",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Ulgu.svg"
         },
         "Language (Estalian)": {
             "id": "Emd8lVdIpaXTxLwL",
             "name": "Język (Estalijski)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Emd8lVdIpaXTxLwL",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Estalian.svg"
         },
         "Trade (Cook)": {
             "id": "epSHxgJWtT1S0yMY",
             "name": "Rzemiosło (Kucharz)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.epSHxgJWtT1S0yMY",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Cook.svg"
         },
         "Play (Horn)": {
             "id": "EsgYCZZbWaDZsLYx",
             "name": "Muzyka (Obój)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN caption=false]{(Muzyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.EsgYCZZbWaDZsLYx",
             "image": "modules/wfrp4e-extended/icons/skills/6_Play_Oboe.svg"
         },
@@ -393,126 +393,126 @@
         "Secret Signs (Vagabond)": {
             "id": "eXLVhJVuIhm8wPUF",
             "name": "Sekretne Znaki (Włóczęgów)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM caption=false]{(Sekretne Znaki)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.eXLVhJVuIhm8wPUF",
             "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Vagabond.svg"
         },
         "Language (Gospodarinyi)": {
             "id": "EXysjCwmGzCOiRDx",
             "name": "Język (Hospodarnyj)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.EXysjCwmGzCOiRDx",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Gospodarinyi.svg"
         },
         "Melee ()": {
             "id": "F8NfBZdVSEIGCMtu",
             "name": "Broń Biała ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee.svg"
         },
         "Lore (History)": {
             "id": "FChdV10BCuXQyUhU",
             "name": "Wiedza (Historia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.FChdV10BCuXQyUhU",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_History.svg"
         },
         "Art ( )": {
             "id": "fdq3RFSOKl5b3WzW",
             "name": "Sztuka ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art.svg"
         },
         "Language (Norse)": {
             "id": "fPVnjkCnm5nKdKBh",
             "name": "Język (Norsmeński)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.fPVnjkCnm5nKdKBh",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Norse.svg"
         },
         "Sail (Caravel)": {
             "id": "FR60c6AX1pWZz6Mc",
             "name": "Żeglarstwo (Karawele)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{(Żeglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.FR60c6AX1pWZz6Mc",
             "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Caravel.svg"
         },
         "Perception": {
             "id": "Fs06sr7y9JKpVQmB",
             "name": "Percepcja",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6Jhks0zDRpJeN6dW]{Percepcja}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6Jhks0zDRpJeN6dW caption=false]{(Percepcja)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Fs06sr7y9JKpVQmB",
             "image": "modules/wfrp4e-extended/icons/skills/4_Perception.svg"
         },
         "Channelling (Aqshy)": {
             "id": "gh91jaxzTBgbMoi5",
             "name": "Splatanie Magii (Aqshy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.gh91jaxzTBgbMoi5",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Aqshy.svg"
         },
         "Play (Harpsichord)": {
             "id": "GJt5I57Fbb7pj1mF",
             "name": "Muzyka (Harfa)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN caption=false]{(Muzyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.GJt5I57Fbb7pj1mF",
             "image": "modules/wfrp4e-extended/icons/skills/6_Play_Harp.svg"
         },
         "Art (Mosaics)": {
             "id": "GPrunawhB8das1O7",
             "name": "Sztuka (Układanie Mozaiki)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.GPrunawhB8das1O7",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Mosaics.svg"
         },
         "Ranged (Blackpowder)": {
             "id": "H2upcZ7q7qAPtPic",
             "name": "Broń Zasięgowa (Prochowa)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.H2upcZ7q7qAPtPic",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Blackpowder.svg"
         },
         "Art (Cartography)": {
             "id": "h7OXI7PXcs8EHdxf",
             "name": "Sztuka (Kartografia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.h7OXI7PXcs8EHdxf",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Cartography.svg"
         },
         "Set Trap": {
             "id": "HngrTVqKis08Nvcf",
             "name": "Zastawianie Pułapek",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.fmMkUHUwOPwex8mj]{Zastawianie Pułapek}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.fmMkUHUwOPwex8mj caption=false]{(Zastawianie Pułapek)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.HngrTVqKis08Nvcf",
             "image": "modules/wfrp4e-extended/icons/skills/6_Set_Trap.svg"
         },
         "Perform ()": {
             "id": "HO8vIjGTHjmenIaV",
             "name": "Kuglarstwo ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.HO8vIjGTHjmenIaV",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform.svg"
         },
         "Swim": {
             "id": "hodHqFNKAmu40ajh",
             "name": "Pływanie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QoWDfx8SIhpCiIX5]{Pływanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QoWDfx8SIhpCiIX5 caption=false]{(Pływanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.hodHqFNKAmu40ajh",
             "image": "modules/wfrp4e-extended/icons/skills/2_Swim.svg"
         },
         "Channelling (Azyr)": {
             "id": "hpc8g8Z9rl3fJECS",
             "name": "Splatanie Magii (Azyr)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.hpc8g8Z9rl3fJECS",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Azyr.svg"
         },
         "Heal": {
             "id": "HXZaV1CJhmTvcAz4",
             "name": "Leczenie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.dSf8QWBvN6mlpHBF]{Leczenie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.dSf8QWBvN6mlpHBF caption=false]{(Leczenie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.HXZaV1CJhmTvcAz4",
             "image": "modules/wfrp4e-extended/icons/skills/7_Heal.svg",
             "effects": {
@@ -547,273 +547,273 @@
         "Language (Reikspiel)": {
             "id": "I0QRyEA0tk4IAEAn",
             "name": "Język (Reikspiel)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.I0QRyEA0tk4IAEAn",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Reikspiel.svg"
         },
         "Intimidate": {
             "id": "I0yPc4PH5erWJLmu",
             "name": "Zastraszanie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mDs8HUZopZAb1fH0]{Zastraszanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mDs8HUZopZAb1fH0 caption=false]{(Zastraszanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.I0yPc4PH5erWJLmu",
             "image": "modules/wfrp4e-extended/icons/skills/2_Intimidate.svg"
         },
         "Channelling (Shyish)": {
             "id": "IQ5MxF1XlWoRomfj",
             "name": "Splatanie Magii (Shyish)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.IQ5MxF1XlWoRomfj",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Shyish.svg"
         },
         "Drive": {
             "id": "iYan4z52v7HYM9u9",
             "name": "Powożenie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.uLPWAFSfT5Vf1zZl]{Powożenie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.uLPWAFSfT5Vf1zZl caption=false]{(Powożenie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.iYan4z52v7HYM9u9",
             "image": "modules/wfrp4e-extended/icons/skills/5_Drive.svg"
         },
         "Melee (Brawling)": {
             "id": "jLyoyqwmBVPjRjhM",
             "name": "Broń Biała (Bijatyka)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.jLyoyqwmBVPjRjhM",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Brawling.svg"
         },
         "Language (Queekish)": {
             "id": "kEI7TLacmDfwcM3A",
             "name": "Język (Queekish)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.kEI7TLacmDfwcM3A",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Queekish.svg"
         },
         "Play (Bagpipe)": {
             "id": "kFfdmvE78pEUVB6f",
             "name": "Muzyka (Dudy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN caption=false]{(Muzyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.kFfdmvE78pEUVB6f",
             "image": "modules/wfrp4e-extended/icons/skills/6_Play_Bagpipe.svg"
         },
         "Row": {
             "id": "KL4pCOqma5E7fLG4",
             "name": "Wioślarstwo",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ACCaGYXdz9yKyxgG]{Wioślarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ACCaGYXdz9yKyxgG caption=false]{(Wioślarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.KL4pCOqma5E7fLG4",
             "image": "modules/wfrp4e-extended/icons/skills/2_Row.svg"
         },
         "Ranged (Sling)": {
             "id": "KQjZ85kKz42YQGYT",
             "name": "Broń Zasięgowa (Proce)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.KQjZ85kKz42YQGYT",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Sling.svg"
         },
         "Athletics": {
             "id": "LGHozP5gmQ8cuDQV",
             "name": "Atletyka",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Ss6Gp732GjscYke0]{Atletyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Ss6Gp732GjscYke0 caption=false]{(Atletyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.LGHozP5gmQ8cuDQV",
             "image": "modules/wfrp4e-extended/icons/skills/5_Athletics.svg"
         },
         "Melee (Two-Handed)": {
             "id": "Lst4xxUcxTYMlD3U",
             "name": "Broń Biała (Dwuręczna)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Lst4xxUcxTYMlD3U",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Two-handed.svg"
         },
         "Stealth ()": {
             "id": "McTtmZu3Ac8Lh48W",
             "name": "Skradanie ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE caption=false]{(Skradanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W",
             "image": "modules/wfrp4e-extended/icons/skills/5_Stealth.svg"
         },
         "Ride ()": {
             "id": "MeXCAQ3wqJzX07X7",
             "name": "Jeździectwo ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe caption=false]{(Jeździectwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7",
             "image": "modules/wfrp4e-extended/icons/skills/5_Ride.svg"
         },
         "Trade (Smith)": {
             "id": "Ml6ZblglcSbVhXyh",
             "name": "Rzemiosło (Kowal)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Ml6ZblglcSbVhXyh",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Smith.svg"
         },
         "Ranged (Entangling)": {
             "id": "MWyxcAft5lonB1mB",
             "name": "Broń Zasięgowa (Oplątująca)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.MWyxcAft5lonB1mB",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Entangling.svg"
         },
         "Animal Care": {
             "id": "MXy22hFCgntdlQrn",
             "name": "Opieka nad Zwierzętami",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QZx9CbhGkIaDMQD3]{Opieka nad Zwierzętami}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QZx9CbhGkIaDMQD3 caption=false]{(Opieka nad Zwierzętami)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.MXy22hFCgntdlQrn",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Care.svg"
         },
         "Sail ()": {
             "id": "n8IfmLt4kzMhIKIv",
             "name": "Żeglarstwo ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{(Żeglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.n8IfmLt4kzMhIKIv",
             "image": "modules/wfrp4e-extended/icons/skills/5_Sail.svg"
         },
         "Perform (Rope Walking)": {
             "id": "nCnEDGtiGYgv80xJ",
             "name": "Kuglarstwo (Chodzenie po Linie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.nCnEDGtiGYgv80xJ",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Rope_Walking.svg"
         },
         "Language (Albion)": {
             "id": "Nemd0MJ4MOcOJYhT",
             "name": "Język (Albioński)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Nemd0MJ4MOcOJYhT",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Albion.svg"
         },
         "Lore (Metallurgy)": {
             "id": "nLlRDNRC95plBgXs",
             "name": "Wiedza (Metalurgia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.nLlRDNRC95plBgXs",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Metallurgy.svg"
         },
         "Language (Battle Tongue)": {
             "id": "nqhgjUbJWglxU59j",
             "name": "Język (Bitewny)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.nqhgjUbJWglxU59j",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Battle_Tongue.svg"
         },
         "Play (Violin)": {
             "id": "nQPMcmt3Q1SXAzEd",
             "name": "Muzyka (Skrzypce)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN caption=false]{(Muzyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.nQPMcmt3Q1SXAzEd",
             "image": "modules/wfrp4e-extended/icons/skills/6_Play_Violin.svg"
         },
         "Ranged (Throwing)": {
             "id": "NSnpJQiky8JcMnme",
             "name": "Broń Zasięgowa (Miotana)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.NSnpJQiky8JcMnme",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Throwing.svg"
         },
         "Ride (Pegasus)": {
             "id": "NzmG8oghB65XqdDd",
             "name": "Jeździectwo (Pegazy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe caption=false]{(Jeździectwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.NzmG8oghB65XqdDd",
             "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Pegasus.svg"
         },
         "Leadership": {
             "id": "oMaJZ5cvCJeOUq9H",
             "name": "Dowodzenie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.haKq6qZXYj7Bweu4]{Dowodzenie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.haKq6qZXYj7Bweu4 caption=false]{(Dowodzenie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.oMaJZ5cvCJeOUq9H",
             "image": "modules/wfrp4e-extended/icons/skills/9_Leadership.svg"
         },
         "Outdoor Survival": {
             "id": "os4NKy5Oy6sRt1eh",
             "name": "Sztuka Przetrwania",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3]{Sztuka Przetrwania}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3 caption=false]{(Sztuka Przetrwania)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.os4NKy5Oy6sRt1eh",
             "image": "modules/wfrp4e-extended/icons/skills/7_Outdoor_Survival.svg"
         },
         "Ride (Horse)": {
             "id": "oSbEE6eXH1S3LfUU",
             "name": "Jeździectwo (Konie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe caption=false]{(Jeździectwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.oSbEE6eXH1S3LfUU",
             "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Horse.svg"
         },
         "Lore (Engineering)": {
             "id": "osMw1Be6YgRBolTm",
             "name": "Wiedza (Inżynieria)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.osMw1Be6YgRBolTm",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Engineering.svg"
         },
         "Ranged (Crossbow)": {
             "id": "OuDdJRDo3W56zk0Z",
             "name": "Broń Zasięgowa (Kusze)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.OuDdJRDo3W56zk0Z",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Crossbow.svg"
         },
         "Perform (Dancing)": {
             "id": "OZMvB887CeshFy7b",
             "name": "Kuglarstwo (Taniec)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.OZMvB887CeshFy7b",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Dancing.svg"
         },
         "Trade (Chandler)": {
             "id": "PFQYm0XaYcoeSYxE",
             "name": "Rzemiosło (Świecarz)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.PFQYm0XaYcoeSYxE",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Chandler.svg"
         },
         "Haggle": {
             "id": "pKLMbmG3Ivt6mzMf",
             "name": "Targowanie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.qSSRHdEK5P7VRmKW]{Targowanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.qSSRHdEK5P7VRmKW caption=false]{(Targowanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.pKLMbmG3Ivt6mzMf",
             "image": "modules/wfrp4e-extended/icons/skills/9_Haggle.svg"
         },
         "Cool": {
             "id": "pxNjTxsp1Kp0SmQe",
             "name": "Opanowanie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.m14pGtefJzDYhgzW]{Opanowanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.m14pGtefJzDYhgzW caption=false]{(Opanowanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.pxNjTxsp1Kp0SmQe",
             "image": "modules/wfrp4e-extended/icons/skills/8_Cool.svg"
         },
         "Melee (Polearm)": {
             "id": "PzimjNx9Ojq4g6mV",
             "name": "Broń Biała (Drzewcowa)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.PzimjNx9Ojq4g6mV",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Polearm.svg"
         },
         "Entertain (Storytelling)": {
             "id": "qBm2fu3oMhxsDBNQ",
             "name": "Występy (Gawędziarstwo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui caption=false]{(Występy)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.qBm2fu3oMhxsDBNQ",
             "image": "modules/wfrp4e-extended/icons/skills/9_Entertain_Storytelling.svg"
         },
         "Perform (Miming)": {
             "id": "qce9bEiaA9ICpl7V",
             "name": "Kuglarstwo (Mimika)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.qce9bEiaA9ICpl7V",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Miming.svg"
         },
         "Channelling (Chamon)": {
             "id": "QJ1sfMkNmIh04nky",
             "name": "Splatanie Magii (Chamon)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.QJ1sfMkNmIh04nky",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Chamon.svg"
         },
         "Play (Lute)": {
             "id": "QXQA1ycrJHzZkIou",
             "name": "Muzyka (Lutnia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN caption=false]{(Muzyka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.QXQA1ycrJHzZkIou",
             "image": "modules/wfrp4e-extended/icons/skills/6_Play_Lute.svg"
         },
         "Trade (Carpenter)": {
             "id": "qy68sCupAbzhlvVU",
             "name": "Rzemiosło (Stolarz)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.qy68sCupAbzhlvVU",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Carpenter.svg"
         },
@@ -827,266 +827,266 @@
         "Art (Weaving)": {
             "id": "RitSkR0YDixuUei9",
             "name": "Sztuka (Tkactwo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.RitSkR0YDixuUei9",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Weaving.svg"
         },
         "Gossip": {
             "id": "RLQHm1s4IuY9RSr2",
             "name": "Plotkowanie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ns3PDbblIFcwqyQi]{Plotkowanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ns3PDbblIFcwqyQi caption=false]{(Plotkowanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.RLQHm1s4IuY9RSr2",
             "image": "modules/wfrp4e-extended/icons/skills/9_Gossip.svg"
         },
         "Channelling (Ghyran)": {
             "id": "RLSVcLqPvnd1cg4U",
             "name": "Splatanie Magii (Ghyran)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.RLSVcLqPvnd1cg4U",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Ghyran.svg"
         },
         "Melee (Basic)": {
             "id": "rOPmyLWa37e7s9v6",
             "name": "Broń Biała (Podstawowa)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.rOPmyLWa37e7s9v6",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Basic.svg"
         },
         "Melee (Cavalry)": {
             "id": "rt1yfcjZoeSulddW",
             "name": "Broń Biała (Kawaleryjska)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.rt1yfcjZoeSulddW",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Cavalry.svg"
         },
         "Track": {
             "id": "rt2rGSwFDCDHPh0A",
             "name": "Tropienie",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.EWHNXyzDLPBpoVxK]{Tropienie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.EWHNXyzDLPBpoVxK caption=false]{(Tropienie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.rt2rGSwFDCDHPh0A",
             "image": "modules/wfrp4e-extended/icons/skills/4_Track.svg"
         },
         "Sleight of Hand": {
             "id": "rvd0S8Z0v2m0MHmD",
             "name": "Zwinne Palce",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.bGqmHCju8VZ8q2Pv]{Zwinne Palce}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.bGqmHCju8VZ8q2Pv caption=false]{(Zwinne Palce)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.rvd0S8Z0v2m0MHmD",
             "image": "modules/wfrp4e-extended/icons/skills/6_Sleight_of_Hand.svg"
         },
         "Trade (Calligrapher)": {
             "id": "SMBkaNJzNKypJMA2",
             "name": "Rzemiosło (Kaligrafia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.SMBkaNJzNKypJMA2",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Calligrapher.svg"
         },
         "Climb": {
             "id": "sRuMlaPU5xdIrwhd",
             "name": "Wspinaczka",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.yOONKSIBrg4FOl20]{Wspinaczka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.yOONKSIBrg4FOl20 caption=false]{(Wspinaczka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.sRuMlaPU5xdIrwhd",
             "image": "modules/wfrp4e-extended/icons/skills/2_Climb.svg"
         },
         "Channelling (Ghur)": {
             "id": "ssCqvqr2ORFX6lPL",
             "name": "Splatanie Magii (Ghur)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ssCqvqr2ORFX6lPL",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Ghur.svg"
         },
         "Art (Sculpture)": {
             "id": "sUaPQdDiyWcTzC9p",
             "name": "Sztuka (Rzeźbiarstwo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.sUaPQdDiyWcTzC9p",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Sculpture.svg"
         },
         "Perform (Juggling)": {
             "id": "TXsoAJQZWcilgUli",
             "name": "Kuglarstwo (Żonglowanie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.TXsoAJQZWcilgUli",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Juggling.svg"
         },
         "Trade (Tanner)": {
             "id": "u9dLyalenY0AIzCT",
             "name": "Rzemiosło (Garbarz)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.u9dLyalenY0AIzCT",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Tanner.svg"
         },
         "Entertain (Singing)": {
             "id": "UFunAopCNaD8Zdc7",
             "name": "Występy (Śpiewanie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui caption=false]{(Występy)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.UFunAopCNaD8Zdc7",
             "image": "modules/wfrp4e-extended/icons/skills/9_Entertain_Singing.svg"
         },
         "Ranged (Explosives)": {
             "id": "UQgNIecnmaguYegE",
             "name": "Broń Zasięgowa (Materiały Wybuchowe)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.UQgNIecnmaguYegE",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Explosives.svg"
         },
         "Language (Thieves Tongue)": {
             "id": "Uxnxmtvshz8OAVaX",
             "name": "Język (Złodziejska grypsera)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Uxnxmtvshz8OAVaX",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Thieves_Tongue.svg"
         },
         "Animal Training ( )": {
             "id": "uZpeJ8P0g10UBRdE",
             "name": "Tresura ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0 caption=false]{(Tresura)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.uZpeJ8P0g10UBRdE",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training.svg"
         },
         "Art (Engraving)": {
             "id": "v2eVrGuRfN4p6NCA",
             "name": "Sztuka (Grawerstwo)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y caption=false]{(Sztuka)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.v2eVrGuRfN4p6NCA",
             "image": "modules/wfrp4e-extended/icons/skills/6_Art_Engraving.svg"
         },
         "Channelling": {
             "id": "V8eRx66SxB9Jha0Q",
             "name": "Splatanie Magii",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja caption=false]{(Splatanie Magii)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.V8eRx66SxB9Jha0Q",
             "image": "modules/wfrp4e-extended/icons/skills/8_Channelling.svg"
         },
         "Lore (Geology)": {
             "id": "VNjHDKWD6sIbF6BI",
             "name": "Wiedza (Geologia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.VNjHDKWD6sIbF6BI",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Geology.svg"
         },
         "Perform (Acrobatics)": {
             "id": "vQtJqX0qb0bbpVDg",
             "name": "Kuglarstwo (Akrobatyka)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB caption=false]{(Kuglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.vQtJqX0qb0bbpVDg",
             "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Acrobatics.svg"
         },
         "Animal Training (Dog)": {
             "id": "W0GnDjtcocY6m07J",
             "name": "Tresura (Psy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0 caption=false]{(Tresura)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.W0GnDjtcocY6m07J",
             "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Dogs.svg"
         },
         "Trade (Embalmer)": {
             "id": "weawpyxoBpAUqDJo",
             "name": "Rzemiosło (Balsamowanie)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.weawpyxoBpAUqDJo",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Embalmer.svg"
         },
         "Trade ()": {
             "id": "wKwel9MG7NIG3i3w",
             "name": "Rzemiosło ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu caption=false]{(Rzemiosło)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.wKwel9MG7NIG3i3w",
             "image": "modules/wfrp4e-extended/icons/skills/6_Trade.svg"
         },
         "Sail (Barge)": {
             "id": "WuGqleOpKoMCfhO0",
             "name": "Żeglarstwo (Barki)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{(Żeglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.WuGqleOpKoMCfhO0",
             "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Barge.svg"
         },
         "Language (Wastelander)": {
             "id": "X16IoUlKcVLI4MRw",
             "name": "Język (Jałowej Krainy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.X16IoUlKcVLI4MRw",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Wastelander.svg"
         },
         "Language (Grumbarth)": {
             "id": "xeGpCLz8uGaZb1nL",
             "name": "Język (Grumbarth)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.xeGpCLz8uGaZb1nL",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Grumbarth.svg"
         },
         "Stealth (Rural)": {
             "id": "Xk5tp3aasPNtk4zt",
             "name": "Skradanie (Wieś)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE caption=false]{(Skradanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Xk5tp3aasPNtk4zt",
             "image": "modules/wfrp4e-extended/icons/skills/5_Stealth_Rural.svg"
         },
         "Language ()": {
             "id": "XQiiwS9m2Du1IMUz",
             "name": "Język ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.XQiiwS9m2Du1IMUz",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language.svg"
         },
         "Language (Khazalid)": {
             "id": "XzPlUWFDtOOjG98P",
             "name": "Język (Khazalid)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl caption=false]{(Język)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.XzPlUWFDtOOjG98P",
             "image": "modules/wfrp4e-extended/icons/skills/7_Language_Khazalid.svg"
         },
         "Ride (Demigryph)": {
             "id": "yr4ikZaXnYt7kOZd",
             "name": "Jeździectwo (Półgryfy)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe caption=false]{(Jeździectwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.yr4ikZaXnYt7kOZd",
             "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Demigryph.svg"
         },
         "Ranged ()": {
             "id": "Z9hQe46ykQBZneoU",
             "name": "Broń Zasięgowa ()",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Z9hQe46ykQBZneoU",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged.svg"
         },
         "Stealth (Urban)": {
             "id": "zkI6tIqbyAZvh0Th",
             "name": "Skradanie (Miasto)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE caption=false]{(Skradanie)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.zkI6tIqbyAZvh0Th",
             "image": "modules/wfrp4e-extended/icons/skills/5_Stealth_Urban.svg"
         },
         "Ranged (Bow)": {
             "id": "ZQSm2AwrgT2cHG0C",
             "name": "Broń Zasięgowa (Łuki)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5 caption=false]{(Broń Zasięgowa)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ZQSm2AwrgT2cHG0C",
             "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Bow.svg"
         },
         "Melee (Flail)": {
             "id": "ZqYYWZuWwqMb3wVf",
             "name": "Broń Biała (Korbacze)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f caption=false]{(Broń Biała)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ZqYYWZuWwqMb3wVf",
             "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Flail.svg"
         },
         "Lore (Magick)": {
             "id": "ZQzRZkB9JK1CveMW",
             "name": "Wiedza (Magia)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc caption=false]{(Wiedza)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ZQzRZkB9JK1CveMW",
             "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Magic.svg"
         },
         "Sail (Cog)": {
             "id": "ZUldeWVqTnMRw5xD",
             "name": "Żeglarstwo (Kogi)",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj caption=false]{(Żeglarstwo)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ZUldeWVqTnMRw5xD",
             "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Cog.svg"
         },
         "Navigation": {
             "id": "zZUX7wO4rOo8k9F0",
             "name": "Nawigacja",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.rf7gtZko4KJvjFaE]{Nawigacja}</p>",
+            "description": "<p>@Embed[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.rf7gtZko4KJvjFaE caption=false]{(Nawigacja)}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.zZUX7wO4rOo8k9F0",
             "image": "modules/wfrp4e-extended/icons/skills/4_Navigation.svg"
         }
