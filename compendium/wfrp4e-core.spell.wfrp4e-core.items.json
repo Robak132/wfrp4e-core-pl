@@ -19,7 +19,7 @@
         "The First Portent of Amul": {
             "id": "04Qv4t0qMMZIUhRw",
             "name": "Pierwsze proroctwo Amul",
-            "description": "<p>Zyskujesz 1 Punkt Szczęścia. Za każde 2 PS zyskujesz 1 więcej. Wszelkie punkty niewykorzystane do końca czasu trwania zaklęcia przepadają.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Zyskujesz 1 Punkt Szczęścia. Za każde 2 PS zyskujesz 1 więcej. Wszelkie punkty niewykorzystane do końca czasu trwania zaklęcia przepadają.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.04Qv4t0qMMZIUhRw",
             "effects": {
                 "z5h8gLfbvL0aMPdK": {
@@ -256,7 +256,7 @@
         "Comet of Casandora": {
             "id": "208BiJLY0jXxelbd",
             "name": "Kometa Kasandory",
-            "description": "<p>Splatasz tyle <em>Azyru</em>, ile możesz pochwycić i dosięgnąć w niebiosach, przyzywając kometę, która rozpętuje inferno w szeregach wroga. Wybierz punkt celu w Zasięgu zaklęcia. Pod koniec następnej Rundy wykonaj <strong>Przeciętny (+20) Test Percepcji</strong>. Za każdy osiągnięty PS możesz przesunąć punkt uderzenia o tyle metrów, ile wynosi twój Bonus z Inicjatywy.</p>\n<p>Za każdy ujemny PS MG może przesunąć punkt uderzenia w losowym kierunku o tyle metrów, ile wynosi twój Bonus z Inicjatywy. Kometa Kasandory uznawana jest za <i>magiczny pocisk</i> o współczynniku Obrażeń +12, który zadaje Obrażenia wszystkim istotom w Zasięgu. Otrzymują one również Stan @Condition[Powalenie]{Powalony} i +1 poziom @Condition[Podpalenie]{Podpalenia}. </p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Splatasz tyle <em>Azyru</em>, ile możesz pochwycić i dosięgnąć w niebiosach, przyzywając kometę, która rozpętuje inferno w szeregach wroga. Wybierz punkt celu w Zasięgu zaklęcia. Pod koniec następnej Rundy wykonaj <strong>Przeciętny (+20) Test Percepcji</strong>. Za każdy osiągnięty PS możesz przesunąć punkt uderzenia o tyle metrów, ile wynosi twój Bonus z Inicjatywy.</p>\n<p>Za każdy ujemny PS MG może przesunąć punkt uderzenia w losowym kierunku o tyle metrów, ile wynosi twój Bonus z Inicjatywy. Kometa Kasandory uznawana jest za <i>magiczny pocisk</i> o współczynniku Obrażeń +12, który zadaje Obrażenia wszystkim istotom w Zasięgu. Otrzymują one również Stan @Condition[Powalenie]{Powalony} i +1 poziom @Condition[Podpalenie]{Podpalenia}. </p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.208BiJLY0jXxelbd",
             "effects": {
                 "RgMufN4ojXxwM49O": {
@@ -585,7 +585,7 @@
         "Fearsome (Heavens)": {
             "id": "3XZDELqDQ1BBUAmI",
             "name": "Straszny wygląd (Niebiosa)",
-            "description": "<p>Wypełniasz siebie magią, budząc grozę wśród wrogów. Zyskujesz 1 poziom @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strachu}. Za każde 3 PS możesz zwiększyć poziom Strachu o 1.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wypełniasz siebie magią, budząc grozę wśród wrogów. Zyskujesz 1 poziom @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strachu}. Za każde 3 PS możesz zwiększyć poziom Strachu o 1.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.3XZDELqDQ1BBUAmI",
             "effects": {
                 "3tVlSQAlq4vZ2Kam": {
@@ -607,7 +607,7 @@
         "Breath (Heavens)": {
             "id": "44AO7oTKwqUu78C1",
             "name": "Zionięcie (Niebiosa)",
-            "description": "<p>Natychmiast wykonujesz Zionięcie, tak jak opisano przy aktywacji Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3]{Zionięcie}, za 2 Przewagi. Zionięcie jest <i>magicznym pociskiem</i> o współczynniku Obrażeń +Bonus z Wytrzymałości. MG zdecyduje, jaki rodzaj Zionięcia najbardziej pasuje do twojej Tradycji.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Natychmiast wykonujesz Zionięcie, tak jak opisano przy aktywacji Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3]{Zionięcie}, za 2 Przewagi. Zionięcie jest <i>magicznym pociskiem</i> o współczynniku Obrażeń +Bonus z Wytrzymałości. MG zdecyduje, jaki rodzaj Zionięcia najbardziej pasuje do twojej Tradycji.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.44AO7oTKwqUu78C1",
             "duration": "Natychmiast",
             "target": "1",
@@ -891,7 +891,7 @@
         "Magic Shield (Heavens)": {
             "id": "6eu6VVbYzq5mCNGW",
             "name": "Magiczna tarcza (Niebiosa)",
-            "description": "<p>Otaczasz się splotami ochronnej magii. Gdy zaklęcie jest aktywne, możesz dodać Bonus z Siły Woli do PS podczas wszelkich prób rozpraszania magii, które przeprowadzasz.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Otaczasz się splotami ochronnej magii. Gdy zaklęcie jest aktywne, możesz dodać Bonus z Siły Woli do PS podczas wszelkich prób rozpraszania magii, które przeprowadzasz.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.6eu6VVbYzq5mCNGW",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -1192,7 +1192,7 @@
         "Corrosive Blood (Heavens)": {
             "id": "a0rkY56nliMmxoCf",
             "name": "Żrąca krew (Niebiosa)",
-            "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.a0rkY56nliMmxoCf",
             "effects": {
                 "nvwYuMyUOW30ilmN": {
@@ -1329,7 +1329,7 @@
         "Teleport (Heavens)": {
             "id": "AwRVLEJZCLwPJKy2",
             "name": "Przeskok (Niebiosa)",
-            "description": "<p>Wykorzystując magię, przemieszczasz się natychmiast na odległość wynoszącą maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Dzięki temu możesz nie przejmować się jarami, dołami, pułapkami i innymi niebezpieczeństwami, ignorując przeszkody. Za każde +2 PS możesz zwiększyć dystans takiej teleportacji o tyle metrów, ile wynosi twój Bonus z Siły Woli.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wykorzystując magię, przemieszczasz się natychmiast na odległość wynoszącą maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Dzięki temu możesz nie przejmować się jarami, dołami, pułapkami i innymi niebezpieczeństwami, ignorując przeszkody. Za każde +2 PS możesz zwiększyć dystans takiej teleportacji o tyle metrów, ile wynosi twój Bonus z Siły Woli.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.AwRVLEJZCLwPJKy2",
             "duration": "Natychmiast",
             "target": "Ty",
@@ -1429,7 +1429,7 @@
         "Dark Vision (Heavens)": {
             "id": "bgQpVEP0PZNsAheP",
             "name": "Widzenie w ciemności (Niebiosa)",
-            "description": "<p>Twoje naturalne zmysły zostają wzmocnione dzięki postrzeganiu magii. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc]{Widzenie w Mroku}.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Twoje naturalne zmysły zostają wzmocnione dzięki postrzeganiu magii. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc]{Widzenie w Mroku}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.bgQpVEP0PZNsAheP",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -1461,7 +1461,7 @@
         "Aethyric Arms (Heavens)": {
             "id": "bLCz5iBxd2wjfStI",
             "name": "Magiczna broń (Niebiosa)",
-            "description": "<p>Możesz stworzyć broń białą, której Obrażenia równe będą +Bonus z Siły Woli. Broń ta może przybrać dowolną formę i używa się jej za pomocą dowolnej posiadanej Umiejętności Broń Biała. Uznaje się ją za Magiczną.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Możesz stworzyć broń białą, której Obrażenia równe będą +Bonus z Siły Woli. Broń ta może przybrać dowolną formę i używa się jej za pomocą dowolnej posiadanej Umiejętności Broń Biała. Uznaje się ją za Magiczną.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.bLCz5iBxd2wjfStI",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -1588,7 +1588,7 @@
         "Push (Heavens)": {
             "id": "cfuqgV2PTnjMrgT7",
             "name": "Odepchnięcie (Niebiosa)",
-            "description": "<p>Wszystkie żywe stworzenia w promieniu tylu metrów, ile wynosi twój Bonus z Siły Woli, zostają odepchnięte na taką właśnie odległość i zostają @Condition[Powalenie]{Powalone}. Jeśli wpadną na ścianę lub inną dużą przeszkodę, zatrzymują się na niej, ale otrzymują tyle Obrażeń, ile metrów powinny jeszcze przebyć. Za każde +2 PS możesz odepchnąć przeciwników dalej - o tyle metrów, ile wynosi Bonus z Siły Woli.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wszystkie żywe stworzenia w promieniu tylu metrów, ile wynosi twój Bonus z Siły Woli, zostają odepchnięte na taką właśnie odległość i zostają @Condition[Powalenie]{Powalone}. Jeśli wpadną na ścianę lub inną dużą przeszkodę, zatrzymują się na niej, ale otrzymują tyle Obrażeń, ile metrów powinny jeszcze przebyć. Za każde +2 PS możesz odepchnąć przeciwników dalej - o tyle metrów, ile wynosi Bonus z Siły Woli.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.cfuqgV2PTnjMrgT7",
             "duration": "Natychmiast",
             "target": "Ty",
@@ -2365,7 +2365,7 @@
         "Distracting (Heavens)": {
             "id": "fxdXQBC34eLXcySP",
             "name": "Dekoncentracja (Niebiosa)",
-            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.fxdXQBC34eLXcySP",
             "effects": {
                 "tbdnvlmuItgP5abc": {
@@ -2582,7 +2582,7 @@
         "Bolt (Heavens)": {
             "id": "ha5MaHoDPxGtzP2b",
             "name": "Pocisk (Niebiosa)",
-            "description": "<p>Tworzysz magiczne wyładowanie odpowiadające charakterowi Tradycji. Jest ono <i>magicznym pociskiem</i> zadającym Obrażenia +4.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Tworzysz magiczne wyładowanie odpowiadające charakterowi Tradycji. Jest ono <i>magicznym pociskiem</i> zadającym Obrażenia +4.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.ha5MaHoDPxGtzP2b",
             "duration": "Natychmiast",
             "target": "1",
@@ -2658,7 +2658,7 @@
         "Bridge (Heavens)": {
             "id": "hFjPSbBEQXVQNXmW",
             "name": "Most (Niebiosa)",
-            "description": "<p>Tworzysz most z magicznej energii, którego długość i szerokość w metrach mogą być równe maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Za każde 2 PS możesz zwiększyć szerokość lub długość mostu o tyle metrów, ile wynosi Bonus z Siły Woli.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Tworzysz most z magicznej energii, którego długość i szerokość w metrach mogą być równe maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Za każde 2 PS możesz zwiększyć szerokość lub długość mostu o tyle metrów, ile wynosi Bonus z Siły Woli.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.hFjPSbBEQXVQNXmW",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
@@ -3065,7 +3065,7 @@
         "Entangle (Heavens)": {
             "id": "IYclEWSEVogFXf3w",
             "name": "Pochwycenie (Niebiosa)",
-            "description": "<p>Za pomocą magii unieruchamiasz cel, oplatając go tym, co najlepiej pasuje do twojej Tradycji - pnączami, cieniami czy ubraniem. Twój cel otrzymuje 1 poziom Stanu @Condition[Pochwycenie], którego Siła równa jest twojej Inteligencji. Za każde 2 PS możesz dodać 1 dodatkowy poziom @Condition[Pochwycenie]{Pochwycenia}. Zaklęcie trwa, dopóki wszystkie poziomy @Condition[Pochwycenie]{Pochwycenia} nie zostaną usunięte.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Za pomocą magii unieruchamiasz cel, oplatając go tym, co najlepiej pasuje do twojej Tradycji - pnączami, cieniami czy ubraniem. Twój cel otrzymuje 1 poziom Stanu @Condition[Pochwycenie], którego Siła równa jest twojej Inteligencji. Za każde 2 PS możesz dodać 1 dodatkowy poziom @Condition[Pochwycenie]{Pochwycenia}. Zaklęcie trwa, dopóki wszystkie poziomy @Condition[Pochwycenie]{Pochwycenia} nie zostaną usunięte.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.IYclEWSEVogFXf3w",
             "effects": {
                 "6XpxhRM1r3IPL5qc": {
@@ -3409,7 +3409,7 @@
         "Aethyric Armour (Heavens)": {
             "id": "kMu92bwMe2jyXSjM",
             "name": "Pancerz Eteru (Niebiosa)",
-            "description": "<p>Zyskujesz 1 Punkt Pancerza na wszystkich Miejscach Trafień, oplatając się ochronnym pasem magii.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Zyskujesz 1 Punkt Pancerza na wszystkich Miejscach Trafień, oplatając się ochronnym pasem magii.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.kMu92bwMe2jyXSjM",
             "effects": {
                 "PKAiQdd29vmRBjZz": {
@@ -3638,7 +3638,7 @@
         "Fate’s Fickle Fingers": {
             "id": "lzTmKnhO1MY9ycPU",
             "name": "Łaska losu",
-            "description": "<p>Bieżące Punkty Szczęścia wszystkich sojuszników w Zasięgu - poza posiadającymi Talent <em>Magia Tajemna (Niebiosa)</em> - łączone są w jedną wspólną pulę. Każdy z tych sojuszników może pobierać z niej punkty - kto pierwszy, ten lepszy. Gdy zaklęcie się kończy, rozdajesz pozostałe Punkty Szczęścia tak sprawiedliwie, jak to tylko możliwe.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Bieżące Punkty Szczęścia wszystkich sojuszników w Zasięgu - poza posiadającymi Talent <em>Magia Tajemna (Niebiosa)</em> - łączone są w jedną wspólną pulę. Każdy z tych sojuszników może pobierać z niej punkty - kto pierwszy, ten lepszy. Gdy zaklęcie się kończy, rozdajesz pozostałe Punkty Szczęścia tak sprawiedliwie, jak to tylko możliwe.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.lzTmKnhO1MY9ycPU",
             "duration": "Bonus SW Rund",
             "target": "Bonus I metrów",
@@ -3733,7 +3733,7 @@
         "Move Object (Heavens)": {
             "id": "MhpmVs0WVP96uOnw",
             "name": "Dotyk na odległość (Niebiosa)",
-            "description": "<p>Używając magii, możesz chwycić przedmiot (ale nie świadomą istotę) nie większy od ciebie i przesunąć go mocą, której Siła równa jest twojej Sile Woli. Możesz przemieścić ten przedmiot maksymalnie o tyle metrów, ile wynosi twój Bonus z Siły Woli. Każdy, kto będzie próbował zatrzymać ten przedmiot, musi wykonać <strong>Przeciwstawny Test Siły Woli/Siły</strong>. Za każde 2 PS możesz zwiększyć dystans przesunięcia o tyle metrów, ile wynosi Bonus z Siły Woli.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Używając magii, możesz chwycić przedmiot (ale nie świadomą istotę) nie większy od ciebie i przesunąć go mocą, której Siła równa jest twojej Sile Woli. Możesz przemieścić ten przedmiot maksymalnie o tyle metrów, ile wynosi twój Bonus z Siły Woli. Każdy, kto będzie próbował zatrzymać ten przedmiot, musi wykonać <strong>Przeciwstawny Test Siły Woli/Siły</strong>. Za każde 2 PS możesz zwiększyć dystans przesunięcia o tyle metrów, ile wynosi Bonus z Siły Woli.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.MhpmVs0WVP96uOnw",
             "duration": "1 Rund",
             "target": "1",
@@ -3878,7 +3878,7 @@
         "Terrifying (Heavens)": {
             "id": "N1aBnhPpQUu0Bkuh",
             "name": "Przerażający wygląd (Niebiosa)",
-            "description": "<p>Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.kJNAY1YRaCy9IgmT]{Groza (1)}. </p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.kJNAY1YRaCy9IgmT]{Groza (1)}. </p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.N1aBnhPpQUu0Bkuh",
             "effects": {
                 "ydDGrVtmLytP0YU7": {
@@ -3985,7 +3985,7 @@
         "Arrow Shield (Heavens)": {
             "id": "nKmrZwwjvYcS0XhE",
             "name": "Niszczyciel strzał (Niebiosa)",
-            "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.nKmrZwwjvYcS0XhE",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
@@ -4969,7 +4969,7 @@
         "Drop (Heavens)": {
             "id": "R0n47B7PvdOaTl23",
             "name": "Niezdarność (Niebiosa)",
-            "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.R0n47B7PvdOaTl23",
             "duration": "Natychmiast",
             "target": "1",
@@ -5536,7 +5536,7 @@
         "Dome (Heavens)": {
             "id": "sWILR54qy3qsdQYQ",
             "name": "Kopuła (Niebiosa)",
-            "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.Item.Bvd2aZ0gQUXHfCTh]{Ochrona (6+)}> przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.Item.Bvd2aZ0gQUXHfCTh]{Ochrona (6+)}> przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.sWILR54qy3qsdQYQ",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
@@ -5749,7 +5749,7 @@
         "Blast (Heavens)": {
             "id": "TtiLLfX0a21t2YpO",
             "name": "Wybuch (Niebiosa)",
-            "description": "<p>Formujesz magię w wybuchowy podmuch. Uznawany jest on za <i>magiczny pocisk</i> o współczynniku Obrażeń +3 zadawanym wszystkim celom w Zasięgu.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Formujesz magię w wybuchowy podmuch. Uznawany jest on za <i>magiczny pocisk</i> o współczynniku Obrażeń +3 zadawanym wszystkim celom w Zasięgu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.TtiLLfX0a21t2YpO",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
@@ -5850,7 +5850,7 @@
         "Flight (Heavens)": {
             "id": "U6P57Y8nJ3H7pFvx",
             "name": "Lot (Niebiosa)",
-            "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.EO05HX7jql0g605A]{Latanie (Zwinność)}.</span></p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.EO05HX7jql0g605A]{Latanie (Zwinność)}.</span></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.U6P57Y8nJ3H7pFvx",
             "effects": {
                 "mPtrAwHjzrMPyL9o": {
@@ -5894,7 +5894,7 @@
         "Ward (Heavens)": {
             "id": "uaCXMXoY3UaJ26ne",
             "name": "Magiczna ochrona (Niebiosa)",
-            "description": "<p>Oplatasz się ochronną magią, zyskując Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.Bvd2aZ0gQUXHfCTh]{Ochrona (9+)}.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Oplatasz się ochronną magią, zyskując Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.Bvd2aZ0gQUXHfCTh]{Ochrona (9+)}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.uaCXMXoY3UaJ26ne",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -5947,7 +5947,7 @@
         "The Third Portent of Amul": {
             "id": "uIamxlmA6SWAa3YR",
             "name": "Trzecie proroctwo Amul",
-            "description": "<p><span class=\"fontstyle0\">Zyskujesz 1 dodatkowy Punkt Przeznaczenia. Jeśli punkt ten nie zostanie wykorzystany przez czas trwania zaklęcia, przepada.</span></p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p><span class=\"fontstyle0\">Zyskujesz 1 dodatkowy Punkt Przeznaczenia. Jeśli punkt ten nie zostanie wykorzystany przez czas trwania zaklęcia, przepada.</span></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.uIamxlmA6SWAa3YR",
             "effects": {
                 "5OfdCRheCpwJsYh2": {
@@ -6383,7 +6383,7 @@
         "Chain Attack (Heavens)": {
             "id": "w5b653yUVENuVHzy",
             "name": "Seria pocisków (Niebiosa)",
-            "description": "<p>Wyzwalasz z magii wirujące i raniące cel zaklęcia kolce. Uznaje się je za <i>magiczne pociski</i>, które zadają +4 Obrażenia. Jeśli Seria pocisków zmniejszy Żywotność celu do 0, przenosi się na następny cel w ramach początkowego Zasięgu zaklęcia i w odległości tylu metrów od poprzedniego celu, ile wynosi Bonus z Siły Woli rzucającego, nadal zadając takie same obrażenia. Kolce mogą przeskakiwać w ten sposób tyle razy, ile wynosi Bonus z Siły Woli. Za każde 2 PS kolce mogą przeskoczyć na jeden dodatkowy cel.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Wyzwalasz z magii wirujące i raniące cel zaklęcia kolce. Uznaje się je za <i>magiczne pociski</i>, które zadają +4 Obrażenia. Jeśli Seria pocisków zmniejszy Żywotność celu do 0, przenosi się na następny cel w ramach początkowego Zasięgu zaklęcia i w odległości tylu metrów od poprzedniego celu, ile wynosi Bonus z Siły Woli rzucającego, nadal zadając takie same obrażenia. Kolce mogą przeskakiwać w ten sposób tyle razy, ile wynosi Bonus z Siły Woli. Za każde 2 PS kolce mogą przeskoczyć na jeden dodatkowy cel.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.w5b653yUVENuVHzy",
             "duration": "Natychmiast",
             "target": "Specjalny",
@@ -6592,7 +6592,7 @@
         "Cerulean Shield": {
             "id": "wTfoDOFOnvQykpdm",
             "name": "Niebiańska tarcza",
-            "description": "<p>Okrywasz się trzaskającą klatką strzelającej iskrami elektryczności i <em>Azyru</em>. Na czas trwania zaklęcia zyskujesz tyle Punktów Pancerza chroniących przed atakami wręcz na wszystkich Miejscach Trafienia, ile wynoszą PS z Testu Rzucania Zaklęcia. Jeśli zostaniesz zaatakowany bronią metalową - sztyletem, mieczem, włócznią o stalowym grocie - atakujący otrzymuje tyle Obrażeń, ile wynosi twój Bonus z Siły Woli..</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Okrywasz się trzaskającą klatką strzelającej iskrami elektryczności i <em>Azyru</em>. Na czas trwania zaklęcia zyskujesz tyle Punktów Pancerza chroniących przed atakami wręcz na wszystkich Miejscach Trafienia, ile wynoszą PS z Testu Rzucania Zaklęcia. Jeśli zostaniesz zaatakowany bronią metalową - sztyletem, mieczem, włócznią o stalowym grocie - atakujący otrzymuje tyle Obrażeń, ile wynosi twój Bonus z Siły Woli..</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.wTfoDOFOnvQykpdm",
             "effects": {
                 "SCQe2V2T0STbxyrD": {
@@ -6772,7 +6772,7 @@
         "The Second Portent of Amul": {
             "id": "xPTG5wLvHULLEM2p",
             "name": "Drugie proroctwo Amul",
-            "description": "<p>Zyskujesz tyle Punktów Szczęścia, ile PS uzyskałeś w Teście. Za każde 2 PS zyskujesz dodatkowy Punkt Szczęścia. Wszelkie punkty niewykorzystane do końca czasu trwania zaklęcia przepadają.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Zyskujesz tyle Punktów Szczęścia, ile PS uzyskałeś w Teście. Za każde 2 PS zyskujesz dodatkowy Punkt Szczęścia. Wszelkie punkty niewykorzystane do końca czasu trwania zaklęcia przepadają.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.xPTG5wLvHULLEM2p",
             "effects": {
                 "2ZR0nyijw6fsufWi": {
@@ -6813,7 +6813,7 @@
         "Starcrossed": {
             "id": "XXEIfkXpNxpfkamo",
             "name": "Pod nieszczęśliwą gwiazdą",
-            "description": "<p>Podczas trwania zaklęcia możesz wydać swoje Punkty Szczęścia, by zmusić przeciwnika do wykonania Testu jeszcze raz.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
+            "description": "<p>Podczas trwania zaklęcia możesz wydać swoje Punkty Szczęścia, by zmusić przeciwnika do wykonania Testu jeszcze raz.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.XXEIfkXpNxpfkamo",
             "duration": "Bonus I Rund",
             "target": "1",
