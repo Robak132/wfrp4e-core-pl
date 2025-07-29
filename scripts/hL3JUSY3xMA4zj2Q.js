@@ -7,8 +7,8 @@ const test = await this.actor.setupCharacteristic("t", {
     difficulty: "difficult"
   },
   context: {
-    success: "Is able to stand!",
-    failure: "Fallen Prone!",
+    success: "Jest w stanie stać!",
+    failure: "Upada!",
   }
 });
 

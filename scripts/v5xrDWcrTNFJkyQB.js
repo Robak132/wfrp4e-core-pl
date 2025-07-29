@@ -1,5 +1,5 @@
 let addOption = await foundry.applications.api.DialogV2.confirm({
-    window : {title : "Opcjonalne przedmioty"},
+    window : {title : "Opcjonalne"},
     content : 
     `
     Dodać opcjonalne przedmioty?

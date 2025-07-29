@@ -1,10 +1,10 @@
 
 
-if (!args.opposedTest.attackerTest.item?.system?.isMelee) 
+if (!args.attackerTest.item?.system?.isMelee)
 {
-    let choice = await foundry.applications.api.DialogV2.confirm({ window: { title: this.effect.name }, content: `<p><strong>${this.effect.name}</strong>: Czy ten magiczny lub zasięgowy atak pochodzi spoza Kopuły?</p>` })
+    let choice = await foundry.applications.api.DialogV2.confirm({ window: { title: this.effect.name }, content: `<p><strong>${this.effect.name}</strong>: Czy ten Magiczny lub Zasięgowy atak pochodził spoza Kopuły?</p>` })
 
-    if (choice) 
+    if (choice)
     {
         args.ward = 6;
     }

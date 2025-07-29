@@ -60,14 +60,14 @@ let choice3 = [
 
 let choice = await foundry.applications.api.DialogV2.wait({
     window : {title : "Wybór zbroi"},
-    content : 
+    content :
     `<p>
     Wybierz
     </p>
     <ol>
-    <li>Kolczuga</li>
-    <li>Kolczuga i skóra</li>
-    <li>Płyta</li>
+        <li>Kolczuga</li>
+        <li>Kolczuga i skóra</li>
+        <li>Płyta</li>
     </ol> 
     `,
     buttons : [

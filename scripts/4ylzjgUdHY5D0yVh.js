@@ -10,12 +10,12 @@ let characteristics = {
     "wp" : 25,
     "fel" : 10
 }
-let skills = ["Cool", "Dodge", "Intimidate", "Intuition", "Language (Battle)", "Leadership", "Lore (Warfare)", "Perception"]
+let skills = [game.i18n.localize("NAME.Cool"), game.i18n.localize("NAME.Dodge"), game.i18n.localize("NAME.Intimidate"), game.i18n.localize("NAME.Intuition"), "Język (Bitewny)", game.i18n.localize("NAME.Leadership"), "Wiedza (Sztuka Wojenna)", game.i18n.localize("NAME.Perception")]
 let skillAdvancements = [15, 15, 15, 15, 10, 15, 10, 10]
 
-let talents = ["Combat Aware", "Combat Master", "Combat Reflexes", "Inspiring", "Resolute", "War Leader"]
-let trappings = ["Hand Weapon",  "Shield", "Plate Breastplate", "Plate Bracers", "Plate Helm", "Plate Leggings"]
-let specialItems = []    
+let talents = ["Zmysł Bitewny", "Mistrz Walki", "Bitewny Refleks", "Inspirujący", "Nieugięty", "Wódz"]
+let trappings = ["Broń ręczna",  "Tarcza", "Płytowy Napierśnik", "Płytowe Naramienniki", "Hełm płytowy", "Płytowe Nagolenniki"]
+let specialItems = []
 let items = [];
 
 let updateObj = this.actor.toObject();

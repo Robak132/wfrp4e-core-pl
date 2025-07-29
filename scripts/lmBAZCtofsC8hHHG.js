@@ -4,14 +4,14 @@ do {
   const signedSL = SL >= 0 ? `+${SL}` : "SL";
   const content = `
   <div>
-    <p style="font-weight: bold;">You have accrued ${signedSL} ${SL > 1 ? "SLs" : "SL"}. Do you want to roll d10?</p>
-    <p>1–6: add +1 SL</p>
-    <p>7–10: lose all accrued SLs and perform next Test at –1 SL</p>
+    <p style="font-weight: bold;">Zdobyto ${signedSL} PS. Czy chcesz rzucić k10?</p>
+    <p>1–6: dodaj +1 PS</p>
+    <p>7–10: Strać wszystkie PS i następny test wykonaj z -1 PS</p>
   </div>
 `;
   const choice = await foundry.applications.api.DialogV2.confirm({
-    yes: {label: "Roll", icon: "fas fa-dice"},
-    no: {label: `Keep ${signedSL} SL`, icon: "fas fa-check"},
+    yes: {label: "Rzuć", icon: "fas fa-dice"},
+    no: {label: `Zachowaj ${signedSL} PS`, icon: "fas fa-check"},
     content,
   });
 

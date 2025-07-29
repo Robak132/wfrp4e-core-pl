@@ -46,7 +46,7 @@ async function addTrait(c) {
 }
 
 async function dialogChoice() {
-    for (let c of choice1) 
+    for (let c of choice1)
     {
         if (await foundry.applications.api.DialogV2.confirm({window : {title: "Cechy Opcjonalne"}, content:`<p>Dodać cechy opcjonalne?</p><ol><li>${c.name}</li></ol>`}))
         {

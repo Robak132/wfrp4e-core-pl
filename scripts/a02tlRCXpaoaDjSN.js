@@ -1,4 +1,4 @@
-let careers = await warhammer.utility.findAllItems("career", "Ładowanie Profesji", true);
+let careers = await warhammer.utility.findAllItems("career", "Wyszukiwanie Profesji...", true);
 careers.forEach(c => {
     if (!c.id)
     {

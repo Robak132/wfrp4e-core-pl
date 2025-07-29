@@ -27,7 +27,7 @@ let choice2 = [
 
 let choice =  await foundry.applications.api.DialogV2.wait({
     window : {
-        title : "Choice"
+        title : "Wybór umiejętności",
     },
     content : 
     `<p>

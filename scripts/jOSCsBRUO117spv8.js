@@ -1,1 +1,1 @@
-args.abort = `Only gunpowder or artillery weapons can attack targets within the ${this.effect.name}`;
+args.abort = `Tylko broń prochowa lub broń artyleryjska może atakować cele w obrębie: ${this.effect.name}`;

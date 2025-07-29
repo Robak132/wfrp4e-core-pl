@@ -8,15 +8,20 @@ Aktualnie obsługiwane moduły:
 
 - [Warhammer Fantasy 4th Edition System](https://foundryvtt.com/packages/wfrp4e)
 - [Core Rulebook](https://foundryvtt.com/packages/wfrp4e-core/)
-- [Up in Arms](https://foundryvtt.com/packages/wfrp4e-up-in-arms) :new:
+- [Up in Arms](https://foundryvtt.com/packages/wfrp4e-up-in-arms)
+- [Starter Set](https://foundryvtt.com/packages/wfrp4e-starter-set)
+- [Archives of the Empire vol. I](https://foundryvtt.com/packages/wfrp4e-archives1):new:
 
 Autorzy:
-- Liv
+- Daniel.Sobolewski
 - Ez
 - GregorHak
+- Gwynbleidd
+- Liv
 - Myeshko1
 - silent_mark
 - Varis (dr_hans)
+- Verhar
 
 <p align="center"><b>Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.</b></p>
 <p align="center"><b>Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024</b></p>

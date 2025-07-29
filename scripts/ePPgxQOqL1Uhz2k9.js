@@ -2,7 +2,7 @@ let addOption = await foundry.applications.api.DialogV2.confirm({
     window : {title : "Opcjonalne"},
     content : 
     `
-    Dodać opcjonalne?
+    Dodać opcjonalne przedmioty?
     <p>
     Broń Zasięgowa (Łuk) +10 oraz długi łuk z 12 strzałami
     </p>

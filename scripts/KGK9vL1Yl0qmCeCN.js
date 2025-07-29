@@ -33,8 +33,8 @@ if (choice.length)
     {
         switch(training.id)
         {
-            case "broken" :
-                let roll = await new Roll("2d10").roll({allowInteractive : false});   
+            case "ujarzmiony" : 
+                let roll = await new Roll("2d10").roll({allowInteractive : false});
                 roll.toMessage(this.script.getChatData());
                 changes.push({value : roll.total, mode : 2, key : "system.characteristics.fel.modifier"})
 
@@ -48,37 +48,37 @@ if (choice.length)
                 }
                 break;
 
-            case "drive" : 
+            case "pociągowy" : 
 
                 break;
 
-            case "entertain" : 
+            case "maskotka" : 
 
                 break;
 
-            case "fetch" : 
+            case "aportujący" : 
 
                 break;
 
-            case "guard" : 
+            case "stóżujący" : 
                 let territorial = await fromUuid("Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do");
                 await this.actor.createEmbeddedDocuments("Item", [territorial], {fromEffect: this.effect.id})
                 foundry.utils.setProperty(args, "options.keepId", true);
                 break;
 
-            case "home" : 
+            case "powracający" : 
 
                 break;
 
-            case "magic" : 
+            case "magiczny" : 
 
                 break;
 
-            case "mount" : 
+            case "wierzchowiec" : 
 
                 break;
 
-            case "war" : 
+            case "bojowy" : 
                 changes.push({value : 10, mode : 2, key : "system.characteristics.ws.modifier"})
                 break;
         }

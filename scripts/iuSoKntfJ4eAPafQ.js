@@ -1,4 +1,4 @@
-let spells = await warhammer.utility.findAllItems("spell", "Wyszukuję zaklęcia...", true, ["system.lore.value"])
+let spells = await warhammer.utility.findAllItems("spell", "Wyszukiwanie zaklęć...", true, ["system.lore.value"])
 spells = spells.filter(s => ["fire", "heavens", "beasts", "shadow", "light", "life", "death", "metal"].includes(s.system.lore.value)).sort((a, b) => a.system.lore.value > b.system.lore.value ?  1 : -1)
 
 let choice = await ItemDialog.create(spells, 1, {text : "Wybierz Zaklęcie", title : this.effect.name});

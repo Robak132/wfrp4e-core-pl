@@ -1,1 +1,1 @@
-args.abort = `Cannot perform Ranged Attacks within ${this.effect.name}`;
+args.abort = `Nie może wykonywać ataków dystansowych: ${this.effect.name}`;
