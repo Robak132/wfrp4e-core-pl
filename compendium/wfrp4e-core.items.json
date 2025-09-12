@@ -1,5 +1,5 @@
 {
-  "label": "Wyposażenie (Podręcznik Główny)",
+  "label": "Przedmioty (Podręcznik Główny)",
   "mapping": {
     "gmdescription": "system.gmdescription.value",
     "skills": {
@@ -55,7 +55,8 @@
     },
     "roll": "system.rollable.skill",
     "penalties": "system.penalty.value",
-    "special": "system.special.value"
+    "special": "system.special.value",
+    "image": "img"
   },
   "folders": {
     "Careers": "Profesje",
@@ -64,17 +65,17 @@
     "Injuries": "Urazy",
     "Mutations": "Mutacje",
     "Prayers": "Modlitwy",
-	  "Blessings": "Błogosławieństwa",
-	  "Manann": "Manann",
-	  "Morr": "Morr",
-	  "Myrmidia": "Myrmidia",
-	  "Ranald": "Ranald",
+    "Blessings": "Błogosławieństwa",
+    "Manann": "Manann",
+    "Morr": "Morr",
+    "Myrmidia": "Myrmidia",
+    "Ranald": "Ranald",
     "Rhya": "Rhya",
-	  "Shallya": "Shallya",
-	  "Sigmar": "Sigmar",
-	  "Taal": "Taal",
-	  "Ulric": "Ulryk",
-	  "Verena": "Verena",
+    "Shallya": "Shallya",
+    "Sigmar": "Sigmar",
+    "Taal": "Taal",
+    "Ulric": "Ulryk",
+    "Verena": "Verena",
     "Psychologies": "Czynniki Psychologiczne",
     "Skills": "Umiejętności",
     "Spells": "Zaklęcia",
@@ -84,14 +85,14 @@
     "Ammunition": "Amunicja",
     "Armour": "Pancerze",
     "Weapons": "Broń",
-    "Books and Documents": "Księgi i Dokumenty",
-    "Clothing and Accessories": "Ubrania i dodatki",
+    "Books and Documents": "Księgi i dokumenty",
+    "Clothing and Accessories": "Odzież i akcesoria",
     "Drugs and Poisons": "Narkotyki i trucizny",
-    "Food and Drink": "Jedzenie i picie",
+    "Food and Drink": "Jedzenie, picie i nocleg",
     "Herbs and Draughts": "Zioła i mikstury",
-    "Miscellaneous": "Inne",
-    "Packs and Containers": "Pakunki i pojemniki",
-    "Tools and Kits": "Narzędzia pracy i warsztaty",
+    "Miscellaneous": "Różne",
+    "Packs and Containers": "Plecaki i pojemniki",
+    "Tools and Kits": "Narzędzia i zestawy",
     "Chaos Magic": "Magia Chaosu",
     "Lore of Beasts": "Tradycja Zwierząt",
     "Lore of Daemonology": "Tradycja Demonologii",
@@ -105,7 +106,8 @@
     "Lore of Shadow": "Tradycja Cieni",
     "Lore of Witchcraft": "Tradycja Czarownictwa",
     "Lore of Necromancy": "Tradycja Nekromancji",
-    "Petty Spells": "Magia Prosta"
+    "Petty Spells": "Magia Prosta",
+    "Uliric": "Ulryk"
   },
   "entries": {
     "Abbess": {
@@ -125,10 +127,10 @@
         "Wiedza (Teologia)",
         "Modlitwa",
         "Charyzma",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Badania Naukowe",
         "Rzemiosło (Piwowarstwo)",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Rzemiosło (Winiarstwo)",
         "Dowodzenie",
         "Wiedza (Lokalna)",
@@ -194,16 +196,16 @@
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Wspinaczka",
         "Występy (Aktorstwo)",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Sekretne Znaki (Dowolne)",
+        "Sekretne Znaki ()",
         "Zwinne Palce",
         "Opieka nad Zwierzętami",
         "Tresura (Gołąb)",
-        "Język (Dowolny)",
+        "Język ()",
         "Dowodzenie"
       ],
       "talents": [
@@ -214,7 +216,7 @@
       ],
       "trappings": [
         "Księga (Kryptografia)",
-        "Sieć Szpiegów i Informatorów",
+        "Sieć szpiegów i informatorów",
         "Strych z Gołębiami Pocztowymi",
         "Kałamarz i Pióro"
       ]
@@ -302,11 +304,11 @@
         "Targowanie",
         "Wiedza (Polityka)",
         "Zastraszanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Dowodzenie",
         "Nawigacja",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)"
+        "Język ()",
+        "Wiedza ()"
       ],
       "talents": [
         "Łapówkarz",
@@ -335,8 +337,8 @@
         "Wiedza (Chemia)",
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
-        "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Aptekarz)",
+        "Rzemiosło (Truciciel)",
         "Charyzma",
         "Targowanie",
         "Wiedza (Nauka)",
@@ -347,11 +349,11 @@
       "talents": [
         "Przestępca",
         "Żyłka Handlowa",
-        "Etykieta (Członkowie Cechu)",
+        "Etykieta (Członkowie Gildii)",
         "Aptekarz"
       ],
       "trappings": [
-        "Licencja Cechu Aptekarzy",
+        "Licencja Gildii Aptekarzy",
         "Narzędzia pracy (Aptekarza)"
       ]
     },
@@ -369,8 +371,8 @@
         "Wiedza (Chemia)",
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
-        "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Aptekarz)",
+        "Rzemiosło (Truciciel)",
         "Charyzma",
         "Targowanie",
         "Wiedza (Nauka)",
@@ -380,14 +382,14 @@
         "Intuicja",
         "Dowodzenie",
         "Badania Naukowe",
-        "Sekretne Znaki (Cechu)",
+        "Sekretne Znaki (Gildii)",
         "Zastraszanie",
         "Jeździectwo (Konie)"
       ],
       "talents": [
         "Wyczulony Zmysł (Smak)",
-        "Zimna krew",
-        "Mistrz Rzemiosła (Trucizny)",
+        "Zimna Krew",
+        "Mistrz Rzemiosła (Truciciel)",
         "Znawca (Aptekarstwo)"
       ],
       "trappings": [
@@ -409,8 +411,8 @@
         "Wiedza (Chemia)",
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
-        "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)"
+        "Rzemiosło (Aptekarz)",
+        "Rzemiosło (Truciciel)"
       ],
       "talents": [
         "Przyrządzanie Mikstur",
@@ -440,11 +442,11 @@
         "Odporność",
         "Wycena",
         "Skradanie (Miasto)",
-        "Rzemiosło (Dowolne)"
+        "Rzemiosło ()"
       ],
       "talents": [
         "Talent Artystyczny",
-        "Wytwórca (Dowolne Rzemiosło)",
+        "Wytwórca ()",
         "Mocne Plecy",
         "Bardzo Silny"
       ],
@@ -462,7 +464,7 @@
       "careergroup": "Artystka",
       "class": "Dworzanie",
       "skills": [
-        "Sztuka (Dowolna)",
+        "Sztuka ()",
         "Opanowanie",
         "Mocna Głowa",
         "Wycena",
@@ -496,22 +498,22 @@
         "Odporność",
         "Wycena",
         "Skradanie (Miasto)",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Charyzma",
         "Targowanie",
         "Wiedza (Lokalna)",
         "Plotkowanie",
-        "Język (Cechu)",
+        "Język (Gildii)",
         "Percepcja"
       ],
       "talents": [
         "Żyłka Handlowa",
-        "Etykieta (Członkowie Cechu)",
+        "Etykieta (Członkowie Gildii)",
         "Zręczny",
         "Tragarz"
       ],
       "trappings": [
-        "licencja Cechu",
+        "licencja Gildii",
         "Narzędzia pracy"
       ]
     },
@@ -523,7 +525,7 @@
       "careergroup": "Artystka",
       "class": "Dworzanie",
       "skills": [
-        "Sztuka (Dowolna)",
+        "Sztuka ()",
         "Opanowanie",
         "Mocna Głowa",
         "Wycena",
@@ -563,7 +565,7 @@
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Przekupstwo",
         "Charyzma",
         "Intuicja",
@@ -575,7 +577,7 @@
         "Nawigacja",
         "Broń Zasięgowa (Miotana)",
         "Występy (Aktorstwo)",
-        "Broń Zasięgowa (Kusza)"
+        "Broń Zasięgowa (Kusze)"
       ],
       "talents": [
         "Celny Strzał",
@@ -585,7 +587,7 @@
       ],
       "trappings": [
         "Kusza z 10 Bełtami",
-        "Zestaw do Charakteryzacji"
+        "Zestaw do charakteryzacji"
       ]
     },
     "Attendant": {
@@ -603,7 +605,7 @@
         "Odporność",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Opieka nad Zwierzętami",
         "Mocna Głowa",
         "Wycena",
@@ -682,7 +684,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Percepcja",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Skradanie (Wieś)",
         "Plotkowanie",
         "Intuicja",
@@ -805,7 +807,7 @@
         "Sztuka (Pisarstwo)",
         "Występy (Przemawianie)",
         "Zastraszanie",
-        "Wiedza (Dowolna)"
+        "Wiedza ()"
       ],
       "talents": [
         "Mól Książkowy",
@@ -829,7 +831,7 @@
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Hazard",
         "Plotkowanie",
         "Targowanie",
@@ -869,7 +871,7 @@
         "Intuicja",
         "Skradanie (Miasto)",
         "Występy (Aktorstwo)",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
@@ -909,7 +911,7 @@
         "Intuicja",
         "Skradanie (Miasto)",
         "Występy (Aktorstwo)",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
@@ -991,7 +993,7 @@
         "Percepcja"
       ],
       "talents": [
-        "Etykieta (Członkowie Cechu)",
+        "Etykieta (Członkowie Gildii)",
         "Obieżyświat",
         "Bardzo Silny",
         "Wodniak"
@@ -1021,12 +1023,12 @@
         "Unik",
         "Odporność",
         "Występy (Śpiewanie)",
-        "Język (Dowolny)",
+        "Język ()",
         "Broń Biała (Podstawowa)",
         "Opanowanie",
         "Dowodzenie",
         "Percepcja",
-        "Rzemiosło (Stolarstwo)"
+        "Rzemiosło (Stolarz)"
       ],
       "talents": [
         "Wilk Morski",
@@ -1082,7 +1084,7 @@
         "Plotkowanie",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)"
+        "Skradanie ()"
       ],
       "talents": [
         "Ulicznik",
@@ -1116,7 +1118,7 @@
         "Atletyka",
         "Odporność",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Broń Zasięgowa (Oplątująca)",
         "Tropienie",
         "Opieka nad Zwierzętami",
@@ -1157,7 +1159,7 @@
         "Atletyka",
         "Odporność",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Broń Zasięgowa (Oplątująca)",
         "Tropienie"
       ],
@@ -1190,7 +1192,7 @@
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
-        "Broń Biała (Dowolna)"
+        "Broń Biała ()"
       ],
       "talents": [
         "Skrócenie Dystansu",
@@ -1283,7 +1285,7 @@
         "Intuicja",
         "Wiedza (Lokalna)",
         "Broń Biała (Bijatyka)",
-        "Muzyka (Dowolna)",
+        "Muzyka ()",
         "Opanowanie",
         "Wiedza (Prawo)",
         "Percepcja",
@@ -1314,11 +1316,11 @@
       "skills": [
         "Atletyka",
         "Charyzma",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Zwinne Palce"
       ],
       "talents": [
@@ -1386,7 +1388,7 @@
         "Przekupstwo",
         "Hazard",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Charyzma",
         "Zastawianie Pułapek"
       ],
@@ -1463,8 +1465,8 @@
         "Wiedza (Lokalna)",
         "Występy (Gawędziarstwo)",
         "Dowodzenie",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)",
+        "Język ()",
+        "Wiedza ()",
         "Wiedza (Heraldyka)",
         "Jeździectwo (Konie)"
       ],
@@ -1475,7 +1477,7 @@
         "Charyzmatyczny"
       ],
       "trappings": [
-        "Koń Wierzchowy z Rzędem",
+        "Koń wierzchowy z rzędem",
         "Dobry strój dworski",
         "zespół Doradców i Asystentów"
       ]
@@ -1531,7 +1533,7 @@
         "Wiedza (Inżynieria)",
         "Percepcja",
         "Broń Zasięgowa (Prochowa)",
-        "Rzemiosło (Inżynieria)",
+        "Rzemiosło (Inżynier)",
         "Powożenie",
         "Unik",
         "Nawigacja",
@@ -1542,8 +1544,8 @@
         "Dowodzenie",
         "Jeździectwo (Konie)",
         "Sekretne Znaki (Gildii)",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)"
+        "Język ()",
+        "Wiedza ()"
       ],
       "talents": [
         "Arcydzieło",
@@ -1552,10 +1554,10 @@
         "Niewzruszony"
       ],
       "trappings": [
-        "licencja Gildii",
+        "Licencja Gildii",
         "Biblioteka (Inżyniera)",
         "Doskonałe narzędzia pracy (Inżyniera)",
-        "duży warsztat (Inżyniera)"
+        "Duży warsztat (Inżyniera)"
       ]
     },
     "Clerk": {
@@ -1610,7 +1612,7 @@
         "Broń Zasięgowa (Prochowa)"
       ],
       "talents": [
-        "Zimna krew",
+        "Zimna Krew",
         "Z Bata",
         "Artylerzysta",
         "Odporność Psychiczna"
@@ -1646,7 +1648,7 @@
         "Broń Zasięgowa (Prochowa)",
         "Tresura (Konie)",
         "Zastraszanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Szlaki)"
       ],
       "talents": [
@@ -1720,7 +1722,7 @@
         "Występy (Gawędziarstwo)",
         "Targowanie",
         "Broń Biała (Podstawowa)",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Unik",
         "Przekupstwo",
         "Charyzma",
@@ -1728,7 +1730,7 @@
         "Dowodzenie"
       ],
       "talents": [
-        "Wytwórca (Dowolne Rzemiosło)",
+        "Wytwórca ()",
         "Żyłka Handlowa",
         "Waleczne Serce",
         "Niezwykle Odporny"
@@ -1762,8 +1764,8 @@
         "Wiedza (Lokalna)",
         "Występy (Gawędziarstwo)",
         "Dowodzenie",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)"
+        "Język ()",
+        "Wiedza ()"
       ],
       "talents": [
         "Przekonujący",
@@ -1921,7 +1923,7 @@
         "Intuicja",
         "Dowodzenie",
         "Percepcja",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Wiedza (Prawo)",
         "Wiedza (Polityka)"
       ],
@@ -2073,13 +2075,13 @@
         "Przekupstwo",
         "Wycena",
         "Dowodzenie",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Zastraszanie",
-        "Wiedza (Dowolna)"
+        "Wiedza ()"
       ],
       "talents": [
-        "Wyczulony Zmysł (Dowolny)",
-        "Znawca (Dowolna Dziedzina)",
+        "Wyczulony Zmysł ()",
+        "Znawca ()",
         "Szybkie Czytanie",
         "Wieża Pamięci"
       ],
@@ -2111,7 +2113,7 @@
         "Targowanie",
         "Wiedza (Polityka)",
         "Zastraszanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Dowodzenie",
         "Nawigacja"
       ],
@@ -2285,7 +2287,7 @@
         "Leczenie",
         "Intuicja",
         "Język (Klasyczny)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja",
         "Charyzma",
         "Opanowanie",
@@ -2319,7 +2321,7 @@
         "Leczenie",
         "Intuicja",
         "Język (Klasyczny)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja",
         "Charyzma",
         "Opanowanie",
@@ -2360,7 +2362,7 @@
         "Wiedza (Inżynieria)",
         "Percepcja",
         "Broń Zasięgowa (Prochowa)",
-        "Rzemiosło (Inżynieria)",
+        "Rzemiosło (Inżynier)",
         "Powożenie",
         "Unik",
         "Nawigacja",
@@ -2389,17 +2391,17 @@
       "skills": [
         "Atletyka",
         "Charyzma",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Zwinne Palce",
-        "Występy (Dowolne)",
-        "Jeździectwo (Dowolne)",
+        "Występy ()",
+        "Jeździectwo ()",
         "Broń Biała (Podstawowa)",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Broń Zasięgowa (Miotana)"
       ],
       "talents": [
@@ -2445,7 +2447,7 @@
         "Obieżyświat"
       ],
       "trappings": [
-        "Kałamarz i Pióro",
+        "Kałamarz i pióro",
         "10 Arkuszy Pergaminu"
       ]
     },
@@ -2467,7 +2469,7 @@
         "Percepcja",
         "Atletyka",
         "Nawigacja",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Jeździectwo (Konie)",
         "Skradanie (Wieś)",
         "Tropienie",
@@ -2475,7 +2477,7 @@
         "Targowanie",
         "Sekretne Znaki (Łowców)",
         "Pływanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Rzemiosło (Kartografia)"
       ],
       "talents": [
@@ -2503,7 +2505,7 @@
         "Mocna Głowa",
         "Odporność",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Skradanie (Podziemia lub Miasto)",
         "Opieka nad Zwierzętami",
         "Plotkowanie",
@@ -2544,23 +2546,23 @@
         "Plotkowanie",
         "Targowanie",
         "Język (Klasyczny)",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Badania Naukowe",
         "Sztuka (Pisarstwo)",
         "Intuicja",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)",
+        "Język ()",
+        "Wiedza ()",
         "Percepcja",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Występy (Wykłady)",
         "Zastraszanie",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)"
+        "Język ()",
+        "Wiedza ()"
       ],
       "talents": [
         "Poliglota",
         "Mówca",
-        "Znawca (Dowolna Dziedzina)",
+        "Znawca ()",
         "Wieża Pamięci"
       ],
       "trappings": [
@@ -2582,7 +2584,7 @@
         "Leczenie",
         "Intuicja",
         "Język (Klasyczny)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja"
       ],
       "talents": [
@@ -2652,14 +2654,14 @@
         "Odporność",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Charyzma",
         "Mocna Głowa",
         "Dowodzenie",
         "Wiedza (Sztuka Wojenna)"
       ],
       "talents": [
-        "Nieustraszony (Dowolny)",
+        "Nieustraszony ()",
         "Waleczne Serce",
         "Niewzruszony",
         "Wódz"
@@ -2683,14 +2685,14 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Sigmar)",
-        "Broń Biała (Korbacz)",
+        "Broń Biała (Korbacze)",
         "Sztuka Przetrwania",
         "Sztuka (Ikony)",
         "Atletyka",
         "Opanowanie",
         "Język (Klasyczny)",
         "Wiedza (Imperium)",
-        "Broń Zasięgowa (Proca)"
+        "Broń Zasięgowa (Proce)"
       ],
       "talents": [
         "Twardziel",
@@ -2795,7 +2797,7 @@
         "Intuicja",
         "Dowodzenie",
         "Percepcja",
-        "Broń Zasięgowa (Kusza)"
+        "Broń Zasięgowa (Kusze)"
       ],
       "talents": [
         "Nieustraszony (Strażnicy)",
@@ -2863,7 +2865,7 @@
         "Opieka nad Zwierzętami",
         "Broń Biała (Podstawowa)",
         "Sztuka Przetrwania",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Jeździectwo (Konie)",
         "Pływanie",
         "Przekupstwo",
@@ -2871,7 +2873,7 @@
         "Plotkowanie",
         "Dowodzenie",
         "Wycena",
-        "Język (Dowolny)"
+        "Język ()"
       ],
       "talents": [
         "Władcza Postura",
@@ -2900,7 +2902,7 @@
         "Plotkowanie",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Przekupstwo",
         "Powożenie",
         "Wycena",
@@ -2971,7 +2973,7 @@
         "Unik",
         "Zastraszanie",
         "Broń Biała (Drzewcowa)",
-        "Broń Zasięgowa (Łuk)"
+        "Broń Zasięgowa (Łuki)"
       ],
       "talents": [
         "Nieustępliwy",
@@ -3007,7 +3009,7 @@
         "Unik",
         "Zastraszanie",
         "Broń Biała (Drzewcowa)",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Leczenie",
         "Język (Bitewny)",
         "Wiedza (Etykieta)",
@@ -3046,7 +3048,7 @@
         "Wyczucie Kierunku",
         "Włóczykij",
         "Czujny",
-        "Doświadczony Wędrowiec (Wybrany Teren)"
+        "Doświadczony Wędrowiec ()"
       ],
       "trappings": [
         "Broń ręczna",
@@ -3070,17 +3072,17 @@
         "Odporność",
         "Wycena",
         "Skradanie (Miasto)",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Charyzma",
         "Targowanie",
         "Wiedza (Lokalna)",
         "Plotkowanie",
-        "Język (Cechu)",
+        "Język (Gildii)",
         "Percepcja",
         "Intuicja",
         "Dowodzenie",
         "Badania Naukowe",
-        "Sekretne Znaki (Cechu)",
+        "Sekretne Znaki (Gildii)",
         "Przekupstwo",
         "Zastraszanie"
       ],
@@ -3092,7 +3094,7 @@
       ],
       "trappings": [
         "Cech",
-        "Dobre Ubranie"
+        "Ubranie dobrej jakości"
       ]
     },
     "Hedgewise": {
@@ -3116,7 +3118,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Rzemiosło (Amulety)",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Targowanie",
         "Wiedza (Genealogia)",
         "Wiedza (Magia)",
@@ -3125,8 +3127,8 @@
         "Modlitwa"
       ],
       "talents": [
-        "Wyczulony Zmysł (Dowolny)",
-        "Mistrz Rzemiosła (Zielarstwo)",
+        "Wyczulony Zmysł ()",
+        "Mistrz Rzemiosła (Zielarz)",
         "Widzenie w Ciemności",
         "Odporność Psychiczna"
       ],
@@ -3185,7 +3187,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Rzemiosło (Amulety)",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Targowanie",
         "Wiedza (Genealogia)",
         "Wiedza (Magia)",
@@ -3223,7 +3225,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Rzemiosło (Amulety)",
-        "Rzemiosło (Zielarstwo)"
+        "Rzemiosło (Zielarz)"
       ],
       "talents": [
         "Zmysł Magii",
@@ -3281,7 +3283,7 @@
         "Sztuka Przetrwania",
         "Percepcja",
         "Pływanie",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Mocna Głowa",
         "Opanowanie",
         "Plotkowanie",
@@ -3316,7 +3318,7 @@
         "Sztuka Przetrwania",
         "Percepcja",
         "Pływanie",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Mocna Głowa",
         "Opanowanie",
         "Plotkowanie",
@@ -3326,13 +3328,13 @@
         "Intuicja",
         "Dowodzenie",
         "Wiedza (Medycyna)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Truciciel)",
         "Powożenie",
         "Nawigacja"
       ],
       "talents": [
         "Przyrządzanie Mikstur",
-        "Mistrz Rzemiosła (Zielarstwo)",
+        "Mistrz Rzemiosła (Zielarz)",
         "Odporny na (Trucizny)",
         "Znawca (Zioła)"
       ],
@@ -3355,13 +3357,13 @@
         "Sztuka Przetrwania",
         "Percepcja",
         "Pływanie",
-        "Rzemiosło (Zielarstwo)"
+        "Rzemiosło (Zielarz)"
       ],
       "talents": [
         "Wyczulony Zmysł (Smak)",
         "Wyczucie Kierunku",
         "Włóczykij",
-        "Doświadczony Wędrowiec (Wybrany Teren)"
+        "Doświadczony Wędrowiec ()"
       ],
       "trappings": [
         "Buty",
@@ -3384,7 +3386,7 @@
         "Sztuka Przetrwania",
         "Percepcja",
         "Pływanie",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Mocna Głowa",
         "Opanowanie",
         "Plotkowanie",
@@ -3394,7 +3396,7 @@
         "Intuicja",
         "Dowodzenie",
         "Wiedza (Medycyna)",
-        "Rzemiosło (Trucizny)"
+        "Rzemiosło (Truciciel)"
       ],
       "talents": [
         "Wytwórca (Zielarstwo)",
@@ -3467,13 +3469,13 @@
         "Wiedza (Heraldyka)"
       ],
       "talents": [
-        "Wyczulony Zmysł (Dowolny)",
-        "Nienawiść (Dowolne)",
+        "Wyczulony Zmysł ()",
+        "Nienawiść ()",
         "Porywająca Gorliwość",
         "Odporność Psychiczna"
       ],
       "trappings": [
-        "Szata Dobrej Jakości",
+        "Szaty dobrej jakości",
         "Relikwia",
         "Podwładni Kapłani",
         "Świątynia"
@@ -3494,7 +3496,7 @@
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Przekupstwo",
         "Charyzma",
         "Intuicja",
@@ -3540,7 +3542,7 @@
         "Unik",
         "Zastraszanie",
         "Broń Biała (Drzewcowa)",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Leczenie",
         "Język (Bitewny)",
         "Wiedza (Etykieta)",
@@ -3605,13 +3607,13 @@
         "Charyzma",
         "Opanowanie",
         "Występy (Gawędziarstwo)",
-        "Język (Dowolny)",
+        "Język ()",
         "Broń Biała (Podstawowa)",
         "Nawigacja"
       ],
       "talents": [
         "Żyłka Handlowa",
-        "Etykieta (Członkowie Cechu)",
+        "Etykieta (Członkowie Gildii)",
         "Nos do Kłopotów",
         "Pilot Rzeczny"
       ],
@@ -3635,12 +3637,12 @@
         "Wiedza (Bestie)",
         "Sztuka Przetrwania",
         "Percepcja",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Zastawianie Pułapek",
         "Opanowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Sekretne Znaki (Łowców)",
         "Skradanie (Wieś)"
       ],
@@ -3668,12 +3670,12 @@
         "Wiedza (Bestie)",
         "Sztuka Przetrwania",
         "Percepcja",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Zastawianie Pułapek",
         "Opanowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Sekretne Znaki (Łowców)",
         "Skradanie (Wieś)",
         "Nawigacja",
@@ -3681,7 +3683,7 @@
         "Pływanie",
         "Tropienie",
         "Opieka nad Zwierzętami",
-        "Tresura (Dowolna)"
+        "Tresura ()"
       ],
       "talents": [
         "Nieustraszony (Potwory)",
@@ -3705,7 +3707,7 @@
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Hazard",
         "Plotkowanie",
         "Targowanie",
@@ -3736,7 +3738,7 @@
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
-        "Skradanie (Dowolne)"
+        "Skradanie ()"
       ],
       "talents": [
         "Gadanina",
@@ -3767,7 +3769,7 @@
         "Badania Naukowe"
       ],
       "talents": [
-        "Błogosławieństwo (Dowolne Bóstwo)",
+        "Błogosławieństwo ()",
         "Święte Wizje",
         "Czytanie/Pisanie",
         "Charyzmatyczny"
@@ -3797,7 +3799,7 @@
         "Broń Biała (Podstawowa)",
         "Plotkowanie",
         "Wiedza (Czarownice)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Zasięgowa ()",
         "Jeździectwo (Konie)",
         "Odporność",
         "Dowodzenie",
@@ -3833,7 +3835,7 @@
         "Percepcja"
       ],
       "talents": [
-        "Zimna krew",
+        "Zimna Krew",
         "Groźny",
         "Czytanie/Pisanie",
         "Nieugięty"
@@ -3904,9 +3906,9 @@
         "Sztuka (Pisarstwo)",
         "Występy (Przemawianie)",
         "Zastraszanie",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Opanowanie",
-        "Wiedza (Dowolna)"
+        "Wiedza ()"
       ],
       "talents": [
         "Władcza Postura",
@@ -3933,7 +3935,7 @@
         "Leczenie",
         "Intuicja",
         "Język (Klasyczny)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja",
         "Charyzma",
         "Opanowanie",
@@ -3946,7 +3948,7 @@
         "Broń Biała (Podstawowa)",
         "Kuglarstwo (Akrobatyka)",
         "Wiedza (Prawo)",
-        "Broń Biała (Dowolna)"
+        "Broń Biała ()"
       ],
       "talents": [
         "Mistrz Walki",
@@ -3979,7 +3981,7 @@
         "Odporność",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Broń Biała (Dowolna)"
+        "Broń Biała ()"
       ],
       "talents": [
         "Groźny",
@@ -4015,12 +4017,12 @@
         "Odporność",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Charyzma",
         "Mocna Głowa",
         "Dowodzenie",
         "Wiedza (Sztuka Wojenna)",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Sekretne Znaki (Zakonu Rycerskiego)"
       ],
       "talents": [
@@ -4125,7 +4127,7 @@
         "Występy (Przemawianie)",
         "Dowodzenie",
         "Wiedza (Heraldyka)",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Polityka)"
       ],
       "talents": [
@@ -4209,7 +4211,7 @@
       "talents": [
         "Bitewny Refleks",
         "Błyskawiczny Strzał",
-        "Nienawiść (Dowolne)",
+        "Nienawiść ()",
         "Wódz"
       ],
       "trappings": [
@@ -4224,7 +4226,7 @@
       "careergroup": "Artystka",
       "class": "Dworzanie",
       "skills": [
-        "Sztuka (Dowolna)",
+        "Sztuka ()",
         "Opanowanie",
         "Mocna Głowa",
         "Wycena",
@@ -4313,20 +4315,20 @@
         "Dowodzenie",
         "Wiedza (Heraldyka)",
         "Broń Biała (Szermiercza)",
-        "Muzyka (Dowolna)",
+        "Muzyka ()",
         "Charyzma",
         "Plotkowanie",
         "Język (Klasyczny)",
         "Wiedza (Lokalna)",
         "Jeździectwo (Konie)",
         "Broń Biała (Parująca)",
-        "Język (Dowolny)",
+        "Język ()",
         "Intuicja",
         "Wiedza (Polityka)",
         "Percepcja"
       ],
       "talents": [
-        "Zimna krew",
+        "Zimna Krew",
         "Żyłka Handlowa",
         "Mówca",
         "Intrygant"
@@ -4353,8 +4355,8 @@
         "Wiedza (Chemia)",
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
-        "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Aptekarz)",
+        "Rzemiosło (Truciciel)",
         "Charyzma",
         "Targowanie",
         "Wiedza (Nauka)",
@@ -4368,7 +4370,7 @@
       ],
       "talents": [
         "Mól Książkowy",
-        "Mistrz Rzemiosła (Aptekarstwo)",
+        "Mistrz Rzemiosła (Aptekarz)",
         "Odporny na (Trucizny)",
         "Błyskotliwość"
       ],
@@ -4393,21 +4395,21 @@
         "Odporność",
         "Wycena",
         "Skradanie (Miasto)",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Charyzma",
         "Targowanie",
         "Wiedza (Lokalna)",
         "Plotkowanie",
-        "Język (Cechu)",
+        "Język (Gildii)",
         "Percepcja",
         "Intuicja",
         "Dowodzenie",
         "Badania Naukowe",
-        "Sekretne Znaki (Cechu)"
+        "Sekretne Znaki (Gildii)"
       ],
       "talents": [
         "Wyczulony Zmysł (Smak lub Dotyk)",
-        "Mistrz Rzemiosła (Dowolny)",
+        "Mistrz Rzemiosła (Dowolna)",
         "Czytanie/Pisanie",
         "Złota Rączka"
       ],
@@ -4424,7 +4426,7 @@
       "careergroup": "Artystka",
       "class": "Dworzanie",
       "skills": [
-        "Sztuka (Dowolna)",
+        "Sztuka ()",
         "Opanowanie",
         "Mocna Głowa",
         "Wycena",
@@ -4444,7 +4446,7 @@
         "Wiedza (Heraldyka)"
       ],
       "talents": [
-        "Wyczulony Zmysł (Dowolny)",
+        "Wyczulony Zmysł ()",
         "Żyłka Handlowa",
         "Etykieta (Grupa Społeczna)",
         "Nos do Kłopotów"
@@ -4472,7 +4474,7 @@
         "Intuicja",
         "Skradanie (Miasto)",
         "Występy (Aktorstwo)",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
@@ -4513,7 +4515,7 @@
         "Atletyka",
         "Odporność",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Broń Zasięgowa (Oplątująca)",
         "Tropienie",
         "Opieka nad Zwierzętami",
@@ -4547,7 +4549,7 @@
         "Wiedza (Inżynieria)",
         "Percepcja",
         "Broń Zasięgowa (Prochowa)",
-        "Rzemiosło (Inżynieria)",
+        "Rzemiosło (Inżynier)",
         "Powożenie",
         "Unik",
         "Nawigacja",
@@ -4561,7 +4563,7 @@
       ],
       "talents": [
         "Etykieta (Uczeni)",
-        "Mistrz Rzemiosła (Inżynieria)",
+        "Mistrz Rzemiosła (Inżynier)",
         "Snajper",
         "Geniusz Arytmetyczny"
       ],
@@ -4631,7 +4633,7 @@
         "Przekupstwo",
         "Wycena",
         "Dowodzenie",
-        "Wiedza (Dowolna)"
+        "Wiedza ()"
       ],
       "talents": [
         "Mól Książkowy",
@@ -4641,7 +4643,7 @@
       ],
       "trappings": [
         "Asystent",
-        "Kantor"
+        "Biuro"
       ]
     },
     "Master Merchant": {
@@ -4662,7 +4664,7 @@
         "Targowanie",
         "Wycena",
         "Intuicja",
-        "Język (Dowolny)",
+        "Język ()",
         "Język (Gildii)",
         "Wiedza (Lokalna)",
         "Percepcja",
@@ -4708,7 +4710,7 @@
         "Plotkowanie",
         "Wiedza (Geologia)",
         "Skradanie (Podziemia)",
-        "Rzemiosło (Inżynieria)"
+        "Rzemiosło (Inżynier)"
       ],
       "talents": [
         "Cios Mierzony",
@@ -4746,7 +4748,7 @@
         "Rzemiosło (Złota Rączka)",
         "Powożenie",
         "Zastraszanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Percepcja"
       ],
       "talents": [
@@ -4779,7 +4781,7 @@
         "Charyzma",
         "Opanowanie",
         "Występy (Gawędziarstwo)",
-        "Język (Dowolny)",
+        "Język ()",
         "Broń Biała (Podstawowa)",
         "Nawigacja",
         "Targowanie",
@@ -4863,7 +4865,7 @@
         "Przekupstwo",
         "Hazard",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)"
+        "Broń Zasięgowa (Kusze)"
       ],
       "talents": [
         "Widzenie w Ciemności",
@@ -4883,7 +4885,7 @@
       "careergroup": "Czarodziej",
       "class": "Uczeni",
       "skills": [
-        "Splatanie Magii",
+        "Splatanie Magii ()",
         "Unik",
         "Intuicja",
         "Język (Magiczny)",
@@ -4896,7 +4898,7 @@
         "Plotkowanie",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Język (Dowolny)",
+        "Język ()",
         "Opieka nad Zwierzętami",
         "Wycena",
         "Wiedza (Sztuka Wojenna)",
@@ -4929,7 +4931,7 @@
         "Odporność",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)"
+        "Skradanie ()"
       ],
       "talents": [
         "Niegodny Uwagi",
@@ -4959,7 +4961,7 @@
         "Targowanie",
         "Wycena",
         "Intuicja",
-        "Język (Dowolny)",
+        "Język ()",
         "Język (Gildii)",
         "Wiedza (Lokalna)",
         "Percepcja"
@@ -4972,7 +4974,7 @@
       ],
       "trappings": [
         "Łódź Rzeczna albo 2 Wozy",
-        "licencja Gildii",
+        "Licencja Gildii",
         "20 Złotych Koron"
       ]
     },
@@ -4994,7 +4996,7 @@
         "Targowanie",
         "Wycena",
         "Intuicja",
-        "Język (Dowolny)",
+        "Język ()",
         "Język (Gildii)",
         "Wiedza (Lokalna)",
         "Percepcja",
@@ -5002,7 +5004,7 @@
         "Język (Klasyczny)",
         "Nawigacja",
         "Sekretne Znaki (Gildii)",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Zastraszanie"
       ],
       "talents": [
@@ -5115,7 +5117,7 @@
         "Plotkowanie",
         "Wiedza (Geologia)",
         "Skradanie (Podziemia)",
-        "Rzemiosło (Inżynieria)",
+        "Rzemiosło (Inżynier)",
         "Charyzma",
         "Dowodzenie"
       ],
@@ -5178,7 +5180,7 @@
         "Dowodzenie",
         "Wiedza (Heraldyka)",
         "Broń Biała (Szermiercza)",
-        "Muzyka (Dowolna)",
+        "Muzyka ()",
         "Charyzma",
         "Plotkowanie",
         "Język (Klasyczny)",
@@ -5216,18 +5218,18 @@
         "Dowodzenie",
         "Wiedza (Heraldyka)",
         "Broń Biała (Szermiercza)",
-        "Muzyka (Dowolna)",
+        "Muzyka ()",
         "Charyzma",
         "Plotkowanie",
         "Język (Klasyczny)",
         "Wiedza (Lokalna)",
         "Jeździectwo (Konie)",
         "Broń Biała (Parująca)",
-        "Język (Dowolny)",
+        "Język ()",
         "Intuicja",
         "Wiedza (Polityka)",
         "Percepcja",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Tropienie"
       ],
       "talents": [
@@ -5262,7 +5264,7 @@
         "Modlitwa"
       ],
       "talents": [
-        "Błogosławieństwo (Dowolne Bóstwo)",
+        "Błogosławieństwo ()",
         "Wstrzemięźliwy",
         "Naciągacz",
         "Czytanie/Pisanie"
@@ -5286,12 +5288,12 @@
         "Leczenie",
         "Dowodzenie",
         "Wiedza (Teologia)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Modlitwa"
       ],
       "talents": [
-        "Błogosławieństwo (Dowolne Bóstwo)",
-        "Etykieta (Kultyści)",
+        "Błogosławieństwo ()",
+        "Etykieta (Kapłani)",
         "Czytanie/Pisanie",
         "Odporność Psychiczna"
       ],
@@ -5300,7 +5302,7 @@
         "Skórzany kaftan",
         "Symbol religijny",
         "Szata",
-        "Broń Biała (Dowolna)"
+        "Broń Biała ()"
       ]
     },
     "Nun": {
@@ -5320,22 +5322,22 @@
         "Wiedza (Teologia)",
         "Modlitwa",
         "Charyzma",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Badania Naukowe",
         "Rzemiosło (Piwowarstwo)",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Rzemiosło (Winiarstwo)"
       ],
       "talents": [
-        "Etykieta (Kultyści)",
+        "Etykieta (Kapłani)",
         "Pierwsza Pomoc",
         "Święte Wizje",
-        "Inwokacja (Dowolne Bóstwo)"
+        "Inwokacja ()"
       ],
       "trappings": [
         "Księga (Religia)",
         "Relikwia",
-        "Narzędzia Pracy (Dowolne)"
+        "Narzędzia Pracy ()"
       ]
     },
     "Officer": {
@@ -5357,8 +5359,8 @@
         "Mocna Głowa",
         "Hazard",
         "Plotkowanie",
-        "Broń Biała (Dowolna)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Biała ()",
+        "Broń Zasięgowa ()",
         "Sztuka Przetrwania",
         "Leczenie",
         "Intuicja",
@@ -5380,7 +5382,7 @@
         "Rozkazy",
         "oddział Żołnierzy",
         "Mundur dobrej jakości",
-        "Symbol Rangi"
+        "Symbol rangi"
       ]
     },
     "Outlaw": {
@@ -5403,7 +5405,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Percepcja",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Skradanie (Wieś)"
       ],
       "talents": [
@@ -5413,7 +5415,7 @@
         "Traper"
       ],
       "trappings": [
-        "Łuk i 10 Strzał",
+        "Łuk i 10 strzał",
         "Tarcza",
         "Namiot"
       ]
@@ -5438,7 +5440,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Percepcja",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Skradanie (Wieś)",
         "Plotkowanie",
         "Intuicja",
@@ -5505,7 +5507,7 @@
         "Percepcja",
         "Atletyka",
         "Nawigacja",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Jeździectwo (Konie)",
         "Skradanie (Wieś)",
         "Tropienie",
@@ -5632,16 +5634,16 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Sigmar)",
-        "Broń Biała (Korbacz)",
+        "Broń Biała (Korbacze)",
         "Sztuka Przetrwania",
         "Sztuka (Ikony)",
         "Atletyka",
         "Opanowanie",
         "Język (Klasyczny)",
         "Wiedza (Imperium)",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Charyzma",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Teologia)",
         "Percepcja"
       ],
@@ -5679,14 +5681,14 @@
         "Rzemiosło (Cyrulik)"
       ],
       "talents": [
-        "Zimna krew",
+        "Zimna Krew",
         "Przestępca",
         "Etykieta (Członkowie Gildii)",
         "Chirurgia"
       ],
       "trappings": [
-        "Książka (Medycyna)",
-        "licencja Gildii",
+        "Księga (Medycyna)",
+        "Licencja Gildii",
         "Narzędzia Pracy (Medycyna)"
       ]
     },
@@ -5737,7 +5739,7 @@
         "Charyzma",
         "Opanowanie",
         "Występy (Gawędziarstwo)",
-        "Język (Dowolny)",
+        "Język ()",
         "Broń Biała (Podstawowa)",
         "Nawigacja",
         "Targowanie",
@@ -5770,12 +5772,12 @@
         "Odporność",
         "Hazard",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Broń Biała (Bijatyka)",
         "Targowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Biała (Korbacz lub Dwuręczna)",
+        "Broń Biała (Korbacze lub Dwuręczna)",
         "Percepcja",
         "Broń Zasięgowa (Oplątująca)",
         "Mocna Głowa",
@@ -5808,12 +5810,12 @@
         "Odporność",
         "Hazard",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Broń Biała (Bijatyka)",
         "Targowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Biała (Korbacz lub Dwuręczna)",
+        "Broń Biała (Korbacze lub Dwuręczna)",
         "Percepcja",
         "Broń Zasięgowa (Oplątująca)"
       ],
@@ -5844,12 +5846,12 @@
         "Odporność",
         "Hazard",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Broń Biała (Bijatyka)",
         "Targowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Biała (Korbacz lub Dwuręczna)",
+        "Broń Biała (Korbacze lub Dwuręczna)",
         "Percepcja",
         "Broń Zasięgowa (Oplątująca)",
         "Mocna Głowa",
@@ -5857,7 +5859,7 @@
         "Wiedza (Anatomia)",
         "Kuglarstwo (Walka Pokazowa)",
         "Charyzma",
-        "Broń Zasięgowa (Dowolna)"
+        "Broń Zasięgowa ()"
       ],
       "talents": [
         "Straszny",
@@ -5923,8 +5925,8 @@
       "talents": [
         "Gadanina",
         "Mól Książkowy",
-        "Etykieta (Kultyści)",
-        "Inwokacja (Dowolne Bóstwo)"
+        "Etykieta (Kapłani)",
+        "Inwokacja ()"
       ],
       "trappings": [
         "Księga (Religia)",
@@ -5945,14 +5947,14 @@
         "Leczenie",
         "Dowodzenie",
         "Wiedza (Teologia)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Modlitwa",
         "Charyzma",
         "Występy (Przemawianie)",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Broń Biała (Dowolna)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Biała ()",
+        "Broń Zasięgowa ()",
         "Opieka nad Zwierzętami",
         "Intuicja",
         "Percepcja",
@@ -5961,7 +5963,7 @@
         "Wiedza (Sztuka Wojenna)"
       ],
       "talents": [
-        "Nieustraszony (Dowolny)",
+        "Nieustraszony ()",
         "Wściekły Atak",
         "Święta Nienawiść",
         "Wódz"
@@ -5984,14 +5986,14 @@
         "Leczenie",
         "Dowodzenie",
         "Wiedza (Teologia)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Modlitwa",
         "Charyzma",
         "Występy (Przemawianie)",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Broń Biała (Dowolna)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Biała ()",
+        "Broń Zasięgowa ()",
         "Opieka nad Zwierzętami",
         "Intuicja",
         "Percepcja",
@@ -6024,17 +6026,17 @@
         "Wiedza (Teologia)",
         "Modlitwa",
         "Charyzma",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Badania Naukowe",
-        "Rzemiosło (Piwowarstwo)",
-        "Rzemiosło (Zielarstwo)",
-        "Rzemiosło (Winiarstwo)",
+        "Rzemiosło (Piwowar)",
+        "Rzemiosło (Zielarz)",
+        "Rzemiosło (Winiarz)",
         "Dowodzenie",
         "Wiedza (Lokalna)",
         "Wiedza (Polityka)",
         "Percepcja",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)"
+        "Język ()",
+        "Wiedza ()"
       ],
       "talents": [
         "Władcza Postura",
@@ -6057,7 +6059,7 @@
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Hazard",
         "Plotkowanie",
         "Targowanie",
@@ -6070,7 +6072,7 @@
         "Percepcja",
         "Opanowanie",
         "Wycena",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Prawo)"
       ],
       "talents": [
@@ -6097,25 +6099,25 @@
         "Plotkowanie",
         "Targowanie",
         "Język (Klasyczny)",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Badania Naukowe",
         "Sztuka (Pisarstwo)",
         "Intuicja",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)",
+        "Język ()",
+        "Wiedza ()",
         "Percepcja",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Występy (Wykłady)",
         "Zastraszanie",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)",
+        "Język ()",
+        "Wiedza ()",
         "Występy (Retoryka)",
-        "Wiedza (Dowolna)"
+        "Wiedza ()"
       ],
       "talents": [
         "Arcydzieło",
         "Krasomówstwo",
-        "Znawca (Dowolna Dziedzina)",
+        "Znawca ()",
         "Czujny"
       ],
       "trappings": [
@@ -6136,16 +6138,16 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Sigmar)",
-        "Broń Biała (Korbacz)",
+        "Broń Biała (Korbacze)",
         "Sztuka Przetrwania",
         "Sztuka (Ikony)",
         "Atletyka",
         "Opanowanie",
         "Język (Klasyczny)",
         "Wiedza (Imperium)",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Charyzma",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Teologia)",
         "Percepcja",
         "Występy (Przemawianie)",
@@ -6183,7 +6185,7 @@
       ],
       "talents": [
         "Włóczykij",
-        "Doświadczony Wędrowiec (Skalisty)",
+        "Doświadczony Wędrowiec (Teren Skalisty)",
         "Tragarz",
         "Wytrwały"
       ],
@@ -6209,7 +6211,7 @@
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Przekupstwo",
         "Charyzma",
         "Intuicja",
@@ -6273,7 +6275,7 @@
         "Odporność",
         "Hazard",
         "Zastraszanie",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Broń Biała (Bijatyka)"
       ],
       "talents": [
@@ -6375,7 +6377,7 @@
         "Mocna Głowa",
         "Odporność",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Skradanie (Podziemia lub Miasto)",
         "Opieka nad Zwierzętami",
         "Plotkowanie",
@@ -6386,7 +6388,7 @@
       ],
       "talents": [
         "Walka w Ciasnocie",
-        "Etykieta (Członkowie Cechu)",
+        "Etykieta (Członkowie Gildii)",
         "Nieustraszony (Szczury)",
         "Niezwykle Odporny"
       ],
@@ -6409,7 +6411,7 @@
         "Mocna Głowa",
         "Odporność",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Skradanie (Podziemia lub Miasto)"
       ],
       "talents": [
@@ -6503,7 +6505,7 @@
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Hazard",
         "Plotkowanie",
         "Targowanie",
@@ -6516,7 +6518,7 @@
         "Percepcja",
         "Opanowanie",
         "Wycena",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Prawo)",
         "Dowodzenie",
         "Wiedza (Heraldyka)"
@@ -6699,7 +6701,7 @@
         "Wiedza (Ludowa)"
       ],
       "talents": [
-        "Mistrz Rzemiosła (Szkutnictwo)",
+        "Mistrz Rzemiosła (Szkutnik)",
         "Mówca",
         "Czujny",
         "Odporność Psychiczna"
@@ -6732,7 +6734,7 @@
         "Zastawianie Pułapek",
         "Plotkowanie",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Skradanie (Wieś)"
       ],
       "talents": [
@@ -6821,7 +6823,7 @@
         "Targowanie",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Opieka nad Zwierzętami",
         "Odporność",
         "Zastraszanie",
@@ -6863,7 +6865,7 @@
         "Targowanie",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Opieka nad Zwierzętami",
         "Odporność",
         "Zastraszanie",
@@ -6878,7 +6880,7 @@
       "talents": [
         "Etykieta (Żołnierze)",
         "Nieustraszony (Banici)",
-        "Nienawiść (Dowolne)",
+        "Nienawiść ()",
         "Nos do Kłopotów"
       ],
       "trappings": [
@@ -6903,7 +6905,7 @@
         "Targowanie",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Opieka nad Zwierzętami",
         "Odporność",
         "Zastraszanie",
@@ -6920,7 +6922,7 @@
       "trappings": [
         "Broń ręczna",
         "Kaftan kolczy",
-        "Koń Wierzchowy z Rzędem",
+        "Koń wierzchowy z rzędem",
         "Lina"
       ]
     },
@@ -6948,7 +6950,7 @@
         "Broń Zasięgowa (Prochowa)",
         "Tresura (Konie)",
         "Zastraszanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Wiedza (Szlaki)",
         "Charyzma",
         "Dowodzenie"
@@ -7015,7 +7017,7 @@
         "Wiedza (Astrologia)",
         "Oswajanie",
         "Występy (Gawędziarstwo)",
-        "Język (Dowolny)",
+        "Język ()",
         "Sztuka (Pisarstwo)"
       ],
       "talents": [
@@ -7042,14 +7044,14 @@
         "Plotkowanie",
         "Targowanie",
         "Język (Klasyczny)",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Badania Naukowe",
         "Sztuka (Pisarstwo)",
         "Intuicja",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)",
+        "Język ()",
+        "Wiedza ()",
         "Percepcja",
-        "Rzemiosło (Dowolne)"
+        "Rzemiosło ()"
       ],
       "talents": [
         "Mól Książkowy",
@@ -7077,7 +7079,7 @@
         "Dowodzenie",
         "Wiedza (Heraldyka)",
         "Broń Biała (Szermiercza)",
-        "Muzyka (Dowolna)"
+        "Muzyka ()"
       ],
       "talents": [
         "Etykieta (Szlachta)",
@@ -7150,7 +7152,7 @@
         "Percepcja",
         "Atletyka",
         "Nawigacja",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Jeździectwo (Konie)",
         "Skradanie (Wieś)",
         "Tropienie"
@@ -7186,7 +7188,7 @@
         "Unik",
         "Odporność",
         "Występy (Śpiewanie)",
-        "Język (Dowolny)",
+        "Język ()",
         "Broń Biała (Podstawowa)"
       ],
       "talents": [
@@ -7224,7 +7226,7 @@
         "Wiedza (Astrologia)",
         "Oswajanie",
         "Występy (Gawędziarstwo)",
-        "Język (Dowolny)",
+        "Język ()",
         "Sztuka (Pisarstwo)",
         "Wiedza (Proroctwa)",
         "Splatanie Magii (Azyr)"
@@ -7258,7 +7260,7 @@
         "Opieka nad Zwierzętami",
         "Broń Biała (Podstawowa)",
         "Sztuka Przetrwania",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Jeździectwo (Konie)",
         "Pływanie",
         "Przekupstwo",
@@ -7326,8 +7328,8 @@
         "Mocna Głowa",
         "Hazard",
         "Plotkowanie",
-        "Broń Biała (Dowolna)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Biała ()",
+        "Broń Zasięgowa ()",
         "Sztuka Przetrwania",
         "Leczenie",
         "Intuicja",
@@ -7360,7 +7362,7 @@
         "Odporność",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Opieka nad Zwierzętami",
         "Mocna Głowa",
         "Wycena",
@@ -7392,7 +7394,7 @@
         "Mocna Głowa",
         "Odporność",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Skradanie (Podziemia lub Miasto)",
         "Opieka nad Zwierzętami",
         "Plotkowanie",
@@ -7446,7 +7448,7 @@
       ],
       "talents": [
         "Nieustraszony (Piraci Rzeczni)",
-        "Nienawiść (Dowolne)",
+        "Nienawiść ()",
         "Pilot",
         "Urodzony Żeglarz"
       ],
@@ -7516,12 +7518,12 @@
         "Unik",
         "Odporność",
         "Występy (Śpiewanie)",
-        "Język (Dowolny)",
+        "Język ()",
         "Broń Biała (Podstawowa)",
         "Opanowanie",
         "Dowodzenie",
         "Percepcja",
-        "Rzemiosło (Stolarstwo)",
+        "Rzemiosło (Stolarz)",
         "Charyzma",
         "Nawigacja"
       ],
@@ -7565,7 +7567,7 @@
         "Latarnia",
         "Olej do lampy",
         "Dziennik",
-        "Kałamarz i Pióro"
+        "Pióro i Kałamarz"
       ]
     },
     "Smuggler King": {
@@ -7594,7 +7596,7 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Szlaki Rzeczne)",
-        "Język (Dowolny)",
+        "Język ()",
         "Dowodzenie"
       ],
       "talents": [
@@ -7663,8 +7665,8 @@
         "Mocna Głowa",
         "Hazard",
         "Plotkowanie",
-        "Broń Biała (Dowolna)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Biała ()",
+        "Broń Zasięgowa ()",
         "Sztuka Przetrwania"
       ],
       "talents": [
@@ -7676,7 +7678,7 @@
       "trappings": [
         "Napierśnik",
         "Hełm",
-        "Broń (Dowolna)"
+        "Broń ()"
       ]
     },
     "Spymaster": {
@@ -7694,18 +7696,18 @@
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Wspinaczka",
         "Występy (Aktorstwo)",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Sekretne Znaki (Dowolne)",
+        "Sekretne Znaki ()",
         "Zwinne Palce",
         "Opieka nad Zwierzętami",
         "Tresura (Gołąb)",
-        "Język (Dowolny)",
+        "Język ()",
         "Dowodzenie",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Badania Naukowe"
       ],
       "talents": [
@@ -7736,12 +7738,12 @@
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Wspinaczka",
         "Występy (Aktorstwo)",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Sekretne Znaki (Dowolne)",
+        "Sekretne Znaki ()",
         "Zwinne Palce"
       ],
       "talents": [
@@ -7814,12 +7816,12 @@
       ],
       "talents": [
         "Przestępca",
-        "Etykieta (Członkowie Cechu)",
+        "Etykieta (Członkowie Gildii)",
         "Silne Nogi",
         "Wytrwały"
       ],
       "trappings": [
-        "licencja Gildii",
+        "Licencja Gildii",
         "Skórzany kaftan",
         "Fajka i tytoń",
         "Czapka Tragarza"
@@ -7840,7 +7842,7 @@
         "Odporność",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Opieka nad Zwierzętami",
         "Mocna Głowa",
         "Wycena",
@@ -7881,7 +7883,7 @@
         "Wiedza (Inżynieria)",
         "Percepcja",
         "Broń Zasięgowa (Prochowa)",
-        "Rzemiosło (Inżynieria)"
+        "Rzemiosło (Inżynier)"
       ],
       "talents": [
         "Talent Artystyczny",
@@ -7936,7 +7938,7 @@
         "Plotkowanie",
         "Targowanie",
         "Język (Klasyczny)",
-        "Wiedza (Dowolna)",
+        "Wiedza ()",
         "Badania Naukowe"
       ],
       "talents": [
@@ -8116,10 +8118,10 @@
         "Targowanie",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Broń Zasięgowa (Kusza)"
+        "Broń Zasięgowa (Kusze)"
       ],
       "talents": [
-        "Zimna krew",
+        "Zimna Krew",
         "Defraudant",
         "Strzelec Wyborowy",
         "Numizmatyka"
@@ -8144,7 +8146,7 @@
         "Plotkowanie",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Przekupstwo",
         "Powożenie",
         "Wycena",
@@ -8167,7 +8169,7 @@
         "Wóz z Koniem",
         "Skórzana kurta",
         "Lina",
-        "Narzędzia Pracy (Złodziei)"
+        "Narzędzia pracy (Złodziei)"
       ]
     },
     "Townsman": {
@@ -8191,7 +8193,7 @@
         "Intuicja",
         "Wiedza (Lokalna)",
         "Broń Biała (Bijatyka)",
-        "Muzyka (Dowolna)"
+        "Muzyka ()"
       ],
       "talents": [
         "Żyłka Handlowa",
@@ -8226,7 +8228,7 @@
         "Intuicja",
         "Wiedza (Lokalna)",
         "Broń Biała (Bijatyka)",
-        "Muzyka (Dowolna)",
+        "Muzyka ()",
         "Opanowanie",
         "Wiedza (Prawo)",
         "Percepcja",
@@ -8257,12 +8259,12 @@
         "Wiedza (Bestie)",
         "Sztuka Przetrwania",
         "Percepcja",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Zastawianie Pułapek",
         "Opanowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Sekretne Znaki (Łowców)",
         "Skradanie (Wieś)",
         "Nawigacja",
@@ -8271,7 +8273,7 @@
         "Tropienie"
       ],
       "talents": [
-        "Wyczulony Zmysł (Dowolny)",
+        "Wyczulony Zmysł ()",
         "Prosto Między Oczy",
         "Nieustraszony (Zwierzęta)",
         "Strzał w Dziesiątkę"
@@ -8326,13 +8328,13 @@
         "Wiedza (Bestie)",
         "Sztuka Przetrwania",
         "Percepcja",
-        "Broń Zasięgowa (Proca)",
+        "Broń Zasięgowa (Proce)",
         "Zastawianie Pułapek"
       ],
       "talents": [
         "Twardziel",
         "Włóczykij",
-        "Doświadczony Wędrowiec (Wybrany Teren)",
+        "Doświadczony Wędrowiec ()",
         "Traper"
       ],
       "trappings": [
@@ -8357,7 +8359,7 @@
         "Plotkowanie",
         "Intuicja",
         "Percepcja",
-        "Skradanie (Dowolne)",
+        "Skradanie ()",
         "Przekupstwo",
         "Powożenie",
         "Wycena",
@@ -8369,7 +8371,7 @@
         "Otwieranie Zamków",
         "Zastawianie Pułapek",
         "Nawigacja",
-        "Rzemiosło (Inżynieria)"
+        "Rzemiosło (Inżynier)"
       ],
       "talents": [
         "Nieustraszony (Nieumarli)",
@@ -8425,22 +8427,22 @@
       "skills": [
         "Atletyka",
         "Charyzma",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Zwinne Palce",
-        "Występy (Dowolne)",
-        "Jeździectwo (Dowolne)",
+        "Występy ()",
+        "Jeździectwo ()",
         "Broń Biała (Podstawowa)",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Broń Zasięgowa (Miotana)",
         "Opieka nad Zwierzętami",
-        "Tresura (Dowolna)",
+        "Tresura ()",
         "Sztuka (Pisarstwo)",
-        "Język (Dowolny)"
+        "Język ()"
       ],
       "talents": [
         "Gadanina",
@@ -8463,22 +8465,22 @@
       "skills": [
         "Atletyka",
         "Charyzma",
-        "Występy (Dowolne)",
+        "Występy ()",
         "Plotkowanie",
         "Targowanie",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Zwinne Palce",
-        "Występy (Dowolne)",
-        "Jeździectwo (Dowolne)",
+        "Występy ()",
+        "Jeździectwo ()",
         "Broń Biała (Podstawowa)",
-        "Kuglarstwo (Dowolne)",
-        "Muzyka (Dowolna)",
+        "Kuglarstwo ()",
+        "Muzyka ()",
         "Broń Zasięgowa (Miotana)",
         "Opieka nad Zwierzętami",
-        "Tresura (Dowolna)",
+        "Tresura ()",
         "Sztuka (Pisarstwo)",
-        "Język (Dowolny)",
+        "Język ()",
         "Powożenie",
         "Dowodzenie"
       ],
@@ -8544,7 +8546,7 @@
         "Występy (Gawędziarstwo)",
         "Targowanie",
         "Broń Biała (Podstawowa)",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Unik"
       ],
       "talents": [
@@ -8579,7 +8581,7 @@
         "Występy (Gawędziarstwo)",
         "Targowanie",
         "Broń Biała (Podstawowa)",
-        "Rzemiosło (Dowolne)",
+        "Rzemiosło ()",
         "Unik",
         "Przekupstwo",
         "Charyzma",
@@ -8589,7 +8591,7 @@
         "Wiedza (Historia)"
       ],
       "talents": [
-        "Mistrz Rzemiosła (Dowolne)",
+        "Mistrz Rzemiosła ()",
         "Zręczny",
         "Mówca",
         "Znawca (Wiedza Lokalna)"
@@ -8622,7 +8624,7 @@
         "Rzemiosło (Złota Rączka)",
         "Powożenie",
         "Zastraszanie",
-        "Język (Dowolny)",
+        "Język ()",
         "Percepcja",
         "Wiedza (Lokalna)",
         "Wiedza (Geografia)"
@@ -8658,19 +8660,19 @@
         "Opieka nad Zwierzętami",
         "Broń Biała (Podstawowa)",
         "Sztuka Przetrwania",
-        "Broń Zasięgowa (Łuk)",
+        "Broń Zasięgowa (Łuki)",
         "Jeździectwo (Konie)",
         "Pływanie"
       ],
       "talents": [
         "Posłuch u Zwierząt",
         "Etykieta (Słudzy)",
-        "Doświadczony Wędrowiec (Wybrany Teren)",
+        "Doświadczony Wędrowiec ()",
         "Włóczykij"
       ],
       "trappings": [
         "Broń ręczna albo Łuk z 10 Strzałami",
-        "Koń Wierzchowy z Rzędem",
+        "Koń wierzchowy z rzędem",
         "Skórzana kurta"
       ]
     },
@@ -8695,7 +8697,7 @@
         "Intuicja",
         "Broń Biała (Drzewcowa)",
         "Percepcja",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Przekupstwo",
         "Charyzma",
         "Targowanie",
@@ -8728,24 +8730,24 @@
         "Leczenie",
         "Dowodzenie",
         "Wiedza (Teologia)",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Modlitwa",
         "Charyzma",
         "Występy (Przemawianie)",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Broń Biała (Dowolna)",
-        "Broń Zasięgowa (Dowolna)"
+        "Broń Biała ()",
+        "Broń Zasięgowa ()"
       ],
       "talents": [
         "Dwie Bronie",
         "Inspirujący",
-        "Inwokacja (Dowolne Bóstwo)",
+        "Inwokacja ()",
         "Obieżyświat"
       ],
       "trappings": [
         "Napierśnik",
-        "Broń (Dowolna)"
+        "Broń ()"
       ]
     },
     "Watchman": {
@@ -8762,7 +8764,7 @@
         "Unik",
         "Odporność",
         "Hazard",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja",
         "Charyzma",
         "Opanowanie",
@@ -8797,7 +8799,7 @@
         "Unik",
         "Odporność",
         "Hazard",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja",
         "Charyzma",
         "Opanowanie",
@@ -8839,7 +8841,7 @@
         "Unik",
         "Odporność",
         "Hazard",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja"
       ],
       "talents": [
@@ -8868,7 +8870,7 @@
         "Unik",
         "Odporność",
         "Hazard",
-        "Broń Biała (Dowolna)",
+        "Broń Biała ()",
         "Percepcja",
         "Charyzma",
         "Opanowanie",
@@ -8913,7 +8915,7 @@
         "Broń Biała (Podstawowa)",
         "Plotkowanie",
         "Wiedza (Czarownice)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Zasięgowa ()",
         "Jeździectwo (Konie)",
         "Odporność",
         "Dowodzenie",
@@ -8953,7 +8955,7 @@
         "Broń Biała (Podstawowa)",
         "Plotkowanie",
         "Wiedza (Czarownice)",
-        "Broń Zasięgowa (Dowolna)",
+        "Broń Zasięgowa ()",
         "Jeździectwo (Konie)"
       ],
       "talents": [
@@ -8992,7 +8994,7 @@
         "Intuicja",
         "Broń Biała (Drzewcowa)",
         "Percepcja",
-        "Rzemiosło (Zielarstwo)"
+        "Rzemiosło (Zielarz)"
       ],
       "talents": [
         "Magia Tajemna (Czarownic)",
@@ -9015,7 +9017,7 @@
       "careergroup": "Czarodziej",
       "class": "Uczeni",
       "skills": [
-        "Splatanie Magii",
+        "Splatanie Magii ()",
         "Unik",
         "Intuicja",
         "Język (Magiczny)",
@@ -9028,10 +9030,10 @@
         "Plotkowanie",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Język (Dowolny)"
+        "Język ()"
       ],
       "talents": [
-        "Magia Tajemna (Dowolna Tradycja)",
+        "Magia Tajemna ()",
         "Rozpoznanie Artefaktu",
         "Ruchliwe Dłonie",
         "Szósty Zmysł"
@@ -9048,7 +9050,7 @@
       "careergroup": "Czarodziej",
       "class": "Uczeni",
       "skills": [
-        "Splatanie Magii",
+        "Splatanie Magii ()",
         "Unik",
         "Intuicja",
         "Język (Magiczny)",
@@ -9061,13 +9063,13 @@
         "Plotkowanie",
         "Zastraszanie",
         "Język (Bitewny)",
-        "Język (Dowolny)",
+        "Język ()",
         "Opieka nad Zwierzętami",
         "Wycena",
         "Wiedza (Sztuka Wojenna)",
         "Jeździectwo (Konie)",
-        "Język (Dowolny)",
-        "Wiedza (Dowolna)"
+        "Język ()",
+        "Wiedza ()"
       ],
       "talents": [
         "Zmysł Bitewny",
@@ -9089,7 +9091,7 @@
       "careergroup": "Czarodziej",
       "class": "Uczeni",
       "skills": [
-        "Splatanie Magii",
+        "Splatanie Magii ()",
         "Unik",
         "Intuicja",
         "Język (Magiczny)",
@@ -9133,7 +9135,7 @@
         "Zastawianie Pułapek",
         "Plotkowanie",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusza)",
+        "Broń Zasięgowa (Kusze)",
         "Skradanie (Wieś)",
         "Dowodzenie",
         "Wiedza (Szlaki Rzeczne)"
@@ -9206,7 +9208,7 @@
         "Intuicja",
         "Broń Biała (Drzewcowa)",
         "Percepcja",
-        "Rzemiosło (Zielarstwo)",
+        "Rzemiosło (Zielarz)",
         "Przekupstwo",
         "Charyzma",
         "Targowanie",
@@ -9238,7 +9240,7 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Sigmar)",
-        "Broń Biała (Korbacz)",
+        "Broń Biała (Korbacze)",
         "Sztuka Przetrwania"
       ],
       "talents": [
@@ -15296,265 +15298,309 @@
       "id": "MXy22hFCgntdlQrn",
       "name": "Opieka nad Zwierzętami",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QZx9CbhGkIaDMQD3]{Opieka nad Zwierzętami}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.MXy22hFCgntdlQrn"
+      "sourceId": "Compendium.wfrp4e-core.items.MXy22hFCgntdlQrn",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Care.svg"
     },
     "Animal Training (Demigryph)": {
       "id": "A5I729L56i4WQXfB",
       "name": "Tresura (Półgryfy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.A5I729L56i4WQXfB"
+      "sourceId": "Compendium.wfrp4e-core.items.A5I729L56i4WQXfB",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Demigryph.svg"
     },
     "Animal Training (Dog)": {
       "id": "W0GnDjtcocY6m07J",
       "name": "Tresura (Psy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.W0GnDjtcocY6m07J"
+      "sourceId": "Compendium.wfrp4e-core.items.W0GnDjtcocY6m07J",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Dogs.svg"
     },
     "Animal Training (Horse)": {
       "id": "6am9EDNE43mzwDvG",
       "name": "Tresura (Konie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.6am9EDNE43mzwDvG"
+      "sourceId": "Compendium.wfrp4e-core.items.6am9EDNE43mzwDvG",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Horse.svg"
     },
     "Animal Training (Pegasus)": {
       "id": "c2HVWH6ZLRn3QjhH",
       "name": "Tresura (Pegaz)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.c2HVWH6ZLRn3QjhH"
+      "sourceId": "Compendium.wfrp4e-core.items.c2HVWH6ZLRn3QjhH",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training.svg"
     },
     "Animal Training (Pigeon)": {
       "id": "4HgOG0Ud3V2P52so",
-      "name": "Tresura (Gołąb)",
+      "name": "Tresura (Gołębie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.4HgOG0Ud3V2P52so"
+      "sourceId": "Compendium.wfrp4e-core.items.4HgOG0Ud3V2P52so",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training_Pigeon.svg"
     },
     "Animal Training ( )": {
       "id": "uZpeJ8P0g10UBRdE",
       "name": "Tresura ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.vbOc3JVfG2nfK1P0]{Tresura}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.uZpeJ8P0g10UBRdE"
+      "sourceId": "Compendium.wfrp4e-core.items.uZpeJ8P0g10UBRdE",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Animal_Training.svg"
     },
     "Art (Cartography)": {
       "id": "h7OXI7PXcs8EHdxf",
       "name": "Sztuka (Kartografia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.h7OXI7PXcs8EHdxf"
+      "sourceId": "Compendium.wfrp4e-core.items.h7OXI7PXcs8EHdxf",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Cartography.svg"
     },
     "Art (Engraving)": {
       "id": "v2eVrGuRfN4p6NCA",
       "name": "Sztuka (Grawerstwo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.v2eVrGuRfN4p6NCA"
+      "sourceId": "Compendium.wfrp4e-core.items.v2eVrGuRfN4p6NCA",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Engraving.svg"
     },
     "Art (Mosaics)": {
       "id": "GPrunawhB8das1O7",
       "name": "Sztuka (Układanie Mozaiki)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.GPrunawhB8das1O7"
+      "sourceId": "Compendium.wfrp4e-core.items.GPrunawhB8das1O7",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Mosaics.svg"
     },
     "Art (Painting)": {
       "id": "bJZ8le54J5OwGqFx",
       "name": "Sztuka (Malarstwo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.bJZ8le54J5OwGqFx"
+      "sourceId": "Compendium.wfrp4e-core.items.bJZ8le54J5OwGqFx",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Painting.svg"
     },
     "Art (Sculpture)": {
       "id": "sUaPQdDiyWcTzC9p",
       "name": "Sztuka (Rzeźbiarstwo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.sUaPQdDiyWcTzC9p"
+      "sourceId": "Compendium.wfrp4e-core.items.sUaPQdDiyWcTzC9p",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Sculpture.svg"
     },
     "Art (Tattoo)": {
       "id": "AaXk4bfDRTPeeYjn",
       "name": "Sztuka (Tatuowanie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.AaXk4bfDRTPeeYjn"
+      "sourceId": "Compendium.wfrp4e-core.items.AaXk4bfDRTPeeYjn",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Tattoo.svg"
     },
     "Art (Weaving)": {
       "id": "RitSkR0YDixuUei9",
       "name": "Sztuka (Tkactwo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.RitSkR0YDixuUei9"
+      "sourceId": "Compendium.wfrp4e-core.items.RitSkR0YDixuUei9",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art_Weaving.svg"
     },
     "Art ( )": {
       "id": "fdq3RFSOKl5b3WzW",
       "name": "Sztuka ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
+      "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Art.svg"
     },
     "Athletics": {
       "id": "LGHozP5gmQ8cuDQV",
       "name": "Atletyka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Ss6Gp732GjscYke0]{Atletyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.LGHozP5gmQ8cuDQV"
+      "sourceId": "Compendium.wfrp4e-core.items.LGHozP5gmQ8cuDQV",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Athletics.svg"
     },
     "Bribery": {
       "id": "d3VZwO4Y5JH5DXdT",
       "name": "Przekupstwo",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.IwGXgEPOkNVZ0SwI]{Przekupstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.d3VZwO4Y5JH5DXdT"
+      "sourceId": "Compendium.wfrp4e-core.items.d3VZwO4Y5JH5DXdT",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Bribery.svg"
     },
     "Channelling": {
       "id": "V8eRx66SxB9Jha0Q",
       "name": "Splatanie Magii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.V8eRx66SxB9Jha0Q"
+      "sourceId": "Compendium.wfrp4e-core.items.V8eRx66SxB9Jha0Q",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling.svg"
     },
     "Channelling (Aqshy)": {
       "id": "gh91jaxzTBgbMoi5",
       "name": "Splatanie Magii (Aqshy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.gh91jaxzTBgbMoi5"
+      "sourceId": "Compendium.wfrp4e-core.items.gh91jaxzTBgbMoi5",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Aqshy.svg"
     },
     "Channelling (Azyr)": {
       "id": "hpc8g8Z9rl3fJECS",
       "name": "Splatanie Magii (Azyr)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.hpc8g8Z9rl3fJECS"
+      "sourceId": "Compendium.wfrp4e-core.items.hpc8g8Z9rl3fJECS",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Azyr.svg"
     },
     "Channelling (Chamon)": {
       "id": "QJ1sfMkNmIh04nky",
       "name": "Splatanie Magii (Chamon)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.QJ1sfMkNmIh04nky"
+      "sourceId": "Compendium.wfrp4e-core.items.QJ1sfMkNmIh04nky",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Chamon.svg"
     },
     "Channelling (Dhar)": {
       "id": "dBwnAzhe0bvobgbY",
       "name": "Splatanie Magii (Dhar)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.dBwnAzhe0bvobgbY"
+      "sourceId": "Compendium.wfrp4e-core.items.dBwnAzhe0bvobgbY",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Dhar.svg"
     },
     "Channelling (Ghur)": {
       "id": "ssCqvqr2ORFX6lPL",
       "name": "Splatanie Magii (Ghur)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.ssCqvqr2ORFX6lPL"
+      "sourceId": "Compendium.wfrp4e-core.items.ssCqvqr2ORFX6lPL",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Ghur.svg"
     },
     "Channelling (Ghyran)": {
       "id": "RLSVcLqPvnd1cg4U",
       "name": "Splatanie Magii (Ghyran)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.RLSVcLqPvnd1cg4U"
+      "sourceId": "Compendium.wfrp4e-core.items.RLSVcLqPvnd1cg4U",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Ghyran.svg"
     },
     "Channelling (Hysh)": {
       "id": "ChI09rjm2afh1bqI",
       "name": "Splatanie Magii (Hysh)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.ChI09rjm2afh1bqI"
+      "sourceId": "Compendium.wfrp4e-core.items.ChI09rjm2afh1bqI",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Hysh.svg"
     },
     "Channelling (Shyish)": {
       "id": "IQ5MxF1XlWoRomfj",
       "name": "Splatanie Magii (Shyish)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.IQ5MxF1XlWoRomfj"
+      "sourceId": "Compendium.wfrp4e-core.items.IQ5MxF1XlWoRomfj",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Shyish.svg"
     },
     "Channelling (Ulgu)": {
       "id": "e6uURn9IFt09beNU",
       "name": "Splatanie Magii (Ulgu)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.e6uURn9IFt09beNU"
+      "sourceId": "Compendium.wfrp4e-core.items.e6uURn9IFt09beNU",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling_Ulgu.svg"
     },
     "Channelling ( )": {
       "id": "3MbQF1W8U18ba9fb",
-      "name": "Splatanie Magii",
+      "name": "Splatanie Magii ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.3MbQF1W8U18ba9fb"
+      "sourceId": "Compendium.wfrp4e-core.items.3MbQF1W8U18ba9fb",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Channelling.svg"
     },
     "Charm Animal": {
       "id": "4IGdIhnwTaZijzg7",
       "name": "Oswajanie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.1N6sOXgrqF1KkIh0]{Oswajanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.4IGdIhnwTaZijzg7"
+      "sourceId": "Compendium.wfrp4e-core.items.4IGdIhnwTaZijzg7",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Charm_Animal.svg"
     },
     "Charm": {
       "id": "exLrBrn2mjb6x2Cq",
       "name": "Charyzma",
       "description": "@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.9OommpqxE34iocmg]{Charyzma}",
-      "sourceId": "Compendium.wfrp4e-core.items.exLrBrn2mjb6x2Cq"
+      "sourceId": "Compendium.wfrp4e-core.items.exLrBrn2mjb6x2Cq",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Charm.svg"
     },
     "Climb": {
       "id": "sRuMlaPU5xdIrwhd",
       "name": "Wspinaczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.yOONKSIBrg4FOl20]{Wspinaczka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.sRuMlaPU5xdIrwhd"
+      "sourceId": "Compendium.wfrp4e-core.items.sRuMlaPU5xdIrwhd",
+      "image": "modules/wfrp4e-extended/icons/skills/2_Climb.svg"
     },
     "Consume Alcohol": {
       "id": "R2ytluHiEFF2KQ5e",
       "name": "Mocna Głowa",
       "description": "@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Mocna Głowa}",
-      "sourceId": "Compendium.wfrp4e-core.items.R2ytluHiEFF2KQ5e"
+      "sourceId": "Compendium.wfrp4e-core.items.R2ytluHiEFF2KQ5e",
+      "image": "modules/wfrp4e-extended/icons/skills/3_Consume_Alcohol.svg"
     },
     "Cool": {
       "id": "pxNjTxsp1Kp0SmQe",
       "name": "Opanowanie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.m14pGtefJzDYhgzW]{Opanowanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.pxNjTxsp1Kp0SmQe"
+      "sourceId": "Compendium.wfrp4e-core.items.pxNjTxsp1Kp0SmQe",
+      "image": "modules/wfrp4e-extended/icons/skills/8_Cool.svg"
     },
     "Dodge": {
       "id": "1jCxbFAUuFuAPLJl",
       "name": "Unik",
       "description": "@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.dPpyiMhPwVGJnJrv]{Unik}",
-      "sourceId": "Compendium.wfrp4e-core.items.1jCxbFAUuFuAPLJl"
+      "sourceId": "Compendium.wfrp4e-core.items.1jCxbFAUuFuAPLJl",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Dodge.svg"
     },
     "Drive": {
       "id": "iYan4z52v7HYM9u9",
       "name": "Powożenie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.uLPWAFSfT5Vf1zZl]{Powożenie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.iYan4z52v7HYM9u9"
+      "sourceId": "Compendium.wfrp4e-core.items.iYan4z52v7HYM9u9",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Drive.svg"
     },
     "Endurance": {
       "id": "CcNJsS4jSwB6Ug1J",
       "name": "Odporność",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.E9UyI8AMrBqgCX4a]{Odporność}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.CcNJsS4jSwB6Ug1J"
+      "sourceId": "Compendium.wfrp4e-core.items.CcNJsS4jSwB6Ug1J",
+      "image": "modules/wfrp4e-extended/icons/skills/3_Endurance.svg"
     },
     "Entertain (Comedy)": {
       "id": "1SVd48nGAHbASqr8",
       "name": "Występy (Komedianctwo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.1SVd48nGAHbASqr8"
+      "sourceId": "Compendium.wfrp4e-core.items.1SVd48nGAHbASqr8",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Entertain_Comedy.svg"
     },
     "Entertain (Singing)": {
       "id": "UFunAopCNaD8Zdc7",
       "name": "Występy (Śpiewanie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.UFunAopCNaD8Zdc7"
+      "sourceId": "Compendium.wfrp4e-core.items.UFunAopCNaD8Zdc7",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Entertain_Singing.svg"
     },
     "Entertain (Storytelling)": {
       "id": "qBm2fu3oMhxsDBNQ",
       "name": "Występy (Gawędziarstwo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.qBm2fu3oMhxsDBNQ"
+      "sourceId": "Compendium.wfrp4e-core.items.qBm2fu3oMhxsDBNQ",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Entertain_Storytelling.svg"
     },
     "Entertain ()": {
       "id": "0CwV96kTDRF0jUhk",
       "name": "Występy ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
+      "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Entertain.svg"
     },
     "Evaluate": {
       "id": "bSWoV1IiS5qWNw39",
       "name": "Wycena",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.NtJ85TY8yY3WOGHN]{Wycena}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.bSWoV1IiS5qWNw39"
+      "sourceId": "Compendium.wfrp4e-core.items.bSWoV1IiS5qWNw39",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Evaluate.svg"
     },
     "Gamble": {
       "id": "7pQo66cESWttzIlb",
       "name": "Hazard",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq]{Hazard}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.7pQo66cESWttzIlb"
+      "sourceId": "Compendium.wfrp4e-core.items.7pQo66cESWttzIlb",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Gamble.svg"
     },
     "Gossip": {
       "id": "RLQHm1s4IuY9RSr2",
       "name": "Plotkowanie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ns3PDbblIFcwqyQi]{Plotkowanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.RLQHm1s4IuY9RSr2"
+      "sourceId": "Compendium.wfrp4e-core.items.RLQHm1s4IuY9RSr2",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Gossip.svg"
     },
     "Haggle": {
       "id": "pKLMbmG3Ivt6mzMf",
       "name": "Targowanie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.qSSRHdEK5P7VRmKW]{Targowanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.pKLMbmG3Ivt6mzMf"
+      "sourceId": "Compendium.wfrp4e-core.items.pKLMbmG3Ivt6mzMf",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Haggle.svg"
     },
     "Heal": {
       "id": "HXZaV1CJhmTvcAz4",
@@ -15588,643 +15634,750 @@
             }
           ]
         }
-      }
+      },
+      "image": "modules/wfrp4e-extended/icons/skills/7_Heal.svg"
     },
     "Intimidate": {
       "id": "I0yPc4PH5erWJLmu",
       "name": "Zastraszanie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mDs8HUZopZAb1fH0]{Zastraszanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.I0yPc4PH5erWJLmu"
+      "sourceId": "Compendium.wfrp4e-core.items.I0yPc4PH5erWJLmu",
+      "image": "modules/wfrp4e-extended/icons/skills/2_Intimidate.svg"
     },
     "Intuition": {
       "id": "cYtU0ORRFCOpQLWz",
       "name": "Intuicja",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.31VEXGfn6houFutI]{Intuicja}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.cYtU0ORRFCOpQLWz"
+      "sourceId": "Compendium.wfrp4e-core.items.cYtU0ORRFCOpQLWz",
+      "image": "modules/wfrp4e-extended/icons/skills/4_Intuition.svg"
     },
     "Language (Albion)": {
       "id": "Nemd0MJ4MOcOJYhT",
       "name": "Język (Albioński)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Nemd0MJ4MOcOJYhT"
+      "sourceId": "Compendium.wfrp4e-core.items.Nemd0MJ4MOcOJYhT",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Albion.svg"
     },
     "Language (Battle Tongue)": {
       "id": "nqhgjUbJWglxU59j",
       "name": "Język (Bitewny)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.nqhgjUbJWglxU59j"
+      "sourceId": "Compendium.wfrp4e-core.items.nqhgjUbJWglxU59j",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Battle_Tongue.svg"
     },
     "Language (Bretonnian)": {
       "id": "5EvSIh1khpt77uM7",
       "name": "Język (Bretoński)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.5EvSIh1khpt77uM7"
+      "sourceId": "Compendium.wfrp4e-core.items.5EvSIh1khpt77uM7",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Bretonnian.svg"
     },
     "Language (Classical)": {
       "id": "61L9aX2z164cjm7K",
       "name": "Język (Klasyczny)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.61L9aX2z164cjm7K"
+      "sourceId": "Compendium.wfrp4e-core.items.61L9aX2z164cjm7K",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Classical.svg"
     },
     "Language (Elthárin)": {
       "id": "5MzxtQSzv5RtJGbw",
       "name": "Język (Elthárin)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.5MzxtQSzv5RtJGbw"
+      "sourceId": "Compendium.wfrp4e-core.items.5MzxtQSzv5RtJGbw",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Eltharin.svg"
     },
     "Language (Estalian)": {
       "id": "Emd8lVdIpaXTxLwL",
       "name": "Język (Estalijski)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Emd8lVdIpaXTxLwL"
+      "sourceId": "Compendium.wfrp4e-core.items.Emd8lVdIpaXTxLwL",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Estalian.svg"
     },
     "Language (Gospodarinyi)": {
       "id": "EXysjCwmGzCOiRDx",
       "name": "Język (Hospodarnyj)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.EXysjCwmGzCOiRDx"
+      "sourceId": "Compendium.wfrp4e-core.items.EXysjCwmGzCOiRDx",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Gospodarinyi.svg"
     },
     "Language (Grumbarth)": {
       "id": "xeGpCLz8uGaZb1nL",
       "name": "Język (Grumbarth)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.xeGpCLz8uGaZb1nL"
+      "sourceId": "Compendium.wfrp4e-core.items.xeGpCLz8uGaZb1nL",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Grumbarth.svg"
     },
     "Language (Khazalid)": {
       "id": "XzPlUWFDtOOjG98P",
       "name": "Język (Khazalid)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.XzPlUWFDtOOjG98P"
+      "sourceId": "Compendium.wfrp4e-core.items.XzPlUWFDtOOjG98P",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Khazalid.svg"
     },
     "Language (Magick)": {
       "id": "e3McIND4Rrsn5cE6",
       "name": "Język (Magiczny)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.e3McIND4Rrsn5cE6"
+      "sourceId": "Compendium.wfrp4e-core.items.e3McIND4Rrsn5cE6",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Magick.svg"
     },
     "Language (Mootish)": {
       "id": "Cg2b92BRjvxYXZiE",
       "name": "Język (Krainy Zgromadzenia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Cg2b92BRjvxYXZiE"
+      "sourceId": "Compendium.wfrp4e-core.items.Cg2b92BRjvxYXZiE",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Mootish.svg"
     },
     "Language (Norse)": {
       "id": "fPVnjkCnm5nKdKBh",
       "name": "Język (Norsmeński)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.fPVnjkCnm5nKdKBh"
+      "sourceId": "Compendium.wfrp4e-core.items.fPVnjkCnm5nKdKBh",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Norse.svg"
     },
     "Language (Queekish)": {
       "id": "kEI7TLacmDfwcM3A",
       "name": "Język (Queekish)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.kEI7TLacmDfwcM3A"
+      "sourceId": "Compendium.wfrp4e-core.items.kEI7TLacmDfwcM3A",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Queekish.svg"
     },
     "Language (Reikspiel)": {
       "id": "I0QRyEA0tk4IAEAn",
       "name": "Język (Reikspiel)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.I0QRyEA0tk4IAEAn"
+      "sourceId": "Compendium.wfrp4e-core.items.I0QRyEA0tk4IAEAn",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Reikspiel.svg"
     },
     "Language (Thieves Tongue)": {
       "id": "Uxnxmtvshz8OAVaX",
       "name": "Język (Złodziejska grypsera)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Uxnxmtvshz8OAVaX"
+      "sourceId": "Compendium.wfrp4e-core.items.Uxnxmtvshz8OAVaX",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Thieves_Tongue.svg"
     },
     "Language (Tilean)": {
       "id": "12e3H6NX4JH0bwI3",
       "name": "Język (Tileański)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.12e3H6NX4JH0bwI3"
+      "sourceId": "Compendium.wfrp4e-core.items.12e3H6NX4JH0bwI3",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Tilean.svg"
     },
     "Language (Wastelander)": {
       "id": "X16IoUlKcVLI4MRw",
       "name": "Język (Jałowej Krainy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.X16IoUlKcVLI4MRw"
+      "sourceId": "Compendium.wfrp4e-core.items.X16IoUlKcVLI4MRw",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language_Wastelander.svg"
     },
     "Language ()": {
       "id": "XQiiwS9m2Du1IMUz",
       "name": "Język ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.xo5U0kL08xCPe6kl]{Język}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.XQiiwS9m2Du1IMUz"
+      "sourceId": "Compendium.wfrp4e-core.items.XQiiwS9m2Du1IMUz",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Language.svg"
     },
     "Leadership": {
       "id": "oMaJZ5cvCJeOUq9H",
       "name": "Dowodzenie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.haKq6qZXYj7Bweu4]{Dowodzenie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.oMaJZ5cvCJeOUq9H"
+      "sourceId": "Compendium.wfrp4e-core.items.oMaJZ5cvCJeOUq9H",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Leadership.svg"
     },
     "Lore (Engineering)": {
       "id": "osMw1Be6YgRBolTm",
       "name": "Wiedza (Inżynieria)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.osMw1Be6YgRBolTm"
+      "sourceId": "Compendium.wfrp4e-core.items.osMw1Be6YgRBolTm",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Engineering.svg"
     },
     "Lore (Geology)": {
       "id": "VNjHDKWD6sIbF6BI",
       "name": "Wiedza (Geologia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.VNjHDKWD6sIbF6BI"
+      "sourceId": "Compendium.wfrp4e-core.items.VNjHDKWD6sIbF6BI",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Geology.svg"
     },
     "Lore (Heraldry)": {
       "id": "DiP9cmbqUir3HkkK",
       "name": "Wiedza (Heraldyka)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.DiP9cmbqUir3HkkK"
+      "sourceId": "Compendium.wfrp4e-core.items.DiP9cmbqUir3HkkK",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Heraldry.svg"
     },
     "Lore (History)": {
       "id": "FChdV10BCuXQyUhU",
       "name": "Wiedza (Historia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.FChdV10BCuXQyUhU"
+      "sourceId": "Compendium.wfrp4e-core.items.FChdV10BCuXQyUhU",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_History.svg"
     },
     "Lore (Law)": {
       "id": "2LDCVJQWkTFszMok",
       "name": "Wiedza (Prawo)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.2LDCVJQWkTFszMok"
+      "sourceId": "Compendium.wfrp4e-core.items.2LDCVJQWkTFszMok",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Law.svg"
     },
     "Lore (Magick)": {
       "id": "ZQzRZkB9JK1CveMW",
       "name": "Wiedza (Magia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.ZQzRZkB9JK1CveMW"
+      "sourceId": "Compendium.wfrp4e-core.items.ZQzRZkB9JK1CveMW",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Magic.svg"
     },
     "Lore (Metallurgy)": {
       "id": "nLlRDNRC95plBgXs",
       "name": "Wiedza (Metalurgia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.nLlRDNRC95plBgXs"
+      "sourceId": "Compendium.wfrp4e-core.items.nLlRDNRC95plBgXs",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Metallurgy.svg"
     },
     "Lore (Science)": {
       "id": "7ToyUcqJDkceoJRd",
       "name": "Wiedza (Nauka)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.7ToyUcqJDkceoJRd"
+      "sourceId": "Compendium.wfrp4e-core.items.7ToyUcqJDkceoJRd",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Science.svg"
     },
     "Lore (Theology)": {
       "id": "d9bGxy6Y3u3rOHIN",
       "name": "Wiedza (Teologia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.d9bGxy6Y3u3rOHIN"
+      "sourceId": "Compendium.wfrp4e-core.items.d9bGxy6Y3u3rOHIN",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore_Theology.svg"
     },
     "Lore ()": {
       "id": "DRO5DLF6UcfkvNSh",
       "name": "Wiedza ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.DRO5DLF6UcfkvNSh"
+      "sourceId": "Compendium.wfrp4e-core.items.DRO5DLF6UcfkvNSh",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Lore.svg"
     },
     "Melee (Basic)": {
       "id": "rOPmyLWa37e7s9v6",
       "name": "Broń Biała (Podstawowa)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.rOPmyLWa37e7s9v6"
+      "sourceId": "Compendium.wfrp4e-core.items.rOPmyLWa37e7s9v6",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Basic.svg"
     },
     "Melee (Brawling)": {
       "id": "jLyoyqwmBVPjRjhM",
       "name": "Broń Biała (Bijatyka)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.jLyoyqwmBVPjRjhM"
+      "sourceId": "Compendium.wfrp4e-core.items.jLyoyqwmBVPjRjhM",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Brawling.svg"
     },
     "Melee (Cavalry)": {
       "id": "rt1yfcjZoeSulddW",
       "name": "Broń Biała (Kawaleryjska)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.rt1yfcjZoeSulddW"
+      "sourceId": "Compendium.wfrp4e-core.items.rt1yfcjZoeSulddW",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Cavalry.svg"
     },
     "Melee (Fencing)": {
       "id": "4mJoPBw4drm1kv2D",
       "name": "Broń Biała (Szermiercza)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.4mJoPBw4drm1kv2D"
+      "sourceId": "Compendium.wfrp4e-core.items.4mJoPBw4drm1kv2D",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Fencing.svg"
     },
     "Melee (Flail)": {
       "id": "ZqYYWZuWwqMb3wVf",
-      "name": "Broń Biała (Korbacz)",
+      "name": "Broń Biała (Korbacze)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.ZqYYWZuWwqMb3wVf"
+      "sourceId": "Compendium.wfrp4e-core.items.ZqYYWZuWwqMb3wVf",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Flail.svg"
     },
     "Melee (Parry)": {
       "id": "bJBesrdCaDqaXbQg",
       "name": "Broń Biała (Parująca)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.bJBesrdCaDqaXbQg"
+      "sourceId": "Compendium.wfrp4e-core.items.bJBesrdCaDqaXbQg",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Parry.svg"
     },
     "Melee (Polearm)": {
       "id": "PzimjNx9Ojq4g6mV",
       "name": "Broń Biała (Drzewcowa)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.PzimjNx9Ojq4g6mV"
+      "sourceId": "Compendium.wfrp4e-core.items.PzimjNx9Ojq4g6mV",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Polearm.svg"
     },
     "Melee (Two-Handed)": {
       "id": "Lst4xxUcxTYMlD3U",
       "name": "Broń Biała (Dwuręczna)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Lst4xxUcxTYMlD3U"
+      "sourceId": "Compendium.wfrp4e-core.items.Lst4xxUcxTYMlD3U",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee_Two-handed.svg"
     },
     "Melee ()": {
       "id": "F8NfBZdVSEIGCMtu",
       "name": "Broń Biała ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
+      "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu",
+      "image": "modules/wfrp4e-extended/icons/skills/0_Melee.svg"
     },
     "Navigation": {
       "id": "zZUX7wO4rOo8k9F0",
       "name": "Nawigacja",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.rf7gtZko4KJvjFaE]{Nawigacja}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.zZUX7wO4rOo8k9F0"
+      "sourceId": "Compendium.wfrp4e-core.items.zZUX7wO4rOo8k9F0",
+      "image": "modules/wfrp4e-extended/icons/skills/4_Navigation.svg"
     },
     "Outdoor Survival": {
       "id": "os4NKy5Oy6sRt1eh",
       "name": "Sztuka Przetrwania",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3]{Sztuka Przetrwania}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.os4NKy5Oy6sRt1eh"
+      "sourceId": "Compendium.wfrp4e-core.items.os4NKy5Oy6sRt1eh",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Outdoor_Survival.svg"
     },
     "Perception": {
       "id": "Fs06sr7y9JKpVQmB",
       "name": "Percepcja",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6Jhks0zDRpJeN6dW]{Percepcja}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Fs06sr7y9JKpVQmB"
+      "sourceId": "Compendium.wfrp4e-core.items.Fs06sr7y9JKpVQmB",
+      "image": "modules/wfrp4e-extended/icons/skills/4_Perception.svg"
     },
     "Perform (Acrobatics)": {
       "id": "vQtJqX0qb0bbpVDg",
       "name": "Kuglarstwo (Akrobatyka)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.vQtJqX0qb0bbpVDg"
+      "sourceId": "Compendium.wfrp4e-core.items.vQtJqX0qb0bbpVDg",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Acrobatics.svg"
     },
     "Perform (Clowning)": {
       "id": "c6I7wHp56nulRLic",
       "name": "Kuglarstwo (Błaznowanie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.c6I7wHp56nulRLic"
+      "sourceId": "Compendium.wfrp4e-core.items.c6I7wHp56nulRLic",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Clowning.svg"
     },
     "Perform (Dancing)": {
       "id": "OZMvB887CeshFy7b",
       "name": "Kuglarstwo (Taniec)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.OZMvB887CeshFy7b"
+      "sourceId": "Compendium.wfrp4e-core.items.OZMvB887CeshFy7b",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Dancing.svg"
     },
     "Perform (Firebreathing)": {
       "id": "1dVlA24UQGuWCiPT",
       "name": "Kuglarstwo (Połykanie Ognia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.1dVlA24UQGuWCiPT"
+      "sourceId": "Compendium.wfrp4e-core.items.1dVlA24UQGuWCiPT",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Firebreathing.svg"
     },
     "Perform (Juggling)": {
       "id": "TXsoAJQZWcilgUli",
       "name": "Kuglarstwo (Żonglowanie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.TXsoAJQZWcilgUli"
+      "sourceId": "Compendium.wfrp4e-core.items.TXsoAJQZWcilgUli",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Juggling.svg"
     },
     "Perform (Miming)": {
       "id": "qce9bEiaA9ICpl7V",
       "name": "Kuglarstwo (Mimika)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.qce9bEiaA9ICpl7V"
+      "sourceId": "Compendium.wfrp4e-core.items.qce9bEiaA9ICpl7V",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Miming.svg"
     },
     "Perform (Rope Walking)": {
       "id": "nCnEDGtiGYgv80xJ",
       "name": "Kuglarstwo (Chodzenie po Linie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.nCnEDGtiGYgv80xJ"
+      "sourceId": "Compendium.wfrp4e-core.items.nCnEDGtiGYgv80xJ",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform_Rope_Walking.svg"
     },
     "Perform ()": {
       "id": "HO8vIjGTHjmenIaV",
       "name": "Kuglarstwo ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6MQIGorN3WgXWfJB]{Kuglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.HO8vIjGTHjmenIaV"
+      "sourceId": "Compendium.wfrp4e-core.items.HO8vIjGTHjmenIaV",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Perform.svg"
     },
     "Pick Lock": {
       "id": "AkjRsazdAppqveZu",
       "name": "Otwieranie Zamków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.XexqYWmxO5dy2us3]{Otwieranie Zamków}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.AkjRsazdAppqveZu"
+      "sourceId": "Compendium.wfrp4e-core.items.AkjRsazdAppqveZu",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Pick_Lock.svg"
     },
     "Play (Bagpipe)": {
       "id": "kFfdmvE78pEUVB6f",
       "name": "Muzyka (Dudy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.kFfdmvE78pEUVB6f"
+      "sourceId": "Compendium.wfrp4e-core.items.kFfdmvE78pEUVB6f",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Play_Bagpipe.svg"
     },
     "Play (Harpsichord)": {
       "id": "GJt5I57Fbb7pj1mF",
       "name": "Muzyka (Harfa)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.GJt5I57Fbb7pj1mF"
+      "sourceId": "Compendium.wfrp4e-core.items.GJt5I57Fbb7pj1mF",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Play_Harp.svg"
     },
     "Play (Horn)": {
       "id": "EsgYCZZbWaDZsLYx",
       "name": "Muzyka (Obój)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.EsgYCZZbWaDZsLYx"
+      "sourceId": "Compendium.wfrp4e-core.items.EsgYCZZbWaDZsLYx",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Play_Oboe.svg"
     },
     "Play (Lute)": {
       "id": "QXQA1ycrJHzZkIou",
       "name": "Muzyka (Lutnia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.QXQA1ycrJHzZkIou"
+      "sourceId": "Compendium.wfrp4e-core.items.QXQA1ycrJHzZkIou",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Play_Lute.svg"
     },
     "Play (Violin)": {
       "id": "nQPMcmt3Q1SXAzEd",
       "name": "Muzyka (Skrzypce)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.nQPMcmt3Q1SXAzEd"
+      "sourceId": "Compendium.wfrp4e-core.items.nQPMcmt3Q1SXAzEd",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Play_Violin.svg"
     },
     "Play ()": {
       "id": "bBLK2hznjPlby6Jb",
       "name": "Muzyka ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.N63wZOWw6ZLYnePN]{Muzyka}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.bBLK2hznjPlby6Jb"
+      "sourceId": "Compendium.wfrp4e-core.items.bBLK2hznjPlby6Jb",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Play.svg"
     },
     "Pray": {
       "id": "9xR9uO8FIvi4YsJp",
       "name": "Modlitwa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.NRfh04q1bZBIND0A]{Modlitwa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.9xR9uO8FIvi4YsJp"
+      "sourceId": "Compendium.wfrp4e-core.items.9xR9uO8FIvi4YsJp",
+      "image": "modules/wfrp4e-extended/icons/skills/9_Pray.svg"
     },
     "Ranged (Blackpowder)": {
       "id": "H2upcZ7q7qAPtPic",
       "name": "Broń Zasięgowa (Prochowa)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.H2upcZ7q7qAPtPic"
+      "sourceId": "Compendium.wfrp4e-core.items.H2upcZ7q7qAPtPic",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Blackpowder.svg"
     },
     "Ranged (Bow)": {
       "id": "ZQSm2AwrgT2cHG0C",
-      "name": "Broń Zasięgowa (Łuk)",
+      "name": "Broń Zasięgowa (Łuki)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.ZQSm2AwrgT2cHG0C"
+      "sourceId": "Compendium.wfrp4e-core.items.ZQSm2AwrgT2cHG0C",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Bow.svg"
     },
     "Ranged (Crossbow)": {
       "id": "OuDdJRDo3W56zk0Z",
-      "name": "Broń Zasięgowa (Kusza)",
+      "name": "Broń Zasięgowa (Kusze)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.OuDdJRDo3W56zk0Z"
+      "sourceId": "Compendium.wfrp4e-core.items.OuDdJRDo3W56zk0Z",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Crossbow.svg"
     },
     "Ranged (Engineering)": {
       "id": "2Y91ebFapH6zRfHk",
       "name": "Broń Zasięgowa (Eksperymentalna)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.2Y91ebFapH6zRfHk"
+      "sourceId": "Compendium.wfrp4e-core.items.2Y91ebFapH6zRfHk",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Engineering.svg"
     },
     "Ranged (Entangling)": {
       "id": "MWyxcAft5lonB1mB",
       "name": "Broń Zasięgowa (Oplątująca)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.MWyxcAft5lonB1mB"
+      "sourceId": "Compendium.wfrp4e-core.items.MWyxcAft5lonB1mB",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Entangling.svg"
     },
     "Ranged (Explosives)": {
       "id": "UQgNIecnmaguYegE",
       "name": "Broń Zasięgowa (Materiały Wybuchowe)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.UQgNIecnmaguYegE"
+      "sourceId": "Compendium.wfrp4e-core.items.UQgNIecnmaguYegE",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Explosives.svg"
     },
     "Ranged (Sling)": {
       "id": "KQjZ85kKz42YQGYT",
-      "name": "Broń Zasięgowa (Proca)",
+      "name": "Broń Zasięgowa (Proce)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.KQjZ85kKz42YQGYT"
+      "sourceId": "Compendium.wfrp4e-core.items.KQjZ85kKz42YQGYT",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Sling.svg"
     },
     "Ranged (Throwing)": {
       "id": "NSnpJQiky8JcMnme",
       "name": "Broń Zasięgowa (Miotana)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.NSnpJQiky8JcMnme"
+      "sourceId": "Compendium.wfrp4e-core.items.NSnpJQiky8JcMnme",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged_Throwing.svg"
     },
     "Ranged ()": {
       "id": "Z9hQe46ykQBZneoU",
       "name": "Broń Zasięgowa ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jJYOiSQNgC9v7cM5]{Broń Zasięgowa}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Z9hQe46ykQBZneoU"
+      "sourceId": "Compendium.wfrp4e-core.items.Z9hQe46ykQBZneoU",
+      "image": "modules/wfrp4e-extended/icons/skills/1_Ranged.svg"
     },
     "Research": {
       "id": "9tbHTeuvEMZrp0rx",
       "name": "Badania Naukowe",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Nv0jexKy05qTOnuN]{Badania Naukowe}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.9tbHTeuvEMZrp0rx"
+      "sourceId": "Compendium.wfrp4e-core.items.9tbHTeuvEMZrp0rx",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Research.svg"
     },
     "Ride (Demigryph)": {
       "id": "yr4ikZaXnYt7kOZd",
       "name": "Jeździectwo (Półgryfy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.yr4ikZaXnYt7kOZd"
+      "sourceId": "Compendium.wfrp4e-core.items.yr4ikZaXnYt7kOZd",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Demigryph.svg"
     },
     "Ride (Great Wolf)": {
       "id": "aD6f4BzQlKEGAM8d",
       "name": "Jeździectwo (Wielkie Wilki)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.aD6f4BzQlKEGAM8d"
+      "sourceId": "Compendium.wfrp4e-core.items.aD6f4BzQlKEGAM8d",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Great_Wolf.svg"
     },
     "Ride (Griffon)": {
       "id": "dfuN0EpNQS6eqCxZ",
       "name": "Jeździectwo (Gryfy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.dfuN0EpNQS6eqCxZ"
+      "sourceId": "Compendium.wfrp4e-core.items.dfuN0EpNQS6eqCxZ",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Griffon.svg"
     },
     "Ride (Horse)": {
       "id": "oSbEE6eXH1S3LfUU",
       "name": "Jeździectwo (Konie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.oSbEE6eXH1S3LfUU"
+      "sourceId": "Compendium.wfrp4e-core.items.oSbEE6eXH1S3LfUU",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Horse.svg"
     },
     "Ride (Pegasus)": {
       "id": "NzmG8oghB65XqdDd",
       "name": "Jeździectwo (Pegazy)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.NzmG8oghB65XqdDd"
+      "sourceId": "Compendium.wfrp4e-core.items.NzmG8oghB65XqdDd",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Ride_Pegasus.svg"
     },
     "Ride ()": {
       "id": "MeXCAQ3wqJzX07X7",
       "name": "Jeździectwo ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
+      "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Ride.svg"
     },
     "Row": {
       "id": "KL4pCOqma5E7fLG4",
       "name": "Wioślarstwo",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ACCaGYXdz9yKyxgG]{Wioślarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.KL4pCOqma5E7fLG4"
+      "sourceId": "Compendium.wfrp4e-core.items.KL4pCOqma5E7fLG4",
+      "image": "modules/wfrp4e-extended/icons/skills/2_Row.svg"
     },
     "Sail (Barge)": {
       "id": "WuGqleOpKoMCfhO0",
       "name": "Żeglarstwo (Barki)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.WuGqleOpKoMCfhO0"
+      "sourceId": "Compendium.wfrp4e-core.items.WuGqleOpKoMCfhO0",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Barge.svg"
     },
     "Sail (Caravel)": {
       "id": "FR60c6AX1pWZz6Mc",
       "name": "Żeglarstwo (Karawele)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.FR60c6AX1pWZz6Mc"
+      "sourceId": "Compendium.wfrp4e-core.items.FR60c6AX1pWZz6Mc",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Caravel.svg"
     },
     "Sail (Cog)": {
       "id": "ZUldeWVqTnMRw5xD",
       "name": "Żeglarstwo (Kogi)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.ZUldeWVqTnMRw5xD"
+      "sourceId": "Compendium.wfrp4e-core.items.ZUldeWVqTnMRw5xD",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Cog.svg"
     },
     "Sail (Frigate)": {
       "id": "9s8S1BlR4cd5UeN8",
       "name": "Żeglarstwo (Fregaty)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.9s8S1BlR4cd5UeN8"
+      "sourceId": "Compendium.wfrp4e-core.items.9s8S1BlR4cd5UeN8",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Frigate.svg"
     },
     "Sail (Wolfship)": {
       "id": "5WfSy7tUYgjvChyN",
       "name": "Żeglarstwo (Wilcze Statki)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.5WfSy7tUYgjvChyN"
+      "sourceId": "Compendium.wfrp4e-core.items.5WfSy7tUYgjvChyN",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Sail_Wolfship.svg"
     },
     "Sail ()": {
       "id": "n8IfmLt4kzMhIKIv",
-      "name": "Żeglarstwo",
+      "name": "Żeglarstwo ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.n8IfmLt4kzMhIKIv"
+      "sourceId": "Compendium.wfrp4e-core.items.n8IfmLt4kzMhIKIv",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Sail.svg"
     },
     "Secret Signs (Grey Order)": {
       "id": "CJxLsDRzVMguEpF1",
       "name": "Sekretne Znaki (Kolegium Cienia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.CJxLsDRzVMguEpF1"
+      "sourceId": "Compendium.wfrp4e-core.items.CJxLsDRzVMguEpF1",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Grey_Order.svg"
     },
     "Secret Signs (Guilder)": {
       "id": "D4JNPSl6VOpsVmSi",
       "name": "Sekretne Znaki (Gildii)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.D4JNPSl6VOpsVmSi"
+      "sourceId": "Compendium.wfrp4e-core.items.D4JNPSl6VOpsVmSi",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Guild.svg"
     },
     "Secret Signs (Ranger)": {
       "id": "6l2JkMfD3mNxqiep",
       "name": "Sekretne Znaki (Łowców)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.6l2JkMfD3mNxqiep"
+      "sourceId": "Compendium.wfrp4e-core.items.6l2JkMfD3mNxqiep",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Ranger.svg"
     },
     "Secret Signs (Scout)": {
       "id": "COND1RfSn9v58QiN",
       "name": "Sekretne Znaki (Zwiadowców)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.COND1RfSn9v58QiN"
+      "sourceId": "Compendium.wfrp4e-core.items.COND1RfSn9v58QiN",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Scout.svg"
     },
     "Secret Signs (Thief)": {
       "id": "AIueed3kikw3euvn",
       "name": "Sekretne Znaki (Złodziei)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.AIueed3kikw3euvn"
+      "sourceId": "Compendium.wfrp4e-core.items.AIueed3kikw3euvn",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Thief.svg"
     },
     "Secret Signs (Vagabond)": {
       "id": "eXLVhJVuIhm8wPUF",
       "name": "Sekretne Znaki (Włóczęgów)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.eXLVhJVuIhm8wPUF"
+      "sourceId": "Compendium.wfrp4e-core.items.eXLVhJVuIhm8wPUF",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs_Vagabond.svg"
     },
     "Secret Signs ()": {
       "id": "bVdhLdfuSAfMi3qq",
       "name": "Sekretne Znaki ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.X2FppoPGuEwJKssM]{Sekretne Znaki}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.bVdhLdfuSAfMi3qq"
+      "sourceId": "Compendium.wfrp4e-core.items.bVdhLdfuSAfMi3qq",
+      "image": "modules/wfrp4e-extended/icons/skills/7_Secret_Signs.svg"
     },
     "Set Trap": {
       "id": "HngrTVqKis08Nvcf",
       "name": "Zastawianie Pułapek",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.fmMkUHUwOPwex8mj]{Zastawianie Pułapek}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.HngrTVqKis08Nvcf"
+      "sourceId": "Compendium.wfrp4e-core.items.HngrTVqKis08Nvcf",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Set_Trap.svg"
     },
     "Sleight of Hand": {
       "id": "rvd0S8Z0v2m0MHmD",
       "name": "Zwinne Palce",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.bGqmHCju8VZ8q2Pv]{Zwinne Palce}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.rvd0S8Z0v2m0MHmD"
+      "sourceId": "Compendium.wfrp4e-core.items.rvd0S8Z0v2m0MHmD",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Sleight_of_Hand.svg"
     },
     "Stealth (Rural)": {
       "id": "Xk5tp3aasPNtk4zt",
       "name": "Skradanie (Wieś)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Xk5tp3aasPNtk4zt"
+      "sourceId": "Compendium.wfrp4e-core.items.Xk5tp3aasPNtk4zt",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Stealth_Rural.svg"
     },
     "Stealth (Underground)": {
       "id": "cHbQeJQ7cVZZyDyl",
       "name": "Skradanie (Podziemia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.cHbQeJQ7cVZZyDyl"
+      "sourceId": "Compendium.wfrp4e-core.items.cHbQeJQ7cVZZyDyl",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Stealth_Underground.svg"
     },
     "Stealth (Urban)": {
       "id": "zkI6tIqbyAZvh0Th",
       "name": "Skradanie (Miasto)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.zkI6tIqbyAZvh0Th"
+      "sourceId": "Compendium.wfrp4e-core.items.zkI6tIqbyAZvh0Th",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Stealth_Urban.svg"
     },
     "Stealth ()": {
       "id": "McTtmZu3Ac8Lh48W",
       "name": "Skradanie ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
+      "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W",
+      "image": "modules/wfrp4e-extended/icons/skills/5_Stealth.svg"
     },
     "Swim": {
       "id": "hodHqFNKAmu40ajh",
       "name": "Pływanie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QoWDfx8SIhpCiIX5]{Pływanie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.hodHqFNKAmu40ajh"
+      "sourceId": "Compendium.wfrp4e-core.items.hodHqFNKAmu40ajh",
+      "image": "modules/wfrp4e-extended/icons/skills/2_Swim.svg"
     },
     "Track": {
       "id": "rt2rGSwFDCDHPh0A",
       "name": "Tropienie",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.EWHNXyzDLPBpoVxK]{Tropienie}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.rt2rGSwFDCDHPh0A"
+      "sourceId": "Compendium.wfrp4e-core.items.rt2rGSwFDCDHPh0A",
+      "image": "modules/wfrp4e-extended/icons/skills/4_Track.svg"
     },
     "Trade (Apothecary)": {
       "id": "0qQqFANTRUDTDpRg",
-      "name": "Rzemiosło (Aptekarstwo)",
+      "name": "Rzemiosło (Aptekarz)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.0qQqFANTRUDTDpRg"
+      "sourceId": "Compendium.wfrp4e-core.items.0qQqFANTRUDTDpRg",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Apothecary.svg"
     },
     "Trade (Calligrapher)": {
       "id": "SMBkaNJzNKypJMA2",
       "name": "Rzemiosło (Kaligrafia)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.SMBkaNJzNKypJMA2"
+      "sourceId": "Compendium.wfrp4e-core.items.SMBkaNJzNKypJMA2",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Calligrapher.svg"
     },
     "Trade (Carpenter)": {
       "id": "qy68sCupAbzhlvVU",
-      "name": "Rzemiosło (Stolarstwo)",
+      "name": "Rzemiosło (Stolarz)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.qy68sCupAbzhlvVU"
+      "sourceId": "Compendium.wfrp4e-core.items.qy68sCupAbzhlvVU",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Carpenter.svg"
     },
     "Trade (Chandler)": {
       "id": "PFQYm0XaYcoeSYxE",
-      "name": "Rzemiosło (Kupiectwo)",
+      "name": "Rzemiosło (Świecarz)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.PFQYm0XaYcoeSYxE"
+      "sourceId": "Compendium.wfrp4e-core.items.PFQYm0XaYcoeSYxE",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Chandler.svg"
     },
     "Trade (Cook)": {
       "id": "epSHxgJWtT1S0yMY",
-      "name": "Rzemiosło (Gotowanie)",
+      "name": "Rzemiosło (Kucharz)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.epSHxgJWtT1S0yMY"
+      "sourceId": "Compendium.wfrp4e-core.items.epSHxgJWtT1S0yMY",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Cook.svg"
     },
     "Trade (Embalmer)": {
       "id": "weawpyxoBpAUqDJo",
       "name": "Rzemiosło (Balsamowanie)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.weawpyxoBpAUqDJo"
+      "sourceId": "Compendium.wfrp4e-core.items.weawpyxoBpAUqDJo",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Embalmer.svg"
     },
     "Trade (Smith)": {
       "id": "Ml6ZblglcSbVhXyh",
-      "name": "Rzemiosło (Kowalstwo)",
+      "name": "Rzemiosło (Kowal)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.Ml6ZblglcSbVhXyh"
+      "sourceId": "Compendium.wfrp4e-core.items.Ml6ZblglcSbVhXyh",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Smith.svg"
     },
     "Trade (Tanner)": {
       "id": "u9dLyalenY0AIzCT",
-      "name": "Rzemiosło (Garbarstwo)",
+      "name": "Rzemiosło (Garbarz)",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.u9dLyalenY0AIzCT"
+      "sourceId": "Compendium.wfrp4e-core.items.u9dLyalenY0AIzCT",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade_Tanner.svg"
     },
     "Trade ()": {
       "id": "wKwel9MG7NIG3i3w",
       "name": "Rzemiosło ()",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}</p>",
-      "sourceId": "Compendium.wfrp4e-core.items.wKwel9MG7NIG3i3w"
+      "sourceId": "Compendium.wfrp4e-core.items.wKwel9MG7NIG3i3w",
+      "image": "modules/wfrp4e-extended/icons/skills/6_Trade.svg"
     },
     "Acquiescence": {
       "id": "2fBaYkBsPZzxNSNj",
@@ -16880,7 +17033,7 @@
     },
     "Arrow Shield": {
       "id": "9uRDDAjndugmNmZr",
-      "name": "Niszczyciel Strzał",
+      "name": "Niszczyciel strzał",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Zakazana Tradycja Demonologii skupia się wokół przyzywania, wiązania i kontrolowania demonów, zazwyczaj po to, by zwiększyć moc czarodzieja. Jest przerażająco niebezpieczna i zwykle wiedzie do upadku demonologa, ponieważ jego dusza jest wyniszczana przez Niszczycielskie Potęgi – w ten sposób rodzi się nowy Czarnoksiężnik Chaosu.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.9uRDDAjndugmNmZr",
       "duration": "Bonus SW Rund",
@@ -16889,11 +17042,11 @@
       "effects": {
         "XP54Ae31hjzHhxck": {
           "id": "XP54Ae31hjzHhxck",
-          "name": "Niszczyciel Strzał",
+          "name": "Niszczyciel strzał",
           "scriptData": [
             {
               "id": "XP54Ae31hjzHhxck",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -16915,7 +17068,7 @@
           "scriptData": [
             {
               "id": "GoYTWl6YKH4pkg0O",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -16924,7 +17077,7 @@
     },
     "Arrow Shield (Daemonology)": {
       "id": "wi9BBLoL1TIf5aUf",
-      "name": "Niszczyciel Strzał (Demonologia)",
+      "name": "Niszczyciel strzał (Demonologia)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Zakazana Tradycja Demonologii skupia się wokół przyzywania, wiązania i kontrolowania demonów, zazwyczaj po to, by zwiększyć moc czarodzieja. Jest przerażająco niebezpieczna i zwykle wiedzie do upadku demonologa, ponieważ jego dusza jest wyniszczana przez Niszczycielskie Potęgi – w ten sposób rodzi się nowy Czarnoksiężnik Chaosu.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.wi9BBLoL1TIf5aUf",
       "duration": "Bonus SW Rund",
@@ -16933,11 +17086,11 @@
       "effects": {
         "XuCxx5xXIP3hcsDa": {
           "id": "XuCxx5xXIP3hcsDa",
-          "name": "Niszczyciel Strzał (Demonologia)",
+          "name": "Niszczyciel strzał (Demonologia)",
           "scriptData": [
             {
               "id": "XuCxx5xXIP3hcsDa",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -16946,7 +17099,7 @@
     },
     "Arrow Shield (Death)": {
       "id": "zwQQb0upMLj8bFe9",
-      "name": "Niszczyciel Strzał (Śmierć)",
+      "name": "Niszczyciel strzał (Śmierć)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Fioletowy Wiatr <i>Shyish</i> niesie ze sobą suche, piaszczyste wichry i uporczywy szelest piasku przesypującego się w klepsydrze Czasu. Ofensywne zaklęcia z Tradycji Śmierci odzierają z życia, pozbawiają sił lub działają otępiająco. Możesz dopisać +1 poziom @Condition[Zmęczenie]{Zmęczenia} do każdego żywego celu zaklęcia z tej Tradycji. W ten sposób cel może otrzymać wyłącznie 1 poziom @Condition[Zmęczenie]{Zmęczenia} na jedno zaklęcie.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.zwQQb0upMLj8bFe9",
       "duration": "Bonus SW Rund",
@@ -16955,11 +17108,11 @@
       "effects": {
         "3p5MDoKzHR3EEJ0H": {
           "id": "3p5MDoKzHR3EEJ0H",
-          "name": "Niszczyciel Strzał (Śmierć)",
+          "name": "Niszczyciel strzał (Śmierć)",
           "scriptData": [
             {
               "id": "3p5MDoKzHR3EEJ0H",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -16981,7 +17134,7 @@
           "scriptData": [
             {
               "id": "7HVppZJ50MrBn6oS",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -16990,7 +17143,7 @@
     },
     "Arrow Shield (Heavens)": {
       "id": "nKmrZwwjvYcS0XhE",
-      "name": "Niszczyciel Strzał (Niebiosa)",
+      "name": "Niszczyciel strzał (Niebiosa)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.nKmrZwwjvYcS0XhE",
       "duration": "Bonus SW Rund",
@@ -16999,11 +17152,11 @@
       "effects": {
         "aZhwaaoQ9Me6De23": {
           "id": "aZhwaaoQ9Me6De23",
-          "name": "Niszczyciel Strzał (Niebiosa)",
+          "name": "Niszczyciel strzał (Niebiosa)",
           "scriptData": [
             {
               "id": "aZhwaaoQ9Me6De23",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17012,7 +17165,7 @@
     },
     "Arrow Shield (Hedgecraft)": {
       "id": "vM8x6slw8TfuAJ9B",
-      "name": "Niszczyciel Strzał (Guślarstwo)",
+      "name": "Niszczyciel strzał (Guślarstwo)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Guślarze wierzą, że ich zdolności to dar od bogów, więc o osobach zdolnych rzucać zaklęcia mówią „nieliczni wybrańcy”. Z powodu swoich starożytnych tradycji i głęboko zakorzenionych wierzeń nie mogą rzucać zaklęć, jeśli nie posiadają składników, które są dla nich nieodzowną częścią ich procesu czarowania.</p>\n<p>Na szczęście są to zazwyczaj dość łatwe do znalezienia składniki, czy to na obrzeżach cywilizacji, czy w formie roślin lub ziół. Udany Test Wiedzy (Zielarstwa) skutkuje pozyskaniem 1 + PS składników, jak opisano w Zbieranie Pożywienia i Ziół. Ewentualnie można je kupić za cenę 5 brązowych pensów sztuka.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.vM8x6slw8TfuAJ9B",
       "duration": "Bonus SW Rund",
@@ -17021,11 +17174,11 @@
       "effects": {
         "TYow8qFRyMONw08Y": {
           "id": "TYow8qFRyMONw08Y",
-          "name": "Niszczyciel Strzał (Guślarstwo)",
+          "name": "Niszczyciel strzał (Guślarstwo)",
           "scriptData": [
             {
               "id": "TYow8qFRyMONw08Y",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17034,7 +17187,7 @@
     },
     "Arrow Shield (Life)": {
       "id": "teHEJyd80PqNHT9q",
-      "name": "Niszczyciel Strzał (Życie)",
+      "name": "Niszczyciel strzał (Życie)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Zaklęcia rzucane przy pomocy Jadeitowego Wiatru <i>Ghyran</i> są przesycone życiem i najczęściej objawiają się w postaci wibrującego, zielonego światła, któremu towarzyszą naturalne zjawiska o nadprzyrodzonych właściwościach. Pnącza, podszycie, drzewa i rzeki naginają się do woli druidów.</p>\n<p>Otrzymujesz premię +10 do Testów Rzucania Zaklęć i Splatania Magii, jeśli znajdujesz się w środowisku wiejskim lub dzikim. Żywe stworzenia (np. te, które nie mają Cechy Stworzenia <i>Demoniczny</i> lub <i>Ożywieniec</i>) będące celem magii z Tradycji Życia tracą wszystkie poziomy @Condition[Krwawienie]{Krwawienia} i @Condition[Zmęczenie]{Zmęczenia} dzięki temu, że życiodajna magia przepływa przez ich ciała. Z drugiej strony stworzenia, które mają Cechę Stworzenia <i>Ożywieniec</i>, otrzymują dodatkowe Obrażenia równe Bonusowi z Siły Woli rzucającego, które ignorują Bonus za Wytrzymałość oraz Punkty Pancerza.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.teHEJyd80PqNHT9q",
       "duration": "Bonus SW Rund",
@@ -17043,11 +17196,11 @@
       "effects": {
         "zWEYwMYf27yzto2L": {
           "id": "zWEYwMYf27yzto2L",
-          "name": "Niszczyciel Strzał (Życie)",
+          "name": "Niszczyciel strzał (Życie)",
           "scriptData": [
             {
               "id": "zWEYwMYf27yzto2L",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17056,7 +17209,7 @@
     },
     "Arrow Shield (Light)": {
       "id": "YsBRTjGGyISyUudZ",
-      "name": "Niszczyciel Strzał (Światło)",
+      "name": "Niszczyciel strzał (Światło)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Magia Tajemna Tradycji Światła emituje oślepiające promienie białego światła lub okrywa czarodzieja połyskliwymi falami promieniującej czystości. Możesz zadać +1 poziom @Condition[Oślepienie]{Oślepienia} wszystkim celom zaklęć Tradycji Światła, chyba że mają Talent <i>Magia Tajemna (Światło)</i>.</p>\n<p>Jeśli cel ma Cechę Stworzenia <i>Demoniczny</i> albo <i>Ożywieniec</i>, zaklęcia zadają dodatkowe Obrażenia równe Bonusowi z Inteligencji, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.YsBRTjGGyISyUudZ",
       "duration": "Bonus SW Rund",
@@ -17065,11 +17218,11 @@
       "effects": {
         "Ljp0hDFhffTnqY1O": {
           "id": "Ljp0hDFhffTnqY1O",
-          "name": "Niszczyciel Strzał (Światło)",
+          "name": "Niszczyciel strzał (Światło)",
           "scriptData": [
             {
               "id": "Ljp0hDFhffTnqY1O",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17078,7 +17231,7 @@
     },
     "Arrow Shield (Metal)": {
       "id": "AywiuNyA8bMS7yFi",
-      "name": "Niszczyciel Strzał (Metal)",
+      "name": "Niszczyciel strzał (Metal)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Wiatr <i>Chamon</i> jest bardzo gęsty, natychmiast przylegający do metalicznych substancji. Zaklęciom z tej Tradycji towarzyszy złote światło i ciepło. Są niezwykle skuteczne wobec głupców, którzy zakładają na siebie metalowe pancerze. Zaklęcia zadają Obrażenia ignorujące Punkty Pancerza metalowych zbroi i dodatkowe Obrażenia równe Punktom Pancerza metalowej zbroi noszonej na trafionym miejscu. Jeśli więc zaklęcie uderzy w ramię chronione przez metalowy pancerz z 2 Punktami Pancerza, zada dodatkowe 2 Obrażenia, w dodatku ignorujące 2 Punkty Pancerza.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.AywiuNyA8bMS7yFi",
       "duration": "Bonus SW Rund",
@@ -17087,11 +17240,11 @@
       "effects": {
         "URxWDjaF0VmshPEv": {
           "id": "URxWDjaF0VmshPEv",
-          "name": "Niszczyciel Strzał (Metal)",
+          "name": "Niszczyciel strzał (Metal)",
           "scriptData": [
             {
               "id": "URxWDjaF0VmshPEv",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17100,8 +17253,8 @@
     },
     "Arrow Shield (Necromancy)": {
       "id": "iEZnh3fR7X0E0wqb",
-      "name": "Niszczyciel Strzał (Nekromancja)",
-            "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Nekromancja jest starożytną i krwawą dziedziną magii zajmującą się śmiercią i poszukiwaniem nieśmiertelności, co zazwyczaj wymaga babrania się w gnijących zwłokach. Biorąc pod uwagę, że jest to jedna z najbardziej nikczemnych i heretyckich Tradycji Magii, niewielu podchodzi do studiowania jej z lekceważeniem, ponieważ niedocenianie potworności związanych z umarłymi i nieumarłymi może się bardzo źle skończyć.</p>",
+      "name": "Niszczyciel strzał (Nekromancja)",
+      "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Nekromancja jest starożytną i krwawą dziedziną magii zajmującą się śmiercią i poszukiwaniem nieśmiertelności, co zazwyczaj wymaga babrania się w gnijących zwłokach. Biorąc pod uwagę, że jest to jedna z najbardziej nikczemnych i heretyckich Tradycji Magii, niewielu podchodzi do studiowania jej z lekceważeniem, ponieważ niedocenianie potworności związanych z umarłymi i nieumarłymi może się bardzo źle skończyć.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.iEZnh3fR7X0E0wqb",
       "duration": "Bonus SW Rund",
       "target": "Bonus SW metrów",
@@ -17109,11 +17262,11 @@
       "effects": {
         "aFt85cPoz0FNKK4f": {
           "id": "aFt85cPoz0FNKK4f",
-          "name": "Niszczyciel Strzał (Nekromancja)",
+          "name": "Niszczyciel strzał (Nekromancja)",
           "scriptData": [
             {
               "id": "aFt85cPoz0FNKK4f",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17122,7 +17275,7 @@
     },
     "Arrow Shield (Shadow)": {
       "id": "G2LKMsTYXJhzF1Tn",
-      "name": "Niszczyciel Strzał (Cień)",
+      "name": "Niszczyciel strzał (Cień)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Zaklęcia z Tradycji Cieni są dyskretne i podstępne do tego stopnia, że w przypadku tej Tradycji <i>Lingua Praestantia</i> może być mówiona szeptem. Wszelkie ochronne zaklęcia oplatają cel kłębami cieni i dymu, sprawiając, że wydaje się niewyraźny i rozmyty. Ponadto wszystkie zaklęcia z Tradycji Cieni zadają Obrażenia, które ignorują wszelkie niemagiczne Punkty Pancerza.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.G2LKMsTYXJhzF1Tn",
       "duration": "Bonus SW Rund",
@@ -17131,11 +17284,11 @@
       "effects": {
         "3cZn06GPmqGXkHDR": {
           "id": "3cZn06GPmqGXkHDR",
-          "name": "Niszczyciel Strzał (Cień)",
+          "name": "Niszczyciel strzał (Cień)",
           "scriptData": [
             {
               "id": "3cZn06GPmqGXkHDR",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -17144,7 +17297,7 @@
     },
     "Arrow Shield (Witchcraft)": {
       "id": "YQtgIycHCNmyAl9N",
-      "name": "Niszczyciel Strzał (Czarownictwo)",
+      "name": "Niszczyciel strzał (Czarownictwo)",
       "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Zaklęcia z Tradycji Czarownictwa korzystają z dowolnego dostępnego Wiatru Magii, nie zważając na niebezpieczeństwa płynące z mieszania Wiatrów. Za każdym razem, gdy postać korzystająca z Czarownictwa wywołuje Manifestację, otrzymuje też 1 Punkt Zepsucia. Każde zaklęcie tej Tradycji może zadać dodatkowo każdemu celowi 1 poziom Stanu @Condition[Krwawienie]. Poza tym Testy Rzucania zaklęć i Splatania Magii z tej Tradycji skutkują automatyczną @Table[minormis]{Mniejszą Manifestacją}, chyba że do rzucenia zaklęcia używane są składniki. Za to składnik nie chroni przed późniejszymi Manifestacjami, jeśli takie się pojawią. Na szczęście składniki Tradycji Czarownictwa są tanie i powszechnie dostępne. Zazwyczaj są to części ciał małych zwierząt. Składniki zaklęć kosztują tyle brązowych pensów (a nie srebrnych szylingów), ile wynosi PZ. Ewentualnie czarownica może poszukać składników na własną rękę, używając Umiejętności Sztuka Przetrwania. Udany Test skutkuje pozyskaniem 1 + PS składników, jak opisano w Zdobywanie Pożywienia i Ziół.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.YQtgIycHCNmyAl9N",
       "duration": "Bonus SW Rund",
@@ -17157,7 +17310,7 @@
           "scriptData": [
             {
               "id": "LLSTGmlrHxWMyTZD",
-              "name": "Niszczyciel Strzał",
+              "name": "Niszczyciel strzał",
               "script": "[Script.naF5EWr1CBkYRZTK]"
             }
           ]
@@ -18074,7 +18227,7 @@
     "qgWy2MsylxyyIm6V": {
       "id": "qgWy2MsylxyyIm6V",
       "name": "Kwasowa Krew",
-      "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}.</p>",
+      "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}. </p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.qgWy2MsylxyyIm6V",
       "effects": {
         "NTWtkUZ1efRoPdSm": {
@@ -19169,7 +19322,7 @@
     },
     "Dome (Beasts)": {
       "id": "ILOsg4RfvpUhXhQa",
-            "name": "Kopuła (Zwierzęta)",
+      "name": "Kopuła (Zwierzęta)",
       "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.Item.Bvd2aZ0gQUXHfCTh]{Ochrona (6+)} przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>\n\n<p>Wiatr Bursztynowy, <i>Ghur</i>, niesie ze sobą dreszcz, pierwotną wściekłość, która wytrąca z równowagi zarówno zwierzęta, jak i stworzenia myślące. Po każdym udanym rzuceniu zaklęcia z Tradycji Zwierząt możesz dodatkowo zyskać Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strach (1)} na [[/r 1d10]]{1k10} Rund.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.ILOsg4RfvpUhXhQa",
       "duration": "Bonus SW Rund",
@@ -23966,7 +24119,7 @@
       "name": "Łapówkarz",
       "description": "<p>Wiesz, jak dawać w łapę. MG powinien obniżyć podstawę wyliczenia łapówki o 10% za każde wykupienie tego Talentu. Minimalna wartość łapówki nie może spaść poniżej 10% wyjściowej stawki.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.34EBUkHQkrqF1sq7",
-      "tests": "Przekupstwo",
+      "tests": "Łapówkarstwo",
       "effects": {
         "2hDs2VmDV11i7fvo": {
           "id": "2hDs2VmDV11i7fvo",
@@ -24221,13 +24374,13 @@
     },
     "Coolheaded": {
       "id": "JLzJws09GMw9GWBV",
-      "name": "Zimna krew",
+      "name": "Zimna Krew",
       "description": "<p>Zyskujesz premię +5 do początkowej wartości Siły Woli, co nie wlicza się do sumy Rozwinięć.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.JLzJws09GMw9GWBV",
       "effects": {
         "QTmmZBqgkJMBn9KT": {
           "id": "QTmmZBqgkJMBn9KT",
-          "name": "Zimna krew"
+          "name": "Zimna Krew"
         }
       }
     },
@@ -24424,7 +24577,7 @@
     "Disarm": {
       "id": "DS44h27iCOvUBa4O",
       "name": "Rozbrojenie",
-      "description": "<p>Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj <strong>Przeciwstawny Test Broni Białej</strong> przeciwko wrogiemu <strong>Testowi Broni Białej</strong>. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k10 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
+      "description": "<p>Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj <strong>Przeciwstawny Test Broni Białej</strong> przeciwko wrogiemu <strong>Testowi Broni Białej</strong>. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k5 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.DS44h27iCOvUBa4O",
       "tests": "Broń Biała w sytuacjach związanych z tym Talentem",
       "effects": {
@@ -24558,7 +24711,7 @@
     "Etiquette": {
       "id": "sYbgpSnRqSZWgwFP",
       "name": "Etykieta (Grupa Społeczna)",
-      "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
+      "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.sYbgpSnRqSZWgwFP",
       "tests": "Charyzma lub Plotkowanie (Grupa Społeczna)",
       "effects": {
@@ -25197,7 +25350,7 @@
       "name": "Poliglota",
       "description": "<p>Masz naturalną łatwość uczenia się języków. Wystarczy ci miesiąc obcowania z którymś i udany Test Inteligencji (można go powtórzyć raz na miesiąc), byś mógł traktować jego znajomość jako Umiejętność Podstawową. <strong>Uwaga</strong>: ten Talent działa tylko na języki, którymi często porozumiewają się istoty, a więc nie na Język (magiczny).</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.726gbrANZt8OqXr5",
-      "tests": "Język (każdy)",
+      "tests": "Języki (Wszystkie)",
       "effects": {
         "FBhrlyI2JT0Hxe2s": {
           "id": "FBhrlyI2JT0Hxe2s",
@@ -25729,7 +25882,7 @@
     "Resistance": {
       "id": "vMYEkrWj0ip6ZOdv",
       "name": "Odporny na (Zagrożenie)",
-      "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Teście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości.</p>",
+      "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Teście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości. </p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.vMYEkrWj0ip6ZOdv",
       "effects": {
         "FQv1UAIrdvtf9Tlc": {
@@ -26747,7 +26900,7 @@
     },
     "Tunnel Rat": {
       "id": "Z91GFaT6FhEwyESU",
-      "name": "Szczur Kanałowy",
+      "name": "Szczur Tunelowy",
       "description": "<p>W tunelach, kanałach ściekowych i pod powierzchnią ziemi jesteś na swoim terenie. Kiedy wykorzystujesz w takich warunkach Umiejętność Skradanie, istotom wokoło nie przysługuje pasywny Test Percepcji. Zauważyć cię mogą dopiero wtedy, gdy będą cię czynnie wyglądały lub szukały ukrytych przeciwników.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.Z91GFaT6FhEwyESU",
       "tests": "Testy Skradania się pod ziemią",
@@ -27293,7 +27446,7 @@
       "name": "Spaczenie",
       "description": "<p>Stworzenie jest napiętnowane przez Chaos lub przepełnione mroczną magią. Siła spaczenia podana jest w nawiasie (@Corruption[minor]{Pomniejsze}, @Corruption[moderate]{Umiarkowane}, albo @Corruption[major]{Potężne}).</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.xsGbDFqK2qh7lsIj",
-      "specification": "Siła Korupcji",
+      "specification": "Siła Zepsucia",
       "effects": {
         "rNq9moHHK0N4dC3S": {
           "id": "rNq9moHHK0N4dC3S",
@@ -27722,17 +27875,17 @@
     },
     "Mental Corruption": {
       "id": "AGreVSdN2jDSenEl",
-      "name": "Zepsucie Psychiczne",
+      "name": "Spaczenie Umysłu",
       "description": "<p>Umysł stworzenia przepełnia Chaos. Wykonaj dla niego rzut w Tabeli @Table[mutatemental]{Zepsucie Psychiczne}</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.AGreVSdN2jDSenEl",
       "effects": {
         "gh8P4EJqUjx9JGnO": {
           "id": "gh8P4EJqUjx9JGnO",
-          "name": "Zepsucie Psychiczne",
+          "name": "Spaczenie Umysłu",
           "scriptData": [
             {
               "id": "gh8P4EJqUjx9JGnO",
-              "name": "Dodaj zepsucie psychiczne",
+              "name": "Dodaj spaczenie umysłu",
               "script": "[Script.KICZPwLvbUSxbDrE]"
             }
           ]
@@ -27806,7 +27959,7 @@
     "Ranged (Range)": {
       "id": "Z1TGphWhic2E3Lfx",
       "name": "Strzelanie (Zasięg)",
-      "description": "<p>BN ma broń dystansową, która zadaje Obrażenia równe wartości w podanym Zasięgu metrów, gdy używa do trafienia Umiejętności Strzeleckich.</p>",
+      "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.Z1TGphWhic2E3Lfx",
       "specification": "Obrażenia"
     },
@@ -27888,7 +28041,7 @@
           "scriptData": [
             {
               "id": "jpwranqt1iGvh9CR",
-              "name": "Nowy Skrypt",
+              "name": "Rzucanie Czarów",
               "script": "[Script.6Ws3ieQ7pG5poUyT]"
             }
           ]
@@ -28357,7 +28510,7 @@
     },
     "Antitoxin Kit": {
       "id": "hhImniNwHKmcC6FK",
-      "name": "Zestaw do Leczenia Zatruć",
+      "name": "Zestaw na zatrucia",
       "description": "<p>Zawiera nożyk, zioła i słoik pijawek. Udany Test Leczenia z użyciem zestawu na zatrucia pozwala usunąć wszystkie Stany Zatrucie. Kuracja zabiera co najmniej dwie Rundy.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.hhImniNwHKmcC6FK",
       "effects": {
@@ -28424,7 +28577,7 @@
     },
     "Baton": {
       "id": "utRev4dXTLI0A2GL",
-      "name": "Pałka",
+      "name": "Pałka (krótka)",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.utRev4dXTLI0A2GL"
     },
@@ -28525,49 +28678,49 @@
     },
     "Book, Apothecary": {
       "id": "AWx6rqwOlN68pN6I",
-      "name": "Księga, aptekarstwo",
+      "name": "Księga (aptekarstwo)",
       "description": "<p>Księgi aptekarskie są zwykle pisane ręcznie. Podstawowa książka aptekarska zawiera opisy składników oraz przedstawione na wykresach instrukcje procesu warzenia mikstur. Zwykle podane są w niej formuły toników na trawienie, mikstur leczniczych i eliksirów żywotności (patrz Zioła i mikstury). Zaawansowane teksty zawierają formuły bardziej egzotycznych mikstur.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.AWx6rqwOlN68pN6I"
     },
     "Book, Art": {
       "id": "H5CqkYPVVUslaORH",
-      "name": "Księga, sztuka",
+      "name": "Księga (sztuka)",
       "description": "<p>Sztuki teatralne, poematy i ballady, a czasem kompozycje muzyczne zapisane na luźnych kartach - książki artystyczne występują pod wieloma postaciami. Ponadto zawierają traktaty na temat perspektywy, formy i stylu, często pisane przez słynnych malarzy lub rzeźbiarzy, takich jak Leonardo da Miragliano, i przeznaczone do masowego druku.&nbsp;</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.H5CqkYPVVUslaORH"
     },
     "Book, Cryptography": {
       "id": "z8X2CMJdAZKoE3lk",
-      "name": "Księga, kryptografia",
+      "name": "Księga (kryptografia)",
       "description": "<p>Podczas gdy pojedyncze szyfry i klucze kodujące bywają zanotowane na jednej lub dwóch stronach, księgi kryptograficzne to często ręcznie pisane kodeksy traktujące o matematyce, numerologii i szyfrach polialfabetycznych.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.z8X2CMJdAZKoE3lk"
     },
     "Book, Engineer": {
       "id": "25Ek5A1EmQqzOcSK",
-      "name": "Księga, inżynieria",
+      "name": "Księga (inżynieria)",
       "description": "<p>Większość książek inżynieryjnych jest drukowana. Inżynieria to w Imperium nauka zaawansowana, głównie dzięki Imperialnej Akademii Inżynierii w Altdorfie i krasnoludzkiej Gildii Inżynierów. Z tego względu teksty traktujące o inżynierii są zwykle pisane, współtworzone lub redagowane przez krasnoludy.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.25Ek5A1EmQqzOcSK"
     },
     "Book, Law": {
       "id": "o4FSm7YgmfNV4Qgq",
-      "name": "Księga, prawo",
+      "name": "Księga (prawo)",
       "description": "<p>Przepisy prawne znacznie różnią się między poszczególnymi regionami. Miasta posiadające prasy drukarskie wydają zbiory rozporządzeń w oprawionych tomiszczach, podczas gdy w mniejszych miastach sędziowie często polegają na manuskryptach spisanych setki lat wcześniej. Księgi prawne używane przez podróżujących prawników lub sędziów nierzadko łączą drukowane i ręcznie pisane stronice pochodzące z różnych miast z całego Imperium, zebrane i oprawione pod jedną okładką.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.o4FSm7YgmfNV4Qgq"
     },
     "Book, Magic": {
       "id": "qQQ6rRUqcRIaU7kr",
-      "name": "Księga, magia",
+      "name": "Księga (magia)",
       "description": "<p>Księgi zaklęć są zwykle spisywane przez czarodziejów, a ich okładki często bywają zabezpieczone zamknięciami na klucz. Czasami tomy chronione są także magicznymi alarmami lub pieczęciami. Posiadanie księgi zaklęć jest karalne jako herezja, o ile jej posiadacz nie jest czarodziejem licencjonowanym przez Kolegia Magii.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.qQQ6rRUqcRIaU7kr"
     },
     "Book, Medicine": {
       "id": "aQIxzS4uOcIe9oxd",
-      "name": "Księga, medycyna",
+      "name": "Księga (medycyna)",
       "description": "<p>Teksty medyczne mogą być pisane ręcznie lub drukowane, w zależności od prestiżu lekarza będącego ich autorem. Zazwyczaj występują w nich ilustracje, zwykle włącznie z rysunkami autopsji i diagramami procedur lekarskich.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.aQIxzS4uOcIe9oxd"
     },
     "Book, Religion": {
       "id": "PKkGM5Q0Chmt5qFe",
-      "name": "Księga, religia",
+      "name": "Księga (religia)",
       "description": "<p>Księgi religijne dostępne są w Imperium we wszelakich formach. To kraina znana z przywiązania do religii. Istnieje chłonny rynek na najpopularniejsze teksty, z których większość jest tanio produkowana z użyciem pras drukarskich.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.PKkGM5Q0Chmt5qFe"
     },
@@ -28591,7 +28744,7 @@
     },
     "Brass Penny": {
       "id": "0MYOJFx3vkYA95B4",
-      "name": "Brązowy Pens",
+      "name": "Brązowy pens",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.0MYOJFx3vkYA95B4"
     },
@@ -28609,13 +28762,13 @@
     },
     "Bugman’s XXXXXX Ale, pint": {
       "id": "KzJkoB12jpidtngo",
-      "name": "Przesławne, wyśmienite Piwo Bugmana XXXXXX",
+      "name": "Pół litra przesławnego Piwa Bugmana",
       "description": "<p>Kupcy przemierzają cały Stary Świat, by nabyć to krzepkie, krasnoludzkie piwo ze słynnego browaru założonego przez Josefa Bugmana. Ten rześki i podnoszący na duchu napój dostarczany jest do większości głównych miast. Jeśli chodzi o spożycie alkoholu, jeden kubek Bugmana liczy się jako 4 porcje zwykłego piwa (patrz @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Mocna Głowa} na stronie 123) i zapewnia odporność na Testy Strachu przez 1k10 godzin.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.KzJkoB12jpidtngo"
     },
     "Bullet and Powder": {
       "id": "xdAP96GGDb87m0Pr",
-      "name": "Pocisk i Proch",
+      "name": "Pocisk i proch",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.xdAP96GGDb87m0Pr",
       "range": "jak broń"
@@ -28748,7 +28901,7 @@
     },
     "Crutch": {
       "id": "t2CmR9kFUJr5yE5E",
-      "name": "Kule do chodzenia",
+      "name": "Widły",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.t2CmR9kFUJr5yE5E"
     },
@@ -28808,7 +28961,7 @@
     },
     "Disguise Kit": {
       "id": "gx451Vn2Ru3eKLIg",
-      "name": "Zestaw do Charakteryzacji",
+      "name": "Zestaw do charakteryzacji",
       "description": "<p>Zawiera rekwizyty wystarczające do przygotowania czterech przebrań (np. peruki i makijaż), a także materiały pozwalające na zmianę wyglądu. Używane są one przez osoby posiadające Umiejętność Występy (Aktorstwo) (np. wosk, sztuczna krew i protezy).</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.gx451Vn2Ru3eKLIg"
     },
@@ -28833,7 +28986,7 @@
     "Earth Root": {
       "id": "WiPzDDFjCAo2EQDT",
       "name": "Ziemny korzeń",
-      "description": "<p>To zioło konsumowane jest w celu uśmierzenia efektów ropniaków powodowanych przez Czarną Zarazę (chociaż pozostają spore obrzęki). Co więcej, zapewnia to +10 do wszystkich Testów związanych z chorobą. <strong>Dawkowanie</strong>: 1 dawka dziennie..</p>",
+      "description": "<p>To zioło konsumowane jest w celu uśmierzenia efektów ropniaków powodowanych przez Czarną Zarazę (chociaż pozostają spore obrzęki). Co więcej, zapewnia to +10 do wszystkich Testów związanych z chorobą. <strong>Dawkowanie</strong>: 1 dawka dziennie.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.WiPzDDFjCAo2EQDT"
     },
     "Ear Pick": {
@@ -28935,13 +29088,13 @@
     },
     "Flask of Spirits": {
       "id": "f6cvUapo8tQHp2OL",
-      "name": "Flaszka mocnego alkoholu",
+      "name": "Butelka spirytusu",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.f6cvUapo8tQHp2OL"
     },
     "Floor Brush": {
       "id": "mu9ysWvO9QwQbd8S",
-      "name": "Szczotka do Podłogi",
+      "name": "Szczotka do podłogi",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.mu9ysWvO9QwQbd8S"
     },
@@ -28977,7 +29130,7 @@
     },
     "Gold Crown": {
       "id": "Ggx0bRaCuq8MbF0g",
-      "name": "Złota Korona",
+      "name": "Złota korona",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.Ggx0bRaCuq8MbF0g"
     },
@@ -29001,8 +29154,8 @@
     },
     "Guild License": {
       "id": "ZgpVhv100Kd9rsao",
-      "name": "licencja Cechu",
-      "description": "<p>Licencje są zwykle drukowane na jednym arkuszu pergaminu, opatrzone oficjalną pieczęcią i podpisane przez mistrza lokalnej organizacji. Takich licencji nie można zakupić: są wręczane członkom cechu lub gildii, zgodnie z tradycjami i prawami danej instytucji.</p>",
+      "name": "Licencja Gildii",
+      "description": "<p>Licencje są zwykle drukowane na jednym arkuszu pergaminu, opatrzone oficjalną pieczęcią i podpisane przez mistrza lokalnej organizacji. Takich licencji nie można zakupić: są wręczane członkom gildii, zgodnie z tradycjami i prawami danej instytucji.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.ZgpVhv100Kd9rsao"
     },
     "Halberd": {
@@ -29590,7 +29743,7 @@
     },
     "Plate Bracers": {
       "id": "oW7wSkl4JMb5sBH8",
-      "name": "Płytowe Naramienniki",
+      "name": "Płytowe naramienniki",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.oW7wSkl4JMb5sBH8"
     },
@@ -29624,13 +29777,13 @@
     },
     "Plate Leggings": {
       "id": "bY6M9XxbqmFmqpA8",
-      "name": "Płytowe Nagolenniki",
+      "name": "Płytowe nagolenniki",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.bY6M9XxbqmFmqpA8",
       "effects": {
         "u46Xpql4mjj6JOD0": {
           "id": "u46Xpql4mjj6JOD0",
-          "name": "Płytowe Nagolenniki",
+          "name": "Płytowe nagolenniki",
           "scriptData": [
             {
               "id": "u46Xpql4mjj6JOD0",
@@ -29669,7 +29822,7 @@
     "Pole (3 yards)": {
       "id": "i2DKz375sriXqfkS",
       "name": "Drąg (3 metry)",
-      "description": "<p>Długi drąg używany do popychania barek; liczy się jako @UUID[Compendium.wfrp4e-core.items.mRU10yAWWWs5WoKt]{Broń improwizowana}</p>",
+      "description": "<p>Długi drąg używany do manewrowania łodzią. Może zostać użyty jako @UUID[Compendium.wfrp4e-core.items.mRU10yAWWWs5WoKt]{Broń Improwizowana}.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.i2DKz375sriXqfkS"
     },
     "Pony": {
@@ -29680,7 +29833,7 @@
     },
     "Pouch": {
       "id": "mCvZAj5F6hfUZhzR",
-      "name": "Sakwa",
+      "name": "Sakiewka",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.mCvZAj5F6hfUZhzR"
     },
@@ -29794,7 +29947,7 @@
     },
     "Riding Horse": {
       "id": "tL7ka28KOIvEi6Rc",
-      "name": "Koń Wierzchowy",
+      "name": "Koń wierzchowy",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.tL7ka28KOIvEi6Rc"
     },
@@ -29818,7 +29971,7 @@
     },
     "Room, common/night": {
       "id": "BZmUt37Jk1UCokqS",
-      "name": "Nocleg, wspólna izba na 1 noc",
+      "name": "Wspólna izba na 1 noc",
       "description": "<p>Goście śpiący we wspólnych izbach powinni uważać na złodziejów.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.BZmUt37Jk1UCokqS"
     },
@@ -29830,7 +29983,7 @@
     },
     "Rope, 10 yards": {
       "id": "horFAtaDz0EbuY3R",
-      "name": "Lina, 10 metrów",
+      "name": "Lina (10 metrów)",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.horFAtaDz0EbuY3R"
     },
@@ -29908,8 +30061,8 @@
     },
     "Scroll Case": {
       "id": "sgJL9NtVEZZvgkys",
-      "name": "Tuba na Zwoje",
-      "description": "<p>Liczy się jako założony, kiedy jest np. noszony na ramieniu. Pojemność: 4,5 litra płynu.</p>",
+      "name": "Tuba na zwoje",
+      "description": "<p>Przerzucona przez ramię liczy się jako 'noszona na sobie'</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.sgJL9NtVEZZvgkys"
     },
     "Shield": {
@@ -29956,7 +30109,7 @@
     },
     "Silver Shilling": {
       "id": "KB8HgDz56dh2w7w1",
-      "name": "Srebrny Szyling",
+      "name": "Srebrny szyling",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.KB8HgDz56dh2w7w1"
     },
@@ -29969,7 +30122,7 @@
     "Sling Bag": {
       "id": "bImtd1QDrQWp53Ua",
       "name": "Torba na ramię",
-      "description": "<p>Liczy się jako założony, kiedy jest np. noszony na ramieniu. Pojemność: 4,5 litra płynu.</p>",
+      "description": "<p>Przerzucona przez ramię liczy się jako „noszona na sobie”.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.bImtd1QDrQWp53Ua"
     },
     "Small shot and Powder": {
@@ -30084,7 +30237,7 @@
     "Tent": {
       "id": "MF43A52UBH8SHOnd",
       "name": "Namiot",
-      "description": "<p></p>",
+      "description": "<p>Średniej wielkości namiot mogący pomieścić 4 osoby śpiące w ciasnej przestrzeni. Małe namioty mieszczą 2 osoby i dostępne są za pół ceny oraz zabierają 1 punkt Obciążenia. Duże namioty mieszczą 8 osób i dostępne są za dwukrotnie wyższą cenę oraz zabierają 4 punkty Obciążenia.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.MF43A52UBH8SHOnd"
     },
     "Throwing Axe": {
@@ -30101,7 +30254,7 @@
     },
     "Tinderbox": {
       "id": "aVLjCqY3guj1DD06",
-      "name": "Pudełko na hubkę i krzesiwo",
+      "name": "Hubka i krzesiwo",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.aVLjCqY3guj1DD06"
     },
@@ -30113,7 +30266,7 @@
     },
     "Trade Tools (Type)": {
       "id": "OD83JAlc9KhDpHK5",
-      "name": "Narzędzia Pracy (Rodzaj)",
+      "name": "Narzędzia pracy ()",
       "description": "<p><strong>Aptekarz</strong>: Narzędzia obejmują moździerz z tłuczkiem, łyżki, słoiki oraz wagę szalkową. Warsztat wyposażony jest także w palniki olejowe i półki pełne składników.</p>\n<p></p>\n<p><strong>Rzemieślnik</strong>: Potencjalny wybór narzędzi używanych przez rzemieślników jest szeroki.</p>\n<p>Przykładowe zestawy:</p>\n<ul type=\"disc\">\n<li><strong>Grawer</strong>: Rylce, punktaki, wosk, kwas, młotek i dłuta. Warsztat zawiera także skrawarki i prasy.</li>\n<li><strong>Kowal</strong>: Młotek, cęgi, punktaki, kształtowniki, świdry i wiertła. Warsztat zawiera także kowadło, piec, dziurkownicę, młot kowalski oraz sztaby metalu.</li>\n<li><strong>Stolarz</strong>: Młotek i gwoździe, piła, przymiar, kreda, pion na sznurku. Warsztat zawiera także tokarki, heble, imadła i zapas drewna.</li>\n</ul>\n<p></p>\n<p><strong>Przykłady innych rzemieślników</strong>: balsamista, bednarz, browarnik, dmuchacz szkła, garbarz, garncarz, jubiler, kaligraf, kamieniarz, kartograf, krawiec, kucharz, malarz, murarz, płatnerz, rusznikarz, rymarz, snycerz, szewc, szkutnik, szlifierz, świecarz, tkacz, winiarz, wytwórca łuków, zbrojmistrz i złotnik.</p>\n<p></p>\n<p><strong>Artysta</strong>: Pędzle i farby, młotek i dłuta, pilniki i skrobaki. Warsztat zawiera także sztalugi lub postumenty i zapas płócien, pergaminu, welinu, drewna, gliny lub nieociosanego kamienia.</p>\n<p><strong>Inżynier</strong>: Klepsydra, przymiar, lont, cyrkiel i przykładnica. Warsztat zawiera także wielokrążki, liny i deski kreślarskie.</p>\n<p><strong>Lekarz</strong>: Igły i szwy, bandaże, skalpel, ocet, pincety i wziernik. Warsztat zawiera także rysunki anatomiczne, różne przybory i stół operacyjny.</p>\n<p><strong>Nawigator</strong>: Kwadrant, astrolabium, wykresy i kompasy, klepsydra i sonda na linie.</p>\n<p><strong>Zielarz</strong>: Moździerz z tłuczkiem, nożyki, sekator i rękawice. Warsztat zawiera także stojaki do suszenia ziół, filtry, lejki, miseczki i słoiki.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.OD83JAlc9KhDpHK5"
     },
@@ -30125,7 +30278,7 @@
     },
     "Unarmed": {
       "id": "KlT5qZzI1bsdvoHv",
-      "name": "Pięści i Kopniaki",
+      "name": "Pięści i kopniaki",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.KlT5qZzI1bsdvoHv"
     },
@@ -30179,7 +30332,7 @@
     },
     "Warhammer": {
       "id": "CdP1xLEJbe289beI",
-      "name": "Młot jednoręczny",
+      "name": "Młot bojowy",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.CdP1xLEJbe289beI"
     },
@@ -30248,7 +30401,7 @@
     },
     "Workshop (Type)": {
       "id": "ixOMVrEC1ISyYdDU",
-      "name": "Warsztat (Rodzaj)",
+      "name": "Warsztat ()",
       "description": "<p><strong>Aptekarz</strong>: Narzędzia obejmują moździerz z tłuczkiem, łyżki, słoiki oraz wagę szalkową. Warsztat wyposażony jest także w palniki olejowe i półki pełne składników.</p>\n<p></p>\n<p><strong>Rzemieślnik</strong>: Potencjalny wybór narzędzi używanych przez rzemieślników jest szeroki.</p>\n<p>Przykładowe zestawy:</p>\n<ul type=\"disc\">\n<li><strong>Grawer</strong>: Rylce, punktaki, wosk, kwas, młotek i dłuta. Warsztat zawiera także skrawarki i prasy.</li>\n<li><strong>Kowal</strong>: Młotek, cęgi, punktaki, kształtowniki, świdry i wiertła. Warsztat zawiera także kowadło, piec, dziurkownicę, młot kowalski oraz sztaby metalu.</li>\n<li><strong>Stolarz</strong>: Młotek i gwoździe, piła, przymiar, kreda, pion na sznurku. Warsztat zawiera także tokarki, heble, imadła i zapas drewna.</li>\n</ul>\n<p></p>\n<p><strong>Przykłady innych rzemieślników</strong>: balsamista, bednarz, browarnik, dmuchacz szkła, garbarz, garncarz, jubiler, kaligraf, kamieniarz, kartograf, krawiec, kucharz, malarz, murarz, płatnerz, rusznikarz, rymarz, snycerz, szewc, szkutnik, szlifierz, świecarz, tkacz, winiarz, wytwórca łuków, zbrojmistrz i złotnik.</p>\n<p></p>\n<p><strong>Artysta</strong>: Pędzle i farby, młotek i dłuta, pilniki i skrobaki. Warsztat zawiera także sztalugi lub postumenty i zapas płócien, pergaminu, welinu, drewna, gliny lub nieociosanego kamienia.</p>\n<p><strong>Inżynier</strong>: Klepsydra, przymiar, lont, cyrkiel i przykładnica. Warsztat zawiera także wielokrążki, liny i deski kreślarskie.</p>\n<p><strong>Lekarz</strong>: Igły i szwy, bandaże, skalpel, ocet, pincety i wziernik. Warsztat zawiera także rysunki anatomiczne, różne przybory i stół operacyjny.</p>\n<p><strong>Nawigator</strong>: Kwadrant, astrolabium, wykresy i kompasy, klepsydra i sonda na linie.</p>\n<p><strong>Zielarz</strong>: Moździerz z tłuczkiem, nożyki, sekator i rękawice. Warsztat zawiera także stojaki do suszenia ziół, filtry, lejki, miseczki i słoiki.</p>",
       "sourceId": "Compendium.wfrp4e-core.items.Item.ixOMVrEC1ISyYdDU"
     },
@@ -30281,6 +30434,39 @@
       "name": "Kilof",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.items.3RttGMwfxEuxRLYu"
+    },
+    "Old Salt": {
+      "id": "L74MT9BDwE4CfutY",
+      "name": "Wilk Morski",
+      "description": "<p>Jesteś doświadczonym żeglarzem i przywykłeś do życia na morzu. Nie dotyczą cię negatywne modyfikatory do Testów spowodowane przez kiepską pogodę, kołysanie statku itp. Co więcej, liczysz się za dwóch członków załogi, gdy trzeba obsadzić jednostkę wychodzącą w morze.</p>",
+      "sourceId": "Compendium.wfrp4e-core.items.Item.L74MT9BDwE4CfutY",
+      "tests": "Żeglowanie (każdy statek morski)",
+      "effects": {
+        "MMdgtgXOkCf2dhot": {
+          "scriptData": [
+            {
+              "id": "MMdgtgXOkCf2dhot",
+              "name": "@item.system.tests.value",
+              "script": "[Script.956dUb5sd6OtbWZR]",
+              "hideScript": "[Script.RNr9CwyvLhlnwD2h]"
+            }
+          ],
+          "id": "MMdgtgXOkCf2dhot",
+          "name": "Wilk Morski"
+        }
+      }
+    },
+    "Pick": {
+      "id": "G2yEH6caM0FJ9s0G",
+      "name": "Kilof",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.items.Item.G2yEH6caM0FJ9s0G"
+    },
+    "Knife": {
+      "id": "Ao7DRZ1hS6uCGONP",
+      "name": "Nóż",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.items.Item.Ao7DRZ1hS6uCGONP"
     }
   }
 }
