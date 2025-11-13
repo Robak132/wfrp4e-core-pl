@@ -3,7 +3,7 @@ Hooks.on("init", () => {
 		game.babele.register({
 			module: "wfrp4e-core-pl",
 			lang: "pl",
-			dir: "compendium",
+			dir: "compendium-pl",
 		});
 	}
 
