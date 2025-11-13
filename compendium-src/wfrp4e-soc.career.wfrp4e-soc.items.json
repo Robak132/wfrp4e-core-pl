@@ -1,0 +1,1397 @@
+{
+  "label": "Przedmioty (Morze Szponów)",
+  "mapping": {
+    "skills": "system.skills",
+    "talents": "system.talents",
+    "class": "system.class.value",
+    "careergroup": "system.careergroup.value",
+    "trappings": "system.trappings"
+  },
+  "entries": {
+    "Admiral": {
+      "careergroup": "Officer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.tBOcrpC9l8TehVlR]{Officer}</p>",
+      "gmdescription": "",
+      "id": "XX1Jy4nyO6aPsFxd",
+      "name": "Admirał",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Gossip",
+        "Leadership",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Sail",
+        "Swim",
+        "Cool",
+        "Endurance",
+        "Intimidate",
+        "Lore (Oceans)",
+        "Navigation",
+        "Ranged (Blackpowder)",
+        "Art (Cartography)",
+        "Charm",
+        "Dodge",
+        "Intuition",
+        "Language (Any)",
+        "Lore (Any)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.XX1Jy4nyO6aPsFxd",
+      "system": {},
+      "talents": [
+        "Commanding Presence",
+        "Iron Will",
+        "Public Speaker",
+        "Stout-hearted"
+      ],
+      "trappings": [
+        "A Fleet"
+      ]
+    },
+    "Beachcomber": {
+      "careergroup": "Beachcomber",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.KjBub5UDWobEyFq4]{Beachcomber}</p>",
+      "gmdescription": "",
+      "id": "5iudQu0V6tgJIsbX",
+      "name": "Przepatrywacz Plaż",
+      "skills": [
+        "Climb",
+        "Dodge",
+        "Gossip",
+        "Haggle",
+        "Lore (Coasts and Tides)",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Stealth (Rural)",
+        "Consume Alcohol",
+        "Endurance",
+        "Lore (Any)",
+        "Ranged (Sling)",
+        "Set Trap",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.5iudQu0V6tgJIsbX",
+      "system": {},
+      "talents": [
+        "Coolheaded",
+        "Flee!",
+        "Rover",
+        "Stone Soup"
+      ],
+      "trappings": [
+        "Found Boots",
+        "Leather Jerkin",
+        "Rain Hat"
+      ]
+    },
+    "Boatswain": {
+      "careergroup": "Sailor",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.mmEvK7ppIM3Htev9]{Sailor}</p>",
+      "gmdescription": "",
+      "id": "M7targs9nHHj7pou",
+      "name": "Bosman",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Gamble",
+        "Gossip",
+        "Lore (Oceans)",
+        "Melee (Brawling)",
+        "Play (Pennywhistle)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Athletics",
+        "Dodge",
+        "Endurance",
+        "Entertain (Singing)",
+        "Language (Any)",
+        "Melee (Basic)",
+        "Cool",
+        "Leadership",
+        "Perception",
+        "Trade (Carpenter)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.M7targs9nHHj7pou",
+      "system": {},
+      "talents": [
+        "Old Salt",
+        "Strike Mighty Blow",
+        "Tenacious",
+        "Very Strong"
+      ],
+      "trappings": [
+        "Trade Tools (Carpenter)"
+      ]
+    },
+    "Captain": {
+      "careergroup": "Officer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.tBOcrpC9l8TehVlR]{Officer}</p>",
+      "gmdescription": "",
+      "id": "gEsR1nMCWSzTtPoK",
+      "name": "Kapitan",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Gossip",
+        "Leadership",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Sail",
+        "Swim",
+        "Cool",
+        "Endurance",
+        "Intimidate",
+        "Lore (Oceans)",
+        "Navigation",
+        "Ranged (Blackpowder)",
+        "Art (Cartography)",
+        "Charm",
+        "Dodge",
+        "Intuition"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.gEsR1nMCWSzTtPoK",
+      "system": {},
+      "talents": [
+        "Inspiring",
+        "Seasoned Traveller",
+        "War Leader",
+        "Suave"
+      ],
+      "trappings": [
+        "Big Hat",
+        "Boat to Command",
+        "Captain’s Log"
+      ]
+    },
+    "Cargo Scavenger": {
+      "careergroup": "Wrecker",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.oM0P2HDvJJxCIxOv]{Wrecker}</p>",
+      "gmdescription": "",
+      "id": "Hz8TMgMqCVUNwIIg",
+      "name": "Łupieżca",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Dodge",
+        "Endurance",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Ranged (Sling)",
+        "Row",
+        "Sail",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.Hz8TMgMqCVUNwIIg",
+      "system": {},
+      "talents": [
+        "Break and Enter",
+        "Criminal",
+        "Fisherman",
+        "Strong Back"
+      ],
+      "trappings": [
+        "Crowbar",
+        "Large Sack",
+        "Leather Gloves"
+      ]
+    },
+    "Chanter": {
+      "careergroup": "Chantyman",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.bF155OC9k6R0BP1x]{Chantyman}</p>",
+      "gmdescription": "",
+      "id": "P4Xr4PqPcWH10v4F",
+      "name": "Śpiewak",
+      "skills": [
+        "Charm",
+        "Consume Alcohol",
+        "Dodge",
+        "Entertain (Singing)",
+        "Gossip",
+        "Melee (Brawling)",
+        "Play (Fiddle or Squeezebox or Tin Whistle)",
+        "Row",
+        "Sail",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.P4Xr4PqPcWH10v4F",
+      "system": {},
+      "talents": [
+        "Etiquette (Crew)",
+        "Perfect Pitch",
+        "Sea Legs",
+        "Strider (Coastal)"
+      ],
+      "trappings": [
+        "Musical Instrument",
+        "Rain Hat"
+      ]
+    },
+    "Chantyman": {
+      "careergroup": "Chantyman",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.bF155OC9k6R0BP1x]{Chantyman}</p><p></p>",
+      "gmdescription": "",
+      "id": "CwGesbC3fio2W6dJ",
+      "name": "Szanciarz",
+      "skills": [
+        "Charm",
+        "Consume Alcohol",
+        "Dodge",
+        "Entertain (Singing)",
+        "Gossip",
+        "Melee (Brawling)",
+        "Play (Fiddle or Squeezebox or Tin Whistle)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Athletics",
+        "Climb",
+        "Endurance",
+        "Gamble",
+        "Melee (Basic)",
+        "Perform (Any)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.CwGesbC3fio2W6dJ",
+      "system": {},
+      "talents": [
+        "Chanty",
+        "Jump Up",
+        "Seasoned Traveller",
+        "Strong Swimmer"
+      ],
+      "trappings": [
+        "Sealskin Coat"
+      ]
+    },
+    "Chanty Captain": {
+      "careergroup": "Chantyman",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.bF155OC9k6R0BP1x]{Chantyman}</p>",
+      "gmdescription": "",
+      "id": "gTF5cHlWZpPkCPdO",
+      "name": "Kapitan Szanciarzy",
+      "skills": [
+        "Charm",
+        "Consume Alcohol",
+        "Dodge",
+        "Entertain (Singing)",
+        "Gossip",
+        "Melee (Brawling)",
+        "Play (Fiddle or Squeezebox or Tin Whistle)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Athletics",
+        "Climb",
+        "Endurance",
+        "Gamble",
+        "Melee (Basic)",
+        "Perform (Any)",
+        "Cool",
+        "Language (Any)",
+        "Leadership",
+        "Perception"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.gTF5cHlWZpPkCPdO",
+      "system": {},
+      "talents": [
+        "Carouser",
+        "Fisherman",
+        "Old Salt",
+        "Public Speaker"
+      ],
+      "trappings": [
+        "Quality Instrument"
+      ]
+    },
+    "Chanty Master": {
+      "careergroup": "Chantyman",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.bF155OC9k6R0BP1x]{Chantyman}</p>",
+      "gmdescription": "",
+      "id": "J20MSRL3uvMUiXYV",
+      "name": "Mistrz Szant",
+      "skills": [
+        "Charm",
+        "Consume Alcohol",
+        "Dodge",
+        "Entertain (Singing)",
+        "Gossip",
+        "Melee (Brawling)",
+        "Play (Fiddle or Squeezebox or Tin Whistle)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Athletics",
+        "Climb",
+        "Endurance",
+        "Gamble",
+        "Melee (Basic)",
+        "Perform (Any)",
+        "Cool",
+        "Language (Any)",
+        "Leadership",
+        "Perception",
+        "Lore (Oceans)",
+        "Navigation"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.J20MSRL3uvMUiXYV",
+      "system": {},
+      "talents": [
+        "Tenacious",
+        "Magnum Opus",
+        "Orientation",
+        "Read/Write"
+      ],
+      "trappings": [
+        "Quality Hat"
+      ]
+    },
+    "Drifter": {
+      "careergroup": "Beachcomber",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.KjBub5UDWobEyFq4]{Beachcomber}</p>",
+      "gmdescription": "",
+      "id": "3ZF7IUwDgB27PMZ8",
+      "name": "Drifter",
+      "skills": [
+        "Climb",
+        "Dodge",
+        "Gossip",
+        "Haggle",
+        "Lore (Coasts and Tides)",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Stealth (Rural)",
+        "Consume Alcohol",
+        "Endurance",
+        "Lore (Any)",
+        "Ranged (Sling)",
+        "Set Trap",
+        "Swim",
+        "Charm",
+        "Evaluate",
+        "Gamble",
+        "Sail"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.3ZF7IUwDgB27PMZ8",
+      "system": {},
+      "talents": [
+        "Old Salt",
+        "Savant (Coasts and Tides)",
+        "Sea Legs",
+        "Tinker"
+      ],
+      "trappings": [
+        "Boat",
+        "Hut",
+        "Storm Lantern"
+      ]
+    },
+    "Gunnery Captain": {
+      "careergroup": "Ship’s Gunner",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.T1Tz6hKtO0n30FRe]{Ship’s Gunner}</p>",
+      "gmdescription": "",
+      "id": "QpLvliRCw8WyBT6R",
+      "name": "Kapitan Artylerii",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Dodge",
+        "Endurance",
+        "Language (Battle)",
+        "Melee (Brawling)",
+        "Perception",
+        "Ranged (Blackpowder)",
+        "Row",
+        "Swim",
+        "Consume Alcohol",
+        "Cool",
+        "Gamble",
+        "Gossip",
+        "Melee (Basic)",
+        "Sail",
+        "Leadership",
+        "Lore (Artillery)",
+        "Navigation",
+        "Trade (Gunsmith)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.QpLvliRCw8WyBT6R",
+      "system": {},
+      "talents": [
+        "Combat Aware",
+        "Crew Commander",
+        "Orientation",
+        "Read/Write"
+      ],
+      "trappings": [
+        "Crew",
+        "Telescope"
+      ]
+    },
+    "Huffer": {
+      "careergroup": "Huffer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.jnWHfdQXNlzVCb62]{Huffer}</p>",
+      "gmdescription": "",
+      "id": "fxizD0D5AXOfZHO5",
+      "name": "Huffer",
+      "skills": [
+        "Consume Alcohol",
+        "Gossip",
+        "Intuition",
+        "Lore (Local)",
+        "Lore (Oceans)",
+        "Melee (Basic)",
+        "Navigation",
+        "Perception",
+        "Row",
+        "Swim",
+        "Athletics",
+        "Charm",
+        "Climb",
+        "Cool",
+        "Entertain (Storytelling)",
+        "Language (Any)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.fxizD0D5AXOfZHO5",
+      "system": {},
+      "talents": [
+        "Dealmaker",
+        "Etiquette (Guilder)",
+        "Nose for Trouble",
+        "Old Salt"
+      ],
+      "trappings": [
+        "Leather Jerkin",
+        "Rope",
+        "Row Boat"
+      ]
+    },
+    "Initiate": {
+      "careergroup": "Priest of Stromfels",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.cTPiJvuUZusNMAj3.JournalEntryPage.g2uzrQAul82tCfVg]{Priest of Stromfels}</p>",
+      "gmdescription": "",
+      "id": "YdquJNXQ2IAUDAtU",
+      "name": "Initiate",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Endurance",
+        "Intimidate",
+        "Intuition",
+        "Melee (Basic)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.YdquJNXQ2IAUDAtU",
+      "system": {},
+      "talents": [
+        "Bless (Stromfels)",
+        "Criminal",
+        "Holy Visions",
+        "Strong Swimmer"
+      ],
+      "trappings": [
+        "Crowbar",
+        "Hand Weapon",
+        "Large Sack",
+        "Leather Jerkin",
+        "Leather Gloves"
+      ]
+    },
+    "Landsman": {
+      "careergroup": "Sailor",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.mmEvK7ppIM3Htev9]{Sailor}</p>",
+      "gmdescription": "",
+      "id": "1mSs0KYC2W8PgnpP",
+      "name": "Landsman",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Gamble",
+        "Gossip",
+        "Lore (Oceans)",
+        "Melee (Brawling)",
+        "Play (Pennywhistle)",
+        "Row",
+        "Sail",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.1mSs0KYC2W8PgnpP",
+      "system": {},
+      "talents": [
+        "Fisherman",
+        "Strider (Coastal)",
+        "Strong Back",
+        "Strong Swimmer"
+      ],
+      "trappings": [
+        "Brush",
+        "Bucket",
+        "Mop"
+      ]
+    },
+    "Master Gunner": {
+      "careergroup": "Ship’s Gunner",
+      "class": "Seafarers",
+      "description": "<p>@UUID[Compendium.wfrp4e-soc.items.Item.4oywU9bMYPCpIloK]{Master Gunner}</p>",
+      "gmdescription": "",
+      "id": "4oywU9bMYPCpIloK",
+      "name": "Master Gunner",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Dodge",
+        "Endurance",
+        "Language (Battle)",
+        "Melee (Brawling)",
+        "Perception",
+        "Ranged (Blackpowder)",
+        "Row",
+        "Swim",
+        "Consume Alcohol",
+        "Cool",
+        "Gamble",
+        "Gossip",
+        "Melee (Basic)",
+        "Sail",
+        "Leadership",
+        "Lore (Artillery)",
+        "Navigation",
+        "Trade (Gunsmith)",
+        "Charm",
+        "Lore (Oceans)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.4oywU9bMYPCpIloK",
+      "system": {},
+      "talents": [
+        "Accurate Shot",
+        "Inspiring",
+        "Seasoned Traveller",
+        "Stout-hearted"
+      ],
+      "trappings": [
+        "Cabin",
+        "Quality Uniform"
+      ]
+    },
+    "Master of the Beach": {
+      "careergroup": "Beachcomber",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.KjBub5UDWobEyFq4]{Beachcomber}</p>",
+      "gmdescription": "",
+      "id": "2gkokay3EqrtLOrq",
+      "name": "Master of the Beach",
+      "skills": [
+        "Climb",
+        "Dodge",
+        "Gossip",
+        "Haggle",
+        "Lore (Coasts and Tides)",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Stealth (Rural)",
+        "Consume Alcohol",
+        "Endurance",
+        "Lore (Any)",
+        "Ranged (Sling)",
+        "Set Trap",
+        "Swim",
+        "Charm",
+        "Evaluate",
+        "Gamble",
+        "Sail",
+        "Leadership",
+        "Trade (Boatbuilder)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.2gkokay3EqrtLOrq",
+      "system": {},
+      "talents": [
+        "Dealmaker",
+        "River Guide",
+        "Seasoned Traveller",
+        "Tenacious"
+      ],
+      "trappings": [
+        "Wreck Dwelling"
+      ]
+    },
+    "Master Pilot": {
+      "careergroup": "Huffer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.jnWHfdQXNlzVCb62]{Huffer}</p>",
+      "gmdescription": "",
+      "id": "ekitFQV1k6vGlX6y",
+      "name": "Master Pilot",
+      "skills": [
+        "Consume Alcohol",
+        "Gossip",
+        "Intuition",
+        "Lore (Local)",
+        "Lore (Oceans)",
+        "Melee (Basic)",
+        "Navigation",
+        "Perception",
+        "Row",
+        "Swim",
+        "Athletics",
+        "Charm",
+        "Climb",
+        "Cool",
+        "Entertain (Storytelling)",
+        "Language (Any)",
+        "Haggle",
+        "Intimidate",
+        "Lore (Local)",
+        "Lore (Wrecks)",
+        "Leadership",
+        "Sail"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.ekitFQV1k6vGlX6y",
+      "system": {},
+      "talents": [
+        "Sharp",
+        "Sixth Sense",
+        "Strong Swimmer",
+        "Tenacious"
+      ],
+      "trappings": [
+        "Boathand",
+        "Small Boat"
+      ]
+    },
+    "Midshipman": {
+      "careergroup": "Officer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.tBOcrpC9l8TehVlR]{Officer}</p>",
+      "gmdescription": "",
+      "id": "jb7j7cihxwlSwe4y",
+      "name": "Midshipman",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Gossip",
+        "Leadership",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Sail",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.jb7j7cihxwlSwe4y",
+      "system": {},
+      "talents": [
+        "Etiquette (Crew)",
+        "Orientation",
+        "Read/Write",
+        "Sea Legs"
+      ],
+      "trappings": [
+        "Hand Weapon",
+        "Uniform"
+      ]
+    },
+    "Officer": {
+      "careergroup": "Officer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.tBOcrpC9l8TehVlR]{Officer}</p>",
+      "gmdescription": "",
+      "id": "o8R4Qmy5jYhM3Hwh",
+      "name": "Officer",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Gossip",
+        "Leadership",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Sail",
+        "Swim",
+        "Cool",
+        "Endurance",
+        "Intimidate",
+        "Lore (Oceans)",
+        "Navigation",
+        "Ranged (Blackpowder)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.o8R4Qmy5jYhM3Hwh",
+      "system": {},
+      "talents": [
+        "Coolheaded",
+        "Old Salt",
+        "Master and Commander",
+        "Pilot"
+      ],
+      "trappings": [
+        "Quality Uniform",
+        "Ship’s Chest"
+      ]
+    },
+    "Pilot": {
+      "careergroup": "Huffer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.jnWHfdQXNlzVCb62]{Huffer}</p>",
+      "gmdescription": "",
+      "id": "CysxtxPnD0Fl7mpn",
+      "name": "Pilot",
+      "skills": [
+        "Consume Alcohol",
+        "Gossip",
+        "Intuition",
+        "Lore (Local)",
+        "Lore (Oceans)",
+        "Melee (Basic)",
+        "Navigation",
+        "Perception",
+        "Row",
+        "Swim",
+        "Athletics",
+        "Charm",
+        "Climb",
+        "Cool",
+        "Entertain (Storytelling)",
+        "Language (Any)",
+        "Haggle",
+        "Intimidate",
+        "Lore (Local)",
+        "Lore (Wrecks)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.CysxtxPnD0Fl7mpn",
+      "system": {},
+      "talents": [
+        "Acute Sense (Sight)",
+        "Pilot",
+        "Sea Legs",
+        "Very Strong"
+      ],
+      "trappings": [
+        "Pole",
+        "Storm Lantern and Oil"
+      ]
+    },
+    "Pirate Captain": {
+      "careergroup": "Wrecker",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.oM0P2HDvJJxCIxOv]{Wrecker}</p>",
+      "gmdescription": "",
+      "id": "lokgSOESDw4DDI3m",
+      "name": "Pirate Captain",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Dodge",
+        "Endurance",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Ranged (Sling)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Bribery",
+        "Cool",
+        "Intuition",
+        "Navigation",
+        "Perception",
+        "Set Trap",
+        "Gossip",
+        "Intimidate",
+        "Ranged (Crossbow)",
+        "Stealth (Rural)",
+        "Leadership",
+        "Lore (Oceans)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.lokgSOESDw4DDI3m",
+      "system": {},
+      "talents": [
+        "Furious Assault",
+        "In–fighter",
+        "Master and Commander",
+        "Warrior Born"
+      ],
+      "trappings": [
+        "Fleet of Riverboats and Wrecker Crew",
+        "Keg of Ale",
+        "Manacles"
+      ]
+    },
+    "Pirate": {
+      "careergroup": "Wrecker",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.oM0P2HDvJJxCIxOv]{Wrecker}</p>",
+      "gmdescription": "",
+      "id": "O5Anb8mQtA7Wa5ye",
+      "name": "Pirate",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Dodge",
+        "Endurance",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Ranged (Sling)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Bribery",
+        "Cool",
+        "Intuition",
+        "Navigation",
+        "Perception",
+        "Set Trap",
+        "Gossip",
+        "Intimidate",
+        "Ranged (Crossbow)",
+        "Stealth (Rural)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.O5Anb8mQtA7Wa5ye",
+      "system": {},
+      "talents": [
+        "Dirty Fighting",
+        "Etiquette (Criminals)",
+        "Menacing",
+        "Waterman"
+      ],
+      "trappings": [
+        "Crossbow with 10 Bolts",
+        "Grappling Hook and Rope",
+        "Riverboat"
+      ]
+    },
+    "Pirate Priest": {
+      "careergroup": "Priest of Stromfels",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.cTPiJvuUZusNMAj3.JournalEntryPage.g2uzrQAul82tCfVg]{Priest of Stromfels}</p>",
+      "gmdescription": "",
+      "id": "UG96fHNaS6Tx1dVi",
+      "name": "Pirate Priest",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Endurance",
+        "Intimidate",
+        "Intuition",
+        "Melee (Basic)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim",
+        "Cool",
+        "Entertain (Singing)",
+        "Lore (Stromfels)",
+        "Navigation",
+        "Perception",
+        "Track",
+        "Gossip",
+        "Leadership",
+        "Lore (Oceans)",
+        "Set Trap"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.UG96fHNaS6Tx1dVi",
+      "system": {},
+      "talents": [
+        "Hatred (Manannites or Followers of  Chaos)",
+        "Impassioned Zeal",
+        "Master Orator",
+        "Rover"
+      ],
+      "trappings": [
+        "Grappling Hook and Rope",
+        "Religious Relic",
+        "Riverboat"
+      ]
+    },
+    "Portguide": {
+      "careergroup": "Huffer",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.jnWHfdQXNlzVCb62]{Huffer}</p>",
+      "gmdescription": "",
+      "id": "HKG8B5PYf0QOpx2O",
+      "name": "Portguide",
+      "skills": [
+        "Consume Alcohol",
+        "Gossip",
+        "Intuition",
+        "Lore (Local)",
+        "Lore (Oceans)",
+        "Melee (Basic)",
+        "Navigation",
+        "Perception",
+        "Row",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.HKG8B5PYf0QOpx2O",
+      "system": {},
+      "talents": [
+        "Fisherman",
+        "Night Vision",
+        "Orientation",
+        "Waterman"
+      ],
+      "trappings": [
+        "Hand Weapon (Boat Hook)",
+        "Storm Lantern and Oil"
+      ]
+    },
+    "Powder Monkey": {
+      "careergroup": "Ship’s Gunner",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.T1Tz6hKtO0n30FRe]{Ship’s Gunner}</p>",
+      "gmdescription": "",
+      "id": "llLBaa1CxeQXMhCc",
+      "name": "Powder Monkey",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Dodge",
+        "Endurance",
+        "Language (Battle)",
+        "Melee (Brawling)",
+        "Perception",
+        "Ranged (Blackpowder)",
+        "Row",
+        "Swim"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.llLBaa1CxeQXMhCc",
+      "system": {},
+      "talents": [
+        "Old Salt",
+        "Rapid Reload",
+        "Sea Legs",
+        "Strong Back"
+      ],
+      "trappings": [
+        "Bucket",
+        "Hammock"
+      ]
+    },
+    "Priest Captain": {
+      "careergroup": "Priest of Stromfels",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.cTPiJvuUZusNMAj3.JournalEntryPage.g2uzrQAul82tCfVg]{Priest of Stromfels}</p>",
+      "gmdescription": "",
+      "id": "8GAkg5MnEv4DuQrS",
+      "name": "Priest Captain",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Endurance",
+        "Intimidate",
+        "Intuition",
+        "Melee (Basic)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim",
+        "Cool",
+        "Entertain (Singing)",
+        "Lore (Stromfels)",
+        "Navigation",
+        "Perception",
+        "Track",
+        "Gossip",
+        "Leadership",
+        "Lore (Oceans)",
+        "Set Trap",
+        "Melee (Any)",
+        "Ranged (Blackpowder)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.8GAkg5MnEv4DuQrS",
+      "system": {},
+      "talents": [
+        "Furious Assault",
+        "In–fighter",
+        "Pilot",
+        "Warrior Born"
+      ],
+      "trappings": [
+        "Group of Cultists",
+        "Pistol with 10 Shots"
+      ]
+    },
+    "Priest-Captain": {
+      "careergroup": "Sailor-Priest of Manann",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.sTZQvz3Hb6ygxxqR]{Sailor-Priest of Manann}</p>",
+      "gmdescription": "",
+      "id": "wXFcn9a1jWnY5xtN",
+      "name": "Priest-Captain",
+      "skills": [
+        "Athletics",
+        "Consume Alcohol",
+        "Cool",
+        "Endurance",
+        "Language (Classical)",
+        "Lore (Manann)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim",
+        "Intuition",
+        "Entertain (Singing)",
+        "Gamble",
+        "Intimidate",
+        "Melee (Polearm)",
+        "Navigation",
+        "Charm",
+        "Leadership",
+        "Lore (Oceans)",
+        "Ranged (Blackpowder)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.wXFcn9a1jWnY5xtN",
+      "system": {},
+      "talents": [
+        "Hatred (Followers of Stromfels)",
+        "Old Salt",
+        "Pilot",
+        "Strong Swimmer"
+      ],
+      "trappings": [
+        "Ceremonial Boat",
+        "Quality Robes",
+        "Subordinate Priests",
+        "Temple"
+      ]
+    },
+    "Priest of Stromfels": {
+      "careergroup": "Priest of Stromfels",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.cTPiJvuUZusNMAj3.JournalEntryPage.g2uzrQAul82tCfVg]{Priest of Stromfels}</p>",
+      "gmdescription": "",
+      "id": "fGQ7JO3Tjeoo4mnT",
+      "name": "Priest of Stromfels",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Endurance",
+        "Intimidate",
+        "Intuition",
+        "Melee (Basic)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim",
+        "Cool",
+        "Entertain (Singing)",
+        "Lore (Stromfels)",
+        "Navigation",
+        "Perception",
+        "Track"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.fGQ7JO3Tjeoo4mnT",
+      "system": {},
+      "talents": [
+        "Fearless (Any)",
+        "Flee!",
+        "Invoke  (Stromfels)",
+        "Menacing"
+      ],
+      "trappings": [
+        "Leather Jack",
+        "Storm Lantern and Oil"
+      ]
+    },
+    "Sailor": {
+      "careergroup": "Sailor",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.mmEvK7ppIM3Htev9]{Sailor}</p>",
+      "gmdescription": "",
+      "id": "fyQwrC9ugl4W7IW0",
+      "name": "Sailor",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Gamble",
+        "Gossip",
+        "Lore (Oceans)",
+        "Melee (Brawling)",
+        "Play (Pennywhistle)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Athletics",
+        "Dodge",
+        "Endurance",
+        "Entertain (Singing)",
+        "Language (Any)",
+        "Melee (Basic)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.fyQwrC9ugl4W7IW0",
+      "system": {},
+      "talents": [
+        "Catfall",
+        "Sea Legs",
+        "Seasoned Traveller",
+        "Strong Legs"
+      ],
+      "trappings": [
+        "Boat Hook",
+        "Leather Jerkin"
+      ]
+    },
+    "Sailor-Priest": {
+      "careergroup": "Sailor-Priest of Manann",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.sTZQvz3Hb6ygxxqR]{Sailor-Priest of Manann}</p>",
+      "gmdescription": "",
+      "id": "YMd6nZe9DHp5S277",
+      "name": "Sailor-Priest",
+      "skills": [
+        "Athletics",
+        "Consume Alcohol",
+        "Cool",
+        "Endurance",
+        "Language (Classical)",
+        "Lore (Manann)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim",
+        "Intuition",
+        "Entertain (Singing)",
+        "Gamble",
+        "Intimidate",
+        "Melee (Polearm)",
+        "Navigation"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.YMd6nZe9DHp5S277",
+      "system": {},
+      "talents": [
+        "Invoke (Manann)",
+        "Public Speaking",
+        "Read/Write",
+        "Strong Back"
+      ],
+      "trappings": [
+        "Holy Book of Manann",
+        "Trident (counts as Spear)"
+      ]
+    },
+    "Scavenger": {
+      "careergroup": "Beachcomber",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.KjBub5UDWobEyFq4]{Beachcomber}</p>",
+      "gmdescription": "",
+      "id": "wx9OD6b7x7Yytrnw",
+      "name": "Scavenger",
+      "skills": [
+        "Climb",
+        "Dodge",
+        "Gossip",
+        "Haggle",
+        "Lore (Coasts and Tides)",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Perception",
+        "Row",
+        "Stealth (Rural)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.wx9OD6b7x7Yytrnw",
+      "system": {},
+      "talents": [
+        "Fisherman",
+        "Orientation",
+        "Strider (Coastal)",
+        "Strong Swimmer"
+      ],
+      "trappings": [
+        "Fishing Net",
+        "String Bag"
+      ]
+    },
+    "Ship’s Gunner": {
+      "careergroup": "Ship’s Gunner",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.T1Tz6hKtO0n30FRe]{Ship’s Gunner}</p>",
+      "gmdescription": "",
+      "id": "IPYZJn7KZUXmXKEf",
+      "name": "Ship’s Gunner",
+      "skills": [
+        "Athletics",
+        "Climb",
+        "Dodge",
+        "Endurance",
+        "Language (Battle)",
+        "Melee (Brawling)",
+        "Perception",
+        "Ranged (Blackpowder)",
+        "Row",
+        "Swim",
+        "Consume Alcohol",
+        "Cool",
+        "Gamble",
+        "Gossip",
+        "Melee (Basic)",
+        "Sail"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.IPYZJn7KZUXmXKEf",
+      "system": {},
+      "talents": [
+        "Etiquette (Crew)",
+        "Gunner",
+        "Marksman",
+        "Sniper"
+      ],
+      "trappings": [
+        "Hat",
+        "Sea Chest",
+        "Tools"
+      ]
+    },
+    "Ship’s Master": {
+      "careergroup": "Sailor",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.mmEvK7ppIM3Htev9]{Sailor}</p><p></p>",
+      "gmdescription": "",
+      "id": "hdIcLx4cNx7psni3",
+      "name": "Ship’s Master",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Gamble",
+        "Gossip",
+        "Lore (Oceans)",
+        "Melee (Brawling)",
+        "Play (Pennywhistle)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Athletics",
+        "Dodge",
+        "Endurance",
+        "Entertain (Singing)",
+        "Language (Any)",
+        "Melee (Basic)",
+        "Cool",
+        "Leadership",
+        "Perception",
+        "Trade (Carpenter)",
+        "Charm",
+        "Navigation"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.hdIcLx4cNx7psni3",
+      "system": {},
+      "talents": [
+        "Orientation",
+        "Pilot",
+        "Public Speaker",
+        "Savvy"
+      ],
+      "trappings": [
+        "Sailing Ship and Crew",
+        "Sextant",
+        "Shipping Charts",
+        "Spyglass"
+      ]
+    },
+    "Wave Lord": {
+      "careergroup": "Sailor-Priest of Manann",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.sTZQvz3Hb6ygxxqR]{Sailor-Priest of Manann}</p>",
+      "gmdescription": "",
+      "id": "CaQJU0gCwasSoAj4",
+      "name": "Pan Fal",
+      "skills": [
+        "Athletics",
+        "Consume Alcohol",
+        "Cool",
+        "Endurance",
+        "Language (Classical)",
+        "Lore (Manann)",
+        "Pray",
+        "Row",
+        "Sail",
+        "Swim",
+        "Intuition",
+        "Entertain (Singing)",
+        "Gamble",
+        "Intimidate",
+        "Melee (Polearm)",
+        "Navigation",
+        "Charm",
+        "Leadership",
+        "Lore (Oceans)",
+        "Ranged (Blackpowder)",
+        "Language (Any)",
+        "Lore (Politics)"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.CaQJU0gCwasSoAj4",
+      "system": {},
+      "talents": [
+        "Chanty",
+        "Inspiring",
+        "Pure Soul",
+        "Seasoned Traveller"
+      ],
+      "trappings": [
+        "Flotilla of Ships",
+        "Holy Relic",
+        "Subordinate High Priests"
+      ]
+    },
+    "Wrecker": {
+      "careergroup": "Wrecker",
+      "class": "Seafarers",
+      "description": "<p>@UUID[JournalEntry.N73rKQn0RyQfphEc.JournalEntryPage.oM0P2HDvJJxCIxOv]{Wrecker}</p>",
+      "gmdescription": "",
+      "id": "BnWRu6oaxpoNQkgK",
+      "name": "Pirat",
+      "skills": [
+        "Climb",
+        "Consume Alcohol",
+        "Dodge",
+        "Endurance",
+        "Melee (Basic)",
+        "Outdoor Survival",
+        "Ranged (Sling)",
+        "Row",
+        "Sail",
+        "Swim",
+        "Bribery",
+        "Cool",
+        "Intuition",
+        "Navigation",
+        "Perception",
+        "Set Trap"
+      ],
+      "sourceId": "Compendium.wfrp4e-soc.items.Item.BnWRu6oaxpoNQkgK",
+      "system": {},
+      "talents": [
+        "Flee!",
+        "Rover",
+        "Strong Swimmer",
+        "Trapper"
+      ],
+      "trappings": [
+        "Boat Hook",
+        "Leather Jack",
+        "Storm Lantern and Oil"
+      ]
+    }
+  }
+}
