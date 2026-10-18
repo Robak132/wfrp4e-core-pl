@@ -96,6 +96,7 @@
     "modules/config-polish.js",
     "modules/dual-wielding-localization.js",
     "modules/value-dialog-localization.js",
+    "modules/effect-duration-localization.js",
     "modules/income-compatibility.js",
     "modules/folder-compatibility.js"
   ],
