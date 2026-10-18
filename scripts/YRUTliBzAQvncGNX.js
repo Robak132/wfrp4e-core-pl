@@ -1,2 +1,2 @@
 this.actor.addCondition("fatigued");
-this.script.notification("Otrzymano Zmęczenie")
+this.script.notification("Otrzymano Stan Zmęczenia")

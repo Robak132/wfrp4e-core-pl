@@ -12,11 +12,11 @@ let index = game.packs
 	return i
 })
 
-let choice = await ItemDialog.create(index, 1, "Wybierz rodzaj Wiedzy")
+let choice = await ItemDialog.create(index, 1, "Wybierz rodzaj wiedzy")
 let text;
 if (!choice[0])
 {
-    let custom = await ValueDialog.create({text : "Wpisz rodzaj Wiedzy", title : this.effect.name});
+    let custom = await ValueDialog.create({text : "Wpisz rodzaj wiedzy", title : this.effect.name});
     text = custom || "";
 }
 else 
@@ -24,5 +24,5 @@ else
     text = game.wfrp4e.utility.extractParenthesesText(choice[0].name)
 }
 
-await this.item.updateSource({name : this.item.name + ` (${text})`, "system.tests.value" : this.item.system.tests.value.replace("wybrana Wiedza", text)})
+await this.item.updateSource({name : this.item.name + ` (${text})`, "system.tests.value" : this.item.system.tests.value.replace("wybrana wiedza", text)})
 await this.effect.updateSource({name : this.effect.name + ` (${text})`})

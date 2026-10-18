@@ -6,5 +6,5 @@ if (fatigued)
 }
 else 
 {
-	this.script.notification(`Brak Stanów Zmęczenia`)
+	this.script.notification(`Brak Stanów Zmęczenia do usunięcia`)
 }

@@ -6,5 +6,5 @@ if (bleeding)
 }
 else 
 {
-   this.script.notification(`Brak stanów Krwawienia`)
+   this.script.notification(`Brak stanów krwawienia`)
 }

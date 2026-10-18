@@ -1,3 +1,3 @@
 if (args.totalWoundLoss > 0) {
-    await args.actor.addCondition("poisoned", 2)
+    await 0rgs.actor.addCondition("poisoned", 2)
 }

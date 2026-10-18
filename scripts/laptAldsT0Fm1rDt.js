@@ -2,5 +2,5 @@ let blunt = await foundry.applications.api.DialogV2.confirm({window: {title : th
 
 if (blunt)
 {
-    args.modifiers.other.push({label : this.effect.name, details : "Zmniejszenie obrażeń obuchowych", value : -3})
+    args.modifiers.other.push({label : this.effect.name, details : "Zmniejszenie Obrażeń Obuchowych", value : -3})
 }

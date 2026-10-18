@@ -4,4 +4,4 @@ if (this.actor.statuses.has("infighting") && !args.flags.infighter)
     args.flags.infighter = true;
 }
 
-args.fields.successBonus += 1; 
+args.fields.successBonus += 1;

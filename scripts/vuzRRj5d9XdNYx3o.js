@@ -2,5 +2,5 @@ let broken = this.actor.hasCondition("broken")
 if (broken)
 {
     broken.delete();
-    this.script.notification("Usunięto Panikę")
+    this.script.notification("Usunięto Stan Panika")
 }

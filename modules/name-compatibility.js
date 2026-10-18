@@ -1,0 +1,906 @@
+const MODULE_ID = "wfrp4e-core-pl";
+const PATCH_MARK = Symbol.for(MODULE_ID + ".nameCompatibility");
+const FORMULA_PATCH_MARK = Symbol.for(MODULE_ID + ".formulaCompatibility");
+const MIGRATION_PATCH_MARK = Symbol.for(MODULE_ID + ".migrationCompatibility");
+const WEAPON_SKILL_PATCH_MARK = Symbol.for(MODULE_ID + ".weaponSkillCompatibility");
+
+// Canonical EN group labels used by the upstream skill selector. These are
+// lookup aliases, not translated UI labels or new weapon-group definitions.
+const ENGLISH_WEAPON_GROUPS = Object.freeze({
+	basic: "Basic", cavalry: "Cavalry", fencing: "Fencing", brawling: "Brawling",
+	flail: "Flail", parry: "Parry", polearm: "Polearm", twohanded: "Two-handed",
+	blackpowder: "Blackpowder", bow: "Bow", crossbow: "Crossbow",
+	entangling: "Entangling", engineering: "Engineering", explosives: "Explosives",
+	sling: "Sling", throwing: "Throwing", vehicle: "Vehicle",
+});
+
+export function installWeaponSkillCompatibility() {
+	const prototype = globalThis.CONFIG?.Item?.dataModels?.weapon?.prototype;
+	if (!prototype || prototype[WEAPON_SKILL_PATCH_MARK]
+		|| typeof prototype.getSkillToUse !== "function") return false;
+	const originalGetSkill = prototype.getSkillToUse;
+	prototype.getSkillToUse = function (actor) {
+		const owner = actor || this.parent?.actor;
+		const skills = owner?.itemTags?.skill ?? [];
+		const override = this.skill?.value;
+		if (typeof override === "string" && override.length) {
+			// An explicit override must beat the generic weapon-group fallback.
+			// Keep the upstream preference for a current exact name.
+			const exact = skills.find(item => item.name.toLowerCase() === override.toLowerCase());
+			const selected = exact ?? skills.find(item => matches(item, override, {caseInsensitive: true}));
+			if (selected) return selected;
+		}
+
+		const result = originalGetSkill.call(this, actor);
+		const group = ENGLISH_WEAPON_GROUPS[this.weaponGroup?.value];
+		if (!group) return result;
+		const token = "(" + group.toLowerCase() + ")";
+		const sourceMatches = (item, includeCurrent = true) => aliases(item, {includeCurrent})
+			.some(name => name.toLowerCase().includes(token));
+		if (!result) return skills.find(item => sourceMatches(item));
+
+		// Two different source skills can acquire the same translated name.
+		// Disambiguate only that collision using the original specialization;
+		// do not replace a unique current-name match or deduplicate documents.
+		const sameName = skills.filter(item => item.name.toLowerCase() === result.name.toLowerCase());
+		return sameName.length > 1 ? sameName.find(item => sourceMatches(item, false)) ?? result : result;
+	};
+	Object.defineProperty(prototype, WEAPON_SKILL_PATCH_MARK, {value: true});
+	return true;
+}
+
+// Formula fields in the official compendia are system data, so Babele leaves
+// them in English. WFRP4e, however, compares those fields with the currently
+// localized characteristic labels. Keep the stored formula untouched and
+// translate only the tokens passed to the v14 formula parser.
+const ENGLISH_CHARACTERISTICS = Object.freeze({
+	ws: "Weapon Skill",
+	bs: "Ballistic Skill",
+	s: "Strength",
+	t: "Toughness",
+	i: "Initiative",
+	ag: "Agility",
+	dex: "Dexterity",
+	int: "Intelligence",
+	wp: "Willpower",
+	fel: "Fellowship",
+});
+
+// Stable WFRP lore keys are stored in system data, while generated document
+// names use human-readable specializations. Accept all three forms (key,
+// English label and current localized label), but only localize the display
+// name. This keeps scripts and system fields language-independent.
+const ENGLISH_MAGIC_LORES = Object.freeze({
+	petty: "Petty",
+	beasts: "Beasts",
+	death: "Death",
+	fire: "Fire",
+	heavens: "Heavens",
+	metal: "Metal",
+	life: "Life",
+	light: "Light",
+	shadow: "Shadow",
+	hedgecraft: "Hedgecraft",
+	witchcraft: "Witchcraft",
+	daemonology: "Daemonology",
+	necromancy: "Necromancy",
+	undivided: "Undivided",
+	nurgle: "Nurgle",
+	slaanesh: "Slaanesh",
+	tzeentch: "Tzeentch",
+});
+
+const WOM_CONTEXTUAL_SPECIALIZATIONS = {
+  "skill:Channelling": {
+    "any colour": "Dowolne",
+    "wind": "Wiatr"
+  },
+  "skill:Lore": {
+    "magic": "Magia",
+    "local": "Lokalna",
+    "astronomy": "Astronomia",
+    "warfare": "Sztuka Wojenna",
+    "prophecy": "Proroctwa",
+    "chemistry": "Chemia",
+    "medicine": "Medycyna",
+    "any": "Dowolna",
+    "plants": "Rośliny",
+    "politics": "Polityka",
+    "undead": "Ożywieńcy",
+    "beasts": "Zwierzęta",
+    "daemonology": "Demonologia"
+  },
+  "skill:Language": {
+    "battle": "Bitewny",
+    "any": "Dowolny",
+    "guilder": "Gildii"
+  },
+  "skill:Secret Signs": {
+    "any": "Dowolne",
+    "amber order": "Kolegium Bursztynu"
+  },
+  "skill:Entertain": {
+    "fortune telling": "Wróżenie",
+    "acting": "Aktorstwo"
+  },
+  "skill:Melee": {
+    "any two": "Dowolne dwie",
+    "any": "Dowolna"
+  },
+  "skill:Stealth": {
+    "rural or urban": "Wieś lub Miasto"
+  },
+  "skill:Trade": {
+    "poisoner": "Trucizny",
+    "blacksmith or goldsmith or engineer": "Kowalstwo albo Złotnik, albo Inżynieria",
+    "engineer": "Inżynieria",
+    "blacksmith or goldsmith or engineer)": "Kowalstwo albo Złotnik, albo Inżynieria"
+  },
+  "talent:Arcane Magic": {
+    "lore of metal": "Metalu",
+    "wind": "Tradycja",
+    "lore of beasts": "Zwierząt",
+    "any arcane lore": "Dowolna Tradycja",
+    "lore of fire": "Ognia",
+    "shadows": "Cienia"
+  },
+  "talent:Master Tradesman": {
+    "poisoner": "Trucizny",
+    "alchemist": "Alchemik"
+  },
+  "talent:Resistance": {
+    "poison": "Trucizny",
+    "poison or disease": "Trucizny lub Choroby"
+  },
+  "talent:Savant": {
+    "alchemy": "Alchemia"
+  },
+  "talent:Etiquette": {
+    "guilder": "Członkowie Gildii",
+    "nobles": "Szlachta",
+    "scholars": "Uczeni"
+  },
+  "skill:Animal Training": {
+    "any": "Dowolna"
+  },
+  "talent:Craftsman": {
+    "blacksmith or goldsmith or engineer": "Inżynier albo Kowalstwo, albo Złotnik",
+    "alchemist": "Alchemik"
+  },
+  "talent:Fearless": {
+    "intruders": "Intruzi"
+  }
+};
+
+export function localizedSpecialization(value, {type, base} = {}) {
+	if (typeof value !== "string") {
+		return value;
+	}
+	const expected = value.trim().toLocaleLowerCase();
+	// Full base AND document type prevent collisions such as Lore (Beasts)
+	// versus Arcane Magic (Beasts), or Alchemist skill versus talent labels.
+	const contextKey = type + ":" + base;
+	const table = supportedWomSkillChoices() && Object.hasOwn(WOM_CONTEXTUAL_SPECIALIZATIONS, contextKey)
+		? WOM_CONTEXTUAL_SPECIALIZATIONS[contextKey] : undefined;
+	const contextual = table && Object.hasOwn(table, expected) ? table[expected] : undefined;
+	if (typeof contextual === "string") return contextual;
+	// WOM's owner-selected skill specialization. This is a display label,
+	// never a profession/talent rename or a stored rule/control-field change.
+	// Existing explicit Polish queries retain their names; native EN stays
+	// available through addRequestedAlias on the generated generic document.
+	if (game.i18n?.lang === "pl" && type === "skill" && base === "Trade"
+		&& expected === "alchemist"
+		&& game.modules?.get("wfrp4e-wom")?.active === true
+		&& game.modules.get("wfrp4e-wom").version === "8.0.0"
+		&& game.modules?.get("wfrp4e-core")?.version === "8.0.1") {
+		return "Alchemia";
+	}
+	if (expected === "choose one" || expected === "choose group" || expected === "any one") {
+		return "dowolne";
+	}
+	for (const [key, english] of Object.entries(ENGLISH_MAGIC_LORES)) {
+		const configured = game.wfrp4e?.config?.magicLores?.[key]
+			?? "WFRP4E.MagicLores." + key;
+		const localized = game.i18n?.localize?.(configured) ?? configured;
+		if ([key, english, key === "petty" ? "Petty Magic" : null, configured, localized].some(candidate =>
+			typeof candidate === "string" && candidate.toLocaleLowerCase() === expected
+		)) {
+			return localized;
+		}
+	}
+	return value.trim();
+}
+
+function replaceFormulaToken(formula, token, replacement) {
+	if (!token || !replacement || token.toLocaleLowerCase() === replacement.toLocaleLowerCase()) {
+		return formula;
+	}
+	const escaped = token.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+	return formula.replace(new RegExp("\\b" + escaped + "\\b", "giu"), replacement);
+}
+
+export function normalizeSpellFormula(formula) {
+	if (typeof formula !== "string") {
+		return formula;
+	}
+
+	let normalized = formula;
+	for (const [key, english] of Object.entries(ENGLISH_CHARACTERISTICS)) {
+		// Bonuses must be handled first so "Willpower" is not consumed from
+		// the longer "Willpower Bonus" token.
+		normalized = replaceFormulaToken(
+			normalized,
+			english + " Bonus",
+			game.wfrp4e?.config?.characteristicsBonus?.[key],
+		);
+		normalized = replaceFormulaToken(
+			normalized,
+			english,
+			game.wfrp4e?.config?.characteristics?.[key],
+		);
+	}
+
+	// Units are labels, not control tokens. Localizing them here makes an
+	// original formula display naturally without changing compendium data.
+	for (const key of ["yards", "Rounds", "Seconds", "Minutes", "Hours", "Days"]) {
+		normalized = replaceFormulaToken(normalized, game.i18n?._fallback?.[key] ?? key, game.i18n?.localize?.(key));
+	}
+	return normalized;
+}
+
+export function installFormulaCompatibility() {
+	const models = [globalThis.CONFIG?.Item?.dataModels?.spell, globalThis.CONFIG?.Item?.dataModels?.prayer]
+		.filter(Boolean);
+	let installed = false;
+
+	for (const Model of new Set(models)) {
+		const prototype = Model.prototype;
+		if (prototype[FORMULA_PATCH_MARK]) {
+			continue;
+		}
+
+		let patched = false;
+		const originalCompute = prototype.computeSpellPrayerFormula;
+		if (typeof originalCompute === "function") {
+			prototype.computeSpellPrayerFormula = function (type, options = {}) {
+				const source = options.formulaOverride ?? this[type]?.value;
+				return originalCompute.call(this, type, {
+					...options,
+					formulaOverride: normalizeSpellFormula(source),
+				});
+			};
+			patched = true;
+		}
+
+		const originalDamage = prototype.computeSpellDamage;
+		if (typeof originalDamage === "function") {
+			prototype.computeSpellDamage = function (formula, options) {
+				return originalDamage.call(this, normalizeSpellFormula(formula), options);
+			};
+			patched = true;
+		}
+
+		if (patched) {
+			Object.defineProperty(prototype, FORMULA_PATCH_MARK, {value: true});
+			installed = true;
+		}
+	}
+	return installed;
+}
+
+export function installMigrationCompatibility() {
+	const modelMaps = [
+		globalThis.CONFIG?.Actor?.dataModels,
+		globalThis.CONFIG?.Item?.dataModels,
+	].filter(Boolean);
+	const models = new Set(modelMaps.flatMap(modelMap => Object.values(modelMap)));
+	let installed = false;
+
+	for (const Model of models) {
+		const originalMigrate = Model?.migrateData;
+		if (!Model || Object.hasOwn(Model, MIGRATION_PATCH_MARK) || typeof originalMigrate !== "function") {
+			continue;
+		}
+
+		Model.migrateData = function (data, ...args) {
+			return originalMigrate.call(this, data, ...args) ?? data;
+		};
+		Object.defineProperty(Model, MIGRATION_PATCH_MARK, {value: true});
+		installed = true;
+	}
+	return installed;
+}
+function valueAt(object, path) {
+	return path.split(".").reduce((value, key) => value?.[key], object);
+}
+
+function sourceIndexEntry(document) {
+	const sourceId = valueAt(document, "flags.core.sourceId")
+		?? valueAt(document, "_stats.compendiumSource");
+	if (!sourceId || !globalThis.foundry?.utils?.parseUuid) {
+		return null;
+	}
+
+	try {
+		const parsed = foundry.utils.parseUuid(sourceId);
+		const collection = parsed?.collection;
+		const documentId = parsed?.documentId ?? parsed?.id;
+		return collection?.index?.get?.(documentId)
+			?? collection?.index?.find?.(entry => (entry._id ?? entry.id) === documentId)
+			?? null;
+	}
+	catch (_error) {
+		return null;
+	}
+}
+
+/**
+ * Return every name by which a translated document may safely be addressed.
+ * Current names come first so a real Polish name always wins over an alias.
+ */
+export function aliases(document, {includeCurrent = true} = {}) {
+	if (!document) {
+		return [];
+	}
+
+	const indexEntry = sourceIndexEntry(document);
+	const dynamicAliases = valueAt(document, "flags." + MODULE_ID + ".nameAliases") ?? [];
+	const candidates = [
+		includeCurrent ? document.name : undefined,
+		document.originalName,
+		valueAt(document, "flags.babele.originalName"),
+		...(Array.isArray(dynamicAliases) ? dynamicAliases : []),
+		indexEntry?.name,
+		indexEntry?.originalName,
+		valueAt(indexEntry, "flags.babele.originalName"),
+	];
+
+	return candidates.filter((name, index) =>
+		typeof name === "string" && name.length > 0 && candidates.indexOf(name) === index
+	);
+}
+
+export function original(document) {
+	if (!document) {
+		return undefined;
+	}
+	const indexEntry = sourceIndexEntry(document);
+	return document.originalName
+		?? valueAt(document, "flags.babele.originalName")
+		?? indexEntry?.originalName
+		?? valueAt(indexEntry, "flags.babele.originalName")
+		?? indexEntry?.name
+		?? document.name;
+}
+
+export function matches(document, query, {caseInsensitive = false} = {}) {
+	if (typeof query !== "string") {
+		return false;
+	}
+	if (caseInsensitive) {
+		const expected = query.toLocaleLowerCase();
+		return aliases(document).some(name => name.toLocaleLowerCase() === expected);
+	}
+	return aliases(document).includes(query);
+}
+
+export function includes(document, query, {caseInsensitive = false} = {}) {
+	if (typeof query !== "string") {
+		return false;
+	}
+	if (caseInsensitive) {
+		const expected = query.toLocaleLowerCase();
+		return aliases(document).some(name => name.toLocaleLowerCase().includes(expected));
+	}
+	return aliases(document).some(name => name.includes(query));
+}
+
+export function oneOf(document, queries, options) {
+	return Array.isArray(queries) && queries.some(query => matches(document, query, options));
+}
+
+export function find(collection, query) {
+	const exact = collection?.getName?.(query);
+	if (exact) {
+		return exact;
+	}
+	const documents = Array.isArray(collection?.contents)
+		? collection.contents
+		: typeof collection?.values === "function"
+			? collection.values()
+			: collection ?? [];
+	return Array.from(documents).find(document => matches(document, query));
+}
+
+function collectionValues(collection) {
+	if (!collection) {
+		return [];
+	}
+	if (Array.isArray(collection.contents)) {
+		return collection.contents;
+	}
+	if (typeof collection.values === "function") {
+		return collection.values();
+	}
+	return collection;
+}
+
+function indexedNameDocuments() {
+	const documents = [...collectionValues(globalThis.game?.items)];
+	for (const actor of collectionValues(globalThis.game?.actors)) {
+		documents.push(...collectionValues(actor.items));
+	}
+	for (const pack of collectionValues(globalThis.game?.packs)) {
+		documents.push(...collectionValues(pack.index));
+	}
+	return documents;
+}
+
+function translatedCompendiumName(query, types) {
+	const translateField = game.babele?.translateField;
+	if (typeof translateField !== "function") {
+		return null;
+	}
+
+	const collections = ["wfrp4e-core.items"];
+	for (const pack of game.wfrp4e?.tags?.getPacksWithTag?.(types) ?? []) {
+		const collection = pack?.collection;
+		if (typeof collection === "string" && !collections.includes(collection)) {
+			collections.push(collection);
+		}
+	}
+
+	for (const collection of collections) {
+		const translated = translateField.call(game.babele, "name", collection, {name: query});
+		if (typeof translated === "string" && translated.length > 0 && translated !== query) {
+			return translated;
+		}
+	}
+	return null;
+}
+
+/**
+ * Resolve an original or translated label to the current document language.
+ * This is intentionally synchronous: Foundry's already loaded compendium
+ * indexes are consulted, but this helper never triggers a pack load while an
+ * effect script is running.
+ */
+export function display(query, type) {
+	if (typeof query !== "string") {
+		return query;
+	}
+	const types = normalizeTypes(type);
+	const translated = translatedCompendiumName(query, types);
+	if (translated) {
+		return translated;
+	}
+	const documents = indexedNameDocuments().filter(document => hasType(document, types));
+	const exact = documents.find(document => document?.name === query);
+	const alias = exact ?? documents.find(document => matches(document, query));
+	if (alias) {
+		return alias.name;
+	}
+
+	const utility = game.wfrp4e?.utility;
+	const baseDocument = utility
+		? documents.find(document => matchingBaseAlias(utility, document, query))
+		: null;
+	if (baseDocument) {
+		const matchedAlias = matchingBaseAlias(utility, baseDocument, query);
+		return localizedSpecializedName(utility, baseDocument, query, matchedAlias);
+	}
+	if (utility && query.includes("(") && query.includes(")")) {
+		const base = extractBaseName(utility, query);
+		const translatedBase = translatedCompendiumName(base + " ()", types) || translatedCompendiumName(base, types);
+		if (translatedBase) {
+			const displayBase = extractBaseName(utility, translatedBase);
+			const opening = query.indexOf("(");
+			const closing = query.lastIndexOf(")");
+			const spec = query.slice(opening + 1, closing);
+			return `${displayBase} (${localizedSpecialization(spec, {type: types.length === 1 ? types[0] : undefined, base})})`;
+		}
+	}
+	return query;
+}
+
+function localizedChoice(value, type) {
+	if (typeof value !== "string" || /^random\[|^\d+$/.test(value.trim())) {
+		return value;
+	}
+	const direct = game.i18n?.localize?.(value) ?? value;
+	if (direct !== value) {
+		return direct;
+	}
+	return value.split(/\s*,\s*/).map(part => {
+		const localized = game.i18n?.localize?.(part) ?? part;
+		return localized !== part ? localized : display(part, type);
+	}).join(", ");
+}
+
+
+export const POLISH_SPECIES_MAP = Object.freeze({
+	"człowiek": "human",
+	"human": "human",
+	"krasnolud": "dwarf",
+	"dwarf": "dwarf",
+	"niziołek": "halfling",
+	"niziolek": "halfling",
+	"halfling": "halfling",
+	"wysoki elf": "helf",
+	"wysokielf": "helf",
+	"high elf": "helf",
+	"highelf": "helf",
+	"helf": "helf",
+	"leśny elf": "welf",
+	"lesny elf": "welf",
+	"leśnyelf": "welf",
+	"lesnyelf": "welf",
+	"wood elf": "welf",
+	"woodelf": "welf",
+	"welf": "welf",
+	"gnom": "gnome",
+	"gnome": "gnome",
+	"ogr": "ogre",
+	"ogre": "ogre",
+	"skink": "skink",
+	"kameleon": "chameleonskink",
+	"kameleon skink": "chameleonskink",
+	"chameleonskink": "chameleonskink",
+	"chameleon skink": "chameleonskink",
+	"chowaniec": "familiar",
+	"familiar": "familiar",
+	"animal familiar": "familiar"
+});
+
+export function resolveSpeciesKey(species) {
+	if (!species) return "";
+	const s = String(species).trim();
+	const lower = s.toLowerCase();
+	if (POLISH_SPECIES_MAP[lower]) return POLISH_SPECIES_MAP[lower];
+	const config = game.wfrp4e?.config;
+	if (!config) return s;
+	if (config.species?.[s]) return s;
+	if (config.species?.[lower]) return lower;
+	const key = globalThis.warhammer?.utility?.findKey?.(s, config.species, {caseInsensitive: true});
+	if (key) return key;
+	for (const [k, v] of Object.entries(config.species || {})) {
+		if (k.toLowerCase() === lower || String(v).toLowerCase() === lower) {
+			return k;
+		}
+	}
+	return s;
+}
+
+export function resolveSubspeciesKey(speciesKey, subspecies) {
+	if (!subspecies) return "";
+	const s = String(subspecies).trim();
+	const lower = s.toLowerCase();
+	if (lower === "reiklandczyk" || lower === "reiklander") return "reiklander";
+	if (lower === "tileańczyk" || lower === "tileanczyk" || lower === "tilean") return "tilean";
+	if (lower === "imperialny tileańczyk" || lower === "imperialny tileanczyk" || lower === "imperial-tilean") return "imperial-tilean";
+	const subs = game.wfrp4e?.config?.subspecies?.[speciesKey];
+	if (!subs) return s;
+	if (subs[s]) return s;
+	if (subs[lower]) return lower;
+	for (const [k, v] of Object.entries(subs)) {
+		const vName = String(v?.name || "");
+		const locName = game.i18n?.localize ? game.i18n.localize(vName) : vName;
+		if (k.toLowerCase() === lower || vName.toLowerCase() === lower || locName.toLowerCase() === lower) {
+			return k;
+		}
+	}
+	return s;
+}
+
+export function localizeSpeciesSkillsTalents(data) {
+	if (!data || game.i18n?.lang !== "pl") {
+		return data;
+	}
+	const talentReplacement = {};
+	for (const [source, replacement] of Object.entries(data.talentReplacement ?? {})) {
+		const localizedSource = localizedChoice(source, "talent");
+		const localizedReplacement = localizedChoice(replacement, "talent");
+		talentReplacement[source] = localizedReplacement;
+		talentReplacement[localizedSource] = localizedReplacement;
+	}
+	return {
+		...data,
+		skills: data.skills ? data.skills.map(value => localizedChoice(value, "skill")) : undefined,
+		talents: data.talents ? data.talents.map(value => localizedChoice(value, "talent")) : undefined,
+		traits: data.traits ? data.traits.map(value => localizedChoice(value, "trait")) : undefined,
+		randomTalents: {...(data.randomTalents ?? {})},
+		talentReplacement,
+	};
+}
+
+function normalizeTypes(type) {
+	if (typeof type === "string") {
+		return [type];
+	}
+	return Array.isArray(type) ? type : [];
+}
+
+function hasType(document, types) {
+	return types.length === 0 || types.includes(document?.type);
+}
+
+function extractBaseName(utility, name) {
+	return utility.extractBaseName(String(name ?? ""));
+}
+
+export function matchingBaseAlias(utility, document, query) {
+	const base = extractBaseName(utility, query);
+	return aliases(document).find(name => extractBaseName(utility, name) === base);
+}
+
+export function localizedSpecializedName(utility, document, query, matchedAlias) {
+	const requested = String(query ?? "");
+	const displayName = String(document?.name ?? requested);
+	const displayBase = extractBaseName(utility, displayName);
+	const matchedBase = extractBaseName(utility, matchedAlias);
+	const opening = requested.indexOf("(");
+
+	if (matchedBase === displayBase) {
+		return requested;
+	}
+	if (opening < 0) {
+		return displayBase;
+	}
+
+	const closing = requested.lastIndexOf(")");
+	if (closing < opening) {
+		return displayBase + " " + requested.slice(opening);
+	}
+	const specialization = requested.slice(opening + 1, closing);
+	const suffix = "(" + localizedSpecialization(specialization, {type: document?.type, base: matchedBase}) + ")" + requested.slice(closing + 1);
+	return displayBase + " " + suffix;
+}
+
+function addRequestedAlias(item, query) {
+	if (!item || typeof query !== "string" || !query.length) {
+		return;
+	}
+	const path = "flags." + MODULE_ID + ".nameAliases";
+	const current = valueAt(item, path) ?? [];
+	const nameAliases = Array.from(new Set([...(Array.isArray(current) ? current : []), query]));
+	item.updateSource?.({[path]: nameAliases});
+}
+
+async function findAliasExact(name, type) {
+	const types = normalizeTypes(type);
+	const worldItem = game.items.contents.find(item => hasType(item, types) && matches(item, name));
+	if (worldItem) {
+		return worldItem;
+	}
+
+	for (const pack of game.wfrp4e.tags.getPacksWithTag(types)) {
+		const index = pack.indexed ? pack.index : await pack.getIndex();
+		const entry = index.find(item => hasType(item, types) && matches(item, name));
+		if (entry) {
+			return pack.getDocument(entry._id);
+		}
+	}
+}
+
+async function findAliasBase(utility, name, type) {
+	const types = normalizeTypes(type);
+	let document;
+	let matchedAlias;
+
+	for (const item of game.items.contents) {
+		if (hasType(item, types)) {
+			matchedAlias = matchingBaseAlias(utility, item, name);
+			if (matchedAlias) {
+				document = item;
+				break;
+			}
+		}
+	}
+
+	if (!document) {
+		for (const pack of game.wfrp4e.tags.getPacksWithTag(types)) {
+			const index = pack.indexed ? pack.index : await pack.getIndex();
+			const entry = index.find(item => hasType(item, types) && matchingBaseAlias(utility, item, name));
+			if (entry) {
+				matchedAlias = matchingBaseAlias(utility, entry, name);
+				document = await pack.getDocument(entry._id);
+				break;
+			}
+		}
+	}
+
+	if (!document) {
+		return undefined;
+	}
+
+	const item = document.clone();
+	item.updateSource({name: localizedSpecializedName(utility, document, name, matchedAlias)});
+	addRequestedAlias(item, name);
+	return item;
+}
+
+
+// Exact current WFRP SkillModel source guard: this small facade is safe only
+// while the upstream method reads the explicitly supplied public properties.
+const SKILL_CHOICE_SOURCE = "async _handleSpecialisationChoice(data, options, user)\n    {\n        if (this.parent.isEmbedded && !options.skipSpecialisationChoice)\n        {\n            // If skill has (any) or (), ask for a specialisation\n            if (this.parent.specifier.toLowerCase() == game.i18n.localize(\"SPEC.Any\").toLowerCase() || (this.isGrouped && !(this.parent.specifier)))\n            {\n                let skills = await warhammer.utility.findAllItems(\"skill\", game.i18n.localize(\"SHEET.LoadingSkills\"), true);\n                let specialisations = skills.filter(i => i.name.split(\"(\")[0]?.trim() == this.parent.baseName);\n                let effects = [];\n\n                // if specialisations are found, prompt it, if not, skip to value dialog\n                let choice = specialisations.length > 0 ? await ItemDialog.create(specialisations, 1, {title : game.i18n.localize(\"SHEET.SkillSpecialization\"), text : game.i18n.localize(\"SHEET.SkillSpecializationText\")}) : [];\n                let newName = \"\";\n                if (choice[0])\n                {\n                    // Need to fetch the item to get effects...\n                    let chosenSkill = await fromUuid(choice[0].uuid);\n                    newName = chosenSkill.name;\n                    effects = chosenSkill.effects?.contents.map(i => i.toObject());\n                }\n                else \n                {\n                    newName = this.parent.baseName + ` (${await ValueDialog.create({text: game.i18n.localize(\"SHEET.SkillSpecializationEnter\"), title : game.i18n.localize(\"SHEET.SkillSpecialization\")})})`;\n\n                }\n\n                if (newName)\n                {\n                    this._handleSkillNameChange(newName, this.parent.name, options.career);\n                    this.parent.updateSource({name : newName, effects});\n                }\n            }\n        }\n    }";
+const SKILL_CHOICE_PATCH_MARK = Symbol.for(MODULE_ID + ".womSkillChoiceCompatibility");
+const WOM_SINGLE_SKILL_CHOICES = new Set([
+	"sekretne znaki (dowolne)", "broń biała (dowolna)",
+	"wiedza (dowolna)", "tresura (dowolna)",
+]);
+function supportedWomSkillChoices() {
+	return game.i18n?.lang === "pl"
+		&& game.modules?.get("wfrp4e-wom")?.active === true
+		&& game.modules.get("wfrp4e-wom").version === "8.0.0"
+		&& game.modules?.get("wfrp4e-core")?.version === "8.0.1";
+}
+export function installSkillChoiceCompatibility() {
+	const prototype = globalThis.CONFIG?.Item?.dataModels?.skill?.prototype;
+	const original = prototype?._handleSpecialisationChoice;
+	if (!prototype || prototype[SKILL_CHOICE_PATCH_MARK]
+		|| typeof original !== "function" || !supportedWomSkillChoices()
+		|| original.toString().replace(/\r\n/g, "\n").trim() !== SKILL_CHOICE_SOURCE) return false;
+	prototype._handleSpecialisationChoice = function (data, options, user) {
+		const parent = this.parent;
+		if (!supportedWomSkillChoices() || !parent?.isEmbedded || !this.isGrouped
+			|| options.skipSpecialisationChoice
+			|| !WOM_SINGLE_SKILL_CHOICES.has(String(parent.name).toLocaleLowerCase())) {
+			return original.call(this, data, options, user);
+		}
+		// Only the comparison view sees the canonical Any token. All real names,
+		// selected effects, source documents and career-link arguments stay intact.
+		const context = {
+			isGrouped: this.isGrouped,
+			parent: {
+				isEmbedded: parent.isEmbedded,
+				specifier: game.i18n.localize("SPEC.Any"),
+				baseName: parent.baseName,
+				name: parent.name,
+				updateSource: parent.updateSource.bind(parent),
+			},
+			_handleSkillNameChange: (...args) => this._handleSkillNameChange(...args),
+		};
+		return original.call(context, data, options, user);
+	};
+	Object.defineProperty(prototype, SKILL_CHOICE_PATCH_MARK, {value: true});
+	return true;
+}
+
+export function installNameCompatibility() {
+	const utility = game.wfrp4e?.utility;
+	const ActorClass = game.wfrp4e?.documents?.ActorWFRP4e;
+	if (!utility || !ActorClass || utility[PATCH_MARK]) {
+		return false;
+	}
+
+	const originalFindExactName = utility.findExactName;
+	const originalFindBaseName = utility.findBaseName;
+	const originalHas = ActorClass.prototype.has;
+	const originalSetupSkill = ActorClass.prototype.setupSkill;
+	const originalSpeciesSkillsTalents = utility.speciesSkillsTalents;
+	const originalSpeciesCharacteristics = utility.speciesCharacteristics;
+	const originalSpeciesMovement = utility.speciesMovement;
+
+	utility.findExactName = async function (name, type) {
+		const result = await originalFindExactName.call(this, name, type);
+		return result ?? findAliasExact(name, type);
+	};
+
+	utility.findBaseName = async function (name, type) {
+		const result = await originalFindBaseName.call(this, name, type);
+		return result ?? findAliasBase(this, name, type);
+	};
+
+	ActorClass.prototype.has = function (name, type = "trait") {
+		const result = originalHas.call(this, name, type);
+		return result ?? this.itemTags[type]?.find(item => item.included && matches(item, name));
+	};
+
+	ActorClass.prototype.setupSkill = function (skill, ...args) {
+		if (typeof skill === "string") {
+			const skills = this.itemTags.skill ?? [];
+			const currentName = skill.toLocaleLowerCase();
+			skill = skills.find(item => item.name.toLocaleLowerCase() === currentName)
+				?? skills.find(item => matches(item, skill, {caseInsensitive: true}))
+				?? skill;
+		}
+		return originalSetupSkill.call(this, skill, ...args);
+	};
+
+	if (typeof originalSpeciesSkillsTalents === "function") {
+		utility.speciesSkillsTalents = function (species, subspecies, ...args) {
+			const speciesKey = resolveSpeciesKey(species);
+			const subspeciesKey = resolveSubspeciesKey(speciesKey, subspecies);
+			const result = originalSpeciesSkillsTalents.call(this, speciesKey, subspeciesKey, ...args);
+			return localizeSpeciesSkillsTalents(result);
+		};
+	}
+
+	if (typeof originalSpeciesCharacteristics === "function") {
+		utility.speciesCharacteristics = function (species, average, subspecies, ...args) {
+			const speciesKey = resolveSpeciesKey(species);
+			const subspeciesKey = resolveSubspeciesKey(speciesKey, subspecies);
+			return originalSpeciesCharacteristics.call(this, speciesKey, average, subspeciesKey, ...args);
+		};
+	}
+
+	if (typeof originalSpeciesMovement === "function") {
+		utility.speciesMovement = function (species, subspecies, ...args) {
+			const speciesKey = resolveSpeciesKey(species);
+			const subspeciesKey = resolveSubspeciesKey(speciesKey, subspecies);
+			return originalSpeciesMovement.call(this, speciesKey, subspeciesKey, ...args);
+		};
+	}
+
+	Object.defineProperty(utility, PATCH_MARK, {value: true});
+	game.wfrp4eCorePl ??= {};
+	game.wfrp4eCorePl.names = {
+		aliases,
+		display,
+		find,
+		includes,
+		matches,
+		matchingBaseAlias: matchingBaseAlias.bind(null, utility),
+		localizedSpecializedName: localizedSpecializedName.bind(null, utility),
+		localizedSpecialization,
+		localizeSpeciesSkillsTalents,
+		resolveSpeciesKey,
+		resolveSubspeciesKey,
+		oneOf,
+		original,
+	};
+	return true;
+}
+
+if (globalThis.Hooks) {
+	Hooks.once("init", () => {
+		installSkillChoiceCompatibility();
+		installNameCompatibility();
+		installFormulaCompatibility();
+		installMigrationCompatibility();
+		installWeaponSkillCompatibility();
+	});
+	Hooks.once("ready", () => {
+		installSkillChoiceCompatibility();
+		// Retry after Babele and every premium module have initialized. The
+		// patch is idempotent, so this only matters when the system API was not
+		// yet exposed during this module's init callback.
+		installNameCompatibility();
+		installFormulaCompatibility();
+		installMigrationCompatibility();
+		installWeaponSkillCompatibility();
+	});
+
+	const elements = (html, selector) => {
+		if (typeof html?.find === "function") {
+			return Array.from(html.find(selector));
+		}
+		const root = html?.[0] ?? html;
+		return root?.querySelectorAll ? Array.from(root.querySelectorAll(selector)) : [];
+	};
+
+	Hooks.on("renderCharGenWfrp4e", (_app, html) => {
+		if (game.i18n?.lang !== "pl") {
+			return;
+		}
+		const original = "Please note that until character creation is updated to AppV2 it may have issues!";
+		const translated = game.i18n.localize("WFRP4EPL.ChargenAppV2Warning");
+		for (const warning of elements(html, ".notification.warning")) {
+			if (warning.textContent?.trim() === original) {
+				warning.textContent = translated;
+			}
+		}
+	});
+
+	Hooks.on("renderSpeciesStage", (_app, html) => {
+		if (game.i18n?.lang !== "pl") {
+			return;
+		}
+		const translatedOr = game.i18n.localize("SkillsOr");
+		for (const emphasis of elements(html, "em")) {
+			if (emphasis.textContent?.trim() === "or") {
+				emphasis.textContent = translatedOr;
+			}
+		}
+	});
+}

@@ -1,24 +1,135 @@
 on:
-  push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
 
-name: Upload Release Asset
+name: Publish Production Release
+
+concurrency:
+  group: production-release
+  cancel-in-progress: false
 
 jobs:
   build:
-    name: Upload Release Asset
+    name: Publish synchronized release
+    if: >-
+      github.event.pull_request.merged == true &&
+      github.event.pull_request.head.ref == 'automation/sync-from-development' &&
+      github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          fetch-depth: 0
 
-      - name: Extract Version From Tag
+      - name: Validate release version and provenance
+        id: provenance
+        env:
+          SOURCE_REPOSITORY_TOKEN: ${{ secrets.SOURCE_REPOSITORY_TOKEN }}
+        run: |
+          if [ -z "$SOURCE_REPOSITORY_TOKEN" ]; then
+            echo "SOURCE_REPOSITORY_TOKEN is not configured." >&2
+            exit 1
+          fi
+
+          python3 << 'PY'
+          import json
+          import os
+          import re
+
+          with open('release-source.json', encoding='utf-8') as handle:
+              provenance = json.load(handle)
+
+          source_tag = str(provenance.get('source_tag', '')).strip()
+          tag_match = re.fullmatch(r'dev-v(\d+\.\d+\.\d+)\.(\d+)', source_tag)
+          if not tag_match:
+              raise SystemExit(
+                  'release-source.json source_tag must use numeric dev-vX.Y.Z.N format'
+              )
+          version = tag_match.group(1)
+          if provenance.get('version') != version:
+              raise SystemExit('release-source.json version does not match the development tag')
+          if provenance.get('source_repository') != 'foundryvttpl/wfrp4e-core-pl-pre':
+              raise SystemExit('release-source.json contains an unexpected source repository')
+
+          source_commit = str(provenance.get('source_commit', ''))
+          if not re.fullmatch(r'[0-9a-f]{40,64}', source_commit):
+              raise SystemExit('release-source.json contains an invalid source commit')
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f'version={version}\n')
+              output.write(f'release_tag=v{version}\n')
+              output.write(f'source_commit={source_commit}\n')
+              output.write(f'source_tag={source_tag}\n')
+          PY
+
+      - name: Prepare release version
         id: get_version
-        uses: battila7/get-version-action@v2
+        env:
+          VERSION: ${{ steps.provenance.outputs.version }}
+          RELEASE_TAG: ${{ steps.provenance.outputs.release_tag }}
+        run: |
+          echo "version=$RELEASE_TAG" >> "$GITHUB_OUTPUT"
+          echo "version-without-v=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Check out synchronized development commit
+        uses: actions/checkout@v4
+        with:
+          repository: foundryvttpl/wfrp4e-core-pl-pre
+          ref: ${{ steps.provenance.outputs.source_commit }}
+          token: ${{ secrets.SOURCE_REPOSITORY_TOKEN }}
+          fetch-depth: 0
+          fetch-tags: true
+          path: development-source
+
+      - name: Verify development tag provenance
+        env:
+          SOURCE_TAG: ${{ steps.provenance.outputs.source_tag }}
+        run: |
+          set -euo pipefail
+          cd development-source
+
+          source_commit=$(git rev-parse HEAD)
+          tagged_commit=$(git rev-parse "${SOURCE_TAG}^{commit}" 2>/dev/null || true)
+          if [ -z "$tagged_commit" ]; then
+            echo "Development tag $SOURCE_TAG does not exist." >&2
+            exit 1
+          fi
+          if [ "$tagged_commit" != "$source_commit" ]; then
+            echo "$SOURCE_TAG points to $tagged_commit instead of $source_commit" >&2
+            exit 1
+          fi
+
+      - name: Create production tag
+        id: production_tag
+        env:
+          RELEASE_TAG: ${{ steps.provenance.outputs.release_tag }}
+        run: |
+          set -euo pipefail
+          production_commit=$(git rev-parse HEAD)
+          existing_commit=$(git rev-list -n 1 "$RELEASE_TAG" 2>/dev/null || true)
+
+          if [ -n "$existing_commit" ] && [ "$existing_commit" != "$production_commit" ]; then
+            echo "$RELEASE_TAG already points to $existing_commit instead of $production_commit" >&2
+            exit 1
+          fi
+
+          if [ -z "$existing_commit" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git tag -a "$RELEASE_TAG" -m "Production release $RELEASE_TAG"
+            git push origin "refs/tags/$RELEASE_TAG"
+          else
+            echo "$RELEASE_TAG already points to the merged synchronization commit."
+          fi
+
+          echo "production_commit=$production_commit" >> "$GITHUB_OUTPUT"
 
       - name: Modify Module Manifest With Release-Specific Values
         id: sub_manifest_link_version
@@ -33,17 +144,24 @@ jobs:
 
       - name: Zip files
         run: |
-          zip -r wfrp4e-core-pl.zip module.json babele-register.js load-scripts-pl.js gazetteer.json modules/ lang/ images/ fonts/ css/ compendium/ 
+          set -euo pipefail
+          zip -r wfrp4e-core-pl.zip module.json release-source.json README.md babele-register.js load-scripts-pl.js gazetteer.json modules/ scripts/ lang/ images/ fonts/ css/ compendium-pl/
+          test -s module.json
+          test -s release-source.json
+          test -s wfrp4e-core-pl.zip
+          unzip -t wfrp4e-core-pl.zip
 
-      - name: Update Release with Files
+      - name: Publish Release with Files
         id: create_version_release
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.21.0
         with:
           allowUpdates: true
+          immutableCreate: true
+          artifactErrorsFailBuild: true
           name: Release ${{steps.get_version.outputs.version}}
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifacts: './module.json, ./wfrp4e-core-pl.zip'
-          tag: ${{ github.ref }}
+          artifacts: './module.json,./release-source.json,./wfrp4e-core-pl.zip'
+          tag: ${{ steps.provenance.outputs.release_tag }}
 
       - name: Get Module ID
         id: moduleID
@@ -80,3 +198,29 @@ jobs:
           method: 'POST'
           customHeaders: '{"Content-Type": "application/json", "Authorization" : "${{ secrets.FOUNDRY_KEY }}"}'
           data: '{"dry_run": false, "id": "${{steps.moduleID.outputs.prop}}", "release": {"version":  "${{steps.get_version.outputs.version-without-v}}", "manifest": "https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/module.json", "compatibility" : {"minimum": "${{steps.minimum.outputs.prop}}", "verified": "${{steps.verified.outputs.prop}}", "maximum": "${{steps.maximum.outputs.prop}}"}}}'
+
+      - name: Tag development commit with production version
+        env:
+          VERSION: ${{ steps.provenance.outputs.version }}
+          PRODUCTION_COMMIT: ${{ steps.production_tag.outputs.production_commit }}
+        run: |
+          set -euo pipefail
+          cd development-source
+
+          tag="production/v${VERSION}"
+          source_commit=$(git rev-parse HEAD)
+          existing_commit=$(git rev-list -n 1 "$tag" 2>/dev/null || true)
+
+          if [ -n "$existing_commit" ]; then
+            if [ "$existing_commit" != "$source_commit" ]; then
+              echo "$tag already points to $existing_commit instead of $source_commit" >&2
+              exit 1
+            fi
+            echo "$tag already points to the synchronized development commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git tag -a "$tag" -m "Production release v${VERSION} from ${PRODUCTION_COMMIT}"
+          git push origin "refs/tags/$tag"

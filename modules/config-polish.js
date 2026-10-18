@@ -1,2581 +1,2750 @@
-Hooks.on("i18nInit", async function () {
 
-	await new Promise(resolve => setTimeout(resolve, 500));
+// Safe advancement handlers for Randomize buttons (C, U, T)
+export async function safeAdvanceSpeciesSkills(actor) {
+	const rawSpecies = actor?.system?.details?.species?.value;
+	const rawSubspecies = actor?.system?.details?.species?.subspecies;
+	const resolveSpecies = game.wfrp4eCorePl?.names?.resolveSpeciesKey || ((s) => s);
+	const resolveSubspecies = game.wfrp4eCorePl?.names?.resolveSubspeciesKey || ((k, sub) => sub);
+	const speciesKey = resolveSpecies(rawSpecies);
+	const subspeciesKey = resolveSubspecies(speciesKey, rawSubspecies);
 
-  const WFRP4E = {};
+	if (!speciesKey || speciesKey === "N/A") {
+		ui.notifications?.warn("Wybierz najpierw rasę na karcie postaci.");
+		return;
+	}
 
-  CONFIG.JournalEntry.noteIcons = {
-    Marker: "systems/wfrp4e/icons/buildings/point_of_interest.png",
-    "Wioska 1": "systems/wfrp4e/icons/buildings/village1.png",
-    "Wioska 2": "systems/wfrp4e/icons/buildings/village2.png",
-    "Wioska 3": "systems/wfrp4e/icons/buildings/village3.png",
-    "Imperialne Koszary": "systems/wfrp4e/icons/buildings/empire_barracks.png",
-    "Nawiedzony Las": "systems/wfrp4e/icons/buildings/haunted_wood.png",
-    Aptekarz: "systems/wfrp4e/icons/buildings/apothecary.png",
-    Droga: "systems/wfrp4e/icons/buildings/roads.png",
-    "Obóz Orków": "systems/wfrp4e/icons/buildings/orc_city.png",
-    Cmentarz: "systems/wfrp4e/icons/buildings/cemetery.png",
-    "Krasnoludzkie Piwo": "systems/wfrp4e/icons/buildings/dwarf_beer.png",
-    "Bretońskie Miasto 1": "systems/wfrp4e/icons/buildings/bret_city1.png",
-    "Bretońskie Miasto 2": "systems/wfrp4e/icons/buildings/bret_city2.png",
-    "Bretońskie Miasto 3": "systems/wfrp4e/icons/buildings/bret_city3.png",
-    "Imperialne Miasto 1": "systems/wfrp4e/icons/buildings/empire_city1.png",
-    "Imperialne Miasto 2": "systems/wfrp4e/icons/buildings/empire_city2.png",
-    "Imperialne Miasto 3": "systems/wfrp4e/icons/buildings/empire_city3.png",
-    "Kislevickie Miasto 1": "systems/wfrp4e/icons/buildings/kislev_city1.png",
-    "Kislevickie Miasto 2": "systems/wfrp4e/icons/buildings/kislev_city2.png",
-    "Kislevickie Miasto 3": "systems/wfrp4e/icons/buildings/kislev_city3.png",
-    "Wzgórze Zamkowe 1": "systems/wfrp4e/icons/buildings/castle_hill1.png",
-    "Wzgórze Zamkowe 2": "systems/wfrp4e/icons/buildings/castle_hill2.png",
-    "Wzgórze Zamkowe 3": "systems/wfrp4e/icons/buildings/castle_hill3.png",
-    "Wzgórze z Wieżą": "systems/wfrp4e/icons/buildings/tower_hill.png",
-    "Nawiedzone Wzgórze": "systems/wfrp4e/icons/buildings/haunted_hill.png",
-    Jedzenie: "systems/wfrp4e/icons/buildings/food.png",
-    "Jedzenie 2": "systems/wfrp4e/icons/buildings/food2.png",
-    Dwór: "systems/wfrp4e/icons/buildings/court.png",
-    "Jaskinia 1": "systems/wfrp4e/icons/buildings/cave1.png",
-    "Jaskinia 2": "systems/wfrp4e/icons/buildings/cave2.png",
-    "Jaskinia 3": "systems/wfrp4e/icons/buildings/cave3.png",
-    "Miejsce Kultu Bretonii":
-      "systems/wfrp4e/icons/buildings/bretonnia_worship.png",
-    "Miejsce Kultu Chaosu": "systems/wfrp4e/icons/buildings/chaos_worship.png",
-    Menhiry: "systems/wfrp4e/icons/buildings/standing_stones.png",
-    "Leśne Elfy 1": "systems/wfrp4e/icons/buildings/welves1.png",
-    "Leśne Elfy 2": "systems/wfrp4e/icons/buildings/welves2.png",
-    "Leśne Elfy 3": "systems/wfrp4e/icons/buildings/welves3.png",
-    Stajnia: "systems/wfrp4e/icons/buildings/stables.png",
-    "Krasnoludzka Twierdza 1": "systems/wfrp4e/icons/buildings/dwarf_hold1.png",
-    "Krasnoludzka Twierdza 2": "systems/wfrp4e/icons/buildings/dwarf_hold2.png",
-    "Krasnoludzka Twierdza 3": "systems/wfrp4e/icons/buildings/dwarf_hold3.png",
-    Farma: "systems/wfrp4e/icons/buildings/farms.png",
-    Kowal: "systems/wfrp4e/icons/buildings/blacksmith.png",
-    Strażnica: "systems/wfrp4e/icons/buildings/guards.png",
-    Magia: "systems/wfrp4e/icons/buildings/magic.png",
-    Metal: "systems/wfrp4e/icons/buildings/metal.png",
-    "Góra 1": "systems/wfrp4e/icons/buildings/mountains1.png",
-    "Góra 2": "systems/wfrp4e/icons/buildings/mountains2.png",
-    "Mury Zamkowe": "systems/wfrp4e/icons/buildings/castle_wall.png",
-    Orki: "systems/wfrp4e/icons/buildings/orcs.png",
-    "Portal Chaosu": "systems/wfrp4e/icons/buildings/chaos_portal.png",
-    "Zajazd 1": "systems/wfrp4e/icons/buildings/inn1.png",
-    "Zajazd 2": "systems/wfrp4e/icons/buildings/inn2.png",
-    Bagno: "systems/wfrp4e/icons/buildings/swamp.png",
-    Zwoje: "systems/wfrp4e/icons/buildings/scroll.png",
-    Port: "systems/wfrp4e/icons/buildings/port.png",
-    "Obóz Zwierzoludzi 1": "systems/wfrp4e/icons/buildings/beastmen_camp1.png",
-    "Obóz Zwierzoludzi 2": "systems/wfrp4e/icons/buildings/beastmen_camp2.png",
-    Ruiny: "systems/wfrp4e/icons/buildings/ruins.png",
-    Tartak: "systems/wfrp4e/icons/buildings/lumber.png",
-    Sigmar: "systems/wfrp4e/icons/buildings/sigmar_worship.png",
-    Świątynia: "systems/wfrp4e/icons/buildings/temple.png",
-    Płótna: "systems/wfrp4e/icons/buildings/textile.png",
-    "Wieża 1": "systems/wfrp4e/icons/buildings/tower1.png",
-    "Wieża 2": "systems/wfrp4e/icons/buildings/tower2.png",
-    "Wieża Czarownika": "systems/wfrp4e/icons/buildings/wizard_tower.png",
-    Ulric: "systems/wfrp4e/icons/buildings/ulric_worship.png",
-  };
+	let skillData = game.wfrp4e?.utility?.speciesSkillsTalents(speciesKey, subspeciesKey);
+	let skills = skillData?.skills || game.wfrp4e?.config?.speciesSkills?.[speciesKey];
 
-  WFRP4E.species = {
-    human: "Człowiek",
-    dwarf: "Krasnolud",
-    halfling: "Niziołek",
-    helf: "Wysoki Elf",
-    welf: "Leśny Elf",
-  };
+	if (!skills || !skills.length) {
+		ui.notifications?.warn(game.i18n?.format("ERROR.Species", { name: rawSpecies || speciesKey }));
+		return;
+	}
 
-  WFRP4E.subspecies = {
-    human: {
-      reiklander: {
-        name: "Reiklandczyk",
-        skills: [
-          "Opieka nad Zwierzętami",
-          "Charyzma",
-          "Opanowanie",
-          "Wycena",
-          "Plotkowanie",
-          "Targowanie",
-          "Język (Bretoński)",
-          "Język (Jałowej Krainy)",
-          "Dowodzenie",
-          "Wiedza (Reikland)",
-          "Broń Biała (Podstawowa)",
-          "Broń Zasięgowa (Łuki)",
-        ],
-        talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
-      },
-      tilean: {
-        name: "Tileańczyk",
-        skills: [
-          "Charyzma",
-          "Opanowanie",
-          "Wycena",
-          "Plotkowanie",
-          "Targowanie",
-          "Język (Arabski)",
-          "Język (Reikspiel)",
-          "Język (Estalijski)",
-          "Wiedza (Tilea)",
-          "Broń Biała (Podstawowa)",
-          "Broń Zasięgowa (Kusza)",
-          "Żeglarstwo",
-        ],
-        talents: ["Przekonujący, Rybak", "Zimna Krew", "Charyzmatyczny", 3],
-      },
-      "imperial-tilean": {
-        name: "Imperialny Tileańczyk",
-        skills: [
-          "Opieka nad Zwierzętami",
-          "Charyzma",
-          "Opanowanie",
-          "Wycena",
-          "Plotkowanie",
-          "Targowanie",
-          "Język (Bretoński)",
-          "Język (Tileański)",
-          "Dowodzenie",
-          "Wiedza (Reikland)",
-          "Broń Biała (Podstawowa)",
-          "Broń Zasięgowa (Łuk)",
-        ],
-        talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
-      },
-    },
-  };
+	const displayFn = game.wfrp4eCorePl?.names?.display;
+	if (typeof displayFn === "function") {
+		skills = skills.map(s => displayFn(s, "skill") || s);
+	}
 
-  WFRP4E.speciesCharacteristics = {
-    human: {
-      ws: "2d10+20",
-      bs: "2d10+20",
-      s: "2d10+20",
-      t: "2d10+20",
-      i: "2d10+20",
-      ag: "2d10+20",
-      dex: "2d10+20",
-      int: "2d10+20",
-      wp: "2d10+20",
-      fel: "2d10+20",
-    },
-    dwarf: {
-      ws: "2d10+30",
-      bs: "2d10+20",
-      s: "2d10+20",
-      t: "2d10+30",
-      i: "2d10+20",
-      ag: "2d10+10",
-      dex: "2d10+30",
-      int: "2d10+20",
-      wp: "2d10+40",
-      fel: "2d10+10",
-    },
-    halfling: {
-      ws: "2d10+10",
-      bs: "2d10+30",
-      s: "2d10+10",
-      t: "2d10+20",
-      i: "2d10+20",
-      ag: "2d10+20",
-      dex: "2d10+30",
-      int: "2d10+20",
-      wp: "2d10+30",
-      fel: "2d10+30",
-    },
-    helf: {
-      ws: "2d10+30",
-      bs: "2d10+30",
-      s: "2d10+20",
-      t: "2d10+20",
-      i: "2d10+40",
-      ag: "2d10+30",
-      dex: "2d10+30",
-      int: "2d10+30",
-      wp: "2d10+30",
-      fel: "2d10+20",
-    },
-    welf: {
-      ws: "2d10+30",
-      bs: "2d10+30",
-      s: "2d10+20",
-      t: "2d10+20",
-      i: "2d10+40",
-      ag: "2d10+30",
-      dex: "2d10+30",
-      int: "2d10+30",
-      wp: "2d10+30",
-      fel: "2d10+20",
-    },
-  };
+	const maxSkills = Math.min(6, skills.length);
+	const skillSelector = new Roll(`1d${skills.length} - 1`);
+	await skillSelector.roll({ allowInteractive: false });
 
-  WFRP4E.speciesSkills = {
-    human: [
-      "Opieka nad Zwierzętami",
-      "Charyzma",
-      "Opanowanie",
-      "Wycena",
-      "Plotkowanie",
-      "Targowanie",
-      "Język (Bretoński)",
-      "Język (Jałowej Krainy)",
-      "Dowodzenie",
-      "Wiedza (Reikland)",
-      "Broń Biała (Podstawowa)",
-      "Broń Zasięgowa (Łuki)",
-    ],
-    dwarf: [
-      "Mocna Głowa",
-      "Opanowanie",
-      "Odporność",
-      "Występy (Gawędziarstwo)",
-      "Wycena",
-      "Zastraszanie",
-      "Język (Reikspiel)",
-      "Wiedza (Krasnoludy)",
-      "Wiedza (Geologia)",
-      "Wiedza (Metalurgia)",
-      "Broń Biała (Podstawowa)",
-      "Rzemiosło (Dowolne)",
-    ],
-    halfling: [
-      "Charyzma",
-      "Mocna Głowa",
-      "Hazard",
-      "Unik",
-      "Zwinne Palce",
-      "Intuicja",
-      "Język (Krainy Zgromadzenia)",
-      "Wiedza (Reikland)",
-      "Percepcja",
-      "Targowanie",
-      "Skradanie ()",
-      "Rzemiosło (Kucharz)",
-    ],
-    helf: [
-      "Broń Biała (Podstawowa)",
-      "Broń Zasięgowa (Łuki)",
-      "Dowodzenie",
-      "Język (Eltharin)",
-      "Muzyka ()",
-      "Nawigacja",
-      "Opanowanie",
-      "Pływanie",
-      "Percepcja",
-      "Wycena",
-      "Występy (Śpiewanie)",
-      "Żeglarstwo",
-    ],
-    welf: [
-      "Atletyka",
-      "Broń Biała (Podstawowa)",
-      "Broń Zasięgowa (Łuki)",
-      "Język (Eltharin)",
-      "Odporność",
-      "Percepcja",
-      "Skradanie",
-      "Sztuka Przetrwania",
-      "Tropienie",
-      "Wspinaczka",
-      "Występy (Śpiewanie)",
-      "Zastraszanie",
-    ],
-  };
+	const skillsSelected = [];
+	let attempts = 0;
+	while (skillsSelected.length < maxSkills && attempts < 100) {
+		attempts++;
+		const r = await skillSelector.reroll();
+		const idx = Math.max(0, Math.min(skills.length - 1, Number(r.total)));
+		if (!isNaN(idx) && !skillsSelected.includes(idx)) {
+			skillsSelected.push(idx);
+		}
+	}
+	for (let i = 0; i < skills.length && skillsSelected.length < maxSkills; i++) {
+		if (!skillsSelected.includes(i)) skillsSelected.push(i);
+	}
 
-  WFRP4E.speciesTalents = {
-    human: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
-    dwarf: [
-      "Odporność na Magię",
-      "Widzenie w Ciemności",
-      "Czytanie/Pisanie, Nieustępliwy",
-      "Odporność Psychiczna, Nieugięty",
-      "Tragarz",
-      0,
-    ],
-    halfling: [
-      "Wyczulony Zmysł (Smak)",
-      "Widzenie w Ciemności",
-      "Odporny na (Chaos)",
-      "Mały",
-      2,
-    ],
-    helf: [
-      "Wyczulony Zmysł (Wzrok)",
-			"Błyskotliwość, Zimna Krew",
-      "Widzenie w Ciemności",
-      "Szósty Zmysł, Percepcja Magiczna",
-      "Czytanie/Pisanie",
-      0,
-    ],
-    welf: [
-      "Wyczulony Zmysł (Wzrok)",
-      "Twardziel, Percepcja Magiczna",
-      "Widzenie w Ciemności",
-      "Czytanie/Pisanie, Niezwykle Odporny",
-      "Włóczykij",
-      0,
-    ],
-  };
+	const toUpdate = [];
+	const toCreate = [];
 
-  WFRP4E.vehicleTypes = {
-    water: "Wodny",
-    land: "Lądowy",
-    air: "Powietrzny",
-  };
+	for (let i = 0; i < skillsSelected.length; i++) {
+		const skillName = skills[skillsSelected[i]];
+		const advances = i <= 2 ? 5 : 3;
 
-  // Weapon Group Descriptions
-  WFRP4E.weaponGroupDescriptions = {
-    basic: "Podstawowa",
-    fencing: "Szermiercza",
-    brawling: "Bijatyka",
-    polearm: "Drzewcowa",
-    twohanded: "Dwuręczna",
-    bow: "Łuk",
-    entangling: "Pętającą",
-    sling: "Proca",
-  };
+		let existingSkill = actor.has?.(skillName, "skill");
+		if (existingSkill) {
+			const obj = existingSkill.toObject();
+			obj.system.advances.value = Math.max(obj.system.advances.value || 0, advances);
+			toUpdate.push(obj);
+		} else {
+			try {
+				let skillDoc = await game.wfrp4e?.utility?.findSkill(skillName);
+				if (skillDoc) {
+					const obj = skillDoc.toObject();
+					delete obj._id;
+					obj.system.advances.value = advances;
+					toCreate.push(obj);
+				}
+			} catch (err) {
+				console.error("Could not find skill: " + skillName, err);
+			}
+		}
+	}
 
-  WFRP4E.loreEffectDescriptions = {
-    petty: "None",
-    daemonology: "",
-    necromancy: "",
-    nurgle: "",
-    slaanesh:
-      "Tradycja Slaanesha przynosi ból i ekstazę, wszystko w imię Księcia Bólu i Przyjemności dla jego wiecznego zadowolenia, łącząc perwersyjną mieszankę Ametystowego, Złotego i Jadeitowego Wiatru w coś pokręconego i egzotycznego. Efekt Tradycji: Czarnoksiężnik Slaanesha jest biegły w sztuce dostarczania przyjemności i bólu. Możesz zadać dodatkową ranę za każdy Stan Ogłuszenia lub Paniki odniesiony przez cele twoich zaklęć.",
-  };
+	if (toUpdate.length) await actor.updateEmbeddedDocuments("Item", toUpdate);
+	if (toCreate.length) await actor.createEmbeddedDocuments("Item", toCreate);
 
-  WFRP4E.loreEffects = {
-    beasts: {
-      name: "Tradycja Zwierząt",
-      img: "modules/wfrp4e-core/icons/spells/beasts.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-          documentType: "Item",
-        },
-        scriptData: [
-          {
-            label: "Dodaj Cechę Stworzenia Strach",
-            trigger: "rollCastTest",
-            script: `if (args.test.result.castOutcome == "success") {
-								args.test.result.other.push("<strong>Strach</strong>: @Fear[1," + this.actor.prototypeToken.name + "]");
-									if (!this.actor.has(game.i18n.localize("NAME.Fear"))) {
-										let item = await fromUuid("Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn");
-										let data = item.toObject();
-										data.system.specification.value = 1
-										this.actor.createEmbeddedDocuments("Item", [data])
-										this.script.scriptNotification("Dodano Cechę Stworzenia Strach");
-									}
-								}`,
-          },
-        ],
-      },
-    },
-    death: {
-      name: "Tradycja Śmierci",
-      img: "modules/wfrp4e-core/icons/spells/death.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "target",
-        },
-        scriptData: [
-          {
-            trigger: "immediate",
-            label: "Tradycja Śmierci",
-            script: `this.actor.addCondition("fatigued")`,
-            options: {
-              deleteEffect: true,
-            },
-          },
-        ],
-      },
-    },
-    fire: {
-      name: "Tradycja Ognia",
-      img: "modules/wfrp4e-core/icons/spells/fire.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "target",
-        },
-        scriptData: [
-          {
-            trigger: "immediate",
-            label: "Tradycja Ognia",
-            script: `this.actor.addCondition("ablaze")`,
-            options: {
-              deleteEffect: true,
-            },
-          },
-        ],
-      },
-    },
-    heavens: {
-      name: "Tradycja Niebios",
-      img: "modules/wfrp4e-core/icons/spells/heavens.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-          documentType: "Item",
-        },
-        scriptData: [
-          {
-            trigger: "computeApplyDamageModifiers",
-            label: "Tradycja Niebios",
-            script: `
-							if (args.applyAP && args.modifiers.ap.metal) 
-							{
-								args.modifiers.ap.ignored += args.modifiers.ap.metal
-								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zigonrowano Metalowy Pancerz (" + args.modifiers.ap.metal + ")");
-								args.modifiers.ap.metal = 0
-							}
-							`,
-          },
-        ],
-      },
-    },
-    metal: {
-      name: "Tradycja Metalu",
-      img: "modules/wfrp4e-core/icons/spells/metal.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-          documentType: "Item",
-        },
-        scriptData: [
-          {
-            trigger: "computeApplyDamageModifiers",
-            label: "Tradycja Metalu",
-            script: `
-							if (args.applyAP && args.modifiers.ap.metal) 
-							{
-								args.modifiers.ap.ignored += args.modifiers.ap.metal
-								args.modifiers.other.push({value : args.modifiers.ap.metal, label : this.effect.name, details : "Dodano PP Metalowego Pancerza do Obrażeń" })
-								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zignorowano Metalowy Pancerz (" + args.modifiers.ap.metal + ")");
-								args.modifiers.ap.metal = 0
-							}
-							`,
-          },
-        ],
-      },
-    },
-    life: {
-      name: "Tradycja Życia",
-      img: "modules/wfrp4e-core/icons/spells/life.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "target",
-        },
-        scriptData: [
-          {
-            trigger: "immediate",
-            label: "Tradycja Życia",
-            script: `
-							let caster = this.effect.sourceActor
-							if (!this.actor.has(game.i18n.localize("NAME.Daemonic")) && !this.actor.has(game.i18n.localize("NAME.Undead")))
-							{
-								await this.actor.hasCondition("bleeding")?.delete();
-								await this.actor.hasCondition("fatigued")?.delete();
-							}
-							else if (this.actor.has(game.i18n.localize("NAME.Undead")))
-							{
-								this.script.message(await this.actor.applyBasicDamage(caster.system.characteristics.wp.bonus, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}));
-							}`,
-            options: {
-              deleteEffect: true,
-            },
-          },
-        ],
-      },
-    },
-    light: {
-      name: "Tradycja Światła",
-      img: "modules/wfrp4e-core/icons/spells/light.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "target",
-        },
-        scriptData: [
-          {
-            trigger: "immediate",
-            label: "Tradycja Światła",
-            script: `
-							let caster = this.effect.sourceActor
-							await this.actor.addCondition("blinded")
-							if (this.actor.has(game.i18n.localize("NAME.Undead")) || this.actor.has(game.i18n.localize("NAME.Daemonic")))
-							{
-								this.script.message(await this.actor.applyBasicDamage(caster.system.characteristics.int.bonus, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}));
-							}`,
-            options: {
-              deleteEffect: true,
-            },
-          },
-        ],
-      },
-    },
-    shadow: {
-      name: "Tradycja Cieni",
-      img: "modules/wfrp4e-core/icons/spells/shadow.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-          documentType: "Item",
-        },
-        scriptData: [
-          {
-            trigger: "computeApplyDamageModifiers",
-            label: "Tradycja Cieni",
-            script: `
-							if (args.applyAP && args.modifiers.ap.magical) 
-							{
-								let nonmagical = args.modifiers.ap.value - args.modifiers.ap.magical
-								args.modifiers.ap.ignored += nonmagical
-								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zignorowano Niemagiczny Pancerz (" + nonmagical + ")");
-							}
-							`,
-          },
-        ],
-      },
-    },
-    hedgecraft: {
-      name: "Tradycja Guślarstwa",
-      img: "modules/wfrp4e-core/icons/spells/hedgecraft.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "other",
-        },
-      },
-    },
-    witchcraft: {
-      name: "Tradycja Czarownictwa",
-      img: "modules/wfrp4e-core/icons/spells/witchcraft.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "target",
-        },
-        scriptData: [
-          {
-            trigger: "immediate",
-            label: "Tradycja Czarownictwa",
-            script: `this.actor.addCondition("bleeding")`,
-            options: {
-              deleteEffect: true,
-            },
-          },
-        ],
-      },
-    },
-    slaanesh: {
-      name: "Tradycja Slaanesha",
-      img: "modules/wfrp4e-core/icons/spells/slaanesh.png",
-      flags: {
-        wfrp4e: {
-          lore: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "target",
-        },
-        scriptData: [
-          {
-            trigger: "immediate",
-            label: "Tradycja Slaanesha",
-            script: `
-								let stunned = this.actor.hasCondition("stunned");
-								let broken = this.actor.hasCondition("broken");
-								let wounds = 0; 
-								if (stunned) { 
-									wounds += stunned.conditionValue;
-								}
-								if (broken) {
-									wounds += broken.conditionValue;
-								}
-								if (wounds) {
-									this.actor.applyBasicDamage(wounds, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});
-								}
-								`,
-            options: {
-              deleteEffect: true,
-            },
-          },
-        ],
-      },
-    },
-    tzeentch: {
-      name: "Tradycja Tzeentcha",
-      icon: "modules/wfrp4e-core/icons/spells/tzeentch.png",
-      transfer: true,
-      flags: {
-        wfrp4e: {
-          effectApplication: "apply",
-          effectTrigger: "oneTime",
-          lore: true,
-          script: `
-          if (this.actor.isOwner)
-            args.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure: "Otrzymano 1 punkt korupcji", success : "Otrzymano 1 punkt szczęścia"}}).then(async test => {
-            await test.roll();
-            if (test.result.result === "success" && args.actor.data.type === "character") {
-              args.actor.update({"data.status.fortune.value" : args.actor.data.data.status.fortune.value + 1})
-            } else if (test.result.result === "failure" && args.actor.data.type === "character") {
-              args.actor.update({"data.status.corruption.value" : args.actor.data.data.status.corruption.value + 1})
-            }
-          })`
-        }
-      }
-    }
-  };
+	ui.notifications?.info(`Wylosowano umiejętności rasowe (${skillsSelected.length}) dla rasy ${rawSpecies || speciesKey}.`);
+}
 
-  WFRP4E.symptomEffects = {
-    blight: {
-      name: "WFRP4E.Symptom.Blight",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "manual",
-            label: "Uwiąd",
-            script: `
-                            let difficulty = ""
-                            if (this.effect.name.includes("Umiarkowany"))
-                                difficulty = "easy"
-                            else if (this.effect.name.includes("Poważny"))
-                                difficulty = "average"
-                            else
-                                difficulty = "veasy"
-        
-                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure : this.actor.name + " umiera z powodu Uwiądu"}, fields: {difficulty}, appendTitle : " - Uwiąd"})
-                            await test.roll();
-                            if (test.failed)
-                            {
-                                this.actor.addCondition("dead");
-                            }
-                            `,
-          },
-        ],
-      },
-    },
-    buboes: {
-      name: "WFRP4E.Symptom.Buboes",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "dialog",
-            label: "Dymienica",
-            script: `args.fields.modifier -= 10`,
-            options: {
-              hideScript: `return !["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
-              activateScript: `return ["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
-            },
-          },
-        ],
-      },
-    },
-    convulsions: {
-      name: "WFRP4E.Symptom.Convulsions",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "dialog",
-            label: "Konwulsje",
-            script: `
-                            let modifier = 0
-                            if (this.effect.name.includes("Umiarkowane"))
-                                modifier = -20
-                            else
-                                modifier = -10
-                            args.fields.modifier += modifier
-                            `,
-            options: {
-              hideScript: `return !["ws", "bs", "s", "ag", "t", "dex"].includes(args.characteristic)`,
-              activateScript: `return ["ws", "bs", "s", "ag", "t", "dex"].includes(args.characteristic)`,
-            },
-          },
-        ],
-      },
-    },
-    coughsAndSneezes: {
-      name: "WFRP4E.Symptom.CoughsandSneezes",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-    },
-    fever: {
-      name: "WFRP4E.Symptom.Fever",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "dialog",
-            label: "Gorączka",
-            script: `args.fields.modifier -= 10`,
-            options: {
-              hideScript: `return !["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
-              activateScript: `return ["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
-            },
-          },
-        ],
-      },
-    },
-    flux: {
-      name: "WFRP4E.Symptom.Flux",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-    },
-    gangrene: {
-      name: "WFRP4E.Symptom.Gangrene",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "dialog",
-            label: "Gangrena",
-            script: `args.fields.modifier -= 10`,
-            options: {
-              hideScript: `return !["fel"].includes(args.characteristic)`,
-              activateScript: `return ["fel"].includes(args.characteristic)`,
-            },
-          },
-          {
-            trigger: "manual",
-            label: "Uciążliwa Rana",
-            script: `
-                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {fields: {difficulty : "average"}, appendTitle : " - Uciążliwa Rana"})
-                            await test.roll();
-                            if (test.failed)
-                            {
-                                let disease = await fromUuid("Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb");
-								await this.actor.createEmbeddedDocuments("Item", [disease.toObject()]);
-                                this.script.scriptNotification("Otrzymano: " + disease.name);
-                            }
-                            `,
-          },
-          {
-            trigger: "manual",
-            label: "Uwiąd",
-            script: `
-                            let difficulty = ""
-                            if (this.effect.name.includes("Umiarkowany"))
-                                difficulty = "easy"
-                            else if (this.effect.name.includes("Poważny"))
-                                difficulty = "average"
-                            else
-                                difficulty = "veasy"
-        
-                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure : this.actor.name + " umiera z powodu Uwiądu"}, fields: {difficulty}, appendTitle : " - Uwiąd"})
-                            await test.roll();
-                            if (test.failed)
-                            {
-                                this.actor.addCondition("dead");
-                            }
-                            `,
-          },
-        ],
-      },
-    },
-    lingering: {
-      name: "WFRP4E.Symptom.Lingering",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-    },
-    malaise: {
-      name: "WFRP4E.Symptom.Malaise",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "update",
-            label: "Apatia",
-            script: `
-                            let fatigued = this.actor.hasCondition("fatigued")
-                            if (!fatigued)
-                            {
-                                this.actor.addCondition("fatigued")
-                                ui.notifications.notify(this.actor.name + " otrzymał Stan Zmęczenia, który nie może zostać usunięty, dopóki Apatia nie zostanie wyleczona.")
-                            }`,
-          },
-        ],
-      },
-    },
-    nausea: {
-      name: "WFRP4E.Symptom.Nausea",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "rollTest",
-            label: "Nudności",
-            script: `                 
-                            if (args.test.failed)
-                            {
-                                let applicableCharacteristics = ["ws", "bs", "s", "fel", "ag", "t", "dex"];
-                                if (applicableCharacteristics.includes(args.test.characteristicKey))
-                                {
-                                    this.actor.addCondition("stunned");
-                                }
-                            }`,
-          },
-        ],
-      },
-    },
-    pox: {
-      name: "WFRP4E.Symptom.Pox",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "dialog",
-            label: "Wysypka",
-            script: `args.fields.modifier -= 10`,
-            options: {
-              hideScript: `return !["fel"].includes(args.characteristic)`,
-              activateScript: `return ["fel"].includes(args.characteristic)`,
-            },
-          },
-        ],
-      },
-    },
-    wounded: {
-      name: "WFRP4E.Symptom.Wounded",
-      img: "modules/wfrp4e-core/icons/diseases/disease.png",
-      flags: {
-        wfrp4e: {
-          symptom: true,
-        },
-      },
-      system: {
-        transferData: {
-          type: "document",
-        },
-        scriptData: [
-          {
-            trigger: "manual",
-            label: "Uciążliwa Rana",
-            script: `
-                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {fields: {difficulty : "average"}, appendTitle : " - Uciążliwa Rana"})
-                            await test.roll();
-                            if (test.failed)
-                            {
-                                let disease = await fromUuid("Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb");
-								await this.actor.createEmbeddedDocuments("Item", [disease.toObject()]);
-                                this.script.scriptNotification("Otrzymano: " + disease.name);
-                            }
-                            `,
-          },
-        ],
-      },
-    },
-  };
+export async function safeAdvanceSpeciesCharacteristics(actor) {
+	const rawSpecies = actor?.system?.details?.species?.value;
+	const rawSubspecies = actor?.system?.details?.species?.subspecies;
+	const resolveSpecies = game.wfrp4eCorePl?.names?.resolveSpeciesKey || ((s) => s);
+	const resolveSubspecies = game.wfrp4eCorePl?.names?.resolveSubspeciesKey || ((k, sub) => sub);
+	const speciesKey = resolveSpecies(rawSpecies);
+	const subspeciesKey = resolveSubspecies(speciesKey, rawSubspecies);
 
-  WFRP4E.classTrappings = {
-    Uczeni: "ClassTrappings.Academics",
-    Uczony: "ClassTrappings.Academics",
-    Dworzanie: "ClassTrappings.Courtiers",
-    Dworzanin: "ClassTrappings.Courtiers",
-    Mieszczanie: "ClassTrappings.Burghers",
-    Mieszczanin: "ClassTrappings.Burghers",
-    Pospólstwo: "ClassTrappings.Peasants",
-    Wędrowcy: "ClassTrappings.Rangers",
-    Wędrowiec: "ClassTrappings.Rangers",
-    Wodniacy: "ClassTrappings.Riverfolk",
-    Wodniak: "ClassTrappings.Riverfolk",
-    Łotry: "ClassTrappings.Rogues",
-    Łotr: "ClassTrappings.Rogues",
-    Wojownicy: "ClassTrappings.Warriors",
-    Wojownik: "ClassTrappings.Warriors",
-  };
+	if (actor.type !== "creature" && (!speciesKey || speciesKey === "N/A")) {
+		ui.notifications?.warn("Wybierz najpierw rasę na karcie postaci.");
+		return;
+	}
 
-  for (const obj in WFRP4E) {
-    for (const el in WFRP4E[obj]) {
-      if (typeof WFRP4E[obj][el] === "string") {
-        WFRP4E[obj][el] = game.i18n.localize(WFRP4E[obj][el]);
-      }
-    }
-  }
+	let creatureMethod = actor.type === "creature" || !speciesKey;
+	let characteristics = actor.toObject().system.characteristics;
 
-  for (let symptom in WFRP4E.symptomEffects) {
-    WFRP4E.symptomEffects[symptom].name = game.i18n.localize(
-      WFRP4E.symptomEffects[symptom].name,
-    );
-  }
+	if (!creatureMethod) {
+		try {
+			let averageCharacteristics = await game.wfrp4e.utility.speciesCharacteristics(speciesKey, true, subspeciesKey);
+			for (let char in characteristics) {
+				if (characteristics[char].initial != averageCharacteristics[char].value) {
+					creatureMethod = true;
+					break;
+				}
+			}
+		} catch (e) {
+			creatureMethod = true;
+		}
+	}
 
-  foundry.utils.mergeObject(game.wfrp4e.config, WFRP4E);
+	if (!creatureMethod) {
+		try {
+			let rolledCharacteristics = await game.wfrp4e.utility.speciesCharacteristics(speciesKey, false, subspeciesKey);
+			for (let char in rolledCharacteristics) {
+				characteristics[char].initial = rolledCharacteristics[char].value;
+			}
+			await actor.update({ "system.characteristics": characteristics });
+			ui.notifications?.info(`Wylosowano cechy dla rasy ${rawSpecies || speciesKey}.`);
+			return;
+		} catch (e) {
+			creatureMethod = true;
+		}
+	}
 
-  game.wfrp4e.config.scriptTriggers = {
-    manual: "Wywołanie Ręczne (manual)",
-    immediate: "Jednorazowy (immediate)",
-    dialog: "Okno Dialogowe Testu (dialog)",
-    addItems: "Podczas dodawania przedmiotu (addItems)",
-    preUpdate: "Przed Aktualizacją (preUpdate)",
-    update: "Podczas Aktualizacji (update)",
-    equipToggle: "Przełączanie Wyposażenia (equipToggle)",
-    prePrepareData: "Przed przygotowaniem danych (prePrepareData)",
-    prePrepareItems:
-      "Przed przygotowaniem przedmiotów aktora (prePrepareItems)",
-    prepareData: "Przygotowanie danych (prepareData)",
-    prepareOwned: "Prepare Owned Data (For Items) (prepareOwned)",
-    computeCharacteristics: "Przeliczanie Cech (computeCharacteristics)",
-    computeEncumbrance: "Obliczanie Obciążenia (computeEncumbrance)",
-    preWoundCalc: "Przed obliczeniem żywotności (preWoundCalc)",
-    woundCalc: "Obliczanie Żywotności (woundCalc)",
-    calculateSize: "Obliczanie Rozmiaru (calculateSize)",
-    preAPCalc: "Przed obliczeniem Punktów Pancerza (preAPCalc)",
-    APCalc: "Obliczanie Punktów Pancerza (APCalc)",
-    preApplyDamage: "Przed zadaniem obrażeń (preApplyDamage)",
-    applyDamage: "Podczas zadawania obrażen (applyDamage)",
-    preTakeDamage: "Przed otrzymaniem obrażeń (preTakeDamage)",
-    takeDamage: "Podczas otrzymywania obrażeń (takeDamage)",
-    computeTakeDamageModifiers:
-      "Obliczanie Modyfikatorów Otrzymania Obrażeń (computeTakeDamageModifiers)",
-    computeApplyDamageModifiers:
-      "Obliczanie Modyfikatórów Zadania Obrażeń (computeApplyDamageModifiers)",
-    preApplyCondition: "Przed Wykonaniem Skryptu Stanu (preApplyCondition)",
-    applyCondition: "Po Wykonaniem Skryptu Stanu (applyCondition)",
-    prePrepareItem: "Przed przygotowaniem danych przedmiotu (prePrepareItem)",
-    prepareItem: "Przygotowanie danych przedmiotu (prepareItem)",
-    preRollTest: "Przed wykonaniem testu (preRollTest)",
-    preRollWeaponTest:
-      "Przed wykonaniem testu Ataku Bronią (preRollWeaponTest)",
-    preRollCastTest:
-      "Przed wykonaniem testu Rzucenia Zaklęcia (preRollCastTest)",
-    preChannellingTest:
-      "Przed wykonaniem testu Splątania Magii (preChannellingTest)",
-    preRollPrayerTest: "Przed wykonaniem testu Modlitwy (preRollPrayerTest)",
-    preRollTraitTest:
-      "Przed wykonaniem testu Cechy Stworzenia (preRollTraitTest)",
-    rollTest: "Po wykonaniu testu (rollTest)",
-    rollIncomeTest: "Po wykonaniu testu Zarabiania (rollIncomeTest)",
-    rollWeaponTest: "Po wykonaniu testu Ataku Bronią (rollWeaponTest)",
-    rollCastTest: "Po wykonaniu testu Rzucania Zaklęcia (rollCastTest)",
-    rollChannellingTest:
-      "Po wykonaniu testu Splątania Magii (rollChannellingTest)",
-    rollPrayerTest: "Po wykonaniu testu Modlitwy (rollPrayerTest)",
-    rollTraitTest: "Po wykonaniu testu Cechy Stworzenia (rollTraitTest)",
-    preOpposedAttacker:
-      "Przed wykonaniem testu Przeciwstawnego przez Atakującego (preOpposedAttacker)",
-    preOpposedDefender:
-      "Przed wykonaniem testu Przeciwstawnego przez Broniącego się (preOpposedDefender)",
-    opposedAttacker: "Po teście przeciwstawnym Atakującego (opposedAttacker)",
-    opposedDefender:
-      "Po teście przeciwstawnym Broniącego się (opposedDefender)",
-    calculateOpposedDamage:
-      "Obliczanie obrażeń z testu przeciwstawnego (calculateOpposedDamage)",
-    getInitiativeFormula:
-      "Obliczanie Inicjatywy podczas walki (getInitiativeFormula)",
-    createToken: "Utworzenie Tokena (createToken)",
-    deleteEffect: "Usunięcie Efektu (deleteEffect)",
-    endTurn: "Koniec Tury (endTurn)",
-    startTurn: "Początek Tury (startTurn)",
-    endRound: "Koniec Rundy (endRound)",
-    endCombat: "Koniec Walki (endCombat)",
-  };
+	let roll = new Roll("2d10");
+	await roll.roll({ allowInteractive: false });
+	for (let char in characteristics) {
+		if (characteristics[char].initial == 0) continue;
+		characteristics[char].modifier = -10;
+		characteristics[char].modifier += (await roll.reroll()).total;
+	}
+	await actor.update({ "system.characteristics": characteristics });
+	ui.notifications?.info("Wylosowano modyfikatory cech.");
+}
+
+export async function findAndRollTalentFromTable() {
+	await ensureCompendiumTablesLoaded();
+	try {
+		const res = await game.wfrp4e?.tables?.rollTable("talents");
+		const name = res?.text || res?.object?.name || res?.name;
+		if (name) return name;
+	} catch (e) {}
+
+	const tablePacks = game.packs.filter(p => p.metadata?.type === "RollTable" || p.documentName === "RollTable");
+	for (const pack of tablePacks) {
+		let index = pack.indexed ? pack.index : await pack.getIndex({ fields: ["flags.wfrp4e.key", "name"] });
+		const entry = index.find(i => 
+			i.flags?.wfrp4e?.key === "talents" ||
+			i.name === "Talents - Character Creation" ||
+			i.name === "Losowe Talenty" ||
+			(i.name?.toLowerCase().includes("talent") && (i.name.includes("Creation") || i.name.includes("Losowe") || i.name.includes("Character")))
+		);
+		if (entry) {
+			try {
+				const tableDoc = await pack.getDocument(entry._id);
+				if (tableDoc) {
+					const roll = await tableDoc.roll({ async: true });
+					const rollResult = roll?.results?.[0];
+					if (rollResult) {
+						const rawText = rollResult.getChatText?.() || rollResult.text || rollResult.name;
+						const label = game.wfrp4e?.utility?.extractLinkLabel?.(rawText) || rollResult.name || rawText;
+						if (label) return label;
+					}
+				}
+			} catch (e) {
+				console.error("Error rolling compendium table:", e);
+			}
+		}
+	}
+	return null;
+}
+
+export async function safeAdvanceSpeciesTalents(actor) {
+	const rawSpecies = actor?.system?.details?.species?.value;
+	const rawSubspecies = actor?.system?.details?.species?.subspecies;
+	const resolveSpecies = game.wfrp4eCorePl?.names?.resolveSpeciesKey || ((s) => s);
+	const resolveSubspecies = game.wfrp4eCorePl?.names?.resolveSubspeciesKey || ((k, sub) => sub);
+	const speciesKey = resolveSpecies(rawSpecies);
+	const subspeciesKey = resolveSubspecies(speciesKey, rawSubspecies);
+
+	if (!speciesKey || speciesKey === "N/A") {
+		ui.notifications?.warn("Wybierz najpierw rasę na karcie postaci.");
+		return;
+	}
+
+	let talentData = game.wfrp4e?.utility?.speciesSkillsTalents(speciesKey, subspeciesKey);
+	let talents = talentData?.talents || game.wfrp4e?.config?.speciesTalents?.[speciesKey];
+
+	if (!talents || !talents.length) {
+		ui.notifications?.warn(game.i18n?.format("ERROR.Species", { name: rawSpecies || speciesKey }));
+		return;
+	}
+
+	let talentsToAdd = [];
+	for (let talent of talents) {
+		if (!isNaN(talent)) {
+			const count = Number(talent);
+			for (let i = 0; i < count; i++) {
+				const talentName = await findAndRollTalentFromTable();
+				if (talentName) {
+					let talentDoc = await game.wfrp4e?.utility?.findTalent(talentName);
+					if (talentDoc) {
+						const obj = talentDoc.toObject();
+						delete obj._id;
+						talentsToAdd.push(obj);
+					}
+				}
+			}
+			continue;
+		}
+
+		let talentOptions = String(talent).split(',').map(item => item.trim());
+		let chosenTalent = talentOptions[0];
+		if (talentOptions.length > 1) {
+			let talentSelector = await new Roll(`1d${talentOptions.length} - 1`).roll({ allowInteractive: false });
+			chosenTalent = talentOptions[talentSelector.total];
+		}
+		let talentDoc = await game.wfrp4e?.utility?.findTalent(chosenTalent);
+		if (talentDoc) {
+			const obj = talentDoc.toObject();
+			delete obj._id;
+			talentsToAdd.push(obj);
+		}
+	}
+
+	if (talentsToAdd.length) {
+		await actor.createEmbeddedDocuments("Item", talentsToAdd);
+		ui.notifications?.info(`Wylosowano talenty rasowe (${talentsToAdd.length}) dla rasy ${rawSpecies || speciesKey}.`);
+	}
+}
+
+export function installSafeRandomizer() {
+	const sheetClasses = [
+		game.wfrp4e?.apps?.ActorSheetWFRP4e,
+		game.wfrp4e?.apps?.ActorSheetWFRP4eCharacter,
+		game.wfrp4e?.apps?.ActorSheetWFRP4eNPC,
+		game.wfrp4e?.apps?.ActorSheetWFRP4eCreature
+	].filter(Boolean);
+
+	for (const sheetClass of sheetClasses) {
+		if (sheetClass._safeRandomizeInstalled) continue;
+		sheetClass._safeRandomizeInstalled = true;
+
+		const originalRandomize = sheetClass._randomize;
+		sheetClass._randomize = async function (ev, target) {
+			const type = target?.dataset?.type || ev?.currentTarget?.dataset?.type || ev?.target?.dataset?.type;
+			const actor = this.actor || (this.document instanceof Actor ? this.document : null);
+			if (!actor) {
+				if (typeof originalRandomize === "function") return originalRandomize.call(this, ev, target);
+				return;
+			}
+			try {
+				if (type === "skills") return await safeAdvanceSpeciesSkills(actor);
+				if (type === "characteristics") return await safeAdvanceSpeciesCharacteristics(actor);
+				if (type === "talents") return await safeAdvanceSpeciesTalents(actor);
+			} catch (err) {
+				console.error("Safe randomize error:", err);
+			}
+			if (typeof originalRandomize === "function") {
+				return originalRandomize.call(this, ev, target);
+			}
+		};
+
+		if (sheetClass.DEFAULT_OPTIONS?.actions?.randomize) {
+			sheetClass.DEFAULT_OPTIONS.actions.randomize = sheetClass._randomize;
+		}
+	}
+}
+
+// Keep the WFRP4e configuration owned by the system and the official modules.
+// The previous implementation copied PrepareSystemItems and large parts of the
+// configuration from an older system release. In v14 that replaces new data
+// and scripts with a stale snapshot. Only user-facing labels are localized
+// here; stable system keys and all executable data remain untouched.
+
+function localizeValues(object) {
+	if (!object || typeof object !== "object") {
+		return;
+	}
+	for (const key of Object.keys(object)) {
+		if (typeof object[key] === "string") {
+			object[key] = game.i18n.localize(object[key]);
+		}
+	}
+}
+
+function localizeNamedEntries(object) {
+	if (!object || typeof object !== "object") {
+		return;
+	}
+	for (const entry of Object.values(object)) {
+		if (entry && typeof entry.name === "string") {
+			entry.name = game.i18n.localize(entry.name);
+		}
+	}
+}
+
+function localizeSubspecies(object) {
+	if (!object || typeof object !== "object") {
+		return;
+	}
+	for (const species of Object.values(object)) {
+		localizeNamedEntries(species);
+	}
+}
+
+const CONDITION_NAME_MAP = {
+	"ablaze": "Podpalenie",
+	"bleeding": "Krwawienie",
+	"blinded": "Oślepienie",
+	"broken": "Panika",
+	"deafened": "Ogłuszenie",
+	"entangled": "Pochwycenie",
+	"fatigued": "Zmęczenie",
+	"poisoned": "Zatrucie",
+	"prone": "Powalenie",
+	"stunned": "Oszołomienie",
+	"surprised": "Zaskoczenie",
+	"unconscious": "Utrata Przytomności",
+	"grappling": "Zapasy",
+	"fear": "Strach",
+	"terror": "Groza",
+	"engaged": "Związany Walką",
+	"dead": "Martwy",
+	"besmirched": "Splamienie"
+};
+
+const SCRIPT_LABEL_TRANSLATIONS = {
+	"penalty to all tests not involving running and hiding.": "EFFECT.BrokenPenalty",
+	"tests related to movement of any kind": "EFFECT.TestsRelatedToMovementOfAnyKind",
+	"tests related to sight": "EFFECT.TestsRelatedToSight",
+	"tests related to hearing": "EFFECT.TestsRelatedToHearing",
+	"bonus to melee attacks": "EFFECT.BonusToMeleeAttacks",
+	"roll to remove stunned": "EFFECT.RollToRemoveStunned",
+	"roll to remove fear": "EFFECT.RollToRemoveFear",
+	"roll to remove terror": "EFFECT.RollToRemoveTerror",
+	"half movement": "EFFECT.HalfMovement",
+	"start turn": "Początek Tury",
+	"accurate": "PROPERTY.Accurate",
+	"defensive": "PROPERTY.Defensive",
+	"precise": "PROPERTY.Precise",
+	"imprecise": "PROPERTY.Imprecise",
+	"blast": "PROPERTY.Blast",
+	"entangle": "PROPERTY.Entangle",
+	"damaging": "PROPERTY.Damaging",
+	"fast": "PROPERTY.Fast",
+	"hack": "PROPERTY.Hack",
+	"impact": "PROPERTY.Impact",
+	"impale": "PROPERTY.Impale",
+	"penetrating": "PROPERTY.Penetrating",
+	"pistol": "PROPERTY.Pistol",
+	"pummel": "PROPERTY.Pummel",
+	"repeater": "PROPERTY.Repeater",
+	"shield": "PROPERTY.Shield",
+	"trapblade": "PROPERTY.TrapBlade",
+	"unbreakable": "PROPERTY.Unbreakable",
+	"wrap": "PROPERTY.Wrap",
+	"magical": "PROPERTY.Magical",
+	"dangerous": "PROPERTY.Dangerous",
+	"reload": "PROPERTY.Reload",
+	"slow": "PROPERTY.Slow",
+	"tiring": "PROPERTY.Tiring",
+	"undamaging": "PROPERTY.Undamaging",
+	"ugly": "PROPERTY.Ugly",
+	"shoddy": "PROPERTY.Shoddy",
+	"unreliable": "PROPERTY.Unreliable",
+	"bulky": "PROPERTY.Bulky",
+	"durable": "PROPERTY.Durable",
+	"fine": "PROPERTY.Fine",
+	"lightweight": "PROPERTY.Lightweight",
+	"practical": "PROPERTY.Practical",
+	"unbalanced": "PROPERTY.Unbalanced",
+	"inflict": "PROPERTY.Inflict",
+	"parry": "PROPERTY.Parry",
+	"advantage on melee tests": "Przewaga w testach walki wręcz",
+	"disadvantage on fellowship tests": "Utrudnienie w testach Ogłady",
+	"prevent momentum gain": "Uniemożliwia zyskanie Impetu"
+};
+
+const SCRIPT_LABEL_FALLBACKS = {
+	"EFFECT.BrokenPenalty": "Kara do wszystkich Testów niezwiązanych z ucieczką i ukrywaniem się.",
+	"EFFECT.TestsRelatedToMovementOfAnyKind": "Testy związane z jakimkolwiek ruchem",
+	"EFFECT.TestsRelatedToSight": "Testy związane ze wzrokiem",
+	"EFFECT.TestsRelatedToHearing": "Testy związane ze słuchem",
+	"EFFECT.BonusToMeleeAttacks": "Premia do ataków w zwarciu",
+	"EFFECT.RollToRemoveStunned": "Rzut na usunięcie Oszołomienia",
+	"EFFECT.RollToRemoveFear": "Rzut na usunięcie Strachu",
+	"EFFECT.RollToRemoveTerror": "Rzut na usunięcie Grozy",
+	"EFFECT.HalfMovement": "Połowa Ruchu"
+};
+
+export function localizeScriptLabel(rawLabel, script = null) {
+	if (!rawLabel || typeof rawLabel !== "string") {
+		return rawLabel;
+	}
+
+	const trimmed = rawLabel.trim();
+
+	// 1. Dynamic penalty: "Penalty to all Tests (...)"
+	const penaltyMatch = trimmed.match(/^Penalty to all Tests\s*\((.+)\)$/i);
+	if (penaltyMatch) {
+		const rawName = penaltyMatch[1].trim();
+		let conditionName = rawName;
+
+		if (rawName === "@effect.name") {
+			if (script?.effect?.name) {
+				conditionName = script.effect.name;
+			}
+		} else {
+			const lower = rawName.toLowerCase();
+			if (CONDITION_NAME_MAP[lower]) {
+				conditionName = CONDITION_NAME_MAP[lower];
+			} else if (game.i18n) {
+				const i18nKey = "WFRP4E.ConditionName." + rawName.charAt(0).toUpperCase() + rawName.slice(1).toLowerCase();
+				const trans = game.i18n.localize(i18nKey);
+				if (trans && trans !== i18nKey) {
+					conditionName = trans;
+				}
+			}
+		}
+
+		if (game.i18n?.format) {
+			const formatted = game.i18n.format("EFFECT.PenaltyToAllTests", { name: conditionName });
+			if (formatted && formatted !== "EFFECT.PenaltyToAllTests") {
+				return formatted;
+			}
+		}
+		return `Kara do wszystkich Testów (${conditionName})`;
+	}
+
+	// 2. Direct dictionary lookup
+	const lower = trimmed.toLowerCase();
+	const translationKey = SCRIPT_LABEL_TRANSLATIONS[lower];
+	if (translationKey) {
+		if (translationKey.startsWith("EFFECT.") || translationKey.startsWith("PROPERTY.")) {
+			const trans = game.i18n?.localize?.(translationKey);
+			if (trans && trans !== translationKey) {
+				return trans;
+			}
+			if (SCRIPT_LABEL_FALLBACKS[translationKey]) {
+				return SCRIPT_LABEL_FALLBACKS[translationKey];
+			}
+		}
+		return translationKey;
+	}
+
+	// 3. Condition name directly
+	if (CONDITION_NAME_MAP[lower]) {
+		return CONDITION_NAME_MAP[lower];
+	}
+
+	// 4. Property with optional value/rating, e.g. "Accurate (1)" or "Defensive 2"
+	const propMatch = trimmed.match(/^([A-Za-z]+)(\s*[\(0-9].*)$/);
+	if (propMatch) {
+		const propKey = propMatch[1].toLowerCase();
+		const propTransKey = SCRIPT_LABEL_TRANSLATIONS[propKey];
+		if (propTransKey && propTransKey.startsWith("PROPERTY.")) {
+			const trans = game.i18n?.localize?.(propTransKey) || propMatch[1];
+			return `${trans}${propMatch[2]}`;
+		}
+	}
+
+	return rawLabel;
+}
+
+function localizeScriptData(scripts) {
+	if (!Array.isArray(scripts)) return;
+	for (const script of scripts) {
+		if (script && typeof script.label === "string") {
+			script.label = localizeScriptLabel(script.label, script);
+		}
+	}
+}
+
+export function localizeSystemEffectsConfig() {
+	const config = game.wfrp4e?.config;
+	const statusEffects = CONFIG.statusEffects || config?.statusEffects;
+	if (Array.isArray(statusEffects)) {
+		for (const effect of statusEffects) {
+			localizeScriptData(effect?.system?.scriptData);
+		}
+	}
+	if (Array.isArray(config?.statusEffects) && config.statusEffects !== statusEffects) {
+		for (const effect of config.statusEffects) {
+			localizeScriptData(effect?.system?.scriptData);
+		}
+	}
+
+	const propertyEffects = config?.propertyEffects;
+	if (propertyEffects && typeof propertyEffects === "object") {
+		for (const prop of Object.values(propertyEffects)) {
+			localizeScriptData(prop?.system?.scriptData);
+		}
+	}
+}
+
+const EFFECT_DIFFICULTY_TRANSLATIONS = {
+	"very easy (+60)": "Banalny (+60)",
+	"very easy": "Banalny (+60)",
+	"easy (+40)": "Prosty (+40)",
+	"easy": "Prosty (+40)",
+	"average (+20)": "Przeciętny (+20)",
+	"average": "Przeciętny (+20)",
+	"challenging (+0)": "Wymagający (+0)",
+	"challenging": "Wymagający (+0)",
+	"difficult (-10)": "Trudny (-10)",
+	"difficult (–10)": "Trudny (-10)",
+	"difficult": "Trudny (-10)",
+	"hard (-20)": "Bardzo trudny (-20)",
+	"hard (–20)": "Bardzo trudny (-20)",
+	"hard": "Bardzo trudny (-20)",
+	"very hard (-30)": "Bardzo trudny (-30)",
+	"very hard (–30)": "Bardzo trudny (-30)",
+	"very hard": "Bardzo trudny (-30)"
+};
+
+const EFFECT_SKILL_CHAR_GENITIVE = {
+	"endurance": "Odporności",
+	"cool": "Opanowania",
+	"willpower": "Siły Woli",
+	"toughness": "Wytrzymałości",
+	"strength": "Siły",
+	"agility": "Zwinności",
+	"dexterity": "Zręczności",
+	"intelligence": "Inteligencji",
+	"initiative": "Inicjatywy",
+	"fellowship": "Ogłady",
+	"weapon skill": "Walki Wręcz",
+	"ballistic skill": "Umiejętności Strzeleckich",
+	"athletics": "Atletyki",
+	"dodge": "Uniku",
+	"perception": "Spostrzegawczości",
+	"stealth": "Skradania",
+	"sail": "Żeglarstwa",
+	"trade (carpenter)": "Rzemiosła (Stolarstwo)",
+	"trade (carpentry)": "Rzemiosła (Stolarstwo)",
+	"trade (tailor)": "Rzemiosła (Krawiectwo)",
+	"trade (engineer)": "Rzemiosła (Inżynieria)"
+};
+
+function translateEffectTestTarget(targetText) {
+	const trimmed = targetText.trim();
+	const lower = trimmed.toLowerCase();
+	for (const [diffEn, diffPl] of Object.entries(EFFECT_DIFFICULTY_TRANSLATIONS)) {
+		if (lower.startsWith(diffEn)) {
+			const remainder = lower.slice(diffEn.length).trim();
+			const skillPl = EFFECT_SKILL_CHAR_GENITIVE[remainder] || remainder;
+			return `${diffPl} Test ${skillPl}`;
+		}
+	}
+	if (EFFECT_SKILL_CHAR_GENITIVE[lower]) {
+		return `Test ${EFFECT_SKILL_CHAR_GENITIVE[lower]}`;
+	}
+	return `Test ${trimmed}`;
+}
+
+const EFFECT_PHRASE_REPLACEMENTS = [
+	[/<b>Infected:\s*/gi, "<b>Zaraza: "],
+	[/Finished repairing <em>(.*?)<\/em>\./gi, "Zakończono naprawę: <em>$1</em>."],
+	[/Ward value is now (\d+)/gi, "Wartość Ochrony wynosi teraz $1"],
+	[/Healed (\d+) Wounds/gi, "Uleczono $1 Ran"],
+	[/Automatically passes any (.*?)(?=[.<]|$)/gi, "Automatycznie zdaje każdy test: $1"],
+	[/Fortune point stolen from\s+/gi, "Skradziono Punkt Szczęścia postaci: "],
+	[/Fortune points? increased from (\d+) to (\d+)/gi, "Punkty Szczęścia wzrosły z $1 do $2"],
+	[/Fortune points? reduced to (\d+)/gi, "Punkty Szczęścia zmniejszone do $1"],
+	[/Cannot enter (.*?)!/gi, "Nie można wkroczyć: $1!"],
+	[/Cannot attack targets that are not Entangled/gi, "Nie można atakować celów bez Stanu Pochwycony"],
+	[/None left!/gi, "Nic nie zostało!"],
+	[/No Festering Wounds!/gi, "Brak Ropiejących Ran!"],
+	[/duration reduced by (\d+)!/gi, "czas trwania zmniejszony o $1!"],
+	[/Dropped (.*?)!/gi, "Upuszczono $1!"],
+	[/Removed Broken\./gi, "Usunięto Stan Załamania."],
+	[/Blinded while wearing the (.*?)(?=[.<]|$)/gi, "Oślepiony podczas noszenia: $1"]
+];
+
+export function localizeEffectChatMessage(content) {
+	if (!content || typeof content !== "string") return content;
+	let result = content;
+
+	// 1. "must pass [an?|a] (<b>)?(...)Test or (gain|contract|acquire|suffer) (...)"
+	const mustPassRegex = /must pass (?:an?|a)\s+(<b>|<strong>)?(.*?)(?:<\/b>|<\/strong>)?\s+Test\s+(?:or|lub)\s+(gain|contract|acquire|suffer)(?:\s+(?:a|an|the|one))?\s*/gi;
+	result = result.replace(mustPassRegex, (match, openTag, testPart, verb) => {
+		const transTest = translateEffectTestTarget(testPart);
+		let transVerb = "otrzyma";
+		if (verb.toLowerCase() === "contract") transVerb = "nabawi się";
+		const tag = openTag ? "<b>" : "";
+		const closeTag = openTag ? "</b>" : "";
+		return `musi zdać ${tag}${transTest}${closeTag} albo ${transVerb} `;
+	});
+
+	// 2. Trait/Condition/Disease specific links and terms in message
+	result = result.replace(/@UUID\[([^\]]*Compendium\.wfrp4e-core\.items\.kKccDTGzWzSXCBOb[^\]]*)\]\{([^}]+)\}/g, (match, uuid) => {
+		return `@UUID[${uuid}]{Ropiejącą Ranę}`;
+	});
+	result = result.replace(/@UUID\[([^\]]*Compendium\.wfrp4e-core\.items\.9GNpAqgsKzxZKJpp[^\]]*)\]\{([^}]+)\}\s*Trait/gi, (match, uuid) => {
+		return `Cechę @UUID[${uuid}]{Głupota}`;
+	});
+	result = result.replace(/(?:\ba\s+)?@Condition\[Deafened\]\s+Condition/gi, "Stan @Condition[Głuchy]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Blinded\]\s+Condition/gi, "Stan @Condition[Oślepiony]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Stunned\]\s+Condition/gi, "Stan @Condition[Ogłuszony]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Broken\]\s+Condition/gi, "Stan @Condition[Załamany]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Fatigued\]\s+Condition/gi, "Stan @Condition[Zmęczony]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Poisoned\]\s+Condition/gi, "Stan @Condition[Zatrucie]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Ablaze\]\s+Condition/gi, "Stan @Condition[Podpalony]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Bleeding\]\s+Condition/gi, "Stan @Condition[Krwawienie]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Prone\]\s+Condition/gi, "Stan @Condition[Powalony]");
+	result = result.replace(/(?:\ba\s+)?@Condition\[Unconscious\]\s+Condition/gi, "Stan @Condition[Nieprzytomny]");
+
+	result = result.replace(/(?:\ba\s+)?Deafened Condition/gi, "Stan @Condition[Głuchy]");
+	result = result.replace(/(?:\ba\s+)?Blinded Condition/gi, "Stan @Condition[Oślepiony]");
+	result = result.replace(/(?:\ba\s+)?Stunned Condition/gi, "Stan @Condition[Ogłuszony]");
+	result = result.replace(/(?:\ba\s+)?Broken Condition/gi, "Stan @Condition[Załamany]");
+	result = result.replace(/(?:\ba\s+)?Fatigued Condition/gi, "Stan @Condition[Zmęczony]");
+	result = result.replace(/(?:\ba\s+)?Poisoned Condition/gi, "Stan @Condition[Zatrucie]");
+	result = result.replace(/(?:\ba\s+)?Ablaze Condition/gi, "Stan @Condition[Podpalony]");
+	result = result.replace(/(?:\ba\s+)?Bleeding Condition/gi, "Stan @Condition[Krwawienie]");
+	result = result.replace(/(?:\ba\s+)?Prone Condition/gi, "Stan @Condition[Powalony]");
+	result = result.replace(/(?:\ba\s+)?Unconscious Condition/gi, "Stan @Condition[Nieprzytomny]");
+
+	result = result.replace(/suffer (\d+d?\d*) Wounds \(ignoring Armour\)/gi, "otrzyma $1 Ran (z ignorowaniem Pancerza)");
+	result = result.replace(/suffer (\d+d?\d*) Wounds/gi, "otrzyma $1 Ran");
+	result = result.replace(/and suffer\s+/gi, "i otrzyma ");
+
+	// 3. Simple phrases
+	for (const [pattern, replacement] of EFFECT_PHRASE_REPLACEMENTS) {
+		result = result.replace(pattern, replacement);
+	}
+
+	return result;
+}
+
+export function patchWarhammerScript() {
+	const WarhammerScript = globalThis.warhammer?.apps?.WarhammerScript;
+	if (!WarhammerScript || WarhammerScript.prototype._wfrp4eCorePlPatched) {
+		return;
+	}
+
+	const origDescriptor = Object.getOwnPropertyDescriptor(WarhammerScript.prototype, "Label");
+	const origGetLabel = origDescriptor?.get;
+
+	Object.defineProperty(WarhammerScript.prototype, "Label", {
+		get() {
+			let label = origGetLabel ? origGetLabel.call(this) : Roll.replaceFormulaData(this.label, this);
+			return localizeScriptLabel(label, this);
+		},
+		configurable: true,
+		enumerable: origDescriptor ? origDescriptor.enumerable : true
+	});
+
+	const origMessage = WarhammerScript.prototype.message;
+	if (typeof origMessage === "function") {
+		WarhammerScript.prototype.message = function (content, chatData = {}) {
+			content = localizeEffectChatMessage(content);
+			return origMessage.call(this, content, chatData);
+		};
+	}
+
+	const origNotification = WarhammerScript.prototype.notification;
+	if (typeof origNotification === "function") {
+		WarhammerScript.prototype.notification = function (content, type = "info", permanent = false) {
+			content = localizeEffectChatMessage(content);
+			return origNotification.call(this, content, type, permanent);
+		};
+	}
+
+	WarhammerScript.prototype._wfrp4eCorePlPatched = true;
+}
+
+if (globalThis.Hooks) {
+	Hooks.on("preCreateChatMessage", (doc, data, options, userId) => {
+		const polish = game.i18n?.lang === "pl" || game.i18n?.lang?.startsWith("pl-");
+		if (!polish) return;
+		const content = doc?.content || data?.content;
+		if (typeof content === "string" && (
+			content.includes("must pass") ||
+			content.includes("Infected:") ||
+			content.includes("Festering Wound") ||
+			content.includes("Finished repairing") ||
+			content.includes("Cannot enter") ||
+			content.includes("Fortune point stolen")
+		)) {
+			const localized = localizeEffectChatMessage(content);
+			if (localized !== content) {
+				doc.updateSource({ content: localized });
+			}
+		}
+	});
+}
+
+function hookPrepareSystemItems() {
+	const config = game.wfrp4e?.config;
+	if (!config || config._wfrp4eCorePlPrepareHooked) return;
+	const origPrepare = config["PrepareSystemItems"];
+	if (typeof origPrepare === "function") {
+		config["PrepareSystemItems"] = function(...args) {
+			const result = origPrepare.apply(this, args);
+			localizeSystemEffectsConfig();
+			return result;
+		};
+		config._wfrp4eCorePlPrepareHooked = true;
+	}
+}
+
+patchWarhammerScript();
+
+Hooks.on("i18nInit", () => {
+	const config = game.wfrp4e?.config;
+	if (!config) {
+		return;
+	}
+
+	localizeValues(config.species);
+	localizeSubspecies(config.subspecies);
+	localizeValues(config.vehicleTypes);
+	for (const key of Object.keys(config.scriptTriggers ?? {})) {
+		const translationKey = "WFRP4E.ScriptTriggers." + key;
+		const translated = game.i18n.localize(translationKey);
+		config.scriptTriggers[key] = translated === translationKey
+			? game.i18n.localize(config.scriptTriggers[key])
+			: translated;
+	}
+	localizeNamedEntries(config.loreEffects);
+	localizeNamedEntries(config.symptomEffects);
+
+	localizeSystemEffectsConfig();
+	patchWarhammerScript();
+	hookPrepareSystemItems();
 });
 
-Hooks.on("init", () => {
-  game.wfrp4e.config.PrepareSystemItems = function () {
-    this.systemItems = foundry.utils.mergeObject(this.systemItems, {
-      reload: {
-        type: "extendedTest",
-        name: "",
-        system: {
-          SL: {},
-          test: {
-            value: "",
-          },
-          completion: {
-            value: "remove",
-          },
-        },
-        flags: {
-          wfrp4e: {
-            reloading: "",
-          },
-        },
-      },
-      improv: {
-        name: game.i18n.localize("NAME.Improvised"),
-        type: "weapon",
-        effects: [],
-        system: {
-          damage: { value: "SB + 1" },
-          reach: { value: "personal" },
-          weaponGroup: { value: "basic" },
-          twohanded: { value: false },
-          qualities: { value: [] },
-          flaws: { value: [{ name: "undamaging" }] },
-          special: { value: "" },
-          range: { value: "" },
-          ammunitionGroup: { value: "" },
-          offhand: { value: false },
-        },
-      },
-      stomp: {
-        name: game.i18n.localize("NAME.Stomp"),
-        type: "trait",
-        effects: [],
-        system: {
-          specification: { value: 0 },
-          rollable: {
-            value: true,
-            rollCharacteristic: "ws",
-            bonusCharacteristic: "s",
-            defaultDifficulty: "challenging",
-            damage: true,
-            SL: true,
-            skill: game.i18n.localize("NAME.MeleeBrawling"),
-          },
-        },
-      },
-      unarmed: {
-        name: game.i18n.localize("NAME.Unarmed"),
-        type: "weapon",
-        effects: [],
-        system: {
-          damage: { value: "SB + 0" },
-          reach: { value: "personal" },
-          weaponGroup: { value: "brawling" },
-          twohanded: { value: false },
-          qualities: { value: [] },
-          flaws: { value: [{ name: "undamaging" }] },
-          special: { value: "" },
-          range: { value: "" },
-          ammunitionGroup: { value: "" },
-          offhand: { value: false },
-        },
-      },
-      fear: {
-        name: game.i18n.localize("NAME.FearExtendedTest"),
-        type: "extendedTest",
-        system: {
-          completion: { value: "remove" },
-          description: { type: "String", label: "Description", value: "" },
-          failingDecreases: { value: true },
-          gmdescription: { type: "String", label: "Description", value: "" },
-          hide: { test: false, progress: false },
-          negativePossible: { value: false },
-          SL: { current: 0, target: 1 },
-          test: { value: game.i18n.localize("NAME.Cool") },
-        },
-        flags: {
-          wfrp4e: {
-            fear: true,
-          },
-        },
-        effects: [
-          {
-            name: game.i18n.localize("NAME.Fear"),
-            img: "systems/wfrp4e/icons/conditions/fear.png",
-            statuses: ["fear"],
-            system: {
-              transferData: {},
-              scriptData: [
-                {
-                  label: "@effect.flags.wfrp4e.dialogTitle",
-                  trigger: "dialog",
-                  script: `args.fields.slBonus -= 1`,
-                  options: {
-                    hideScript: "",
-                    activateScript: `return args.data.targets[0]?.name == this.item.flags.wfrp4e?.fearName`,
-                  },
-                },
-                {
-                                    label : "Strach",
-                  trigger: "immediate",
-                  script: `
-                                    let name = this.item?.flags?.wfrp4e?.fearName
-                                    this.effect.updateSource({"flags.wfrp4e.dialogTitle" : (name ? game.i18n.format("EFFECT.AffectTheSourceOfFearName", {name}) : game.i18n.format("EFFECT.AffectTheSourceOfFear"))})
-                                    if (name)
-                                    {
-                                        this.item.updateSource({name : this.item.name + " (" + name + ")" })
-                                    }
-                                    `,
-                },
-              ],
-            },
-          },
-        ],
-      },
-      terror: {
-        name: game.i18n.localize("NAME.Terror"),
-        img: "systems/wfrp4e/icons/conditions/terror.png",
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("NAME.Terror"),
-              trigger: "immediate",
-              script: `
-							let terror = this.effect.flags.wfrp4e.terrorValue;
-							let skillName = game.i18n.localize("NAME.Cool");
-							let test = await args.actor.setupSkill(skillName, {terror: true, appendTitle : " - Groza", skipTargets: true});
-							await test.roll();
-							await this.actor.applyFear(terror, name)
-							if (test.failed)
-							{
-								if (test.result.SL < 0)
-									terror += Math.abs(test.result.SL)
+// Safe evaluation of ammunition range and damage modifiers. System WFRP4e runs
+// eval() on raw localized strings (e.g. 'ćwierć zasięgu broni' or 'jak broń'), which
+// throws SyntaxError and breaks actor preparation. Support all Polish forms gracefully.
+function patchWeaponAmmoMods() {
+	const WeaponModel = CONFIG.Item?.dataModels?.weapon ?? game.wfrp4e?.models?.WeaponModel;
+	if (!WeaponModel || WeaponModel.prototype._wfrp4eCorePlAmmoModsPatched) {
+		return;
+	}
 
-								await this.actor.addCondition("broken", terror)
-							}
-							`,
-            },
-          ],
-        },
-      },
-    });
+	WeaponModel.prototype.applyAmmoMods = function(value, type) {
+		if (this.ammo?.type === "weapon" && type === "damage") {
+			return Number(this.ammo.damage?.value || 0);
+		}
 
-    this.systemEffects = foundry.utils.mergeObject(this.systemEffects, {
-      fear: {
-        name: game.i18n.localize("NAME.Fear"),
-        img: "systems/wfrp4e/icons/conditions/fear.png",
-        statuses: ["fear"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: "@effect.flags.wfrp4e.dialogTitle",
-              trigger: "dialog",
-              script: `args.fields.slBonus -= 1`,
-              options: {
-                hideScript: "",
-                activateScript: `return args.data.targets[0]?.name == this.item.flags.wfrp4e?.fearName`,
-              },
-            },
-            {
-							label : "Strach",
-              trigger: "immediate",
-              script: `
-							let name = this.item?.flags?.wfrp4e?.fearName
-							this.effect.updateSource({"flags.wfrp4e.dialogTitle" : (name ? game.i18n.format("EFFECT.AffectTheSourceOfFearName", {name}) : game.i18n.format("EFFECT.AffectTheSourceOfFear"))})
-							if (name)
-							{
-								this.item.updateSource({name : this.item.name + " (" + name + ")" })
-							}
-							`,
-            },
-          ],
-        },
-      },
-      enc1: {
-        name: game.i18n.localize("EFFECT.Encumbrance") + " 1",
-				img: "systems/wfrp4e/icons/effects/enc1.png",
-        statuses: ["enc1"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.Encumbrance") + " 1",
-              trigger: "prePrepareData",
-              script: `
-							args.actor.characteristics.ag.modifier -= 10;
+		if (!this.ammo || this.ammo.type === "weapon") {
+			return value;
+		}
 
-							if (args.actor.details.move.value > 3)
-							{
-								args.actor.details.move.value -= 1;
-								if (args.actor.details.move.value < 3)
-									args.actor.details.move.value = 3
-							}
-							`,
-            },
-          ],
-        },
-      },
-      enc2: {
-        name: game.i18n.localize("EFFECT.Encumbrance") + " 2",
-				img: "systems/wfrp4e/icons/effects/enc2.png",
-        statuses: ["enc2"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.Encumbrance") + " 2",
-              trigger: "prePrepareData",
-              script: `
-							args.actor.characteristics.ag.modifier -= 20;
-							if (args.actor.details.move.value > 2)
-							{
-								args.actor.details.move.value -= 2;
-								if (args.actor.details.move.value < 2)
-									args.actor.details.move.value = 2
-							}
-							`,
-            },
-          ],
-        },
-      },
-      enc3: {
-        name: game.i18n.localize("EFFECT.Encumbrance") + " 3",
-				img: "systems/wfrp4e/icons/effects/enc3.png",
-        statuses: ["enc3"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.Encumbrance") + " 3",
-              trigger: "prePrepareData",
-              script: "args.actor.details.move.value = 0;",
-            },
-          ],
-        },
-      },
-      cold1: {
-        name: game.i18n.localize("EFFECT.ColdExposure") + " 1",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["cold1"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -10 },
-        ],
-      },
-      cold2: {
-        name: game.i18n.localize("EFFECT.ColdExposure") + " 2",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["cold2"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.s.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.t.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.i.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.wp.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.fel.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.t.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.s.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.wp.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-      },
-      cold3: {
-        name: game.i18n.localize("EFFECT.ColdExposure") + " 3",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["cold3"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.ColdExposure") + " 3",
-              trigger: "manual",
-              script: `
-							let tb = this.actor.characteristics.t.bonus
-							let damage = (await new Roll("1d10").roll()).total
-							damage -= tb
-							if (damage <= 0) damage = 1
-							if (this.actor.status.wounds.value <= damage) {
-								await this.actor.addCondition("unconscious")
-							}
-							this.actor.modifyWounds(-damage)
-							ui.notifications.notify(game.i18n.format("TookDamage", { damage: damage }))
-							`,
-            },
-          ],
-        },
-      },
-      heat1: {
-        name: game.i18n.localize("EFFECT.HeatExposure") + " 1",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["heat1"],
-        changes: [
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.wp.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.wp.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-      },
-      heat2: {
-        name: game.i18n.localize("EFFECT.HeatExposure") + " 2",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["heat2"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.s.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.t.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.i.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.wp.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.fel.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.t.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.s.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.wp.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-      },
-      heat3: {
-        name: game.i18n.localize("EFFECT.HeatExposure") + " 3",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["heat3"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.HeatExposure") + " 3",
-              trigger: "manual",
-              script: `
-							let tb = this.actor.characteristics.t.bonus
-							let damage = (await new Roll("1d10").roll()).total
-							damage -= tb
-							if (damage <= 0) {
-								damage = 1
-							}
-							this.actor.modifyWounds(-damage)
-							ui.notifications.notify(game.i18n.format("TookDamage", { damage: damage }))
-							`,
-            },
-          ],
-        },
-      },
-      thirst1: {
-        name: game.i18n.localize("EFFECT.Thirst") + " 1",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["thirst1"],
-        changes: [
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.wp.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.fel.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.wp.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-      },
-      thirst2: {
-        name: game.i18n.localize("EFFECT.Thirst") + " 2+",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["thirst2"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.s.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.t.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.i.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.wp.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.fel.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.t.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.s.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.wp.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.Thirst") + " 2+",
-              trigger: "manual",
-              script: `
-							let tb = this.actor.characteristics.t.bonus
-							let damage = (await new Roll("1d10").roll()).total
-							damage -= tb
-							if (damage <= 0) {
-								damage = 1
-							}
-							this.actor.modifyWounds(-damage)
-							ui.notifications.notify(game.i18n.format("TookDamage", { damage: damage }))
-							`,
-            },
-          ],
-        },
-      },
-      starvation1: {
-        name: game.i18n.localize("EFFECT.Starvation") + " 1",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["starvation1"],
-        changes: [
-          { key: "system.characteristics.s.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.t.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.t.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.s.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-      },
-      starvation2: {
-        name: game.i18n.localize("EFFECT.Starvation") + " 2",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["starvation2"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.s.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.t.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.i.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.wp.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.fel.modifier", mode: 2, value: -10 },
-          {
-            key: "system.characteristics.t.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.s.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-          {
-            key: "system.characteristics.wp.calculationBonusModifier",
-            mode: 2,
-            value: 1,
-          },
-        ],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.Starvation") + " 2",
-              trigger: "manual",
-              script: `
-							let tb = this.actor.characteristics.t.bonus
-							let damage = (await new Roll("1d10").roll()).total
-							damage -= tb
-							if (damage <= 0) {
-								damage = 1
-							}
-							this.actor.modifyWounds(-damage)
-							ui.notifications.notify(game.i18n.format("TookDamage", { damage: damage }))
-							`,
-            },
-          ],
-        },
-      },
-      blackpowder: {
-        name: game.i18n.localize("EFFECT.BlackpowderShock"),
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["blackpowder"],
-        flags: {
-          wfrp4e: {
-            blackpowder: true,
-          },
-				},
+		let ammoValue = this.ammo[type]?.value;
+		if (!ammoValue) {
+			return value;
+		}
 
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-							label : "Huk Wystrzału",
-              trigger: "immediate",
-              script: `
-								test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {appendTitle : " - " + this.effect.name, skipTargets: true, fields : {difficulty : "average"}});
-								await test.roll();
-								if (test.failed)
-								{
-									this.actor.addCondition("broken");
-								}
-								return false;
-							`,
-            },
-          ],
-        },
-      },
-      infighting: {
-        name: game.i18n.localize("EFFECT.Infighting"),
-        img: "modules/wfrp4e-core/icons/talents/in-fighter.png",
-        statuses: ["infighting"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-							label : "Skrócenie Dystansu",
-              trigger: "prePrepareItem",
-              script: `
-							if (args.item.type == "weapon" && args.item.isEquipped)
-							{
-								let weaponLength = args.item.reachNum
-								if (weaponLength > 3)
-								{
-									let improv = foundry.utils.duplicate(game.wfrp4e.config.systemItems.improv)
-									improv.system.twohanded.value = args.item.twohanded.value
-									improv.system.offhand.value = args.item.offhand.value
-									improv.name = args.item.name + " (" + game.i18n.localize("EFFECT.Infighting") + ")"
-									foundry.utils.mergeObject(args.item.system, improv.system, {overwrite : true})
-									args.item.system.qualities = improv.system.qualities
-									args.item.system.flaws = improv.system.flaws
-									args.item.name = improv.name
-									args.item.system.infighting = true;
-								}
-							}
-							`
-						}
-					]
-        },
-      },
-      defensive: {
-        name: game.i18n.localize("EFFECT.OnDefensive"),
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["defensive"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.OnDefensive"),
-              trigger: "dialog",
-              script: `args.prefillModifiers.modifier += 20`,
-              options: {
-                hideScript: "return !this.actor.isOpposing",
-                activateScript: `
-									let skillName = this.effect.name.substring(this.effect.name.indexOf("[") + 1, this.effect.name.indexOf("]"))
-									return args.skill?.name == skillName
-								`,
-              },
-            },
-            {
-              label: game.i18n.localize("EFFECT.OnDefensive"),
-              trigger: "immediate",
-              script: `
-								let choice = await ItemDialog.create(this.actor.itemTypes.skill.sort((a, b) => a.name > b.name ? 1 : -1), 1, "Wybierz umiejętnośc, z której chcesz korzystać podczas Pozycji Obronnej");    
-								this.effect.updateSource({name : this.effect.name + " [" +  choice[0]?.name + "]"})
-								`,
-            },
-          ],
-        },
-      },
-      dualwielder: {
-        name: game.i18n.localize("EFFECT.DualWielder"),
-        img: "modules/wfrp4e-core/icons/talents/dual-wielder.png",
-        statuses: ["dualwielder"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-              label: game.i18n.localize("EFFECT.DualWielder"),
-              trigger: "dialog",
-              script: `args.prefillModifiers.modifier -= 10`,
-              options: {
-                hideScript: "return !this.actor.isOpposing",
-								activateScript: `return this.actor.isOpposing`
-							}
-						},
-						{
-							label: "Start Turn",
-							trigger: "startTurn",
-							script: `this.effect.delete()`,
-						}
-					]
+		if (typeof ammoValue === "number") {
+			return value + ammoValue;
+		}
+
+		const normalized = String(ammoValue).trim().toLowerCase();
+
+		// As weapon / Jak broń
+		if (
+			normalized === "as weapon"
+			|| normalized === "jak broń"
+			|| normalized === "jak w broni"
+			|| normalized === "zasięg broni"
+			|| normalized === "taki jak broń"
+			|| normalized === game.i18n?.localize?.("as weapon")?.toLowerCase()
+		) {
+			return value;
+		}
+
+		// Half weapon / 1/2
+		if (
+			normalized === "half weapon"
+			|| normalized === "1/2 zasięgu broni"
+			|| normalized === "1/2 broni"
+			|| normalized === "połowa broni"
+			|| normalized === game.i18n?.localize?.("half weapon")?.toLowerCase()
+		) {
+			return Math.floor(value / 2);
+		}
+
+		// Third weapon / 1/3
+		if (
+			normalized === "third weapon"
+			|| normalized === "1/3 zasięgu broni"
+			|| normalized === "1/3 broni"
+			|| normalized === game.i18n?.localize?.("third weapon")?.toLowerCase()
+		) {
+			return Math.floor(value / 3);
+		}
+
+		// Quarter weapon / 1/4 / Ćwierć
+		if (
+			normalized === "quarter weapon"
+			|| normalized === "1/4 zasięgu broni"
+			|| normalized === "1/4 broni"
+			|| normalized === "ćwierć zasięgu broni"
+			|| normalized === "ćwierć broni"
+			|| normalized === game.i18n?.localize?.("quarter weapon")?.toLowerCase()
+		) {
+			return Math.floor(value / 4);
+		}
+
+		// Twice weapon / 2x
+		if (
+			normalized === "twice weapon"
+			|| normalized === "2x zasięg broń"
+			|| normalized === "2x zasięgu broni"
+			|| normalized === "2x broń"
+			|| normalized === "podwójny zasięg"
+			|| normalized === "podwojony zasięg"
+			|| normalized === game.i18n?.localize?.("twice weapon")?.toLowerCase()
+		) {
+			return value * 2;
+		}
+
+		// Formuła numeryczna (np. +10, -5, 20)
+		if (/^[\s\d+\-*/().]+$/.test(normalized)) {
+			try {
+				const parsed = Number(normalized);
+				if (!Number.isNaN(parsed)) {
+					return value + parsed;
 				}
-      },
-      consumealcohol1: {
-        name: game.i18n.localize("EFFECT.ConsumeAlcohol") + " 1",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["consumealcohol1"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -10 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -10 },
-        ],
-      },
-      consumealcohol2: {
-        name: game.i18n.localize("EFFECT.ConsumeAlcohol") + " 2",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["consumealcohol2"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -20 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -20 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -20 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -20 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -20 },
-        ],
-      },
-      consumealcohol3: {
-        name: game.i18n.localize("EFFECT.ConsumeAlcohol") + " 3",
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["consumealcohol3"],
-        changes: [
-          { key: "system.characteristics.bs.modifier", mode: 2, value: -30 },
-          { key: "system.characteristics.ag.modifier", mode: 2, value: -30 },
-          { key: "system.characteristics.ws.modifier", mode: 2, value: -30 },
-          { key: "system.characteristics.int.modifier", mode: 2, value: -30 },
-          { key: "system.characteristics.dex.modifier", mode: 2, value: -30 },
-        ],
-      },
-      stinkingdrunk1: {
-        name: game.i18n.localize("EFFECT.MarienburghersCourage"),
-				img: "systems/wfrp4e/icons/blank.png",
-        statuses: ["stinkingdrunk1"],
-        system: {
-          transferData: {},
-          scriptData: [
-            {
-							label: "@effect.name",
-              trigger: "dialog",
-              script: `args.prefillModifiers.modifier += 20`,
-              options: {
-                hideScript:
-                  "return args.skill?.name != game.i18n.localize('NAME.Cool')",
-                activateScript: `return args.skill?.name == game.i18n.localize('NAME.Cool')`,
-              },
-            },
-          ],
-        },
-      },
-    });
-
-    this.statusEffects = [
-      {
-				img: "systems/wfrp4e/icons/conditions/bleeding.png",
-        id: "bleeding",
-        statuses: ["bleeding"],
-        name: "WFRP4E.ConditionName.Bleeding",
-				description : "WFRP4E.Conditions.Bleeding",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-            trigger: "endRound",
-          },
-          scriptData: [
-            {
-              trigger: "manual",
-              label: "Krwawienie (Obrażenia)",
-							script: `let uiaBleeding = game.settings.get("wfrp4e", "uiaBleeding");
-							let actor = this.actor;
-							let effect = this.effect;
-							let bleedingAmt;
-							let bleedingRoll;
-							let msg = ""
-
-							let damage = effect.conditionValue;
-							let scriptArgs = {msg, damage};
-							await Promise.all(actor.runScripts("preApplyCondition", {effect, data : scriptArgs}))
-							msg = scriptArgs.msg;
-							damage = scriptArgs.damage;
-							msg += await actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, minimumOne : false, suppressMsg : true})
-
-							if (actor.status.wounds.value == 0 && !actor.hasCondition("unconscious"))
-							{
-								addBleedingUnconscious = async () => {
-									await actor.addCondition("unconscious")
-									msg += "<br>" + game.i18n.format("BleedUnc", {name: actor.prototypeToken.name })
-								}
-								if (uiaBleeding) {
-									test = await actor.setupSkill(game.i18n.localize("NAME.Endurance"), {appendTitle : " - " + this.effect.name, skipTargets: true, fields : {difficulty : "challenging"}});
-									await test.roll();
-									if (test.failed) {
-										await addBleedingUnconscious();
-									}
-								} else {
-									await addBleedingUnconscious();
-								}
-							}
-
-							if (actor.hasCondition("unconscious"))
-							{
-								bleedingAmt = effect.conditionValue;
-								bleedingRoll = (await new Roll("1d100").roll()).total;
-								if (bleedingRoll <= bleedingAmt * 10)
-								{
-									msg += "<br>" + game.i18n.format("BleedFail", {name: actor.prototypeToken.name}) + " (" + game.i18n.localize("Rolled") + " " + bleedingRoll + ")";
-									await actor.addCondition("dead")
-								}
-								else if (bleedingRoll % 11 == 0)
-								{
-									msg += "<br>" + game.i18n.format("BleedCrit", { name: actor.prototypeToken.name } ) + " (" + game.i18n.localize("Rolled") + bleedingRoll + ")"
-									await actor.removeCondition("bleeding")
-								}
-								else
-								{
-									msg += "<br>" + game.i18n.localize("BleedRoll") + ": " + bleedingRoll;
-								}
-							}
-
-							await Promise.all(actor.runScripts("applyCondition", {effect, data : {bleedingRoll}}))
-							if (args.suppressMessage)
-							{
-								let messageData = game.wfrp4e.utility.chatDataSetup(msg);
-								messageData.speaker = {alias: this.effect.name}
-								messageData.flavor = this.effect.name;
-								return messageData
-							}
-							else
-							{
-								return this.script.message(msg)
-							}
-							`,
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/poisoned.png",
-        id: "poisoned",
-        statuses: ["poisoned"],
-        name: "WFRP4E.ConditionName.Poisoned",
-				description : "WFRP4E.Conditions.Poisoned",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-            trigger: "endRound",
-          },
-          scriptData: [
-            {
-              trigger: "manual",
-              label: "Trucizna (Obrażenia)",
-              script: `let actor = this.actor;
-							let effect = this.effect;
-							let msg = ""
-
-							let damage = effect.conditionValue;
-							let scriptArgs = {msg, damage};
-							await Promise.all(actor.runScripts("preApplyCondition", {effect, data : scriptArgs}))
-							msg = scriptArgs.msg;
-							damage = scriptArgs.damage;
-							msg += await actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true})
-
-							await Promise.all(actor.runScripts("applyCondition", {effect}))
-							if (args.suppressMessage)
-							{
-								let messageData = game.wfrp4e.utility.chatDataSetup(msg);
-								messageData.speaker = {alias: this.effect.name}
-								return messageData
-							}
-							else
-							{
-								return this.script.message(msg)
-							}
-							`,
-            },
-            {
-              trigger: "dialog",
-              label: "Trucizna (Wszystkie Testy)",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-              options: {
-								activateScript: "return true"
-							}
-						}
-					]
+				const result = Function(`"use strict"; return (${value} + ${normalized})`)();
+				if (typeof result === "number" && !Number.isNaN(result)) {
+					return Math.floor(result);
 				}
-
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/ablaze.png",
-        id: "ablaze",
-        statuses: ["ablaze"],
-        name: "WFRP4E.ConditionName.Ablaze",
-				description : "WFRP4E.Conditions.Ablaze",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-            trigger: "endRound",
-          },
-          scriptData: [
-            {
-              trigger: "manual",
-              label: "Podpalenie (Obrażenia)",
-              script: `let leastProtectedLoc;
-							let leastProtectedValue = 999;
-							for (let loc in this.actor.status.armour)
-							{
-								if (this.actor.status.armour[loc].value != undefined && this.actor.status.armour[loc].value < leastProtectedValue)
-								{
-									leastProtectedLoc = loc;
-									leastProtectedValue = this.actor.status.armour[loc].value;
-								}
-							}
-
-							let formula = "1d10 + @effect.conditionValue - 1"
-							let msg = "<b>${game.i18n.localize("Formula")}</b>: @FORMULA"
-
-							let scriptArgs = {msg, formula}
-							await Promise.all(this.actor.runScripts("preApplyCondition", {effect : this.effect, data : scriptArgs}));
-							formula = scriptArgs.formula;
-							msg = scriptArgs.msg;
-							let roll = await new Roll(formula, this).roll();
-							let terms = roll.terms.map(i => (i instanceof Die ? (i.formula + " (" + i.total + ")") : (i.total))).join("")
-							msg = msg.replace("@FORMULA", terms);
-
-							let damageMsg = ("<br>" + await this.actor.applyBasicDamage(roll.total, {loc: leastProtectedLoc, suppressMsg : true})).split("")
-							msg += damageMsg.join("");
-							await Promise.all(this.actor.runScripts("applyCondition", {effect : this.effect}))
-							if (args.suppressMessage)
-							{
-								let messageData = game.wfrp4e.utility.chatDataSetup(msg);
-								messageData.speaker = {alias: this.actor.prototypeToken.name}
-								messageData.flavor = this.effect.name
-								return messageData
-							}
-							else
-							{
-								return this.script.message(msg)
-							}
-							`,
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/deafened.png",
-        id: "deafened",
-        statuses: ["deafened"],
-        name: "WFRP4E.ConditionName.Deafened",
-				description : "WFRP4E.Conditions.Deafened",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Ogłuszenie - Testy związane z słuchem",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/stunned.png",
-        id: "stunned",
-        statuses: ["stunned"],
-        name: "WFRP4E.ConditionName.Stunned",
-				description : "WFRP4E.Conditions.Stunned",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Oszołomienie - Kara do wszystkich testów",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-              options: {
-								activateScript: "return true"
-							}
-						}
-						// { // Not sure what to do about this
-						//     trigger: "dialog",
-						//     label : "Bonus to Melee Attacks",
-						//     script : `args.fields.modifier -= 10 * this.effect.conditionValue`,
-						//     "options.dialog.targeter" : true
-						// }
-					]
-				}
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/entangled.png",
-        id: "entangled",
-        statuses: ["entangled"],
-        name: "WFRP4E.ConditionName.Entangled",
-				description : "WFRP4E.Conditions.Entangled",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Testy związane z poruszaniem się",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-              options: {
-                activateScript:
-                  "return ['ws', 'bs', 'ag'].includes(args.characteristic)",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/fatigued.png",
-        id: "fatigued",
-        statuses: ["fatigued"],
-        name: "WFRP4E.ConditionName.Fatigued",
-				description : "WFRP4E.Conditions.Fatigued",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Zmęczenie - Kara do wszystkich testów",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-              options: {
-                activateScript: "return true",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/blinded.png",
-        id: "blinded",
-        statuses: ["blinded"],
-        name: "WFRP4E.ConditionName.Blinded",
-				description : "WFRP4E.Conditions.Blinded",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Oślepienie - Testy związane ze wzrokiem",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-              options: {
-                activateScript:
-                  "return ['ws', 'bs', 'ag'].includes(args.characteristic)",
-              },
-            },
-            {
-              trigger: "dialog",
-              label: "Bonus do ataku oślepionego celu",
-              script: `args.fields.modifier += 10 * this.effect.conditionValue`,
-              options: {
-                targeter: true,
-                hideScript: "return args.item?.attackType != 'melee'",
-                activateScript: "return args.item?.attackType == 'melee'",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/broken.png",
-        id: "broken",
-        statuses: ["broken"],
-        name: "WFRP4E.ConditionName.Broken",
-				description : "WFRP4E.Conditions.Broken",
-        system: {
-          condition: {
-            value: 1,
-            numbered: true,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label:
-                "Panika - Wszystkie testy, oprócz związanych z ucieczką i ukrywaniem się",
-              script: `args.fields.modifier -= 10 * this.effect.conditionValue`,
-              options: {
-                activateScript:
-                  "return !args.skill?.name?.includes(game.i18n.localize('NAME.Stealth')) && args.skill?.name != game.i18n.localize('NAME.Athletics')",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/prone.png",
-        id: "prone",
-        statuses: ["prone"],
-        name: "WFRP4E.ConditionName.Prone",
-				description : "WFRP4E.Conditions.Prone",
-        system: {
-          condition: {
-            value: null,
-            numbered: false,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Powalenie - Wszystkie testy związane z ruchem",
-              script: `args.fields.modifier -= 20`,
-              options: {
-                activateScript:
-                  "return ['ws', 'bs', 'ag'].includes(args.characteristic)",
-              },
-            },
-            {
-              trigger: "dialog",
-              label: "Bonus do ataku wręcz przeciwko celowi leżącemu",
-              script: `args.fields.modifier += 20`,
-              options: {
-                targeter: true,
-                hideScript: "return args.item?.system.attackType != 'melee'",
-                activateScript:
-                  "return args.item?.system.attackType == 'melee'",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/surprised.png",
-        id: "surprised",
-        statuses: ["surprised"],
-        name: "WFRP4E.ConditionName.Surprised",
-				description : "WFRP4E.Conditions.Surprised",
-        system: {
-          condition: {
-            value: null,
-            numbered: false,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Bonus do ataku z zaskoczenia",
-              script: `args.fields.modifier += 20`,
-              options: {
-                targeter: true,
-                hideScript: "return args.item?.system.attackType != 'melee'",
-                activateScript:
-                  "return args.item?.system.attackType == 'melee'",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/unconscious.png",
-        id: "unconscious",
-        statuses: ["unconscious"],
-        name: "WFRP4E.ConditionName.Unconscious",
-				description : "WFRP4E.Conditions.Unconscious",
-        system: {
-          condition: {
-            value: null,
-            numbered: false,
-          },
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/grappling.png",
-        id: "grappling",
-        statuses: ["grappling"],
-        name: "WFRP4E.ConditionName.Grappling",
-				description : "WFRP4E.Conditions.Grappling",
-        system: {
-          condition: {
-            value: null,
-            numbered: false,
-          },
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/conditions/engaged.png",
-        id: "engaged",
-        statuses: ["engaged"],
-        name: "WFRP4E.ConditionName.Engaged",
-				description : "WFRP4E.Conditions.Engaged",
-        system: {
-          condition: {
-            value: null,
-            numbered: false,
-          },
-          scriptData: [
-            {
-              trigger: "dialog",
-              label: "Nie można atakować z dystansu (Związany Walką)",
-              script: `args.abort = true
-							ui.notifications.error(game.i18n.localize("EFFECT.ShooterEngagedError"))`,
-              options: {
-                hideScript:
-                  "return !args.weapon || args.weapon.isMelee || args.weapon.properties.qualities.pistol",
-                activateScript:
-                  "return args.weapon.isRanged && !args.weapon.properties.qualities.pistol",
-              },
-            },
-          ],
-        },
-      },
-      {
-				img: "systems/wfrp4e/icons/defeated.png",
-        id: "dead",
-        statuses: ["dead"],
-        name: "WFRP4E.ConditionName.Dead",
-				description : "WFRP4E.Conditions.Dead",
-        system: {
-          condition: {
-            value: null,
-            numbered: false,
-          },
-        }
 			}
-		]
-
-		foundry.utils.mergeObject(this.propertyEffects, {
-			// Qualities
-			accurate: {
-				name : game.i18n.localize("PROPERTY.Accurate"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item"
-					},
-					scriptData : [{
-						label : game.i18n.localize("PROPERTY.Accurate"),
-						trigger : "dialog",
-						script : "args.fields.modifier += 10;",
-						options : {
-							hideScript : "",
-							activateScript : "return true"
-						}
+			catch (_e) {
+				try {
+					const result = Function(`"use strict"; return (${value}${normalized})`)();
+					if (typeof result === "number" && !Number.isNaN(result)) {
+						return Math.floor(result);
 					}
-				],
 				}
-			},
-			blackpowder: {
-				img : "systems/wfrp4e/icons/blank.png",
-				name: game.i18n.localize("EFFECT.BlackpowderShock"),
-				system: {
-					transferData : {
-						type : "target",
-						documentType : "Actor"
-					},
-					scriptData: [
-						{
-							label: game.i18n.localize("EFFECT.BlackpowderShock"),
-							trigger: "immediate",
-							script: `
-								test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {appendTitle : " - " + this.effect.name, skipTargets: true, fields : {difficulty : "average"}});
-								await test.roll();
-								if (test.failed)
-								{
-									this.actor.addCondition("broken");
-								}
-								return false;
-							`
-						}
-					]
-				}
-			},
-			blast: {
-				name : game.i18n.localize("PROPERTY.Blast"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item"
-					},
-					scriptData : [{
-						label : game.i18n.localize("PROPERTY.Blast"),
-						trigger : "rollWeaponTest",
-						script : "if (args.test.succeeded) args.test.result.other.push(`<a class='aoe-template' data-type='radius'><i class='fas fa-ruler-combined'></i>${this.item.properties.qualities.blast.value} yard Blast</a>`)",
-					}]
-				}
-			},
-			damaging: {
-				name : game.i18n.localize("PROPERTY.Damaging"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			defensive: {
-				name : game.i18n.localize("PROPERTY.Defensive"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Actor",
-						equipTransfer: true
-					},
-					scriptData : [{
-						label : game.i18n.localize("PROPERTY.Defensive"),
-						trigger : "dialog",
-						script : "args.fields.slBonus++;",
-						options : {
-							activateScript : "return args.actor.attacker",
-							hideScript : "return !args.actor.attacker"
-						}
-					}]
-				}
-			},
-			distract: {
-				name : game.i18n.localize("PROPERTY.Distract"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			entangle: {
-				name : game.i18n.localize("PROPERTY.Entangle"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-					scriptData : [{
-						label : game.i18n.localize("PROPERTY.Entangle"),
-						trigger : "applyDamage",
-						script : "args.actor.addCondition('entangled')"
-					}]
-				}
+				catch (_e2) {}
+			}
+		}
 
-			},
-			fast: {
-				name : game.i18n.localize("PROPERTY.Fast"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			hack: {
-				name : game.i18n.localize("PROPERTY.Hack"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			impact: {
-				name : game.i18n.localize("PROPERTY.Impact"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			impale: {
-				name : game.i18n.localize("PROPERTY.Impale"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			magical: {
-				name : game.i18n.localize("PROPERTY.Magical"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			penetrating: {
-				name : game.i18n.localize("PROPERTY.Penetrating"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			pistol: {
-				name : game.i18n.localize("PROPERTY.Pistol"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			precise: {
-				name : game.i18n.localize("PROPERTY.Precise"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item"
-					},
-					scriptData : [{
-						label : game.i18n.localize("PROPERTY.Precise"),
-						trigger : "dialog",
-						script : "args.fields.successBonus += 1;",
-						options : {
-							hideScript : "",
-							activateScript : "return true"
-						}
-					}]
-				}
-			},
-			pummel: {
-				name : game.i18n.localize("PROPERTY.Pummel"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			repeater: {
-				name : game.i18n.localize("PROPERTY.Repeater"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			shield: {
-				name : game.i18n.localize("PROPERTY.Shield"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			trapblade: {
-				name : game.i18n.localize("PROPERTY.TrapBlade"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			unbreakable: {
-				name : game.i18n.localize("PROPERTY.Unbreakable"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			wrap: {
-				name : game.i18n.localize("PROPERTY.Wrap"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
+		// Bezpieczny fallback: jeśli to inny tekst (np. nazwa), nie rzucamy błędu eval!
+		return value;
+	};
 
-			// Flaws
-			dangerous: {
-				name : game.i18n.localize("PROPERTY.Dangerous"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			imprecise: {
-				name : game.i18n.localize("PROPERTY.Imprecise"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item"
-					},
-					scriptData : [{
-						label : game.i18n.localize("PROPERTY.Imprecise"),
-						trigger : "dialog",
-						script : "args.fields.slBonus -= 1;",
-						options : {
-							hideScript : "",
-							activateScript : "return true"
-						}
-					}]
-				}
-			},
-			reload: {
-				name : game.i18n.localize("PROPERTY.Reload"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			slow: {
-				name : game.i18n.localize("PROPERTY.Slow"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			tiring: {
-				name : game.i18n.localize("PROPERTY.Tiring"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-			undamaging: {
-				name : game.i18n.localize("PROPERTY.Undamaging"),
-				img : "systems/wfrp4e/icons/blank.png",
-				system : {
-					transferData : {
-						documentType : "Item",
-					},
-				}
-			},
-		})
+	WeaponModel.prototype._wfrp4eCorePlAmmoModsPatched = true;
+}
+
+Hooks.on("init", patchWeaponAmmoMods);
+Hooks.on("i18nInit", patchWeaponAmmoMods);
+Hooks.on("ready", patchWeaponAmmoMods);
+
+// Prevent ActorWFRP4e from creating ActiveEffects inside locked compendiums
+// when documents are being read/prepared by Babele or getDocuments()
+function patchActorSystemEffects() {
+	const ActorWFRP4e = CONFIG.Actor?.documentClass;
+	if (!ActorWFRP4e || ActorWFRP4e.prototype._wfrp4eCorePlSystemEffectsPatched) {
+		return;
+	}
+
+	const origAddSystemEffect = ActorWFRP4e.prototype.addSystemEffect;
+	ActorWFRP4e.prototype.addSystemEffect = async function(key) {
+		if (this.pack) {
+			return;
+		}
+		return origAddSystemEffect.apply(this, arguments);
+	};
+
+	const origRemoveSystemEffect = ActorWFRP4e.prototype.removeSystemEffect;
+	ActorWFRP4e.prototype.removeSystemEffect = async function(key) {
+		if (this.pack) {
+			return;
+		}
+		return origRemoveSystemEffect.apply(this, arguments);
+	};
+
+	ActorWFRP4e.prototype._wfrp4eCorePlSystemEffectsPatched = true;
+}
+
+Hooks.on("init", patchActorSystemEffects);
+Hooks.on("i18nInit", patchActorSystemEffects);
+Hooks.on("ready", patchActorSystemEffects);
+
+// Fix broken image path for miscast effects (modules/wfrp4e-core/icons/effects/miscast.png -> modules/wfrp4e-core/art/other/miscast.webp)
+function patchActiveEffectImages() {
+	const ActiveEffectClass = CONFIG.ActiveEffect?.documentClass;
+	if (!ActiveEffectClass || ActiveEffectClass.prototype._wfrp4eCorePlImagesPatched) {
+		return;
+	}
+
+	const origPrepareBaseData = ActiveEffectClass.prototype.prepareBaseData;
+	if (typeof origPrepareBaseData === "function") {
+		ActiveEffectClass.prototype.prepareBaseData = function() {
+			origPrepareBaseData.call(this);
+			if (this.img === "modules/wfrp4e-core/icons/effects/miscast.png") {
+				this.img = "modules/wfrp4e-core/art/other/miscast.webp";
+			}
+		};
+	}
+
+	ActiveEffectClass.prototype._wfrp4eCorePlImagesPatched = true;
+}
+
+Hooks.on("init", patchActiveEffectImages);
+Hooks.on("i18nInit", patchActiveEffectImages);
+Hooks.on("ready", patchActiveEffectImages);
+
+Hooks.on("preCreateActiveEffect", (effect) => {
+	if (effect?.img === "modules/wfrp4e-core/icons/effects/miscast.png") {
+		effect.updateSource?.({ img: "modules/wfrp4e-core/art/other/miscast.webp" });
 	}
 });
+
+// Fix SpellModel.migrateData throwing when source.lore is undefined during partial item updates
+function patchSpellMigration() {
+	const SpellModel = CONFIG.Item?.dataModels?.spell ?? game.wfrp4e?.models?.SpellModel;
+	if (!SpellModel || SpellModel._wfrp4eCorePlSpellMigrationPatched) {
+		return;
+	}
+
+	const origMigrate = SpellModel.migrateData;
+	SpellModel.migrateData = function(source) {
+		if (source && !source.lore) {
+			source.lore = {};
+		}
+		return origMigrate.call(this, source);
+	};
+
+	SpellModel._wfrp4eCorePlSpellMigrationPatched = true;
+}
+
+Hooks.on("init", patchSpellMigration);
+Hooks.on("i18nInit", patchSpellMigration);
+Hooks.on("ready", patchSpellMigration);
+
+// Fix VehicleModel.checkSize throwing when actor.system.autoCalc is undefined in older/DLC vehicles
+function patchVehicleCheckSize() {
+	const VehicleModel = CONFIG.Actor?.dataModels?.vehicle ?? game.wfrp4e?.models?.VehicleModel;
+	if (!VehicleModel || VehicleModel.prototype._wfrp4eCorePlVehicleSizePatched) {
+		return;
+	}
+
+	const origCheckSize = VehicleModel.prototype.checkSize;
+	VehicleModel.prototype.checkSize = function() {
+		const actor = this.parent;
+		if (!actor?.system?.autoCalc) {
+			return;
+		}
+		return origCheckSize.apply(this, arguments);
+	};
+
+	VehicleModel.prototype._wfrp4eCorePlVehicleSizePatched = true;
+}
+
+Hooks.on("init", patchVehicleCheckSize);
+Hooks.on("i18nInit", patchVehicleCheckSize);
+Hooks.on("ready", patchVehicleCheckSize);
+
+// WFRP 9.6.x inserts this label as a hard-coded English string after the
+// Journal page has been enriched, so it cannot be translated in a compendium
+// catalog. Localize every rendered Endeavour action without modifying the
+// system package itself.
+Hooks.on("renderApplicationV2", (application, element) => {
+	if (game.i18n?.lang !== "pl") {
+		return;
+	}
+	const root = element?.querySelectorAll
+		? element
+		: element?.[0] ?? application?.element;
+	for (const button of root?.querySelectorAll?.('[data-action="performEndeavour"]') ?? []) {
+		button.textContent = game.i18n.localize("WFRP4EPL.PerformEndeavour");
+	}
+});
+
+// Filter supplement species and subspecies in character generator (SpeciesStage)
+// based on whether the corresponding compendium journal is available and translated.
+const SUPPLEMENT_SPECIES_REQUIREMENTS = {
+	skink: "wfrp4e-lustria.journals",
+	chameleonskink: "wfrp4e-lustria.journals",
+	familiar: "wfrp4e-archives3.journals",
+	gnome: "wfrp4e-rnhd.journals",
+	ogre: "wfrp4e-archives2.journals",
+};
+
+const SUPPLEMENT_SUBSPECIES_REQUIREMENTS = {
+	human: {
+		tilean: "wfrp4e-up-in-arms.journals",
+		"imperial-tilean": "wfrp4e-up-in-arms.journals",
+		salzenmunder: "wfrp4e-salzenmund.journals",
+		nordlander: ["wfrp4e-salzenmund.journals", "wfrp4e-middenheim.journals"],
+		middenheimer: "wfrp4e-middenheim.journals",
+		middenlander: "wfrp4e-middenheim.journals",
+		bjornling: "wfrp4e-soc.journals",
+		sarl: "wfrp4e-soc.journals",
+		skaeling: "wfrp4e-soc.journals",
+		southbanker: "wfrp4e-archives3.journals",
+		eastender: "wfrp4e-archives3.journals",
+		hexxerbezrik: "wfrp4e-archives3.journals",
+		docklands: "wfrp4e-archives3.journals",
+	},
+	dwarf: {
+		cragforge: "wfrp4e-salzenmund.journals",
+		grumsson: "wfrp4e-salzenmund.journals",
+		middenheimer: "wfrp4e-middenheim.journals",
+		altdorfer: "wfrp4e-archives3.journals",
+		norse: ["wfrp4e-soc.journals", "wfrp4e-dwarfs.journals"],
+		imperial: "wfrp4e-dwarfs.journals",
+		"karaz-a-karak": "wfrp4e-dwarfs.journals",
+		"barak-varr": "wfrp4e-dwarfs.journals",
+		"karak-azul": "wfrp4e-dwarfs.journals",
+		"karak-eight-peaks": "wfrp4e-dwarfs.journals",
+		"karak-kadrin": "wfrp4e-dwarfs.journals",
+		zhufbar: "wfrp4e-dwarfs.journals",
+		"karak-hirn": "wfrp4e-dwarfs.journals",
+		"karak-izor": "wfrp4e-dwarfs.journals",
+		"karak-norn": "wfrp4e-dwarfs.journals",
+	},
+	halfling: {
+		ashfield: "wfrp4e-archives1.journals",
+		brambledown: "wfrp4e-archives1.journals",
+		brandysnap: "wfrp4e-archives1.journals",
+		hayfoot: "wfrp4e-archives1.journals",
+		hollyfoot: "wfrp4e-archives1.journals",
+		"hayfoot—hollyfoot": "wfrp4e-archives1.journals",
+		lostpockets: "wfrp4e-archives1.journals",
+		lowhaven: "wfrp4e-archives1.journals",
+		rumster: "wfrp4e-archives1.journals",
+		skelfsider: "wfrp4e-archives1.journals",
+		thorncobble: "wfrp4e-archives1.journals",
+		tumbleberry: "wfrp4e-archives1.journals",
+	},
+	welf: {
+		harioth: "wfrp4e-archives1.journals",
+		toriour: "wfrp4e-archives1.journals",
+		faniour: "wfrp4e-archives1.journals",
+	},
+	familiar: {
+		badger: "wfrp4e-archives3.journals",
+		cat: "wfrp4e-archives3.journals",
+		crow: "wfrp4e-archives3.journals",
+		fox: "wfrp4e-archives3.journals",
+		owl: "wfrp4e-archives3.journals",
+		stoat: "wfrp4e-archives3.journals",
+	},
+};
+
+function isPackAvailable(packKey) {
+	if (!packKey) return true;
+	const packs = Array.isArray(packKey) ? packKey : [packKey];
+	return packs.some(pk => {
+		if (game.packs?.get(pk)) return true;
+		const moduleId = pk.split(".")[0];
+		return Boolean(game.modules?.get(moduleId)?.active);
+	});
+}
+
+function isPackTranslated(packKey) {
+	if (!packKey) return true;
+	if (game.i18n?.lang !== "pl") return false;
+	const packs = Array.isArray(packKey) ? packKey : [packKey];
+	return packs.some(pk => {
+		const pack = game.packs?.get(pk);
+		if (!pack) return false;
+		return Boolean(
+			game.babele?.isTranslated?.(pk) ||
+			game.babele?.isTranslated?.(pack.collection) ||
+			game.babele?.translations?.for?.(pk) ||
+			game.babele?.translations?.for?.(pack.collection)
+		);
+	});
+}
+
+function isRequirementMet(requirement) {
+	if (!requirement) {
+		return true;
+	}
+	return isPackAvailable(requirement);
+}
+
+const isPackJournalAvailable = isPackAvailable;
+
+function getLocalizedSubspeciesName(species, subKey, fallbackName) {
+	if (game.i18n?.lang !== "pl") return fallbackName;
+	const directKey = `SUBSPECIES.${subKey}`;
+	if (game.i18n?.has?.(directKey)) return game.i18n.localize(directKey);
+	if (game.i18n?.has?.(fallbackName)) return game.i18n.localize(fallbackName);
+	if (subKey === "reiklander") return "Reiklandczyk";
+	if (subKey === "tilean") return "Tileańczyk";
+	if (subKey === "imperial-tilean") return "Imperialny Tileańczyk";
+	return fallbackName;
+}
+
+function resolveSpecies(species) {
+	return game.wfrp4eCorePl?.names?.resolveSpeciesKey?.(species) ?? species;
+}
+
+function resolveSubspecies(speciesKey, subspecies) {
+	return game.wfrp4eCorePl?.names?.resolveSubspeciesKey?.(speciesKey, subspecies) ?? subspecies;
+}
+
+function patchSpeciesStage(SpeciesStage) {
+	if (!SpeciesStage || SpeciesStage.prototype._wfrp4eCorePlFilterPatched) {
+		return;
+	}
+
+	const origSetSpecies = SpeciesStage.prototype.setSpecies;
+	SpeciesStage.prototype.setSpecies = function(species, subspecies) {
+		const resolvedSpecies = resolveSpecies(species) || species;
+		const resolvedSubspecies = resolveSubspecies(resolvedSpecies, subspecies) || subspecies;
+		if (typeof origSetSpecies === "function") {
+			origSetSpecies.call(this, resolvedSpecies, resolvedSubspecies);
+		} else {
+			this.context.species = resolvedSpecies;
+			if (resolvedSubspecies) {
+				this.context.subspecies = resolvedSubspecies;
+			} else {
+				delete this.context.subspecies;
+			}
+		}
+
+		if (this.context.subspecies) {
+			const speciesSub = SUPPLEMENT_SUBSPECIES_REQUIREMENTS[this.context.species];
+			const req = speciesSub?.[this.context.subspecies];
+			if (req && !isRequirementMet(req)) {
+				const allSub = game.wfrp4e?.config?.subspecies?.[this.context.species] || {};
+				const validKey = Object.keys(allSub).find(k => {
+					const r = speciesSub?.[k];
+					return !r || isRequirementMet(r);
+				});
+				if (validKey) {
+					this.context.subspecies = validKey;
+				} else {
+					delete this.context.subspecies;
+				}
+			}
+		}
+	};
+
+	const origOnRollSpecies = SpeciesStage.prototype.onRollSpecies;
+	if (typeof origOnRollSpecies === "function") {
+		SpeciesStage.prototype.onRollSpecies = async function(event) {
+			event.stopPropagation();
+			this.context.exp = 20;
+			this.context.roll = await game.wfrp4e.tables.rollTable("species");
+			this.context.choose = false;
+			const speciesKey = resolveSpecies(this.context.roll?.name) || this.context.roll?.name;
+			const localizedRollName = game.wfrp4e?.config?.species?.[speciesKey] || this.context.roll?.name;
+			this.updateMessage("Rolled", {rolled : localizedRollName});
+			this.setSpecies(speciesKey);
+		};
+	}
+
+	const origOnSelectSpecies = SpeciesStage.prototype.onSelectSpecies;
+	if (typeof origOnSelectSpecies === "function") {
+		SpeciesStage.prototype.onSelectSpecies = function(event) {
+			this.context.exp = 0;
+			const rawKey = event.currentTarget?.dataset?.species;
+			const speciesKey = resolveSpecies(rawKey) || rawKey;
+			this.context.choose = speciesKey;
+			const localizedName = game.wfrp4e?.config?.species?.[speciesKey] || speciesKey;
+			this.updateMessage("Chosen", {chosen : localizedName});
+			this.setSpecies(speciesKey);
+		};
+	}
+
+	const origGetData = SpeciesStage.prototype.getData;
+	SpeciesStage.prototype.getData = async function() {
+		await ensureCompendiumTablesLoaded();
+		if (this.context.species) {
+			const extraReq = SUPPLEMENT_SPECIES_REQUIREMENTS[this.context.species];
+			if (extraReq && !isRequirementMet(extraReq)) {
+				this.context.species = "";
+				delete this.context.subspecies;
+			}
+		}
+
+		if (this.context.species && this.context.subspecies) {
+			const speciesSub = SUPPLEMENT_SUBSPECIES_REQUIREMENTS[this.context.species];
+			const req = speciesSub?.[this.context.subspecies];
+			if (req && !isRequirementMet(req)) {
+				const allSub = game.wfrp4e?.config?.subspecies?.[this.context.species] || {};
+				const validKey = Object.keys(allSub).find(k => {
+					const r = speciesSub?.[k];
+					return !r || isRequirementMet(r);
+				});
+				if (validKey) {
+					this.context.subspecies = validKey;
+				} else {
+					delete this.context.subspecies;
+				}
+			}
+		}
+
+		const data = await origGetData.apply(this, arguments);
+
+		// Ensure all species from the species table are properly resolved into data.species
+		// even if the table has English names (Human, Dwarf, etc.) which cause warhammer.utility.findKey
+		// to fail against Polish config.species, resulting in only Ogre (or nothing) appearing!
+		let speciesTable = game.wfrp4e?.tables?.findTable?.("species");
+		if (speciesTable?.results) {
+			const resolvedSpecies = {};
+			for (const result of speciesTable.results) {
+				const rName = result.name || result.text || "";
+				const speciesKey = resolveSpecies(rName);
+				if (speciesKey && game.wfrp4e?.config?.species?.[speciesKey]) {
+					resolvedSpecies[speciesKey] = game.wfrp4e.config.species[speciesKey];
+				} else if (speciesKey) {
+					resolvedSpecies[speciesKey] = rName;
+				}
+			}
+			if (Object.keys(resolvedSpecies).length > 0) {
+				data.species = resolvedSpecies;
+			}
+		}
+
+		// Species added by active modules (e.g. Gnome, Ogre) are only listed by their own species table,
+		// which replaces the core one in the table settings. Offer every species that has a career table.
+		for (const key of Object.keys(game.wfrp4e?.config?.species || {})) {
+			if (data.species?.[key] || data.extraSpecies?.[key]) continue;
+			if (!game.wfrp4e?.config?.speciesCharacteristics?.[key]) continue;
+			if (!hasCareerTableColumn(key)) continue;
+			data.extraSpecies ??= {};
+			data.extraSpecies[key] = game.wfrp4e.config.species[key];
+		}
+
+		if (data.extraSpecies) {
+			const filteredExtra = {};
+			for (const [key, label] of Object.entries(data.extraSpecies)) {
+				// Don't duplicate species that are already in the main species table (e.g. Ogre from Archives 2)
+				if (data.species?.[key]) {
+					continue;
+				}
+				const req = SUPPLEMENT_SPECIES_REQUIREMENTS[key];
+				if (!req || isRequirementMet(req)) {
+					if (!req || isPackTranslated(req)) {
+						filteredExtra[key] = game.wfrp4e?.config?.species?.[key] || label;
+					} else {
+						filteredExtra[key] = label;
+					}
+				}
+			}
+			if (Object.keys(filteredExtra).length > 0) {
+				data.extraSpecies = filteredExtra;
+			} else {
+				delete data.extraSpecies;
+			}
+		}
+
+		if (data.subspeciesChoices && this.context.species) {
+			const speciesSub = SUPPLEMENT_SUBSPECIES_REQUIREMENTS[this.context.species];
+			const filteredSub = {};
+			for (const [subKey, subData] of Object.entries(data.subspeciesChoices)) {
+				const req = speciesSub?.[subKey];
+				if (!req || isRequirementMet(req)) {
+					const cloned = { ...subData };
+					if (!req || isPackTranslated(req)) {
+						const locName = getLocalizedSubspeciesName(this.context.species, subKey, subData.name);
+						if (locName) {
+							cloned.name = locName;
+						}
+					}
+					filteredSub[subKey] = cloned;
+				}
+			}
+
+			if (Object.keys(filteredSub).length > 0) {
+				data.subspeciesChoices = filteredSub;
+			} else {
+				delete data.subspeciesChoices;
+				if (this.context.subspecies) {
+					delete this.context.subspecies;
+				}
+			}
+
+			if (this.context.subspecies) {
+				const chosenName = filteredSub[this.context.subspecies]?.name || game.wfrp4e?.config?.subspecies?.[this.context.species]?.[this.context.subspecies]?.name;
+				const baseSpecies = game.wfrp4e?.config?.species?.[this.context.species] ?? this.context.species;
+				data.speciesDisplay = chosenName ? `${baseSpecies} (${chosenName})` : baseSpecies;
+			} else {
+				data.speciesDisplay = game.wfrp4e?.config?.species?.[this.context.species] ?? this.context.species;
+			}
+		}
+
+		if (data.preview?.skills && game.i18n?.lang === "pl") {
+			const or = game.i18n.localize("SkillsOr") || "lub";
+			data.preview.skills = data.preview.skills.map(t => t.replace(/ <em>or<\/em> /g, ` <em>${or}</em> `));
+		}
+
+		return data;
+	};
+
+	SpeciesStage.prototype._wfrp4eCorePlFilterPatched = true;
+}
+
+function hasCareerTableColumn(column) {
+	const isCareerTable = table => table?.getFlag?.("wfrp4e", "key") === "career" && table.getFlag("wfrp4e", "column") === column;
+	if (game.tables?.some?.(isCareerTable)) return true;
+	return (game.packs?.filter?.(p => p.documentName === "RollTable") || []).some(pack => pack.contents?.some?.(isCareerTable));
+}
+
+function tryPatchSpeciesStage() {
+	if (game.wfrp4e?.apps?.SpeciesStage) {
+		patchSpeciesStage(game.wfrp4e.apps.SpeciesStage);
+	}
+}
+
+const CAREER_CLASS_MAP = {
+	"Academics": "Uczeni",
+	"Burghers": "Mieszczanie",
+	"Courtiers": "Dworzanie",
+	"Peasants": "Pospólstwo",
+	"Rangers": "Wędrowcy",
+	"Riverfolk": "Wodniacy",
+	"Rogues": "Łotry",
+	"Warriors": "Wojownicy",
+};
+
+const CAREER_GROUP_FALLBACK = {
+	"Advisor": "Doradca",
+	"Agitator": "Agitator",
+	"Apothecary": "Aptekarka",
+	"Artisan": "Rzemieślniczka",
+	"Artist": "Artystka",
+	"Bailiff": "Zarządca",
+	"Bawd": "Rajfur",
+	"Beggar": "Żebrak",
+	"Boatman": "Przewoźnik",
+	"Bounty Hunter": "Łowczyni Nagród",
+	"Cavalryman": "Kawalerzysta",
+	"Charlatan": "Szarlatan",
+	"Coachman": "Woźnica",
+	"Duellist": "Zwadźca",
+	"Engineer": "Inżynier",
+	"Entertainer": "Kuglarka",
+	"Envoy": "Poseł",
+	"Fence": "Paser",
+	"Flagellant": "Biczownik",
+	"Grave Robber": "Hiena Cmentarna",
+	"Guard": "Ochroniarz",
+	"Hedge Witch": "Guślarz",
+	"Herbalist": "Zielarka",
+	"Huffer": "Pilotka Rzeczna",
+	"Hunter": "Łowczyni",
+	"Investigator": "Śledczy",
+	"Knight": "Rycerz",
+	"Lawyer": "Prawniczka",
+	"Merchant": "Kupiec",
+	"Messenger": "Posłaniec",
+	"Miner": "Górnik",
+	"Mystic": "Mistyczka",
+	"Noble": "Szlachcic",
+	"Nun": "Mniszka",
+	"Outlaw": "Banita",
+	"Pedlar": "Domokrążca",
+	"Physician": "Medyczka",
+	"Pit Fighter": "Gladiator",
+	"Priest": "Kapłan",
+	"Protagonist": "Oprych",
+	"Racketeer": "Rekieterka",
+	"Rekietierka": "Rekieterka",
+	"Rat Catcher": "Szczurołap",
+	"Riverwarden": "Strażnik Rzeczny",
+	"Riverwoman": "Flisak",
+	"Road warden": "Strażniczka Dróg",
+	"Road Warden": "Strażniczka Dróg",
+	"Scholar": "Uczony",
+	"Scout": "Zwiadowca",
+	"Seaman": "Żeglarz",
+	"Servant": "Służąca",
+	"Slayer": "Zabójca",
+	"Smuggler": "Przemytniczka",
+	"Soldier": "Żołnierz",
+	"Spy": "Szpieg",
+	"Stevedore": "Doker",
+	"Thief": "Złodziej",
+	"Townsman": "Mieszczka",
+	"Villager": "Chłopka",
+	"Warden": "Namiestnik",
+	"Warrior Priest": "Kapłan Bitewny",
+	"Watchman": "Strażnik",
+	"Witch": "Czarownica",
+	"Witch Hunter": "Łowca Czarownic",
+	"Wizard": "Czarodziej",
+	"Wrecker": "Pirat Rzeczny",
+	// Up in Arms & expansions
+	"Artillerist": "Artylerzysta",
+	"Archer": "Łuczniczka",
+	"Pikeman": "Pikinier",
+	"Camp Follower": "Ciura Obozowa",
+	"Light Cavalry": "Lekki Kawalerzysta",
+	"Cartographer": "Kartografka",
+	"Knight of the White Wolf": "Rycerz Białego Wilka",
+	"Knight Panther": "Rycerz Pantery",
+	"Siege Specialist": "Specjalista Oblężniczy",
+	"Freelance": "Rycerz Najemny",
+	"Greatsword": "Gwardzista Elektorski",
+	"Halberdier": "Halabardnik",
+	"Handgunner": "Strzelec",
+	"Knight of the Blazing Sun": "Rycerz Płonącego Słońca",
+	// Winds of Magic
+	"Alchemist": "Alchemik",
+	"Mundane Alchemist": "Świecka Alchemiczka",
+	"Astromancer": "Astromanta",
+	"Beadle": "Bedel",
+	"Combat Familiar": "Chowaniec Bojowy",
+	"Druid": "Druidka",
+	"Hierophant": "Hierofant",
+	"Magister Vigilant": "Magister Rewizor",
+	"Pyromancer": "Piromanta",
+	"Scryer": "Jasnowidząca",
+	"Shaman": "Szamanka",
+	"Spell Familiar": "Chowaniec Zaklęć",
+	"Spiriter": "Spirytysta",
+	"Shadowmancer": "Czarodziej Kolegium Cieni",
+	// Archives of the Empire
+	"Badger Rider": "Borsuczy Jeździec",
+	"Fieldwarden": "Strażniczka Pól",
+	"Ghost Strider": "Wędrowny Duch",
+	"Karak Ranger": "Zwiadowczyni z Karaku",
+	"Ogre Butcher": "Ogrzy Rzeźnik",
+	"Maneater": "Ludojad",
+	"Rhinox Herder": "Poganiacz Rhinoxów",
+};
+
+const REVERSE_CAREER_GROUP_FALLBACK = Object.freeze(
+	Object.entries(CAREER_GROUP_FALLBACK).reduce((acc, [en, pl]) => {
+		acc[pl] = en;
+		return acc;
+	}, {})
+);
+
+function patchCareerSelector() {
+	const CareerSelectorClass = game.wfrp4e?.apps?.CareerSelector;
+	if (!CareerSelectorClass || CareerSelectorClass.prototype._wfrp4eCorePlPatched) return;
+
+	const origLoadCareers = CareerSelectorClass.prototype.loadCareers;
+	CareerSelectorClass.prototype.loadCareers = async function() {
+		await origLoadCareers.call(this);
+
+		if (!Array.isArray(this.careers) || !this.careers.length) return;
+
+		for (const tier of this.careers) {
+			if (!tier?.system) continue;
+
+			// 1. Resolve Babele compendium translation if available
+			if (tier.uuid && globalThis.game?.babele) {
+				try {
+					const parsed = foundry.utils.parseUuid(tier.uuid);
+					if (parsed?.collection) {
+						const packId = parsed.collection.collection ?? parsed.collection.metadata?.id ?? parsed.collection;
+						const compendium = game.babele.translatedCompendiumFor?.(packId);
+						if (compendium) {
+							const entry = compendium.translationsFor?.({
+								_id: parsed.id,
+								id: parsed.id,
+								name: tier.name
+							});
+							if (entry?.careergroup) {
+								tier.system.careergroup.value = entry.careergroup;
+							}
+							if (entry?.class) {
+								tier.system.class.value = entry.class;
+							}
+						}
+					}
+				} catch (e) {}
+			}
+
+			// 2. Normalize class (English -> Polish)
+			const rawClass = tier.system.class?.value;
+			if (rawClass && CAREER_CLASS_MAP[rawClass]) {
+				tier.system.class.value = CAREER_CLASS_MAP[rawClass];
+			}
+
+			// 3. Normalize careergroup if still English
+			const rawGroup = tier.system.careergroup?.value;
+			if (rawGroup && CAREER_GROUP_FALLBACK[rawGroup]) {
+				tier.system.careergroup.value = CAREER_GROUP_FALLBACK[rawGroup];
+			}
+		}
+
+		// Normalize current career if present
+		if (this.currentCareer?.system) {
+			const curClass = this.currentCareer.system.class?.value;
+			if (curClass && CAREER_CLASS_MAP[curClass]) {
+				this.currentCareer.system.class.value = CAREER_CLASS_MAP[curClass];
+			}
+			const curGroup = this.currentCareer.system.careergroup?.value;
+			if (curGroup && CAREER_GROUP_FALLBACK[curGroup]) {
+				this.currentCareer.system.careergroup.value = CAREER_GROUP_FALLBACK[curGroup];
+			}
+		}
+
+		// Re-sort with Polish collation and prioritize current career group at the top
+		const currentCareerGroup = this.currentCareer?.system?.careergroup?.value;
+		this.careers.sort((a, b) => (a.system?.careergroup?.value || "").localeCompare(b.system?.careergroup?.value || "", "pl"));
+		if (currentCareerGroup) {
+			const currentCareers = this.careers.filter((a) => a.system?.careergroup?.value === currentCareerGroup);
+			this.careers = this.careers.filter((a) => a.system?.careergroup?.value !== currentCareerGroup);
+			this.careers.unshift(...currentCareers);
+		}
+	};
+
+	// Clean up any cross-section duplicates (inClass vs outOfClass) in sortCareers
+	const origSortCareers = CareerSelectorClass.prototype.sortCareers;
+	CareerSelectorClass.prototype.sortCareers = function() {
+		const careerList = origSortCareers.call(this);
+		if (careerList?.inClass && careerList?.outOfClass) {
+			for (const [groupName, tiers] of Object.entries(careerList.inClass)) {
+				if (careerList.outOfClass[groupName]) {
+					careerList.outOfClass[groupName] = careerList.outOfClass[groupName].filter(
+						outTier => !tiers.some(inTier => inTier.name === outTier.name)
+					);
+					if (!careerList.outOfClass[groupName].length) {
+						delete careerList.outOfClass[groupName];
+					}
+				}
+			}
+		}
+		return careerList;
+	};
+
+	CareerSelectorClass.prototype._wfrp4eCorePlPatched = true;
+}
+
+const CAREER_LINK_LABEL = /@(?:UUID|Compendium)\[[^\]]+\]\{([^}]+)\}/i;
+const CAREER_LINK_ANY = /@(?:UUID|Compendium)\[/i;
+
+/**
+ * Normalize a career name for comparison (case, whitespace, typographic apostrophes).
+ */
+function normalizeCareerKey(value) {
+	return String(value ?? "")
+		.normalize("NFC")
+		.replace(/[‘’ʼ`´]/g, "'")
+		.replace(/\s+/g, " ")
+		.trim()
+		.toLowerCase();
+}
+
+const NORMALIZED_CAREER_ALIASES = (() => {
+	const aliases = new Map();
+	const add = (from, to) => {
+		const key = normalizeCareerKey(from);
+		if (!key || !to) return;
+		if (!aliases.has(key)) aliases.set(key, new Set());
+		aliases.get(key).add(normalizeCareerKey(to));
+	};
+	for (const [en, pl] of Object.entries(CAREER_GROUP_FALLBACK)) {
+		add(en, pl);
+		add(pl, en);
+	}
+	return aliases;
+})();
+
+function careerAliases(name) {
+	const key = normalizeCareerKey(name);
+	const result = new Set(key ? [key] : []);
+	for (const alias of NORMALIZED_CAREER_ALIASES.get(key) ?? []) {
+		result.add(alias);
+	}
+	return result;
+}
+
+/**
+ * Plain career label from a table result field: "@UUID[...]{Label}" -> "Label", HTML stripped.
+ */
+function plainCareerLabel(value) {
+	if (typeof value !== "string") return "";
+	const link = value.match(CAREER_LINK_LABEL);
+	if (link) return link[1].trim();
+	if (CAREER_LINK_ANY.test(value)) return "";
+	return value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+}
+
+/**
+ * Career name rolled on a career/seafarer table, read from the result data.
+ * TableUtility.rollTable() derives `text` from the rendered HTML; on Foundry V13+ that yields
+ * markup such as "<p>" or "<i class=...>" whenever a result has no name or is a document link,
+ * so the data fields are checked first and the rendered text only as a last resort.
+ */
+function careerNameFromTableResult(result) {
+	if (!result || typeof result !== "object") return "";
+	const data = result.object ?? {};
+	for (const value of [data.name, data.description, data.text]) {
+		const label = plainCareerLabel(value);
+		if (label) return label;
+	}
+	if (data.documentUuid) {
+		try {
+			const document = fromUuidSync(data.documentUuid, {strict: false});
+			if (document?.name) return document.name;
+		} catch (err) {}
+	}
+	for (const value of [result.name, result.text]) {
+		const label = plainCareerLabel(value);
+		if (label) return label;
+	}
+	return "";
+}
+
+function sanitizeCareerTableResult(result) {
+	if (!result || typeof result !== "object") return result;
+	const careerName = careerNameFromTableResult(result);
+	if (careerName) {
+		const display = CAREER_GROUP_FALLBACK[careerName] || careerName;
+		result.name = display;
+		result.text = display;
+	}
+	return result;
+}
+
+function careerGroupKey(career) {
+	return normalizeCareerKey(career?.system?.careergroup?.value);
+}
+
+/**
+ * Find the tier 1 career for a career group name.
+ * Accepts English or Polish names, the group name or the name of any of its levels
+ * (e.g. "Ironbreaker" -> group of "Żelazny brat"), so mixed EN/PL data from DLC modules still resolves.
+ */
+function findTier1Career(careers, targetName) {
+	const aliases = careerAliases(targetName);
+	if (!aliases.size) return null;
+
+	const tier1 = careers.filter(c => Number(c.system?.level?.value) === 1);
+	const byGroup = tier1.find(c => aliases.has(careerGroupKey(c)));
+	if (byGroup) return byGroup;
+
+	const named = careers.filter(c => aliases.has(normalizeCareerKey(c.name))
+		|| aliases.has(normalizeCareerKey(c.flags?.babele?.originalName)));
+	// Prefer the level that names its group (e.g. SoC "Officer" over the Soldier rank "Officer")
+	const isNamesake = c => normalizeCareerKey(c.name) === careerGroupKey(c) ? 1 : 0;
+	named.sort((a, b) => isNamesake(b) - isNamesake(a));
+	for (const career of named) {
+		const group = careerGroupKey(career);
+		if (!group) continue;
+		const match = tier1.find(t => t.pack === career.pack && careerGroupKey(t) === group)
+			?? tier1.find(t => careerGroupKey(t) === group);
+		if (match) return match;
+	}
+	return null;
+}
+
+function careerReplacementOptions(species, subspecies, careerNames) {
+	const replacements = game.wfrp4e?.config?.speciesCareerReplacements || {};
+	const sources = [replacements[species], subspecies ? replacements[`${species}-${subspecies}`] : null].filter(Boolean);
+	const wanted = new Set();
+	for (const name of careerNames) {
+		for (const alias of careerAliases(name)) wanted.add(alias);
+	}
+	const options = [];
+	for (const source of sources) {
+		for (const [career, list] of Object.entries(source)) {
+			if (wanted.has(normalizeCareerKey(career)) && Array.isArray(list)) options.push(...list);
+		}
+	}
+	return Array.from(new Set(options.filter(Boolean)));
+}
+
+/**
+ * The class that defines the career stage methods (CareerStage). Module stages such as SoCCareerStage
+ * extend it and override rollCareerTable/onRollCareer, so only the base class is patched; the subclass
+ * overrides keep working and reach the patched methods through super.
+ */
+function baseCareerStageClass(CareerStageClass) {
+	let cls = CareerStageClass;
+	while (cls?.prototype && !Object.hasOwn(cls.prototype, "findT1Careers")) {
+		cls = Object.getPrototypeOf(cls);
+	}
+	return cls?.prototype ? cls : CareerStageClass;
+}
+
+/**
+ * Sea of Claws asks about Seafarer careers for every species; skip the question when the species
+ * has no Seafarer table instead of failing with "Could not find imported Seafarer Table".
+ */
+function patchSeafarerCareerStage(StageClass) {
+	const proto = StageClass?.prototype;
+	if (!proto || !Object.hasOwn(proto, "handleSeafarerReplacement") || Object.hasOwn(proto, "_wfrp4eCorePlSeafarerPatched")) return;
+
+	const origOnRollCareer = proto.onRollCareer;
+	const baseOnRollCareer = Object.getPrototypeOf(proto).onRollCareer;
+	proto.onRollCareer = async function(event) {
+		if (typeof baseOnRollCareer === "function" && !game.wfrp4e?.tables?.findTable?.("seafarer", this.data?.species)) {
+			this.context.useSeafarer = false;
+			return baseOnRollCareer.call(this, event);
+		}
+		return origOnRollCareer.call(this, event);
+	};
+	proto._wfrp4eCorePlSeafarerPatched = true;
+}
+
+function patchCareerStage(CareerStageClass) {
+	patchSeafarerCareerStage(CareerStageClass);
+	const BaseClass = baseCareerStageClass(CareerStageClass);
+	if (!BaseClass?.prototype || Object.hasOwn(BaseClass.prototype, "_wfrp4eCorePlPatched")) return;
+
+	BaseClass.prototype.findT1Careers = async function(careerNames) {
+		const careers = await this.careers;
+		const careersFound = [];
+
+		if (!Array.isArray(careerNames)) {
+			careerNames = careerNames ? [careerNames] : [];
+		}
+
+		const missing = [];
+		for (const targetName of careerNames) {
+			const match = targetName ? findTier1Career(careers, String(targetName)) : null;
+			if (match) {
+				careersFound.push(match);
+			} else {
+				missing.push(targetName ? String(targetName) : "?");
+			}
+		}
+
+		if (missing.length) {
+			this.showError("CareerItems", {
+				num: missing.length,
+				careers: missing.join(", ")
+			});
+		}
+
+		return careersFound;
+	};
+
+	BaseClass.prototype.rollCareerTable = async function(species) {
+		let rollSpecies = resolveSpecies(species) || species;
+		let table = game.wfrp4e?.tables?.findTable?.("career", rollSpecies);
+
+		if (!table && typeof rollSpecies === "string" && rollSpecies.includes("-")) {
+			const baseSpecies = rollSpecies.split("-")[0];
+			if (game.wfrp4e?.tables?.findTable?.("career", baseSpecies)) {
+				rollSpecies = baseSpecies;
+			}
+		}
+
+		let result;
+		try {
+			result = await game.wfrp4e.tables.rollTable("career", {}, rollSpecies);
+		} catch (err) {
+			console.warn("wfrp4e-core-pl | Błąd podczas rollTable('career'):", err);
+			if (rollSpecies !== "human") {
+				try {
+					result = await game.wfrp4e.tables.rollTable("career", {}, "human");
+				} catch (e) {}
+			}
+			if (!result) throw err;
+		}
+
+		// rollTable() returns the notification when the table is missing
+		if (!result || typeof result !== "object" || !("total" in result)) {
+			return {name: "", text: ""};
+		}
+		return sanitizeCareerTableResult(result);
+	};
+
+	BaseClass.prototype.addCareerChoice = async function(number = 1) {
+		let rollSpecies = this.data.species;
+
+		const subspeciesCareerTable = this.data.subspecies && game.wfrp4e?.config?.subspecies?.[this.data.species]?.[this.data.subspecies]?.careerTable || null;
+		if (subspeciesCareerTable && game.wfrp4e.tables.findTable("career", subspeciesCareerTable)) {
+			rollSpecies = subspeciesCareerTable;
+		} else if (this.data.subspecies && game.wfrp4e.tables.findTable("career", rollSpecies + "-" + this.data.subspecies)) {
+			rollSpecies += "-" + this.data.subspecies;
+		} else if (this.data.species === "human" && !game.wfrp4e.tables.findTable("career", "human") && game.wfrp4e.tables.findTable("career", "human-reiklander")) {
+			rollSpecies = "human-reiklander";
+		}
+
+		for (let i = 0; i < number; i++) {
+			const careerResult = await this.rollCareerTable(rollSpecies);
+			const careerName = careerNameFromTableResult(careerResult);
+
+			const t1Careers = await this.findT1Careers(careerName);
+			this.context.careers = this.context.careers.concat(t1Careers);
+
+			// Replacement keys come from several modules, in English or Polish
+			const lookupNames = [careerName, ...t1Careers.map(c => c.system?.careergroup?.value)];
+			const replacementOptions = careerReplacementOptions(this.data.species, this.data.subspecies, lookupNames);
+			if (replacementOptions.length > 0) {
+				const replacements = await this.findT1Careers(replacementOptions);
+				this.context.replacements = this.context.replacements.concat(replacements);
+			}
+
+			this.updateMessage("Rolled", { rolled: t1Careers.map(c => c.name).join(", ") });
+		}
+		this.render(true);
+	};
+
+	BaseClass.prototype._wfrp4eCorePlPatched = true;
+}
+
+function patchChargenStages() {
+	const CharGenClass = game.wfrp4e?.apps?.CharGenWfrp4e;
+	if (CharGenClass && !CharGenClass.prototype._wfrp4eCorePlPatched) {
+		const origAddStage = CharGenClass.prototype.addStage;
+		CharGenClass.prototype.addStage = function(stage, index, stageData = {}) {
+			const stageObj = stage?.stageData ? stage.stageData() : {};
+			const key = stageData?.key || stageObj?.key;
+			if ((key === "star-sign" || key === "starsign") && !isPackJournalAvailable("wfrp4e-archives2.journals")) {
+				return;
+			}
+			if (stage?.class && key === "career") {
+				patchCareerStage(stage.class);
+			}
+			return origAddStage.call(this, stage, index, stageData);
+		};
+
+		const origReplaceStage = CharGenClass.prototype.replaceStage;
+		CharGenClass.prototype.replaceStage = function(key, stage) {
+			if (key === "career" && stage?.name === "SoCCareerStage" && !isPackJournalAvailable("wfrp4e-soc.journals")) {
+				return;
+			}
+			if (stage && key === "career") {
+				patchCareerStage(stage);
+			}
+			return origReplaceStage.call(this, key, stage);
+		};
+
+		CharGenClass.prototype._wfrp4eCorePlPatched = true;
+	}
+
+	if (game.wfrp4e?.apps?.CareerStage) {
+		patchCareerStage(game.wfrp4e.apps.CareerStage);
+	}
+}
+
+const TABLE_PATCH_MARK = Symbol.for("wfrp4e-core-pl.tableCompatibility");
+let compendiumTablesPromise = null;
+let compendiumTablesLoaded = false;
+
+export async function ensureCompendiumTablesLoaded() {
+	if (compendiumTablesLoaded) return true;
+	if (compendiumTablesPromise) return compendiumTablesPromise;
+
+	compendiumTablesPromise = (async () => {
+		try {
+			const tablePacks = game.packs?.filter?.(p => p.metadata?.type === "RollTable" || p.documentName === "RollTable") || [];
+			for (const pack of tablePacks) {
+				await pack.getDocuments();
+			}
+			compendiumTablesLoaded = true;
+		} catch (err) {
+			console.warn("wfrp4e-core-pl | Błąd ładowania tabel z kompendium:", err);
+		} finally {
+			compendiumTablesPromise = null;
+		}
+		return compendiumTablesLoaded;
+	})();
+
+	return compendiumTablesPromise;
+}
+
+export function findCompendiumTable(key, column) {
+	if (!key) return null;
+	const normKey = String(key).toLowerCase().trim();
+	const normCol = column ? String(column).toLowerCase().trim() : null;
+
+	const tablePacks = game.packs?.filter?.(p => p.metadata?.type === "RollTable" || p.documentName === "RollTable") || [];
+	let matchedTables = [];
+
+	for (const pack of tablePacks) {
+		const docs = pack.contents || [];
+		for (const table of docs) {
+			const tableKey = table.getFlag?.("wfrp4e", "key")?.toLowerCase();
+			const origName = (table.flags?.babele?.originalName || table._source?.name || "").toLowerCase();
+			const tableName = (table.name || "").toLowerCase();
+
+			// 1. Direct key match
+			if (tableKey === normKey) {
+				matchedTables.push(table);
+				continue;
+			}
+
+			// 2. Special aliases for species
+			if (normKey === "species" && (tableKey === "species" || origName === "species" || tableName === "species" || tableName === "rasy")) {
+				matchedTables.push(table);
+				continue;
+			}
+
+			// 3. Special aliases for talents
+			if (normKey === "talents" && (tableKey === "talents" || origName.includes("talents") || tableName.includes("talenty") || (tableName.includes("talent") && (tableName.includes("losowe") || tableName.includes("creation") || tableName.includes("tworzenie"))))) {
+				matchedTables.push(table);
+				continue;
+			}
+
+			// 4. Exact name match
+			if (tableName === normKey || origName === normKey) {
+				matchedTables.push(table);
+				continue;
+			}
+		}
+	}
+
+	if (matchedTables.length === 0) return null;
+
+	if (normKey === "species") {
+		const settingId = game.settings?.get?.("wfrp4e", "tableSettings")?.species;
+		if (settingId) {
+			const settingTable = matchedTables.find(t => t.id === settingId || t._id === settingId);
+			if (settingTable) return settingTable;
+		}
+		const coreTable = matchedTables.find(t => t.pack === "wfrp4e-core.tables" || t.collection?.collection === "wfrp4e-core.tables");
+		if (coreTable) return coreTable;
+	}
+
+	if (normCol) {
+		const resolvedColSpecies = game.wfrp4eCorePl?.names?.resolveSpeciesKey?.(normCol)?.toLowerCase();
+		const colTable = matchedTables.find(t => {
+			const colFlag = t.getFlag?.("wfrp4e", "column")?.toLowerCase();
+			const origName = (t.flags?.babele?.originalName || t._source?.name || "").toLowerCase();
+			const tableName = (t.name || "").toLowerCase();
+			return colFlag === normCol || 
+				(resolvedColSpecies && colFlag === resolvedColSpecies) ||
+				origName === normCol || 
+				tableName === normCol || 
+				origName.includes(normCol) || 
+				tableName.includes(normCol);
+		});
+		if (colTable) return colTable;
+		return null;
+	}
+
+	if (matchedTables.length === 1 || matchedTables.filter(t => t.getFlag?.("wfrp4e", "column")).length < 1) {
+		return matchedTables[0];
+	}
+
+	return {
+		name: matchedTables[0].name.split("-")[0].trim(),
+		columns: matchedTables,
+		roll: async () => {
+			const ItemDialog = game.wfrp4e?.apps?.ItemDialog || window.ItemDialog;
+			if (ItemDialog) {
+				let selected = await ItemDialog.create(matchedTables, 1, game.i18n.localize("CHAT.ColumnPrompt"));
+				return await selected[0]?.roll();
+			}
+			return await matchedTables[0]?.roll();
+		}
+	};
+}
+
+export function patchTableCompatibility() {
+	const Tables = game.wfrp4e?.tables;
+	if (!Tables || Tables[TABLE_PATCH_MARK] || typeof Tables.findTable !== "function") return;
+
+	const origFindTable = Tables.findTable;
+	Tables.findTable = function(key, column) {
+		const table = origFindTable.call(this, key, column);
+		if (table) return table;
+		return findCompendiumTable(key, column);
+	};
+
+	const origRollTable = Tables.rollTable;
+	if (typeof origRollTable === "function") {
+		Tables.rollTable = async function(tableKey, options = {}, column = null) {
+			let resolvedCol = column ? String(column).trim() : null;
+			if (resolvedCol && tableKey?.toLowerCase() === "career") {
+				resolvedCol = resolveSpecies(resolvedCol) || resolvedCol;
+			}
+
+			let table = Tables.findTable(tableKey, resolvedCol);
+			if (!table) {
+				await ensureCompendiumTablesLoaded();
+				table = Tables.findTable(tableKey, resolvedCol);
+			}
+
+			// If column was specified with hyphen (e.g. human-reiklander), fall back to base species if specific table doesn't exist
+			if (!table && resolvedCol && resolvedCol.includes("-") && tableKey?.toLowerCase() === "career") {
+				const baseSpecies = resolvedCol.split("-")[0];
+				if (Tables.findTable(tableKey, baseSpecies)) {
+					resolvedCol = baseSpecies;
+					table = Tables.findTable(tableKey, resolvedCol);
+				}
+			}
+
+			// If column was explicitly specified but no table matches it anywhere, do not let upstream fallback pick an arbitrary table
+			if (resolvedCol && !table) {
+				const errorMsg = game.i18n?.format?.("ERROR.Table", { key: `${tableKey} (${resolvedCol})` }) || `Nie znaleziono tabeli: ${tableKey} (${resolvedCol})`;
+				return ui.notifications?.error?.(errorMsg);
+			}
+
+			const result = await origRollTable.call(this, tableKey, options, resolvedCol);
+			if (result && ["career", "seafarer"].includes(tableKey?.toLowerCase())) {
+				sanitizeCareerTableResult(result);
+			}
+			return result;
+		};
+	}
+
+	Object.defineProperty(Tables, TABLE_PATCH_MARK, { value: true });
+}
+
+function tryPatchComponents() {
+	tryPatchSpeciesStage();
+	patchChargenStages();
+	patchCareerSelector();
+	patchTableCompatibility();
+	patchTradeManager();
+	patchTradeDialog();
+	sanitizeTradeGazetteers();
+}
+
+Hooks.on("init", tryPatchComponents);
+Hooks.on("ready", tryPatchComponents);
+Hooks.on("wfrp4e:chargen", async chargen => {
+	await ensureCompendiumTablesLoaded();
+	patchChargenStages();
+
+	const speciesStage = chargen?.stages?.find(s => s.key === "species")?.class;
+	if (speciesStage) {
+		patchSpeciesStage(speciesStage);
+	}
+
+	if (!isPackJournalAvailable("wfrp4e-archives2.journals")) {
+		if (Array.isArray(chargen?.stages)) {
+			chargen.stages = chargen.stages.filter(s => s.key !== "star-sign" && s.key !== "starsign");
+		}
+	}
+
+	const careerStage = chargen?.stages?.find(s => s.key === "career");
+	if (!isPackJournalAvailable("wfrp4e-soc.journals")) {
+		if (careerStage && careerStage.class?.name === "SoCCareerStage") {
+			careerStage.class = Object.getPrototypeOf(careerStage.class);
+		}
+	}
+	if (careerStage?.class) {
+		patchCareerStage(careerStage.class);
+	}
+});
+
+// ---------------------------------------------------------------------------
+// Obsługa i filtrowanie handlu (/trade): podział na grupy, filtrowanie i spolszczenie
+// ---------------------------------------------------------------------------
+
+const SETTLEMENT_NAME_TRANSLATIONS = {
+	"Castle Reikguard": "Zamek Reikguard",
+	"Castle Grauenburg": "Zamek Grauenburg",
+	"Brass Keep": "Mosiężna Twierdza",
+	"Hope Square": "Plac Nadziei",
+	"Upper Spite": "Górne Zgorszenie",
+	"Castle Midfast": "Zamek Midfast",
+	"Auld Troldved": "Stary Troldved",
+	"Altar of the Crimson Harvest": "Ołtarz Krwawych Żniw",
+};
+
+function isModuleSourceAvailable(cfg) {
+	if (!cfg) return true;
+	if (cfg.id && game.modules?.get(cfg.id)?.active) {
+		return true;
+	}
+	if (cfg.pack && game.packs?.get(cfg.pack)) {
+		return true;
+	}
+	return false;
+}
+
+const GAZETTEER_SOURCE_CONFIG = [
+	{
+		id: "wfrp4e-dotr",
+		fileMatch: "wfrp4e-dotr",
+		pack: "wfrp4e-dotr.journals",
+		group: "Śmierć na rzece Reik (Reikland)",
+		groupEn: "Death on the Reik (Reikland)",
+	},
+	{
+		id: "wfrp4e-up-in-arms",
+		fileMatch: "wfrp4e-up-in-arms",
+		pack: "wfrp4e-up-in-arms.journals",
+		group: "Pod broń! (Tilea)",
+		groupEn: "Up in Arms (Tilea)",
+	},
+	{
+		id: "wfrp4e-pbtt",
+		fileMatch: "wfrp4e-pbtt",
+		pack: "wfrp4e-pbtt.journals",
+		group: "Szara Eminencja (Middenland)",
+		groupEn: "Power Behind the Throne (Middenland)",
+	},
+	{
+		id: "wfrp4e-salzenmund",
+		fileMatch: "wfrp4e-salzenmund",
+		pack: "wfrp4e-salzenmund.journals",
+		group: "Salzenmund (Nordland)",
+		groupEn: "Salzenmund (Nordland)",
+	},
+	{
+		id: "wfrp4e-owb3",
+		fileMatch: "wfrp4e-owb3",
+		pack: "wfrp4e-owb3.journals",
+		group: "Stary Świat",
+		groupEn: "The Old World",
+	},
+	{
+		id: "wfrp4e-soc",
+		fileMatch: "wfrp4e-soc",
+		pack: "wfrp4e-soc.journals",
+		group: "Morze Szponów (Porty morskie)",
+		groupEn: "Sea of Claws (Sea ports)",
+	},
+];
+
+const PBTT_SETTLEMENT_NAMES = new Set([
+	"Middenheim", "Brass Keep", "Gladbeich", "Holzbek", "Hope Square", "Hovelhof",
+	"Immelschied", "Jagerhausen", "Linz", "Nordringen", "Oberholzbek", "Schoninhagen",
+	"Sohk", "Solzheim", "Thugenheim", "Upper Spite", "Warrenburg",
+	"Mosiężna Twierdza", "Plac Nadziei", "Górne Zgorszenie",
+]);
+
+const UIA_SETTLEMENT_NAMES = new Set([
+	"Luccini", "Anducci", "Pattio", "Miragliano", "Amato", "Campogrotta", "Cammaro",
+	"Etobrutti", "Mironia", "Parmis", "Ravola", "Toscania", "Udolpho", "Zeluco",
+	"Monte Castello", "Pavona", "Bucollia", "Lambrusco", "Organza", "Remas",
+	"Alcatani", "Catrazza", "Ciarascura", "Motta Zorella", "Monte Negro", "Scintio",
+	"Vennia", "Zorasta", "Sartosa", "Tobaro", "Cera-Scuro", "Vedenza", "Trantio",
+	"Ducieso", "Terramorta", "Torrico", "Varenna", "Viccia", "Verezzo", "Ciabbatta",
+	"Nonucci", "Riccotta", "Veddia",
+]);
+
+const SALZENMUND_SETTLEMENT_NAMES = new Set([
+	"Beeckerhoven", "Grafenrich", "Oldenlitz", "Gaussfurt", "Tettens", "Odisheim",
+	"Silbertief", "Hohenaspe", "Kurtwallen", "Köhlen", "Schlaghügel", "Massenfels",
+	"Beilen", "Ueblingen", "Dunkelkiefer", "Wulfhaven", "Schadelbruck", "Leihafen",
+	"Broghur", "Hørup", "Skovby", "Burkal", "Stavern", "Alfhausen", "Dreizack",
+	"Heiligdorf", "Manannsheim", "Nysted", "Luftberg", "Hüven", "Wilhelmskoog",
+	"Ockholm", "Wittigholm", "Skjaldberg", "Varrel", "Seuchenshof", "Schuten",
+	"Beelen", "Salzmorast", "Kriedeklippe", "Gelting", "Nordenwatch", "Forstfast",
+	"Kronven", "Skogholm", "Voervinholm", "Tyrvad", "Zelebhorn", "Vesterrup",
+	"Auld Troldved", "Castle Midfast", "Frote", "Dünsen", "Marklohe", "Dorfmark",
+	"Zamek Midfast", "Stary Troldved",
+]);
+
+function tagAndTranslateRecord(rec, defaultGroup) {
+	if (!rec) return;
+	const isPl = game.i18n?.lang === "pl";
+	if (isPl && SETTLEMENT_NAME_TRANSLATIONS[rec.name]) {
+		rec.originalName = rec.name;
+		rec.name = SETTLEMENT_NAME_TRANSLATIONS[rec.name];
+	}
+	if (!rec.group) {
+		if (PBTT_SETTLEMENT_NAMES.has(rec.name) || PBTT_SETTLEMENT_NAMES.has(rec.originalName)) {
+			rec.group = isPl ? "Szara Eminencja (Middenland)" : "Power Behind the Throne (Middenland)";
+		} else if (UIA_SETTLEMENT_NAMES.has(rec.name) || UIA_SETTLEMENT_NAMES.has(rec.originalName)) {
+			rec.group = isPl ? "Pod broń! (Tilea)" : "Up in Arms (Tilea)";
+		} else if (SALZENMUND_SETTLEMENT_NAMES.has(rec.name) || SALZENMUND_SETTLEMENT_NAMES.has(rec.originalName)) {
+			rec.group = isPl ? "Salzenmund (Nordland)" : "Salzenmund (Nordland)";
+		} else {
+			rec.group = defaultGroup || (isPl ? "Śmierć na rzece Reik (Reikland)" : "Death on the Reik (Reikland)");
+		}
+	}
+}
+
+function sanitizeTradeGazetteers() {
+	const trade = game.wfrp4e?.trade;
+	if (!trade) return;
+
+	const isPl = game.i18n?.lang === "pl";
+	const socCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-soc");
+	const dotrCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-dotr");
+	const pbttCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-pbtt");
+	const uiaCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-up-in-arms");
+	const salzCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-salzenmund");
+	const owbCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-owb3");
+
+	const socGroup = isPl ? "Morze Szponów (Porty morskie)" : "Sea of Claws (Sea ports)";
+	const dotrGroup = isPl ? "Śmierć na rzece Reik (Reikland)" : "Death on the Reik (Reikland)";
+
+	// 1. Obsługa handlu morskiego (Sea of Claws)
+	if (!isModuleSourceAvailable(socCfg)) {
+		trade.gazetteers.maritime = [];
+		if (trade.tradeData?.maritime) {
+			delete trade.tradeData.maritime.soc;
+		}
+	} else if (Array.isArray(trade.gazetteers?.maritime)) {
+		for (const rec of trade.gazetteers.maritime) {
+			tagAndTranslateRecord(rec, socGroup);
+		}
+	}
+
+	// 2. Filtrowanie i podział osad handlu rzecznego
+	if (Array.isArray(trade.gazetteers?.river)) {
+		for (const rec of trade.gazetteers.river) {
+			tagAndTranslateRecord(rec, dotrGroup);
+		}
+
+		trade.gazetteers.river = trade.gazetteers.river.filter(rec => {
+			if (rec.group === "Śmierć na rzece Reik (Reikland)" || rec.group === "Death on the Reik (Reikland)") {
+				return isModuleSourceAvailable(dotrCfg);
+			}
+			if (rec.group === "Szara Eminencja (Middenland)" || rec.group === "Power Behind the Throne (Middenland)") {
+				return isModuleSourceAvailable(pbttCfg);
+			}
+			if (rec.group === "Pod broń! (Tilea)" || rec.group === "Up in Arms (Tilea)") {
+				return isModuleSourceAvailable(uiaCfg);
+			}
+			if (rec.group === "Salzenmund (Nordland)") {
+				return isModuleSourceAvailable(salzCfg);
+			}
+			if (rec.group === "Stary Świat" || rec.group === "The Old World") {
+				return isModuleSourceAvailable(owbCfg);
+			}
+			return true;
+		});
+	}
+}
+
+function patchTradeManager() {
+	const trade = game.wfrp4e?.trade;
+	if (!trade || trade._wfrp4eCorePlPatched) return;
+
+	if (game.i18n?.lang === "pl") {
+		trade.seasons = {
+			spring: game.i18n?.localize("TRADE.Spring") || "Wiosna",
+			summer: game.i18n?.localize("TRADE.Summer") || "Lato",
+			autumn: game.i18n?.localize("TRADE.Autumn") || "Jesień",
+			winter: game.i18n?.localize("TRADE.Winter") || "Zima",
+		};
+	}
+
+	const origAddGazzetteerFile = trade.addGazzetteerFile;
+	trade.addGazzetteerFile = function(path, type) {
+		const cfg = GAZETTEER_SOURCE_CONFIG.find(c => path.includes(c.fileMatch));
+		if (cfg && !isModuleSourceAvailable(cfg)) {
+			return;
+		}
+
+		fetch(path).then(r => r.json()).then(async records => {
+			const isPl = game.i18n?.lang === "pl";
+			const groupName = cfg ? (isPl ? cfg.group : (cfg.groupEn || cfg.group)) : (type === "maritime" ? (isPl ? "Morze Szponów (Porty morskie)" : "Sea of Claws (Sea ports)") : (isPl ? "Śmierć na rzece Reik (Reikland)" : "Death on the Reik (Reikland)"));
+			for (const rec of records) {
+				rec.group = groupName;
+				if (isPl && SETTLEMENT_NAME_TRANSLATIONS[rec.name]) {
+					rec.originalName = rec.name;
+					rec.name = SETTLEMENT_NAME_TRANSLATIONS[rec.name];
+				}
+			}
+			this.gazetteers[type] = this.gazetteers[type].concat(records);
+		}).catch(err => {
+			console.warn("wfrp4e-core-pl | Błąd wczytywania gazetteer:", err);
+		});
+	};
+
+	const origGetTradeType = trade.getTradeType;
+	trade.getTradeType = async function() {
+		sanitizeTradeGazetteers();
+
+		const buttons = [];
+		const dotrCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-dotr");
+		if (this.tradeData?.river?.dotr && isModuleSourceAvailable(dotrCfg) && this.gazetteers?.river?.length) {
+			buttons.push({
+				action: "river",
+				label: game.i18n.localize("TRADE.River") || "Rzeczny",
+				callback: () => "river",
+			});
+		}
+		const socCfg = GAZETTEER_SOURCE_CONFIG.find(c => c.id === "wfrp4e-soc");
+		if (this.tradeData?.maritime?.soc && isModuleSourceAvailable(socCfg) && this.gazetteers?.maritime?.length) {
+			buttons.push({
+				action: "maritime",
+				label: game.i18n.localize("TRADE.Maritime") || "Morski",
+				callback: () => "maritime",
+			});
+		}
+
+		if (buttons.length === 0) {
+			ui.notifications.error(game.i18n.localize("TRADE.NoTradeData") || "Nie znaleziono danych handlowych.");
+			return null;
+		}
+		if (buttons.length === 1) {
+			return buttons[0].action;
+		}
+
+		return foundry.applications.api.DialogV2.wait({
+			window: { title: game.i18n.localize("TRADE.Trade") || "Handel" },
+			content: game.i18n.localize("TRADE.TradeType") || "Wybierz rodzaj handlu",
+			buttons,
+		});
+	};
+
+	const origAttemptBuy = trade.attemptBuy;
+	trade.attemptBuy = async function() {
+		sanitizeTradeGazetteers();
+		return origAttemptBuy.apply(this, arguments);
+	};
+
+	const origAttemptSell = trade.attemptSell;
+	trade.attemptSell = async function(cargo) {
+		sanitizeTradeGazetteers();
+		return origAttemptSell.apply(this, arguments);
+	};
+
+	trade._wfrp4eCorePlPatched = true;
+}
+
+const ENGLISH_CARGO_MAP = {
+	"grain": "grain",
+	"armaments": "armaments",
+	"arms": "arms",
+	"luxuries": "luxuries",
+	"metal": "metal",
+	"timber": "timber",
+	"wine": "wine",
+	"brandy": "brandy",
+	"wool": "wool",
+	"boatbuilding": "boatbuilding",
+	"bricks": "bricks",
+	"metalworking": "metalworking",
+	"smuggling": "smuggling",
+	"trade": "trade",
+	"shipparts": "shipParts",
+	"ship parts": "shipParts",
+	"salt": "salt",
+	"oil": "oil",
+	"saltfish": "saltfish",
+	"citrusfruit": "citrusFruit",
+	"citrus fruit": "citrusFruit",
+	"citrus": "citrusFruit",
+	"olives": "olives",
+	"stone": "stone",
+};
+
+function patchTradeDialog() {
+	if (typeof TradeDialog === "undefined") return;
+	if (TradeDialog.prototype._wfrp4eCorePlPatched) return;
+
+	const origEncode = TradeDialog.prototype.encodeSurplusDemand;
+	TradeDialog.prototype.encodeSurplusDemand = function(string) {
+		if (!string) return [];
+		const cargoTypes = game.wfrp4e?.trade?.tradeData?.[this.tradeType]?.cargoTypes || {};
+		const strings = string.split(",").map(i => i.trim());
+		const encoded = [];
+
+		for (const str of strings) {
+			const parts = str.split("+");
+			if (parts.length < 2) continue;
+			const value = parts[1].trim();
+			let rawName = parts[0].trim();
+			if (rawName.includes("(")) {
+				rawName = rawName.split("(")[0].trim();
+			}
+
+			let key = warhammer?.utility?.findKey ? warhammer.utility.findKey(rawName, cargoTypes, { caseInsensitive: true }) : null;
+			if (!key && cargoTypes[rawName.toLowerCase()]) {
+				key = rawName.toLowerCase();
+			}
+			if (!key && ENGLISH_CARGO_MAP[rawName.toLowerCase()]) {
+				key = ENGLISH_CARGO_MAP[rawName.toLowerCase()];
+			}
+			if (!key) {
+				key = rawName.toLowerCase();
+			}
+
+			encoded.push(`${key} +${value}`);
+		}
+		return encoded;
+	};
+
+	TradeDialog.prototype._wfrp4eCorePlPatched = true;
+}
+
+Hooks.on("renderTradeDialog", (app, html) => {
+	const root = html instanceof HTMLElement ? html : html?.[0] || app.element;
+	if (!root || !Array.isArray(app.gazetteer)) return;
+
+	const select = root.querySelector("[name='settlement']");
+	if (!select) return;
+
+	const isPl = game.i18n?.lang === "pl";
+	const defaultGroup = isPl ? "Śmierć na rzece Reik (Reikland)" : "Death on the Reik (Reikland)";
+	const groups = {};
+	for (const rec of app.gazetteer) {
+		const gName = rec.group || defaultGroup;
+		groups[gName] ||= [];
+		groups[gName].push(rec);
+	}
+
+	let newOptionsHtml = '<option value=""></option>';
+	for (const [groupName, records] of Object.entries(groups)) {
+		newOptionsHtml += `<optgroup label="${groupName}">`;
+		for (const rec of records) {
+			newOptionsHtml += `<option value="${rec.name}">${rec.name}</option>`;
+		}
+		newOptionsHtml += `</optgroup>`;
+	}
+
+	select.innerHTML = newOptionsHtml;
+
+	select.addEventListener("change", ev => {
+		const val = ev.target.value;
+		if (!val) return;
+		const rec = app.gazetteer.find(g => g.name === val || g.originalName === val);
+		if (rec) {
+			const wealth = root.querySelector("[name='wealth']");
+			const size = root.querySelector("[name='size']");
+			const produces = root.querySelector("[name='produces']");
+			const surplus = root.querySelector("[name='surplus']");
+			const demand = root.querySelector("[name='demand']");
+			const trade = root.querySelector("[name='trade']");
+			const name = root.querySelector("[name='name']");
+
+			if (wealth) wealth.value = rec.w ?? "";
+			if (size) size.value = rec.size ?? "";
+			if (produces) produces.value = (rec.produces || []).map(i => app.formatCargoType(i) || i).join(", ");
+			if (surplus && typeof app.formatSurplusDemand === "function") surplus.value = app.formatSurplusDemand(rec.surplus);
+			if (demand && typeof app.formatSurplusDemand === "function") demand.value = app.formatSurplusDemand(rec.demand);
+			if (trade) trade.checked = Boolean(rec.isTrade);
+			if (name) name.value = rec.name;
+		}
+	});
+
+	const submitBtn = root.querySelector("button[type='submit']");
+	if (submitBtn && submitBtn.textContent.trim() === "Submit") {
+		submitBtn.textContent = game.i18n?.localize("Submit") || "Zatwierdź";
+	}
+});
+
+ 
+// Localize HR-generated lore effects without replacing their mechanics.
+function localizeHornedRatGeneratedLabels() {
+  if (globalThis.game?.system?.id !== "wfrp4e" || game.i18n?.lang !== "pl") return;
+  const config = game.wfrp4e?.config;
+  if (!config) return;
+  const labels = {
+    "Lore of Plague": "Tradycja Zarazy",
+    "Lore of Stealth": "Tradycja Skrytości",
+    "Lore of Ruin": "Tradycja Zniszczenia",
+    "Apply Lore Effect": "Zastosuj efekt Tradycji",
+    "Add Distracting": "Dodaj cechę Dekoncentrujący",
+    "Add Stealthy": "Dodaj cechę Skryty",
+    "Initiative or Agility based Tests": "Testy oparte na Inicjatywie lub Zwinności",
+    "Lore effect added for ": "Efekt Tradycji dodany na ",
+    " rounds.": " Rund."
+  };
+  for (const key of ["plague", "stealth", "ruin"]) {
+    const effect = config.loreEffects?.[key];
+    if (!effect) continue;
+    if (labels[effect.name]) effect.name = labels[effect.name];
+    for (const data of effect.system?.scriptData ?? []) {
+      if (labels[data.label]) data.label = labels[data.label];
+      if (data.trigger !== "rollCastTest" || typeof data.script !== "string") continue;
+      // Exact quoted literals only. Status keys, nested scripts, UUIDs and dice stay intact.
+      for (const [english, polish] of Object.entries(labels)) {
+        data.script = data.script.split(JSON.stringify(english)).join(JSON.stringify(polish));
+      }
+    }
+  }
+}
+
+Hooks.once("init", () => queueMicrotask(localizeHornedRatGeneratedLabels));
+Hooks.once("i18nInit", localizeHornedRatGeneratedLabels);
+Hooks.once("ready", () => queueMicrotask(localizeHornedRatGeneratedLabels));
+
+// Localize randomize buttons (C S T -> C U T) and clean solitary movement units on actor sheets
+function polishActorSheet(app, html) {
+	if (game.i18n?.lang !== "pl") return;
+	const root = html instanceof HTMLElement ? html : html?.[0] || app?.element;
+	if (!root || typeof root.querySelectorAll !== "function") return;
+
+	
+	// Intercept randomize clicks to safely run without freeze
+	root.querySelectorAll('a[data-action="randomize"]').forEach(btn => {
+		if (btn._safeRandomizeAttached) return;
+		btn._safeRandomizeAttached = true;
+		btn.addEventListener("click", async (e) => {
+			e.stopPropagation();
+			e.preventDefault();
+			const type = btn.dataset.type;
+			const actor = app.actor || app.document;
+			if (!actor) return;
+			if (type === "skills") await safeAdvanceSpeciesSkills(actor);
+			else if (type === "characteristics") await safeAdvanceSpeciesCharacteristics(actor);
+			else if (type === "talents") await safeAdvanceSpeciesTalents(actor);
+		}, { capture: true });
+	});
+
+	// Randomize buttons: C S T -> C U T
+	const randomizeSkills = root.querySelector('a[data-action="randomize"][data-type="skills"]');
+	if (randomizeSkills && randomizeSkills.textContent.trim() === "S") {
+		randomizeSkills.textContent = game.i18n?.localize?.("SHEET.RandomizeSkillAbbr") || "U";
+	}
+
+	// Movement walk / run: clean solitary "yds" / "m" or convert lingering "yds" to "m"
+	const moveInputs = root.querySelectorAll('input[name="system.details.move.walk"], input[name="system.details.move.run"], .movement input, .movement-box input');
+	moveInputs.forEach(input => {
+		if (input.readOnly) {
+			const val = input.value.trim();
+			if (val === "yds" || val === "m" || val === "NaN yds" || val === "NaN m" || val === "undefined yds" || val === "undefined m") {
+				input.value = "";
+			} else if (/\byds\b/.test(val)) {
+				input.value = val.replace(/\byds\b/g, "m");
+			}
+		}
+	});
+}
+
+Hooks.on("renderActorSheet", (app, html) => polishActorSheet(app, html));
+Hooks.on("renderApplicationV2", (app, html) => polishActorSheet(app, html));
+
+// Polish translations and DOM cleanup for settings dialogs
+function polishSettingsWindows(app, html) {
+	if (game.i18n?.lang !== "pl") return;
+	const root = html instanceof HTMLElement ? html : html?.[0] || app?.element;
+	if (!root || typeof root.querySelectorAll !== "function") return;
+
+	// 1. Homebrew settings: window title and unescaping &lt;br&gt; in notes/hints
+	if (app?.constructor?.name === "HomebrewConfig" || root.classList?.contains("homebrew-config")) {
+		const titleEl = app.element?.querySelector?.(".window-title") || root.closest?.(".window-app")?.querySelector?.(".window-title");
+		if (titleEl && (titleEl.textContent.trim() === "Homebrew Settings Configuration" || titleEl.textContent.trim() === "SETTINGS.Menu.HouseRules")) {
+			titleEl.textContent = game.i18n?.localize?.("SETTINGS.Menu.HouseRules") || "Zasady domowe";
+		}
+		root.querySelectorAll(".hint, .notes").forEach(el => {
+			if (el.innerHTML.includes("&lt;br&gt;")) {
+				el.innerHTML = el.innerHTML.replace(/&lt;br&gt;/g, "<br>");
+			}
+		});
+	}
+
+	// 2. Table settings: window title and Grimoire Miscast label
+	if (app?.constructor?.name === "TableSettings" || root.classList?.contains("table-settings")) {
+		const titleEl = app.element?.querySelector?.(".window-title") || root.closest?.(".window-app")?.querySelector?.(".window-title");
+		if (titleEl && (titleEl.textContent.trim() === "Table Settings Configuration" || titleEl.textContent.trim() === "SETTINGS.Menu.TableSettings")) {
+			titleEl.textContent = game.i18n?.localize?.("SETTINGS.Menu.TableSettings") || "Ustawienia tabel";
+		}
+		root.querySelectorAll("label").forEach(lbl => {
+			if (lbl.textContent.trim() === "Grimoire Miscast" || lbl.textContent.trim() === "SETTINGS.TABLE_grimoire-miscast") {
+				lbl.textContent = game.i18n?.localize?.("SETTINGS.TABLE_grimoire-miscast") || "Manifestacja Ksiąg Zaklęć";
+			}
+		});
+	}
+
+	// 3. Main settings list: Theme Configuration submenu
+	if (app?.constructor?.name === "SettingsConfig" || root.querySelector?.('[data-category="wfrp4e"]')) {
+		root.querySelectorAll(".form-group.submenu, .settings-list .setting").forEach(row => {
+			const label = row.querySelector("label");
+			const button = row.querySelector("button");
+			const notes = row.querySelector(".notes, .hint");
+			if (label && (label.textContent.trim() === "Theme Configuration" || label.textContent.trim() === "WH.Theme.Config")) {
+				label.textContent = game.i18n?.localize?.("WH.Theme.Config") || "Konfiguracja motywu";
+			}
+			if (button && (button.textContent.trim() === "Configure Theme" || button.textContent.trim() === "WH.Theme.ConfigButton")) {
+				button.innerHTML = '<i class="fa-solid fa-table-layout"></i> ' + (game.i18n?.localize?.("WH.Theme.ConfigButton") || "Konfiguruj motyw");
+			}
+			if (notes && (notes.textContent.trim() === "Enable or disable the styling provided by the system." || notes.textContent.trim() === "WH.Theme.ConfigHint")) {
+				notes.textContent = game.i18n?.localize?.("WH.Theme.ConfigHint") || "Włącz lub wyłącz stylizację dostarczaną przez system.";
+			}
+		});
+	}
+
+	// 4. WFRP4eThemeConfig: window title and footer buttons
+	if (app?.constructor?.name === "WFRP4eThemeConfig" || root.id === "theme-config") {
+		const titleEl = app.element?.querySelector?.(".window-title") || root.closest?.(".window-app")?.querySelector?.(".window-title");
+		if (titleEl && (titleEl.textContent.trim() === "Theme Configuration" || titleEl.textContent.trim() === "WH.Theme.Config")) {
+			titleEl.textContent = game.i18n?.localize?.("WH.Theme.Config") || "Konfiguracja motywu";
+		}
+		root.querySelectorAll("button").forEach(btn => {
+			const t = btn.textContent.trim();
+			if (t === "Reset") btn.textContent = game.i18n?.localize?.("Reset") || "Zresetuj";
+			if (t === "Save Changes") btn.textContent = game.i18n?.localize?.("Save Changes") || "Zapisz zmiany";
+		});
+	}
+
+	// 5. EditionManager: window title and notifications
+	if (app?.constructor?.name === "EditionManager" || root.classList?.contains("edition-manager")) {
+		const titleEl = app.element?.querySelector?.(".window-title") || root.closest?.(".window-app")?.querySelector?.(".window-title");
+		if (titleEl && (titleEl.textContent.trim() === "Edition Configuration" || titleEl.textContent.trim() === "SETTINGS.Menu.EditionManagerLabel")) {
+			titleEl.textContent = game.i18n?.localize?.("SETTINGS.Menu.EditionManagerLabel") || "Menedżer edycji";
+		}
+		root.querySelectorAll(".notification.warning").forEach(el => {
+			if (el.innerHTML.includes("5th Edition rules are a") || el.innerHTML.includes("Work in Progress")) {
+				el.innerHTML = "Zasady 5. edycji są wciąż <strong>w fazie rozwoju!</strong> Niektóre funkcje mogą nie być jeszcze zaimplementowane.";
+			}
+		});
+		root.querySelectorAll(".notification.info").forEach(el => {
+			if (el.innerHTML.includes("In the future, this window will include") || el.innerHTML.includes("join the Discord")) {
+				el.innerHTML = "W przyszłości to okno będzie zawierać różne opcje do wyboru. Jeśli chcesz zaproponować nową opcję, dołącz do naszego Discorda!";
+			}
+		});
+	}
+
+	// 6. CareerSelector: localize "Add Career" button and attach search filter
+	if (app?.constructor?.name === "CareerSelector" || root.classList?.contains("career-selector")) {
+		const btn = root.querySelector(".form-footer button[type=submit], button[type=submit]");
+		if (btn && btn.textContent.trim() === "Add Career") {
+			btn.textContent = game.i18n?.localize?.("CAREER.AddCareer") || game.i18n?.localize?.("Add Career") || "Dodaj Profesję";
+		}
+		setupCareerSelectorSearch(root);
+	}
+}
+
+function setupCareerSelectorSearch(root) {
+	const list = root.querySelector(".dialog-list");
+	if (!list || root.querySelector(".career-search-bar")) return;
+
+	const searchBar = document.createElement("div");
+	searchBar.className = "career-search-bar";
+	searchBar.innerHTML = `
+		<div class="career-search-wrapper" style="display: flex; align-items: center; gap: 6px; padding: 4px 8px; margin: 4px 6px 6px 6px; background: rgba(0, 0, 0, 0.35); border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);">
+			<i class="fa-solid fa-magnifying-glass" style="opacity: 0.6; font-size: 0.85em;"></i>
+			<input type="text" class="career-search-input" placeholder="Szukaj profesji... (Enter = przejdź)" style="flex: 1; height: 22px; font-size: 0.85em; background: transparent; border: none; color: inherit; outline: none; padding: 0;" autocomplete="off" spellcheck="false">
+			<span class="career-search-count" style="display: none; font-size: 0.75em; padding: 1px 5px; border-radius: 3px; background: rgba(255, 255, 255, 0.1); white-space: nowrap;"></span>
+			<button type="button" class="career-search-clear" style="display: none; width: 18px; height: 18px; line-height: 16px; padding: 0; background: transparent; border: none; cursor: pointer; color: inherit; opacity: 0.6;" title="Wyczyść"><i class="fa-solid fa-xmark"></i></button>
+		</div>
+	`;
+
+	list.parentNode.insertBefore(searchBar, list);
+
+	if (!document.getElementById("career-search-custom-styles")) {
+		const styleEl = document.createElement("style");
+		styleEl.id = "career-search-custom-styles";
+		styleEl.textContent = `
+			.career-search-match {
+				background: rgba(255, 204, 0, 0.12) !important;
+			}
+			.career-search-active {
+				outline: 2px solid #ffcc00 !important;
+				outline-offset: -1px;
+				background: rgba(255, 204, 0, 0.3) !important;
+				box-shadow: 0 0 10px rgba(255, 204, 0, 0.5) !important;
+				transition: background 0.2s ease, outline 0.2s ease;
+			}
+			.career-search-input:focus {
+				outline: none !important;
+				box-shadow: none !important;
+			}
+		`;
+		document.head.appendChild(styleEl);
+	}
+
+	const input = searchBar.querySelector(".career-search-input");
+	const countBadge = searchBar.querySelector(".career-search-count");
+	const clearBtn = searchBar.querySelector(".career-search-clear");
+
+	let matches = [];
+	let currentIndex = -1;
+
+	const normalize = (str) => (str || "").toLowerCase().replace(/ł/g, "l").normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
+
+	function clearActiveHighlight() {
+		if (currentIndex >= 0 && matches[currentIndex]) {
+			matches[currentIndex].classList.remove("career-search-active");
+		}
+	}
+
+	function clearAllHighlights() {
+		clearActiveHighlight();
+		list.querySelectorAll(".career-search-match, .career-search-active").forEach(el => {
+			el.classList.remove("career-search-match", "career-search-active");
+		});
+		matches = [];
+		currentIndex = -1;
+	}
+
+	function updateSearch() {
+		clearAllHighlights();
+		const query = normalize(input.value);
+
+		if (!query) {
+			countBadge.style.display = "none";
+			clearBtn.style.display = "none";
+			return;
+		}
+
+		clearBtn.style.display = "inline-block";
+
+		const elements = Array.from(list.querySelectorAll("h2, li.dialog-item"));
+		for (const el of elements) {
+			const text = normalize(el.textContent);
+			if (text.includes(query)) {
+				matches.push(el);
+				el.classList.add("career-search-match");
+			}
+		}
+
+		countBadge.style.display = "inline-block";
+		if (!matches.length) {
+			countBadge.textContent = "0";
+			countBadge.style.color = "#ff6b6b";
+		} else {
+			countBadge.textContent = `${matches.length}`;
+			countBadge.style.color = "#ffcc00";
+		}
+	}
+
+	function jumpToMatch(forward = true) {
+		if (!matches.length) return;
+
+		clearActiveHighlight();
+
+		if (forward) {
+			currentIndex = (currentIndex + 1) % matches.length;
+		} else {
+			currentIndex = (currentIndex - 1 + matches.length) % matches.length;
+		}
+
+		const target = matches[currentIndex];
+		target.classList.add("career-search-active");
+		target.scrollIntoView({ behavior: "smooth", block: "center" });
+
+		countBadge.textContent = `${currentIndex + 1}/${matches.length}`;
+		countBadge.style.color = "#ffcc00";
+	}
+
+	function clearSearch() {
+		input.value = "";
+		clearAllHighlights();
+		countBadge.style.display = "none";
+		clearBtn.style.display = "none";
+		input.focus();
+	}
+
+	input.addEventListener("input", () => {
+		currentIndex = -1;
+		updateSearch();
+	});
+
+	input.addEventListener("keydown", (e) => {
+		if (e.key === "Enter") {
+			e.preventDefault();
+			e.stopPropagation();
+			jumpToMatch(!e.shiftKey);
+		} else if (e.key === "Escape") {
+			e.preventDefault();
+			e.stopPropagation();
+			clearSearch();
+		}
+	});
+
+	clearBtn.addEventListener("click", (e) => {
+		e.preventDefault();
+		clearSearch();
+	});
+}
+
+Hooks.on("renderApplication", (app, html) => polishSettingsWindows(app, html));
+Hooks.on("renderApplicationV2", (app, html) => polishSettingsWindows(app, html));
+Hooks.on("renderSettingsConfig", (app, html) => polishSettingsWindows(app, html));
+
+Hooks.once("init", () => {
+	installSafeRandomizer();
+	patchWarhammerScript();
+	hookPrepareSystemItems();
+});
+Hooks.once("ready", () => {
+	installSafeRandomizer();
+	ensureCompendiumTablesLoaded();
+	localizeSystemEffectsConfig();
+	patchWarhammerScript();
+});
+
+game.wfrp4eCorePl = game.wfrp4eCorePl || {};
+game.wfrp4eCorePl.localizeScriptLabel = localizeScriptLabel;
+game.wfrp4eCorePl.localizeSystemEffectsConfig = localizeSystemEffectsConfig;
+game.wfrp4eCorePl.patchWarhammerScript = patchWarhammerScript;
+
