@@ -1477,7 +1477,7 @@
       "name": "Tabela Większych Manifestacji",
       "description": " ",
       "results": {
-        "1-5": "<p><strong>Upiorne głosy</strong>: Każdy w promieniu tylu metrów, ile wynosi Siła Woli postaci, słyszy mroczne, nęcące szepty, które są emanacją Dziedziny Chaosu. Wszystkie myślące stworzenia muszą zdać <strong>Przeciętny (+20) Test Opanowania</strong> albo otrzymują 1 Punkt Zepsucia.</p>",
+        "1-5": "<p><strong>Upiorne głosy</strong>: Każdy w promieniu tylu metrów, ile wynosi Siła Woli postaci, słyszy mroczne, nęcące szepty, które są emanacją Domeny Chaosu. Wszystkie myślące stworzenia muszą zdać <strong>Przeciętny (+20) Test Opanowania</strong> albo otrzymują 1 Punkt Zepsucia.</p>",
         "6-10": "<p><strong>Przeklęty wzrok</strong>: Oczy postaci nabierają nienaturalnego koloru, odpowiedniego dla Tradycji zaklęcia, na [[1d10]]{1k10} godzin. W tym czasie postać cierpi z powodu 1 poziomu @Condition[blinded]{Oślepienie}, co nie może zostać wyleczone ani rozproszone żadnym sposobem.</p>",
         "11-15": "<p><strong>Wstrząs Eteru</strong>: Postać otrzymuje [[1d10]]{1k10} obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Musi także zdać <strong>Przeciętny (+20) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom @Condition[stunned]{Oszołomienie}.</p>",
         "16-20": "<p><strong>Spacer śmierci</strong>: Wszędzie, gdzie stąpa postać, pojawia się śmierć. Przez najbliższe [[1d10]]{1k10} godzin wszelkie rośliny obok postaci usychają i giną.</p>",

@@ -46,7 +46,7 @@
     },
     "0YPzJqELtZgm1bbG": {
       "id": "0YPzJqELtZgm1bbG",
-      "name": "Sześcioocze",
+      "name": "Przeklęty wzrok",
       "scriptData": [
         {
           "label": "Oślepienie"
@@ -59,17 +59,17 @@
     },
     "1kIZuOtH2zxONi3B": {
       "id": "1kIZuOtH2zxONi3B",
-      "name": "Chaotyczna Dalekowzroczność",
+      "name": "Chaotyczna dalekowzroczność",
       "scriptData": [
         {
           "label": "Dodaj Punkty Szczęścia"
         }
       ],
-      "description": "<p>Otrzymujesz premiową pulę [[/r 1d10]] Punktów Szczęścia; może ona przekroczyć normalny limit. Za każdym razem, gdy wydajesz jeden z tych punktów, otrzymujesz 1 Punkt Zepsucia. Niewydane punkty z tej puli przepadają na końcu sesji.</p>"
+      "description": "<p>Otrzymujesz premiową pulę [[/r 1d10]] Punktów Szczęścia (które mogą przekroczyć normalny limit). Za każdym razem, gdy postać korzysta z tych punktów, otrzymuje 1 Punkt Zepsucia. Wszelkie pozostałe Punkty Szczęścia zdobyte w ten sposób przepadają po zakończeniu sesji gry. MG przydziela ponadto postaci tyle odwróconych symboli (patrz Tabeli Symboli (Winds of Magic, s. 45)), ile wynosi jej Bonus z Siły Woli.</p>"
     },
     "24ajr7T6WQS5SKIs": {
       "id": "24ajr7T6WQS5SKIs",
-      "name": "Nadużywasz Mojego Miłosierdzia",
+      "name": "Nadużywasz mego miłosierdzia",
       "scriptData": [
         {
           "label": "Brak modlitw"
@@ -78,11 +78,11 @@
           "label": "Czas trwania"
         }
       ],
-      "description": "<p>Tracisz Talenty Błogosławieństwo i Inwokacja na następne [[/r 2d10]] + Punkty Grzechu dni.</p>"
+      "description": "<p>Tracisz Talenty Błogosławieństwo i Inwokacja na następne [[/r 2d10]]+Punkty Grzechu dni.</p>"
     },
     "2hHZNI6hHpJy830N": {
       "id": "2hHZNI6hHpJy830N",
-      "name": "Piekielny Smród",
+      "name": "Odór z piekła rodem",
       "scriptData": [
         {
           "label": "Czas trwania"
@@ -91,11 +91,11 @@
           "label": "Rozpraszający"
         }
       ],
-      "description": "<p>Zaczynasz cuchnąć w piekielny sposób. Otrzymujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Rozpraszający} i prawdopodobnie niechęć każdego, kto ma węch. Efekt trwa [[/r 1d10]] godzin.</p>"
+      "description": "<p>To jest dopiero smród! Postać otrzymuje Cechę Stworzenia Dekoncentrujący (patrz strona 338), a najpewniej też wrogość czegokolwiek, co ma zmysł powonienia. Efekt utrzymuje się przez [[/r 1d10]] godzin.</p>"
     },
     "3TuvTME6mJq79mbJ": {
       "id": "3TuvTME6mJq79mbJ",
-      "name": "Sześcioocze",
+      "name": "Przeklęty wzrok",
       "scriptData": [
         {
           "label": "Oślepienie"
@@ -104,7 +104,7 @@
           "label": "Zapobieganie usunięciu"
         }
       ],
-      "description": "<p>Twoje oczy przybierają nienaturalną barwę powiązaną z twoją Tradycją Magiczną na [[/r 1d10]] godzin. Dopóki są odbarwione, masz 1 Stan @Condition[blinded]{Oślepienie}, którego nie można usunąć żadnym sposobem.</p>"
+      "description": "<p>Oczy postaci nabierają nienaturalnego koloru, odpowiedniego dla Tradycji zaklęcia, na [[/r 1d10]] godzin. W tym czasie postać cierpi z powodu 1 poziomu @Condition[blinded]{Oślepienia}, którego nie można wyleczyć ani rozproszyć żadnym sposobem. Przez ten czas postać traci również możliwość korzystania z Talentów Wykrywanie Magii i Percepcja Magiczna.</p>"
     },
     "3lE9UsIYYTWPpvyk": {
       "id": "3lE9UsIYYTWPpvyk",
@@ -128,7 +128,7 @@
     },
     "5NzC3j1fokWiADQs": {
       "id": "5NzC3j1fokWiADQs",
-      "name": "Krwotok z Twarzy",
+      "name": "Krwotok",
       "scriptData": [
         {
           "label": "Krwawienie"
@@ -148,27 +148,27 @@
     },
     "9g8rXCGwZ52euJED": {
       "id": "9g8rXCGwZ52euJED",
-      "name": "Chłosta",
+      "name": "Skarcenie",
       "scriptData": [
         {
           "label": "Żywotność"
         }
       ],
-      "description": "<p>Twoja Żywotność zostaje zredukowana do 0, o ile już nie była równa 0. Następnie otrzymujesz Stan @Condition[unconscious]{Utrata Przytomności}, którego nie można usunąć, dopóki nie odzyskasz przynajmniej 1 punktu Żywotności.</p>"
+      "description": "<p>Twoja Żywotność zostaje zredukowana do 0 (o ile już się tak nie stało), a następnie dostajesz Stan @Condition[unconscious]{Utrata Przytomności}, którego nie da się usunąć, dopóki nie odzyskasz przynajmniej 1 Punktu Żywotności.</p>"
     },
     "9tmyx3fWsFJJrTX8": {
       "id": "9tmyx3fWsFJJrTX8",
-      "name": "Co Poświęcisz?",
+      "name": "Co poświęcisz?",
       "scriptData": [
         {
           "label": "Obrażenia"
         }
       ],
-      "description": "<p>Otrzymujesz [[/r 1d10]] + Punkty Grzechu Ran ignorujących Bonus z Wytrzymałości i Punkty Pancerza. Następnie wykonaj Trudny (-10) Test Odporności. W razie porażki otrzymujesz 1 Stan @Condition[stunned]{Oszołomienie}.</p>"
+      "description": "<p>Dostajesz [[/r 1d10]]+Punkty Grzechu Ran ignorujących Bonus z Wytrzymałości i PP. Ponadto wykonaj Trudny (-10) Test Odporności. W razie porażki dostajesz jeden Stan @Condition[stunned]{Oszołomienie}.</p>"
     },
     "C2CJmUhiN0exLdJs": {
       "id": "C2CJmUhiN0exLdJs",
-      "name": "Lepki Język",
+      "name": "Język w supeł",
       "scriptData": [
         {
           "label": "Kara do testów Języka"
@@ -181,7 +181,7 @@
     },
     "CPVnxLWx9ojCP3MM": {
       "id": "CPVnxLWx9ojCP3MM",
-      "name": "Nie Pojmujesz Mojej Woli",
+      "name": "Nie rozumiesz moich zamiarów",
       "scriptData": [
         {
           "label": "Czas trwania i umiejętności"
@@ -190,37 +190,37 @@
           "label": "Ukarane umiejętności"
         }
       ],
-      "description": "<p>Otrzymujesz karę -10 do wszystkich Umiejętności powiązanych z twoim bóstwem, według uznania MG, przez następne [[/r 1d10]] + Punkty Grzechu godzin.</p>"
+      "description": "<p>Dostajesz karę -10 do wszelkich Umiejętności powiązanych z twoim bóstwem (określa je MG) na następne [[/r 1d10]]+Punkty Grzechu godzin.</p>"
     },
     "DIjRZmZRHPiXd26A": {
       "id": "DIjRZmZRHPiXd26A",
-      "name": "Wysysanie Duszy",
+      "name": "Wyssanie duszy",
       "scriptData": [
         {
           "label": "Zmęczenie"
         }
       ],
-      "description": "<p>Otrzymujesz 1 Stan @Condition[fatigued]{Zmęczenie}, który utrzymuje się przez [[/r 1d10]] godzin.</p>"
+      "description": "<p>Postać otrzymuje 1 poziom @Condition[fatigued]{Zmęczenia}, który utrzymuje się przez [[/r 1d10]] godzin.</p>"
     },
     "F57JdPNmGvDFv0y5": {
       "id": "F57JdPNmGvDFv0y5",
-      "name": "Duszowosk",
+      "name": "Woskowina",
       "scriptData": [
         {
           "label": "Dodaj Ogłuszenie słuchu"
         }
       ],
-      "description": "<p>Twoje uszy natychmiast zatykają się gęstą woskowiną. Otrzymujesz 1 Stan @Condition[deafened]{Ogłuszenie}, którego nie można usunąć, dopóki ktoś nie oczyści ci uszu udanym Testem Leczenia.</p>"
+      "description": "<p>Uszy czarodzieja natychmiast zatykają się przez nadmiar gęstej woskowiny. Postać otrzymuje 1 poziom @Condition[deafened]{Ogłuszenia}, który nie może zostać usunięty, dopóki ktoś nie wyczyści uszu postaci (udany Przeciętny (+20) Test Leczenia).</p>"
     },
     "G2BnlTlC0sQ7tY53": {
       "id": "G2BnlTlC0sQ7tY53",
-      "name": "Oczyść Ciało",
+      "name": "Oczyść ciało",
       "scriptData": [
         {
           "label": "Obrażenia"
         }
       ],
-      "description": "<p>Otrzymujesz [[/r 2d10]] + Punkty Grzechu Ran ignorujących Bonus z Wytrzymałości i Punkty Pancerza. Następnie wykonaj Bardzo Trudny (-20) Test Odporności. W razie porażki otrzymujesz 1 Stan @Condition[stunned]{Oszołomienie}. Jeśli porażka wynosi -4 PS lub mniej, otrzymujesz Stan @Condition[unconscious]{Utrata Przytomności} na minimum [[/r 1d10]] Rund.</p>"
+      "description": "<p>Dostajesz [[/r 2d10]]+Punkty Grzechu Ran ignorujących Bonus z Wytrzymałości i PP. Ponadto wykonaj Trudny (-20) Test Odporności. W razie porażki dostajesz jeden Stan @Condition[stunned]{Oszołomienie}. Jeśli Porażka wynosi -4 lub mniej PS, dostajesz Stan @Condition[unconscious]{Utrata Przytomności}, który utrzymuje się przez minimum [[/r 1d10]] Rund.</p>"
     },
     "GL0v9tNALqWtiQp1": {
       "id": "GL0v9tNALqWtiQp1",
@@ -234,27 +234,27 @@
     },
     "H2LonRUXOvkoiZmO": {
       "id": "H2LonRUXOvkoiZmO",
-      "name": "Szmacianka",
+      "name": "Szmaciana lalka",
       "scriptData": [
         {
           "label": "Obrażenia"
         }
       ],
-      "description": "<p>Zostajesz wyrzucony w powietrze i lecisz [[/r 1d10]] jardów w losowym kierunku. Przy lądowaniu otrzymujesz [[/r 1d10]] Ran ignorujących Punkty Pancerza oraz Stan @Condition[prone]{Powalenie}.</p>"
+      "description": "<p>Postać zostaje wyrzucona w powietrze i leci [[/r 1d10]] metrów w losowym kierunku. Otrzymuje [[/r 1d10]] Obrażeń ignorujących Punkty Pancerza, zostaje również Powalona.</p>"
     },
     "HrsHkC0ysUhJWpb5": {
       "id": "HrsHkC0ysUhJWpb5",
-      "name": "Zgrzeszyłeś Przeciwko Mnie",
+      "name": "Zgrzeszyłeś przeciwko mnie",
       "scriptData": [
         {
           "label": "Czas trwania"
         }
       ],
-      "description": "<p>Twój bóg jest bardzo rozgniewany i w ramach pokuty zmusza cię do wykonywania Testów Modlitwy jako Akcji przez następne [[/r 1d10]] + Punkty Grzechu Rund.</p>"
+      "description": "<p>Twój bóg jest bardzo zirytowany i w ramach pokuty zmusza cię do wykonywania Testów Modlitwy w ramach twojej Akcji przez następnych [[/r 1d10]]+Punkty Grzechu Rund.</p>"
     },
     "JRWOOwfKE0aDUY6T": {
       "id": "JRWOOwfKE0aDUY6T",
-      "name": "Złowrogie Szepty",
+      "name": "Straszliwe szepty",
       "scriptData": [
         {
           "label": "Test Zepsucia"
@@ -264,7 +264,7 @@
     },
     "KSNhsLq1t8jn5IkM": {
       "id": "KSNhsLq1t8jn5IkM",
-      "name": "Eteryczne Sprzężenie",
+      "name": "Reakcja Eteru",
       "scriptData": [
         {
           "label": "Test Zepsucia"
@@ -284,7 +284,7 @@
     },
     "KusAeo60hFZASpe6": {
       "id": "KusAeo60hFZASpe6",
-      "name": "Wiedźmie Światło",
+      "name": "Wiedźmi blask",
       "scriptData": [
         {
           "label": "Ustaw kolor"
@@ -304,27 +304,27 @@
     },
     "NZmh0jsT3X1hL5cY": {
       "id": "NZmh0jsT3X1hL5cY",
-      "name": "Boskie Rany",
+      "name": "Boskie rany",
       "scriptData": [
         {
           "label": "Krwawienie"
         }
       ],
-      "description": "<p>Otrzymujesz 1 + Punkty Grzechu Stanów @Condition[bleeding]{Krwawienie}.</p>"
+      "description": "<p>Dostajesz 1+Punkty Grzechu Stanów @Condition[bleeding]{Krwawienie}.</p>"
     },
     "NmIJ4CC0tvKWRVPE": {
       "id": "NmIJ4CC0tvKWRVPE",
-      "name": "Cierp Jak Ja Cierpię",
+      "name": "Cierp, jak ja cierpię",
       "scriptData": [
         {
           "label": "Krwawienie"
         }
       ],
-      "description": "<p>Każdego ranka otrzymujesz 1 + Punkty Grzechu Stanów @Condition[bleeding]{Krwawienie}, dopóki nie odprawisz Pokuty.</p>"
+      "description": "<p>Dostajesz 1+Punkty Grzechu Stanów @Condition[bleeding]{Krwawienie} każdego ranka, dopóki nie wypełnisz pokuty.</p>"
     },
     "OgWN6Emwg1SVsea5": {
       "id": "OgWN6Emwg1SVsea5",
-      "name": "Nie Wzywaj Mojego Imienia Nadaremno",
+      "name": "Nie wzywaj mego imienia nadaremnie",
       "scriptData": [
         {
           "label": "Brak modlitw"
@@ -333,7 +333,7 @@
           "label": "Czas trwania"
         }
       ],
-      "description": "<p>Tracisz Talenty Błogosławieństwo i Inwokacja na następne [[/r 1d10]] + Punkty Grzechu dni.</p>"
+      "description": "<p>Tracisz Talenty Błogosławieństwo i Inwokacja na następne [[/r 1d10]]+Punkty Grzechu dni.</p>"
     },
     "P1lRGLGkJVytDYFo": {
       "id": "P1lRGLGkJVytDYFo",
@@ -343,21 +343,21 @@
           "label": "Powalenie"
         }
       ],
-      "description": "<p>Wszystkie stworzenia w promieniu [[/r 1d10]] jardów muszą zdać Przeciętny (+0) Test Atletyki albo otrzymują Stan @Condition[prone]{Powalenie}.</p>"
+      "description": "<p>Wszystkie stworzenia w promieniu [[/r 1d100]] metrów muszą zdać Przeciętny (+20) Test Atletyki albo zostaną Powalone.</p>"
     },
     "Qv2pA5xJJ4OFUgbX": {
       "id": "Qv2pA5xJJ4OFUgbX",
-      "name": "Plugawa Słabość",
+      "name": "Plugawa niemoc",
       "scriptData": [
         {
           "label": "Zepsucie"
         }
       ],
-      "description": "<p>Otrzymujesz 1 Punkt Zepsucia, Stan @Condition[prone]{Powalenie} oraz Stan @Condition[fatigued]{Zmęczenie}.</p>"
+      "description": "<p>Postać otrzymuje 1 Punkt Zepsucia, 1 poziom @Condition[fatigued]{Zmęczenia} i zostaje Powalona.</p>"
     },
     "RfD4gEXjvQF7tvfh": {
       "id": "RfD4gEXjvQF7tvfh",
-      "name": "Eteryczny Wstrząs",
+      "name": "Wstrząs Eteru",
       "scriptData": [
         {
           "label": "Obrażenia"
@@ -367,17 +367,17 @@
     },
     "SZK6g6PgExylCtHu": {
       "id": "SZK6g6PgExylCtHu",
-      "name": "Wypędzam Cię",
+      "name": "Wypędzam cię",
       "scriptData": [
         {
           "label": "Usuń przedmioty"
         }
       ],
-      "description": "<p>Twój bóg cię porzuca. Nieodwracalnie tracisz Talenty Błogosławieństwo i Inwokacja oraz wszystkie Rozwinięcia Modlitwy. Wszyscy kultyści twojego boga automatycznie wiedzą o twoim losie; wszystkie Testy interakcji z nimi są automatycznie Bardzo Trudne (-30) i nie mogą być modyfikowane powyżej tego poziomu.</p>"
+      "description": "<p>Twój bóg cię porzuca. Nieodwracalnie tracisz Talenty Błogosławieństwo i Inwokacja, a także tracisz wszystkie Rozwinięcia w Umiejętności Modlitwa. Co więcej, wszyscy kultyści twojego boga automatycznie dowiadują się o twym losie; wszystkie Testy interakcji z nimi są automatycznie Bardzo Trudne (-30) i nie mogą być modyfikowane w celu ich ułatwienia.</p>"
     },
     "T4YYCjMhlKTMmn3A": {
       "id": "T4YYCjMhlKTMmn3A",
-      "name": "Twój Brak Wiary Jest Niepokojący",
+      "name": "Niepokoi mnie twój brak wiary",
       "scriptData": [
         {
           "label": "Brak testów Modlitwy"
@@ -386,7 +386,7 @@
           "label": "Czas trwania"
         }
       ],
-      "description": "<p>Nie możesz wykonywać żadnych Testów Modlitwy przez [[/r 1d10]] + Punkty Grzechu Rund.</p>"
+      "description": "<p>Nie możesz wykonywać żadnych Testów Modlitwy przez [[/r 1d10]]+Punkty Grzechu Rund.</p>"
     },
     "TQcjDKlRqVszbfrD": {
       "id": "TQcjDKlRqVszbfrD",
@@ -400,7 +400,7 @@
     },
     "UR0sopIW2DQAj8FE": {
       "id": "UR0sopIW2DQAj8FE",
-      "name": "Plugawa Słabość",
+      "name": "Plugawa niemoc",
       "scriptData": [
         {
           "label": "Zepsucie"
@@ -410,27 +410,27 @@
     },
     "UzcTxjHNVngBGnWh": {
       "id": "UzcTxjHNVngBGnWh",
-      "name": "Gromy i Błyskawice",
+      "name": "Grom z jasnego nieba",
       "scriptData": [
         {
           "label": "Żywotność"
         }
       ],
-      "description": "<p>Twój bóg razi cię piorunem. Twoja Żywotność zostaje zredukowana do 0, o ile już nie była równa 0, i otrzymujesz Stan @Condition[ablaze]{Podpalenie}.</p>"
+      "description": "<p>Twój bóg razi cię piorunem. Twoja Żywotność zostaje zredukowana do 0 (o ile już się tak nie stało) i dostajesz Stan @Condition[ablaze]{Podpalenie}.</p>"
     },
     "Va8YSsW9BgpYJ7fT": {
       "id": "Va8YSsW9BgpYJ7fT",
-      "name": "Ogień Duszy",
+      "name": "Ogień duszy",
       "scriptData": [
         {
           "label": "Podpalenie"
         }
       ],
-      "description": "<p>Otrzymujesz Stan @Condition[ablaze]{Podpalenie}, gdy otaczają cię bezbożne płomienie o barwie powiązanej z twoją Tradycją Magiczną.</p>"
+      "description": "<p>Postać otrzymuje 1 poziom @Condition[ablaze]{Podpalenia}, trawiona przez potworne płomienie w kolorze Tradycji zaklęcia.</p>"
     },
     "VdIXOJJoGm1X0ZVo": {
       "id": "VdIXOJJoGm1X0ZVo",
-      "name": "Odpływ Mocy",
+      "name": "Wyssanie mocy",
       "scriptData": [
         {
           "label": "Czas trwania"
@@ -443,7 +443,7 @@
     },
     "WD40ugQoB2GSZJxV": {
       "id": "WD40ugQoB2GSZJxV",
-      "name": "Udowodnij Swoje Oddanie",
+      "name": "Dowiedź swej pobożności",
       "scriptData": [
         {
           "label": "Powalenie"
@@ -452,21 +452,21 @@
           "label": "Zapobieganie usunięciu"
         }
       ],
-      "description": "<p>Otrzymujesz Stan @Condition[prone]{Powalenie}. Nie można go usunąć, dopóki nie osiągniesz Sukcesu w Przeciętnym (+20) Teście Modlitwy.</p>"
+      "description": "<p>Dostajesz Stan @Condition[prone]{Powalenie}. Nie zostanie on usunięty, dopóki nie osiągniesz Sukcesu w Przeciętnym (+20) Teście Modlitwy.</p>"
     },
     "X4gsRyQtS2nNUq6E": {
       "id": "X4gsRyQtS2nNUq6E",
-      "name": "Wiedźmie Światło",
+      "name": "Wiedźmi blask",
       "scriptData": [
         {
           "label": "Ustaw kolor"
         }
       ],
-      "description": "<p>Jarzysz się upiornym światłem powiązanym z twoją Tradycją Magiczną, świecąc jak duże ognisko. Efekt trwa [[/r 1d10]] Rund.</p>"
+      "description": "<p>Na [[/r 1d10]] Rund postać żarzy się dziwnym blaskiem, który emituje tyle światła, co ognisko. Kolor zależny jest od Tradycji zaklęcia.</p>"
     },
     "XeTF12nsTa2keSKJ": {
       "id": "XeTF12nsTa2keSKJ",
-      "name": "Mroczne Widzenie",
+      "name": "Mroczna ślepota",
       "scriptData": [
         {
           "label": "Czas trwania"
@@ -475,11 +475,11 @@
           "label": "Kara do splatania magii"
         }
       ],
-      "description": "<p>Tracisz korzyści z Talentu @UUID[Compendium.wfrp4e-core.items.OEjUvJKi0xmBwbS2]{Drugie Widzenie} na [[/r 1d10]] godzin. Przez ten czas Testy Splatania Magii otrzymują karę -20.</p>"
+      "description": "<p>Na [[/r 1d10]] godzin postać traci swój Talent Percepcja Magiczna. Wszelkie Testy Splatania Magii otrzymują karę -20.</p>"
     },
     "Xo7GEFcGlouC3ME2": {
       "id": "Xo7GEFcGlouC3ME2",
-      "name": "Duszowosk",
+      "name": "Woskowina",
       "scriptData": [
         {
           "label": "Dodaj Ogłuszenie słuchu"
@@ -489,7 +489,7 @@
     },
     "XuHkhXzaSh0A0Fqe": {
       "id": "XuHkhXzaSh0A0Fqe",
-      "name": "Nieposłuszne Szaty",
+      "name": "Krnąbrne odzienie",
       "scriptData": [
         {
           "label": "Splątanie"
@@ -499,7 +499,7 @@
     },
     "YeboVMf4f6lL6hTo": {
       "id": "YeboVMf4f6lL6hTo",
-      "name": "Mówienie Językami",
+      "name": "Dar języków",
       "scriptData": [
         {
           "label": "Czas trwania"
@@ -508,11 +508,11 @@
           "label": "Blokada testu splatania"
         }
       ],
-      "description": "<p>Bełkoczesz niezrozumiale przez [[/r 1d10]] Rund. W tym czasie nie możesz komunikować się werbalnie ani wykonywać Testów Rzucania Zaklęć, choć poza tym możesz działać normalnie.</p>"
+      "description": "<p>Postać przez [[/r 1d10]] Rund trajkocze niezrozumiale. Podczas trwania tego efektu nie może porozumiewać się werbalnie ani podejmować Testów Rzucania Zaklęć, choć oprócz tego zachowuje się zupełnie normalnie.</p>"
     },
     "ZoYQIPQWoDiltyF8": {
       "id": "ZoYQIPQWoDiltyF8",
-      "name": "Ogień Duszy",
+      "name": "Ogień duszy",
       "scriptData": [
         {
           "label": "Podpalenie"
@@ -528,31 +528,31 @@
           "label": "Brak modlitw"
         }
       ],
-      "description": "<p>Tracisz Talenty Błogosławieństwo i Inwokacja, dopóki nie odprawisz 2 Pokut. Pierwsza Pokuta przywraca Błogosławieństwo, a druga Inwokację. Wszyscy kultyści twojego boga automatycznie wiedzą o twoim losie; wszystkie Testy interakcji z nimi są automatycznie Bardzo Trudne (-30) i nie mogą być modyfikowane powyżej tego poziomu.</p>"
+      "description": "<p>Tracisz Talenty Błogosławieństwo i Inwokacja, dopóki nie wypełnisz 2 pokut; pierwsza pokuta przywraca Błogosławieństwo, a druga – Inwokację. Wszyscy kultyści twojego boga automatycznie dowiadują się o twym losie; wszystkie Testy interakcji z nimi są automatycznie Bardzo Trudne (-30) i nie mogą być modyfikowane w celu ich ułatwienia.</p>"
     },
     "aVoIrzGcSpEvnRhX": {
       "id": "aVoIrzGcSpEvnRhX",
-      "name": "Trzęsienie Duszy",
+      "name": "Trzęsienie duszy",
       "scriptData": [
         {
           "label": "Powalenie"
         }
       ],
-      "description": "<p>Otrzymujesz Stan @Condition[prone]{Powalenie}.</p>"
+      "description": "<p>Postać zostaje Powalona.</p>"
     },
     "cV1R0DvRq9o6VgL6": {
       "id": "cV1R0DvRq9o6VgL6",
-      "name": "Klątwa Zepsucia",
+      "name": "Klątwa zepsucia",
       "scriptData": [
         {
           "label": "Zepsucie"
         }
       ],
-      "description": "<p>Otrzymujesz 1 Punkt Zepsucia.</p>"
+      "description": "<p>Postać otrzymuje 1 Punkt Zepsucia.</p>"
     },
     "cmD5p01uNXe7g50J": {
       "id": "cmD5p01uNXe7g50J",
-      "name": "Klątwa Zepsucia",
+      "name": "Klątwa zepsucia",
       "scriptData": [
         {
           "label": "Zepsucie"
@@ -572,7 +572,7 @@
     },
     "djGEQCrs66q0wSiA": {
       "id": "djGEQCrs66q0wSiA",
-      "name": "Przestań Paplać",
+      "name": "Skończ tę paplaninę",
       "scriptData": [
         {
           "label": "Testy Modlitwy"
@@ -581,27 +581,27 @@
           "label": "Czas trwania"
         }
       ],
-      "description": "<p>Nie możesz wykonywać żadnych Testów Modlitwy przez następne [[/r 2d10]] + Punkty Grzechu Rund.</p>"
+      "description": "<p>Nie możesz wykonywać żadnych Testów Modlitwy przez następnych [[/r 2d10]]+Punkty Grzechu Rund.</p>"
     },
     "eHsi7YUlJGfRTfZS": {
       "id": "eHsi7YUlJGfRTfZS",
-      "name": "Lękaj Się Mojego Gniewu",
+      "name": "Lękaj się mego gniewu",
       "scriptData": [
         {
           "label": "Panika"
         }
       ],
-      "description": "<p>Otrzymujesz 1 + Punkty Grzechu Stanów @Condition[broken]{Panika}.</p>"
+      "description": "<p>Dostajesz 1+Punkty Grzechu poziomów Stanu @Condition[broken]{Panika}.</p>"
     },
     "fwr7eFadUrL2Ck10": {
       "id": "fwr7eFadUrL2Ck10",
-      "name": "Poczuj Mój Gniew",
+      "name": "Poczuj mój gniew",
       "scriptData": [
         {
           "label": "Obrażenia"
         }
       ],
-      "description": "<p>Otrzymujesz [[/r 1d10]] + Punkty Grzechu Ran. Następnie wykonaj Wymagający (+0) Test Odporności. W razie porażki otrzymujesz 1 Stan @Condition[stunned]{Oszołomienie}.</p>"
+      "description": "<p>Dostajesz [[/r 1d10]]+Punkty Grzechu Ran. Ponadto wykonaj Wymagający (+0) Test Odporności. W razie porażki dostajesz jeden Stan @Condition[stunned]{Oszołomienie}.</p>"
     },
     "ggexcGnWkWoZCcp8": {
       "id": "ggexcGnWkWoZCcp8",
@@ -618,27 +618,27 @@
     },
     "h8530ITx5ZbiGUVG": {
       "id": "h8530ITx5ZbiGUVG",
-      "name": "Groza!",
+      "name": "Zgroza!",
       "scriptData": [
         {
           "label": "Test Paniki"
         }
       ],
-      "description": "<p>Zdaj Trudny (-20) Test Opanowania albo otrzymujesz 1 Stan @Condition[broken]{Panika}.</p>"
+      "description": "<p>Postać nawiedza nagły natłok niepokojących wizji Domeny Chaosu. MG może wybrać jeden odwrócony symbol z Tabeli Symboli (Winds of Magic, s. 45). Postać musi zdać Trudny (-20) Test Opanowania albo otrzymuje 1 poziom @Condition[broken]{Paniki}.</p>"
     },
     "hKRZZXzPPbHB317y": {
       "id": "hKRZZXzPPbHB317y",
-      "name": "Rozproszenie",
+      "name": "Rozproszenie uwagi",
       "scriptData": [
         {
           "label": "Zaskoczenie"
         }
       ],
-      "description": "<p>Jeśli jesteś zaangażowany w walkę, otrzymujesz Stan @Condition[surprised]{Zaskoczenie}. W przeciwnym razie coś kompletnie cię wybija z równowagi: serce bije jak szalone, a ty przez chwilę nie możesz się skupić.</p>"
+      "description": "<p>Jeśli postać zaangażowana jest w walkę, staje się @Condition[surprised]{Zaskoczona}. Jeśli nie jest to scena walki, postać ogarnia strach, serce wali jej jak młotem, nie jest w stanie skupić się na niczym przez kilka chwil.</p>"
     },
     "j5vwzjFvcSE3YQ2o": {
       "id": "j5vwzjFvcSE3YQ2o",
-      "name": "Lepki Język",
+      "name": "Język w supeł",
       "scriptData": [
         {
           "label": "Kara do testów Języka"
@@ -647,11 +647,11 @@
           "label": "Ustaw czas trwania"
         }
       ],
-      "description": "<p>Wszystkie Testy Języka, w tym Testy Rzucania Zaklęć, otrzymują karę -10 przez [[/r 1d10]] Rund.</p>"
+      "description": "<p>Wszystkie Testy językowe (w tym Testy Rzucenia Zaklęć) otrzymują karę -10 na [[/r 1d10]] Rund.</p>"
     },
     "jHgqPKrOWC6aZtqh": {
       "id": "jHgqPKrOWC6aZtqh",
-      "name": "Widmowe Głosy",
+      "name": "Upiorne głosy",
       "scriptData": [
         {
           "label": "Test Zepsucia"
@@ -661,7 +661,7 @@
     },
     "jYhkh1EGjzs9zk4I": {
       "id": "jYhkh1EGjzs9zk4I",
-      "name": "Zamrożona Kończyna",
+      "name": "Zmrożone kończyny",
       "scriptData": [
         {
           "label": "Wybierz kończynę"
@@ -671,17 +671,17 @@
     },
     "jhfE9C0lUwnMdQsX": {
       "id": "jhfE9C0lUwnMdQsX",
-      "name": "Przemyśl Swoje Czyny",
+      "name": "Przemyśl swoje uczynki",
       "scriptData": [
         {
           "label": "Maks. PS"
         }
       ],
-      "description": "<p>Do końca tygodnia żaden udany Test Modlitwy nie może osiągnąć więcej niż +0 PS.</p>"
+      "description": "<p>Do końca tygodnia każdy udany Test Modlitwy będzie traktowany, jakby miał 0 PS.</p>"
     },
     "jrFYP6TvvS0M64cM": {
       "id": "jrFYP6TvvS0M64cM",
-      "name": "Zapamiętaj Moją Lekcję",
+      "name": "Bacz na moje nauki",
       "scriptData": [
         {
           "label": "Modyfikator"
@@ -690,7 +690,7 @@
           "label": "Czas trwania"
         }
       ],
-      "description": "<p>Otrzymujesz karę -10 do Umiejętności Modlitwa przez następne [[/r 1d10]] + Punkty Grzechu Rund.</p>"
+      "description": "<p>Dostajesz karę -10 do Umiejętności Modlitwa przez następnych [[/r 1d10]]+Punkty Grzechu Rund.</p>"
     },
     "jtBFe6tNWanZZX8Z": {
       "id": "jtBFe6tNWanZZX8Z",
@@ -704,7 +704,7 @@
     },
     "kJlRfQiar7xB7oHP": {
       "id": "kJlRfQiar7xB7oHP",
-      "name": "Groza!",
+      "name": "Zgroza!",
       "scriptData": [
         {
           "label": "Test Paniki"
@@ -714,7 +714,7 @@
     },
     "lFViy4F8sj84tB9c": {
       "id": "lFViy4F8sj84tB9c",
-      "name": "Chaotyczna Dalekowzroczność",
+      "name": "Chaotyczna dalekowzroczność",
       "scriptData": [
         {
           "label": "Dodaj Punkty Szczęścia"
@@ -724,17 +724,17 @@
     },
     "llcHiwV2L3NXmxkV": {
       "id": "llcHiwV2L3NXmxkV",
-      "name": "Złowrogie Szepty",
+      "name": "Straszliwe szepty",
       "scriptData": [
         {
           "label": "Test Zepsucia"
         }
       ],
-      "description": "<p>Zdaj Łatwy (+20) Test Siły Woli albo otrzymujesz 1 Punkt Zepsucia.</p>"
+      "description": "<p>MG może wybrać dwa odwrócone symbole z Tabeli Symboli (Winds of Magic, s. 45). Wykonaj Przeciętny (+20) Test Siły Woli. Jeśli się on nie powiedzie, postać otrzymuje 1 Punkt Zepsucia.</p>"
     },
     "n32KbNptDebxNIyD": {
       "id": "n32KbNptDebxNIyD",
-      "name": "Bluźniercze Wizje",
+      "name": "Bezbożne wizje",
       "scriptData": [
         {
           "label": "Oślepienie"
@@ -744,7 +744,7 @@
     },
     "n97KMGAa6QVNnpcz": {
       "id": "n97KMGAa6QVNnpcz",
-      "name": "Rażony Ślepotą",
+      "name": "Dotknięcie ślepotą",
       "scriptData": [
         {
           "label": "Stany"
@@ -753,61 +753,61 @@
           "label": "Usuń Oślepienie"
         }
       ],
-      "description": "<p>Otrzymujesz Stan @Condition[prone]{Powalenie}. Otrzymujesz też 1 + Punkty Grzechu Stanów @Condition[blinded]{Oślepienie}, które można usunąć wyłącznie zdanym Wymagającym (+0) Testem Modlitwy; Sukces usuwa 1 + PS Stanów @Condition[blinded]{Oślepienie}.</p>"
+      "description": "<p>Dostajesz Stan @Condition[prone]{Powalenie}. Otrzymujesz 1+Punkty Grzechu Stanów @Condition[blinded]{Oślepienie}, których można się pozbyć wyłącznie poprzez wykonanie udanego Wymagającego (+0) Testu Modlitwy, przy czym Sukces usuwa 1 + PS Stanów Oślepienie.</p>"
     },
     "nIvxxRfsSKItoSxC": {
       "id": "nIvxxRfsSKItoSxC",
-      "name": "Widmowe Głosy",
+      "name": "Upiorne głosy",
       "scriptData": [
         {
           "label": "Test Zepsucia"
         }
       ],
-      "description": "<p>Wszyscy w zasięgu liczby jardów równej twojej Sile Woli słyszą mroczne, uwodzicielskie szepty z Królestwa Chaosu. Wszystkie rozumne stworzenia muszą zdać Przeciętny (+0) Test Opanowania albo otrzymują 1 Punkt Zepsucia.</p>"
+      "description": "<p>Każdy w promieniu tylu metrów, ile wynosi Siła Woli postaci, słyszy mroczne, nęcące szepty, które są emanacją Domeny Chaosu. Wszystkie myślące stworzenia muszą zdać Przeciętny (+20) Test Opanowania albo otrzymują 1 Punkt Zepsucia.</p>"
     },
     "npGBWFkWDd8kexfO": {
       "id": "npGBWFkWDd8kexfO",
-      "name": "Dziel Mój Ból",
+      "name": "Dziel mój ból",
       "scriptData": [
         {
           "label": "Obrażenia"
         }
       ],
-      "description": "<p>Otrzymujesz 1 + Punkty Grzechu Ran ignorujących Bonus z Wytrzymałości i Punkty Pancerza. Następnie wykonaj Przeciętny (+20) Test Odporności. W razie porażki otrzymujesz 1 Stan @Condition[stunned]{Oszołomienie}.</p>"
+      "description": "<p>Dostajesz 1+Punkty Grzechu Ran ignorujących Bonus z Wytrzymałości i PP. Ponadto wykonaj Przeciętny (+20) Test Odporności. W razie porażki dostajesz jeden Stan @Condition[stunned]{Oszołomienie}.</p>"
     },
     "nuMJN3wsbfldRrjp": {
       "id": "nuMJN3wsbfldRrjp",
-      "name": "Eteryczny Wstrząs",
+      "name": "Wstrząs Eteru",
       "scriptData": [
         {
           "label": "Obrażenia"
         }
       ],
-      "description": "<p>Otrzymujesz [[/r 1d10]] Ran ignorujących Bonus z Wytrzymałości i Punkty Pancerza. Zdaj Przeciętny (+20) Test Odporności albo otrzymujesz także Stan @Condition[stunned]{Oszołomienie}.</p>"
+      "description": "<p>Postać otrzymuje [[/r 1d10]] Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Musi także zdać Przeciętny (+20) Test Odporności, w przeciwnym wypadku otrzyma również 1 poziom @Condition[stunned]{Oszołomienia}.</p>"
     },
     "oPmCAsSeFq30dD9y": {
       "id": "oPmCAsSeFq30dD9y",
-      "name": "Eteryczne Sprzężenie",
+      "name": "Reakcja Eteru",
       "scriptData": [
         {
           "label": "Test"
         }
       ],
-      "description": "<p>Wszyscy w zasięgu liczby jardów równej twojemu Bonusowi Siły Woli, zarówno przyjaciele, jak i wrogowie, otrzymują [[/r 1d10]] Ran ignorujących Bonus z Wytrzymałości i Punkty Pancerza oraz Stan @Condition[prone]{Powalenie}. Jeśli w zasięgu nie ma żadnych celów, magia nie ma ujścia i rozsadza twoją głowę. Giniesz natychmiast.</p>"
+      "description": "<p>Każdy – wróg czy przyjaciel – w promieniu tylu metrów, ile wynosi Bonus z Siły Woli postaci, otrzymuje [[/r 1d10]] Obrażeń, które ignorują Bonus z Wytrzymałości i Punkty Pancerza. Wszyscy w tym promieniu zostają też @Condition[prone]{Powaleni}. Jeśli na tym obszarze nie ma żadnych celów, magia nie ma się gdzie ulotnić, więc wzbiera wewnątrz czaszki, rozsadzając ją od środka. Postać ginie natychmiast. WARHAMMER FANTASY ROLEPLAY</p>"
     },
     "pH5IdAhXRC2pvdQc": {
       "id": "pH5IdAhXRC2pvdQc",
-      "name": "Bluźniercze Wizje",
+      "name": "Bezbożne wizje",
       "scriptData": [
         {
           "label": "Oślepienie"
         }
       ],
-      "description": "<p>Przemijające wizje bluźnierczych i bezbożnych czynów dręczą twój wzrok. Otrzymujesz Stan @Condition[blinded]{Oślepienie}; zdaj Wymagający (+0) Test Opanowania albo otrzymujesz kolejny.</p>"
+      "description": "<p>Przez krótką chwilę postać nawiedzają bluźniercze i bezbożne wizje. Postać otrzymuje 1 poziom @Condition[blinded]{Oślepienia} i musi zdać Wymagający (+0) Test Opanowania albo otrzymuje kolejny poziom Oślepienia.</p>"
     },
     "pX3ptqYMzz7D7weu": {
       "id": "pX3ptqYMzz7D7weu",
-      "name": "Wystawiasz Moją Cierpliwość Na Próbę",
+      "name": "Wystawiasz na próbę mą cierpliwość",
       "scriptData": [
         {
           "label": "Brak testów Modlitwy"
@@ -820,17 +820,17 @@
     },
     "qukgvellSPnySIvG": {
       "id": "qukgvellSPnySIvG",
-      "name": "Regurgitacja",
+      "name": "Wymioty",
       "scriptData": [
         {
           "label": "Oszołomienie"
         }
       ],
-      "description": "<p>Wymiotujesz niekontrolowanie, wyrzucając z siebie znacznie więcej cuchnących wymiocin, niż powinno pomieścić twoje ciało. Otrzymujesz Stan @Condition[stunned]{Oszołomienie}, który trwa [[/r 1d10]] Rund.</p>"
+      "description": "<p>Postać wymiotuje, wyrzucając z siebie o wiele więcej odrażająco śmierdzących wymiocin, niż mogłoby pomieścić ciało. Postać otrzymuje 1 poziom @Condition[stunned]{Oszołomienia}, który utrzymuje się przez [[/r 1d10]] Rund.</p>"
     },
     "r414pjrzqzvcijlq": {
       "id": "r414pjrzqzvcijlq",
-      "name": "Wysysanie Duszy",
+      "name": "Wyssanie duszy",
       "scriptData": [
         {
           "label": "Zmęczenie"
@@ -840,7 +840,7 @@
     },
     "s1ux2GmOpyHySpLi": {
       "id": "s1ux2GmOpyHySpLi",
-      "name": "Jelitowy Bunt",
+      "name": "Żołądkowa rewolucja",
       "scriptData": [
         {
           "label": "Zmęczenie"
@@ -849,11 +849,11 @@
           "label": "Zapobieganie usunięciu"
         }
       ],
-      "description": "<p>Twoje jelita poruszają się niekontrolowanie i brudzisz ubranie. Otrzymujesz 1 Stan @Condition[fatigued]{Zmęczenie}, którego nie można usunąć, dopóki nie zmienisz ubrania i się nie oczyścisz.</p>"
+      "description": "<p>Wnętrzności zaczynają poruszać się w niekontrolowany sposób, a postać wypróżnia się wbrew swojej woli. Otrzymuje 1 poziom @Condition[fatigued]{Zmęczenia}, którego nie da się usunąć inaczej niż kąpielą i zmianą ubrania.</p>"
     },
     "s26fYiDzzrBpXKWK": {
       "id": "s26fYiDzzrBpXKWK",
-      "name": "Szmacianka",
+      "name": "Szmaciana lalka",
       "scriptData": [
         {
           "label": "Obrażenia"
@@ -893,27 +893,27 @@
     },
     "to0VPZr1cHxVVhJ7": {
       "id": "to0VPZr1cHxVVhJ7",
-      "name": "Pęknięcie",
+      "name": "Krwotok",
       "scriptData": [
         {
           "label": "Krwawienie"
         }
       ],
-      "description": "<p>Twój nos, oczy i uszy obficie krwawią. Otrzymujesz 1 Stan @Condition[bleeding]{Krwawienie}.</p>"
+      "description": "<p>Nos, oczy i uszy zaczynają obficie krwawić. Postać otrzymuje 1 poziom @Condition[bleeding]{Krwawienia}.</p>"
     },
     "tvYmlY4WUq2fkOCH": {
       "id": "tvYmlY4WUq2fkOCH",
-      "name": "Nieposłuszne Szaty",
+      "name": "Krnąbrne odzienie",
       "scriptData": [
         {
           "label": "Splątanie"
         }
       ],
-      "description": "<p>Twoje ubrania zdają się wić z własnej woli. Otrzymujesz 1 Stan @Condition[entangled]{Splątanie} o Sile [[/r 1d10*5]] do opierania się.</p>"
+      "description": "<p>Ubrania postaci zaczynają się skręcać, jakby nagle otrzymały wolną wolę. Postać otrzymuje 1 poziom @Condition[entangled]{Pochwycenia}, którego Siła równa jest [[/r 1d10*5]].</p>"
     },
     "uBGIoMnueUPVhaXo": {
       "id": "uBGIoMnueUPVhaXo",
-      "name": "Nie Wspomogę Cię",
+      "name": "Nie pomogę ci",
       "scriptData": [
         {
           "label": "Czas trwania"
@@ -922,11 +922,11 @@
           "label": "Ukarane umiejętności"
         }
       ],
-      "description": "<p>Otrzymujesz karę -10 do Umiejętności powiązanej z twoim bóstwem, według uznania MG, przez następne [[/r 1d10]] + Punkty Grzechu dni.</p>"
+      "description": "<p>Dostajesz karę -10 do Umiejętności powiązanej z twoim bóstwem (określa ją MG) na następne [[/r 1d10]]+Punkty Grzechu dni.</p>"
     },
     "uFKrc4U4jZVYrpIe": {
       "id": "uFKrc4U4jZVYrpIe",
-      "name": "Regurgitacja",
+      "name": "Wymioty",
       "scriptData": [
         {
           "label": "Oszołomienie"
@@ -949,23 +949,23 @@
     },
     "xycIOtaHw60fxn63": {
       "id": "xycIOtaHw60fxn63",
-      "name": "Zamrożona Kończyna",
+      "name": "Zmrożone kończyny",
       "scriptData": [
         {
           "label": "Wybierz kończynę"
         }
       ],
-      "description": "<p>Jedna losowo określona kończyna zostaje zamrożona w miejscu na [[/r 1d10]] godzin. Kończyna jest bezużyteczna, jakby została @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputated-parts]{amputowana}.</p>"
+      "description": "<p>Jedna kończyna (losowa) zostaje zamrożona na [[/r 1d10]] godzin. Przez ten czas jest zupełnie bezużyteczna, jakby została Amputowana (patrz strona 180).</p>"
     },
     "zmIcU8VmmnallB2j": {
       "id": "zmIcU8VmmnallB2j",
-      "name": "Święte Wizje",
+      "name": "Święte wizje",
       "scriptData": [
         {
           "label": "Oszołomienie"
         }
       ],
-      "description": "<p>Wizje twojego boga dręczą twoje zmysły. Wykonaj Przeciętny (+20) Test Odporności. W razie porażki otrzymujesz 1 Stan @Condition[stunned]{Oszołomienie}. MG określa, co dokładnie przedstawiają wizje.</p>"
+      "description": "<p>Twoje zmysły dręczą wizje ukazujące twojego boga. Wykonaj Przeciętny (+20) Test Odporności. W razie porażki dostajesz jeden Stan @Condition[stunned]{Oszołomienie}. MG decyduje, co dokładnie przedstawiają wizje.</p>"
     }
   }
 }
